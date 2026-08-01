@@ -20,8 +20,14 @@ export const EXAM_MODES: Record<ExamMode, ExamModeConfig> = {
   full: { mode: 'full', questionCount: 30, timeLimitMinutes: 30 },
 };
 
-/** Minimum share of correct answers required to pass. */
-export const PASS_THRESHOLD = 0.6;
+/**
+ * Minimum share of correct answers required to pass.
+ *
+ * 80% comes from the official bank itself, which asks the pass mark as a
+ * question ("درجة النجاح في الامتحان (الاختبار النظري) لمنح إجازة السوق هي؟")
+ * and marks 80% as the correct answer.
+ */
+export const PASS_THRESHOLD = 0.8;
 
 /** A question with its choices already shuffled for this attempt. */
 export type ExamQuestion = Omit<Question, 'choices'> & { choices: Choice[] };

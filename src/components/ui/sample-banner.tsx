@@ -1,21 +1,21 @@
 import { StyleSheet, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
-import { isSampleOnly } from '@/content/registry';
+import { sampleAreas, type SampleArea } from '@/content/registry';
 import { useTheme } from '@/theme/theme-provider';
 import { radius, spacing } from '@/theme/tokens';
 import { Text } from './text';
 
 /**
- * Standing warning that the visible material is placeholder text. Renders
- * nothing once any verified official record is loaded, so shipping the real
- * content removes it automatically.
+ * Standing warning that the material in one area is still placeholder text.
+ * Renders nothing once that area is fully transcribed from the official
+ * source, so shipping the real content removes it automatically.
  */
-export function SampleBanner() {
+export function SampleBanner({ area }: { area: SampleArea }) {
   const { t } = useTranslation();
   const { colors } = useTheme();
 
-  if (!isSampleOnly) return null;
+  if (!sampleAreas[area]) return null;
 
   return (
     <View

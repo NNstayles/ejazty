@@ -6,11 +6,11 @@
  * in `BUNDLES`. Screens and the exam engine read only from this module.
  */
 
+import { officialBundle } from './data/official';
 import {
   samplePriority,
   sampleQuestions,
   sampleRules,
-  sampleSigns,
   sampleViolations,
 } from './data/sample';
 import {
@@ -24,19 +24,20 @@ import {
   type Violation,
 } from './schema';
 
+/**
+ * Placeholder material for the areas the official transcription does not cover
+ * yet. Signs are gone from here — the ministry manual supplies all of them.
+ */
 const sampleBundle: ContentBundle = {
-  signs: sampleSigns,
+  signs: [],
   violations: sampleViolations,
   rules: sampleRules,
   priority: samplePriority,
   questions: sampleQuestions,
 };
 
-/**
- * Ordered highest-trust first. Add the official bundle ahead of the sample one;
- * once it covers a topic you can drop the sample bundle entirely.
- */
-const BUNDLES: ContentBundle[] = [sampleBundle];
+/** Ordered highest-trust first. */
+const BUNDLES: ContentBundle[] = [officialBundle, sampleBundle];
 
 function merge(bundles: ContentBundle[]): ContentBundle {
   return {
@@ -66,14 +67,36 @@ export const rules: TrafficRule[] = bundle.rules;
 export const priorityScenarios: PriorityScenario[] = bundle.priority;
 export const questions: Question[] = bundle.questions;
 
-/** True when no verified official material has been loaded yet. */
-export const isSampleOnly: boolean = ![
-  ...bundle.signs,
-  ...bundle.violations,
-  ...bundle.rules,
-  ...bundle.priority,
-  ...bundle.questions,
-].some((item) => item.verified);
+/** Signs governing right of way, surfaced as the road-priority section. */
+export const prioritySigns: TrafficSign[] = signs.filter((s) => s.priority);
+
+/** Signs shown under the "traffic signs" section, excluding markings/lights. */
+export const roadSigns: TrafficSign[] = signs.filter(
+  (s) => s.category !== 'roadmarking' && s.category !== 'trafficlight',
+);
+
+/** Markings and light signals, shown under the "traffic rules" section. */
+export const markingsAndLights: TrafficSign[] = signs.filter(
+  (s) => s.category === 'roadmarking' || s.category === 'trafficlight',
+);
+
+const anyUnverified = (items: { verified: boolean }[]) =>
+  items.length === 0 || items.some((i) => !i.verified);
+
+/**
+ * Placeholder status is tracked per area rather than globally: the signs are
+ * fully transcribed while the question bank is not, so a single flag would
+ * wrongly clear the warning on the Exam tab.
+ */
+export const sampleAreas = {
+  signs: anyUnverified(bundle.signs),
+  violations: anyUnverified(bundle.violations),
+  rules: anyUnverified(bundle.rules),
+  priority: anyUnverified(bundle.priority),
+  questions: anyUnverified(bundle.questions),
+} as const;
+
+export type SampleArea = keyof typeof sampleAreas;
 
 /**
  * Questions eligible for an exam.

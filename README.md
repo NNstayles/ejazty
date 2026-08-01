@@ -19,37 +19,40 @@ npm run typecheck  # tsc --noEmit
 
 ---
 
-## ⚠️ The content is placeholder — read this first
+## Content status
 
-The app currently ships **sample content only**. Every record in
-`src/content/data/sample.ts` is marked `verified: false`, and a standing warning
-banner appears throughout the app while that is true.
+Placeholder status is tracked **per area** (`sampleAreas` in
+`src/content/registry.ts`), and the warning banner renders only for areas that
+are still placeholder. Shipping real content removes it automatically.
 
-**Do not ship this to users.** The sample text exists so the layouts and the
-exam engine can be exercised end to end. It is not official ministry material
-and must not be used to study.
+| Area               | Status | Source                                 |
+| ------------------ | ------ | -------------------------------------- |
+| Traffic signs      | ✅ 111 records + original artwork | العلامات المرورية (MoI, General Traffic Directorate) |
+| Road markings      | ✅ included in the 111 | same manual, pp. 24–26 |
+| Traffic lights     | ✅ included in the 111 | same manual, pp. 27–28 |
+| Road priority      | ⚠️ 14 priority signs, no rule text | derived from the signs manual |
+| Exam questions     | ❌ placeholder | دليل الأسئلة والأجوبة — 431 questions, not yet transcribed |
+| Traffic violations | ❌ placeholder | no source supplied |
 
-### Loading the official material
+**The Exam tab is still placeholder and must not be used to study.**
 
-1. Create `src/content/data/official.ts` exporting arrays that match the types
-   in `src/content/schema.ts`.
-2. Give every record a real `SourceRef` (`authority`, `document`, and a
-   `locator` such as a page or article number) and set `verified: true`.
-3. Register the bundle in `src/content/registry.ts`, ahead of the sample one:
+### Adding the remaining material
 
-   ```ts
-   const BUNDLES: ContentBundle[] = [officialBundle, sampleBundle];
-   ```
-
-4. Once every topic is covered, drop `sampleBundle` from the array. The warning
-   banner disappears on its own, and `examPool()` automatically stops serving
-   unverified questions the moment any verified question exists.
-
-Nothing outside `src/content/` needs to change.
+Records live under `src/content/data/official/`. Each needs a real `SourceRef`
+(`authority`, `document`, `locator`) and `verified: true`. Add them to the
+bundle in `data/official/index.ts`; nothing outside `src/content/` changes.
+`examPool()` stops serving unverified questions the moment any verified
+question exists.
 
 `validateBundle()` runs on every dev boot and reports duplicate ids, questions
-that do not have exactly four choices, and questions whose `correctChoiceId`
-matches no choice.
+with the wrong number of choices, and questions whose `correctChoiceId` matches
+no choice.
+
+### A note on the translations
+
+Arabic is transcribed **verbatim** from the ministry publications. English and
+Kurdish Sorani are translations of that Arabic and are **not** part of the
+official source. Have a fluent speaker review them before release.
 
 ---
 
@@ -86,9 +89,11 @@ Defined in `src/features/exam/engine.ts`:
 | Medium | 20        | 10 min     |
 | Full   | 30        | 30 min     |
 
-- Pass mark is 60% (`PASS_THRESHOLD`).
-- Every question is multiple choice with **exactly four options, one correct** —
-  enforced by the `ChoiceSet` tuple type and by `validateBundle()`.
+- Pass mark is **80%** (`PASS_THRESHOLD`). This comes from the official bank
+  itself, which asks the pass mark as a question and marks 80% correct.
+- Every question is multiple choice with **one correct option**. The official
+  bank uses **three** options throughout; four is permitted by the type and by
+  `validateBundle()` for any future material that needs it.
 - Exams draw only from the `signs` and `priority` topics.
 - Questions and their choices are reshuffled per attempt, so answer position is
   never memorisable.

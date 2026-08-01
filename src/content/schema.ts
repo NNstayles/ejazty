@@ -38,21 +38,28 @@ type Sourced = {
   verified: boolean;
 };
 
+/** The divisions used by the ministry manual. */
 export type SignCategory =
-  | 'warning'
-  | 'regulatory'
-  | 'informative'
-  | 'priority'
-  | 'roadwork';
+  | 'regulatory' // علامات مانعة أو تنظيمية
+  | 'warning' // علامات تحذيرية
+  | 'informative' // علامات إرشادية أو توجيهية
+  | 'roadmarking' // علامات أرضية
+  | 'trafficlight'; // إشارات ضوئية
 
 export type TrafficSign = Sourced & {
   category: SignCategory;
   image?: ImageSourcePropType;
   title: Localized;
-  /** What the sign denotes. */
+  /** What the sign denotes, as stated by the source. */
   meaning: Localized;
-  /** The action the driver is legally required to take. */
-  action: Localized;
+  /**
+   * The required action, only where the source states one separately from the
+   * meaning. Optional because the ministry manual gives a single description
+   * per sign — inventing an action would put unofficial text in the app.
+   */
+  action?: Localized;
+  /** True when this sign governs right of way, for the priority section. */
+  priority?: boolean;
 };
 
 export type Violation = Sourced & {
@@ -78,19 +85,24 @@ export type PriorityScenario = Sourced & {
 export type QuestionTopic = 'signs' | 'priority';
 
 /**
- * Every exam question is multiple choice with exactly four options, one of
- * which is correct. This is enforced both in the type (a 4-tuple) and in
- * `validateBundle`, so an imported question with the wrong shape fails loudly
- * instead of rendering a lopsided question card.
+ * Every exam question is multiple choice with exactly one correct option.
+ *
+ * The official ministry bank uses three options throughout, so three is the
+ * canonical shape; four is permitted for any future material that uses it.
+ * Anything outside this range is rejected by `validateBundle`, so a malformed
+ * import fails loudly instead of rendering a lopsided question card.
  */
-export const CHOICES_PER_QUESTION = 4;
+export const MIN_CHOICES_PER_QUESTION = 3;
+export const MAX_CHOICES_PER_QUESTION = 4;
 
 export type Choice = {
   id: string;
   text: Localized;
 };
 
-export type ChoiceSet = [Choice, Choice, Choice, Choice];
+export type ChoiceSet =
+  | [Choice, Choice, Choice]
+  | [Choice, Choice, Choice, Choice];
 
 export type Question = Sourced & {
   topic: QuestionTopic;
@@ -132,9 +144,12 @@ export function validateBundle(bundle: ContentBundle): string[] {
 
   for (const q of bundle.questions) {
     checkId('question', q.id);
-    if (q.choices.length !== CHOICES_PER_QUESTION) {
+    if (
+      q.choices.length < MIN_CHOICES_PER_QUESTION ||
+      q.choices.length > MAX_CHOICES_PER_QUESTION
+    ) {
       problems.push(
-        `Question "${q.id}" has ${q.choices.length} choices; every question must have exactly ${CHOICES_PER_QUESTION}`,
+        `Question "${q.id}" has ${q.choices.length} choices; expected ${MIN_CHOICES_PER_QUESTION}-${MAX_CHOICES_PER_QUESTION}`,
       );
     }
     const correctMatches = q.choices.filter(

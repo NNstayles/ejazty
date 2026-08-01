@@ -15,7 +15,6 @@ import type {
   Question,
   SourceRef,
   TrafficRule,
-  TrafficSign,
   Violation,
 } from '../schema';
 
@@ -23,111 +22,6 @@ const PLACEHOLDER: SourceRef = {
   authority: 'other-official',
   document: 'PLACEHOLDER — replace with the official ministry publication',
 };
-
-export const sampleSigns: TrafficSign[] = [
-  {
-    id: 'sample-sign-stop',
-    verified: false,
-    source: PLACEHOLDER,
-    category: 'regulatory',
-    title: { en: 'Stop', ar: 'قف', ckb: 'وەستە' },
-    meaning: {
-      en: 'An octagonal red sign marking a mandatory full stop.',
-      ar: 'إشارة حمراء ثمانية الأضلاع تدل على وجوب التوقف التام.',
-      ckb: 'هێمایەکی سووری هەشت لایەنە کە وەستانی تەواوی پێویست دەکات.',
-    },
-    action: {
-      en: 'Come to a complete stop at the line, give way, then proceed when clear.',
-      ar: 'توقف توقفًا تامًا عند الخط، وأعطِ الأولوية، ثم تابع عندما يخلو الطريق.',
-      ckb: 'لە هێڵەکەدا بەتەواوی بوەستە، ڕێگا بدە، پاشان کاتێک ڕێگا چۆڵە بەردەوام بە.',
-    },
-  },
-  {
-    id: 'sample-sign-yield',
-    verified: false,
-    source: PLACEHOLDER,
-    category: 'priority',
-    title: { en: 'Give way', ar: 'أعطِ الأولوية', ckb: 'ڕێگا بدە' },
-    meaning: {
-      en: 'A downward-pointing triangle: traffic on the road ahead has priority.',
-      ar: 'مثلث رأسه إلى الأسفل: الأولوية لحركة المرور على الطريق أمامك.',
-      ckb: 'سێگۆشەیەک سەری بەرەو خوارەوە: پێشینەیی بۆ هاتوچۆی ڕێگای پێشەوەیە.',
-    },
-    action: {
-      en: 'Slow down and be ready to stop; only continue without obstructing others.',
-      ar: 'خفّف السرعة وكن مستعدًا للتوقف؛ ولا تتابع إلا دون إعاقة الآخرين.',
-      ckb: 'خێرایی کەم بکەرەوە و ئامادەبە بۆ وەستان؛ تەنها بەبێ ڕێگرتن لە کەسانی تر بەردەوام بە.',
-    },
-  },
-  {
-    id: 'sample-sign-no-entry',
-    verified: false,
-    source: PLACEHOLDER,
-    category: 'regulatory',
-    title: { en: 'No entry', ar: 'ممنوع الدخول', ckb: 'چوونەژوورەوە قەدەغەیە' },
-    meaning: {
-      en: 'A red disc with a white horizontal bar: entry is prohibited for all vehicles.',
-      ar: 'قرص أحمر بشريط أبيض أفقي: الدخول ممنوع لجميع المركبات.',
-      ckb: 'بازنەیەکی سوور بە هێڵێکی سپی ئاسۆیی: چوونەژوورەوە بۆ هەموو ئۆتۆمبێلێک قەدەغەیە.',
-    },
-    action: {
-      en: 'Do not enter. Find an alternative route.',
-      ar: 'لا تدخل. ابحث عن طريق بديل.',
-      ckb: 'مەچۆ ژوورەوە. ڕێگایەکی تر بدۆزەرەوە.',
-    },
-  },
-  {
-    id: 'sample-sign-speed-limit',
-    verified: false,
-    source: PLACEHOLDER,
-    category: 'regulatory',
-    title: { en: 'Speed limit', ar: 'الحد الأقصى للسرعة', ckb: 'سنووری خێرایی' },
-    meaning: {
-      en: 'A red-bordered circle with a number: the maximum permitted speed in km/h.',
-      ar: 'دائرة بإطار أحمر بداخلها رقم: السرعة القصوى المسموح بها بالكيلومتر/ساعة.',
-      ckb: 'بازنەیەک بە چوارچێوەی سوور و ژمارەیەک: زۆرترین خێرایی ڕێپێدراو بە کم/کاتژمێر.',
-    },
-    action: {
-      en: 'Do not exceed the posted speed, and go slower when conditions require it.',
-      ar: 'لا تتجاوز السرعة المحددة، وقُد بسرعة أقل عندما تستدعي الظروف ذلك.',
-      ckb: 'لە خێرایی دیاریکراو تێمەپەڕە، و کاتێک بارودۆخ پێویستی دەکات هێواشتر بڕۆ.',
-    },
-  },
-  {
-    id: 'sample-sign-pedestrian-crossing',
-    verified: false,
-    source: PLACEHOLDER,
-    category: 'warning',
-    title: { en: 'Pedestrian crossing', ar: 'ممر مشاة', ckb: 'پەڕینەوەی پیادە' },
-    meaning: {
-      en: 'Warns of a marked crossing where pedestrians may be on the carriageway.',
-      ar: 'تحذر من وجود ممر مخصص قد يعبر منه المشاة.',
-      ckb: 'ئاگادارکردنەوەیە لە پەڕینەوەیەکی نیشانکراو کە لەوانەیە پیادە لەسەر ڕێگا بن.',
-    },
-    action: {
-      en: 'Reduce speed and give way to pedestrians already crossing.',
-      ar: 'خفّف السرعة وأعطِ الأولوية للمشاة الذين بدأوا العبور.',
-      ckb: 'خێرایی کەم بکەرەوە و ڕێگا بدە بەو پیادانەی دەستیان بە پەڕینەوە کردووە.',
-    },
-  },
-  {
-    id: 'sample-sign-roundabout',
-    verified: false,
-    source: PLACEHOLDER,
-    category: 'priority',
-    title: { en: 'Roundabout ahead', ar: 'دوّار أمامك', ckb: 'بازنە لە پێشەوە' },
-    meaning: {
-      en: 'Indicates a circular junction where traffic flows in one direction.',
-      ar: 'تشير إلى تقاطع دائري تسير فيه الحركة باتجاه واحد.',
-      ckb: 'ئاماژە بە چوارڕیانێکی بازنەیی دەکات کە هاتوچۆ بە یەک ئاراستە دەڕوات.',
-    },
-    action: {
-      en: 'Slow down, follow the arrows and give way as required at entry.',
-      ar: 'خفّف السرعة، واتبع الأسهم، وأعطِ الأولوية عند الدخول حسب المطلوب.',
-      ckb: 'خێرایی کەم بکەرەوە، شوێن تیرەکان بکەوە و لە کاتی چوونەژوورەوە ڕێگا بدە.',
-    },
-  },
-];
 
 export const sampleViolations: Violation[] = [
   {

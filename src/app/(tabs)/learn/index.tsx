@@ -4,13 +4,14 @@ import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
 
 import { PressableScale } from '@/components/ui/pressable-scale';
-import { SampleBanner } from '@/components/ui/sample-banner';
 import { Card, Screen, SectionHeader } from '@/components/ui/surfaces';
 import { Text } from '@/components/ui/text';
 import {
+  markingsAndLights,
+  prioritySigns,
   priorityScenarios,
+  roadSigns,
   rules,
-  signs,
   violations,
 } from '@/content/registry';
 import { useTheme } from '@/theme/theme-provider';
@@ -36,7 +37,7 @@ export default function LearnHome() {
       titleKey: 'learn.signs',
       descKey: 'learn.signsDesc',
       icon: 'warning-outline',
-      count: signs.length,
+      count: roadSigns.length,
     },
     {
       id: 'violations',
@@ -50,21 +51,20 @@ export default function LearnHome() {
       titleKey: 'learn.rules',
       descKey: 'learn.rulesDesc',
       icon: 'document-text-outline',
-      count: rules.length,
+      count: rules.length + markingsAndLights.length,
     },
     {
       id: 'priority',
       titleKey: 'learn.priority',
       descKey: 'learn.priorityDesc',
       icon: 'git-merge-outline',
-      count: priorityScenarios.length,
+      count: priorityScenarios.length + prioritySigns.length,
     },
   ];
 
   return (
     <Screen>
       <SectionHeader title={t('learn.title')} subtitle={t('learn.subtitle')} />
-      <SampleBanner />
 
       <View style={styles.grid}>
         {sections.map((section) => (

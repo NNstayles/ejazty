@@ -43,7 +43,7 @@ export default function ExamHome() {
   return (
     <Screen>
       <SectionHeader title={t('exam.title')} subtitle={t('exam.subtitle')} />
-      <SampleBanner />
+      <SampleBanner area="questions" />
 
       <View style={styles.list}>
         {(Object.keys(EXAM_MODES) as ExamMode[]).map((mode) => {

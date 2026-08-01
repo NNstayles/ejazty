@@ -7,9 +7,11 @@ import { SampleBanner } from '@/components/ui/sample-banner';
 import { Badge, Card, Screen } from '@/components/ui/surfaces';
 import { Text } from '@/components/ui/text';
 import {
+  markingsAndLights,
+  prioritySigns,
   priorityScenarios,
+  roadSigns,
   rules,
-  signs,
   violations,
 } from '@/content/registry';
 import { pick, type Localized, type SourceRef } from '@/content/schema';
@@ -45,19 +47,21 @@ function buildEntries(
 ): Entry[] {
   const p = (value: Localized) => pick(value, lang);
 
+  const fromSign = (s: (typeof roadSigns)[number]): Entry => ({
+    id: s.id,
+    title: p(s.title),
+    image: s.image,
+    verified: s.verified,
+    source: s.source,
+    blocks: [
+      { label: t('learn.meaning'), value: p(s.meaning) },
+      ...(s.action ? [{ label: t('learn.whatToDo'), value: p(s.action) }] : []),
+    ],
+  });
+
   switch (section) {
     case 'signs':
-      return signs.map((s) => ({
-        id: s.id,
-        title: p(s.title),
-        image: s.image,
-        verified: s.verified,
-        source: s.source,
-        blocks: [
-          { label: t('learn.meaning'), value: p(s.meaning) },
-          { label: t('learn.whatToDo'), value: p(s.action) },
-        ],
-      }));
+      return roadSigns.map(fromSign);
     case 'violations':
       return violations.map((v) => ({
         id: v.id,
@@ -70,22 +74,28 @@ function buildEntries(
         ],
       }));
     case 'rules':
-      return rules.map((r) => ({
-        id: r.id,
-        title: p(r.title),
-        verified: r.verified,
-        source: r.source,
-        blocks: [{ label: t('learn.meaning'), value: p(r.body) }],
-      }));
+      return [
+        ...markingsAndLights.map(fromSign),
+        ...rules.map((r) => ({
+          id: r.id,
+          title: p(r.title),
+          verified: r.verified,
+          source: r.source,
+          blocks: [{ label: t('learn.meaning'), value: p(r.body) }],
+        })),
+      ];
     case 'priority':
-      return priorityScenarios.map((s) => ({
-        id: s.id,
-        title: p(s.title),
-        image: s.image,
-        verified: s.verified,
-        source: s.source,
-        blocks: [{ label: t('learn.whatToDo'), value: p(s.description) }],
-      }));
+      return [
+        ...prioritySigns.map(fromSign),
+        ...priorityScenarios.map((s) => ({
+          id: s.id,
+          title: p(s.title),
+          image: s.image,
+          verified: s.verified,
+          source: s.source,
+          blocks: [{ label: t('learn.whatToDo'), value: p(s.description) }],
+        })),
+      ];
   }
 }
 
@@ -106,7 +116,7 @@ export default function LearnSectionScreen() {
     <>
       <Stack.Screen options={{ title: t(SECTION_TITLE_KEYS[section]) }} />
       <Screen edges={[]}>
-        <SampleBanner />
+        <SampleBanner area={section} />
 
         {entries.length === 0 ? (
           <Text tone="textMuted">{t('learn.empty')}</Text>
