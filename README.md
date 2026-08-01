@@ -1,56 +1,171 @@
-# Welcome to your Expo app 👋
+# Ejazty — إجازتي — ئیجازەتی
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A study and mock-exam app for the Iraqi theoretical driving licence exam, in
+Arabic, Kurdish (Sorani) and English.
 
-## Get started
+Expo SDK 57 · React Native 0.86 · expo-router · TypeScript
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Running it
 
 ```bash
-npm run reset-project
+npm start          # dev server + QR code (scan with Expo Go)
+npm run android    # requires Android Studio + SDK
+npm run ios        # requires macOS
+npm run web        # browser
+npm run typecheck  # tsc --noEmit
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-### Other setup steps
+## ⚠️ The content is placeholder — read this first
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+The app currently ships **sample content only**. Every record in
+`src/content/data/sample.ts` is marked `verified: false`, and a standing warning
+banner appears throughout the app while that is true.
 
-## Learn more
+**Do not ship this to users.** The sample text exists so the layouts and the
+exam engine can be exercised end to end. It is not official ministry material
+and must not be used to study.
 
-To learn more about developing your project with Expo, look at the following resources:
+### Loading the official material
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+1. Create `src/content/data/official.ts` exporting arrays that match the types
+   in `src/content/schema.ts`.
+2. Give every record a real `SourceRef` (`authority`, `document`, and a
+   `locator` such as a page or article number) and set `verified: true`.
+3. Register the bundle in `src/content/registry.ts`, ahead of the sample one:
 
-## Join the community
+   ```ts
+   const BUNDLES: ContentBundle[] = [officialBundle, sampleBundle];
+   ```
 
-Join our community of developers creating universal apps.
+4. Once every topic is covered, drop `sampleBundle` from the array. The warning
+   banner disappears on its own, and `examPool()` automatically stops serving
+   unverified questions the moment any verified question exists.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Nothing outside `src/content/` needs to change.
+
+`validateBundle()` runs on every dev boot and reports duplicate ids, questions
+that do not have exactly four choices, and questions whose `correctChoiceId`
+matches no choice.
+
+---
+
+## Architecture
+
+```
+src/
+  app/                      expo-router routes
+    index.tsx               gate: language -> auth -> tabs
+    language.tsx            first-run language picker
+    (auth)/                 sign-in, sign-up
+    (tabs)/
+      learn/                section grid + [section] detail
+      exam/                 mode picker, session runner, result
+      settings.tsx          account + app preferences
+  content/                  schema, registry, datasets  <- the pluggable seam
+  features/
+    auth/                   Supabase-backed AuthProvider
+    exam/                   engine (draw, grade) + session store
+    notifications/          reminder scheduling
+  i18n/                     en / ar / ckb + RTL handling
+  preferences/              language, theme, notification prefs
+  theme/                    design tokens + light/dark provider
+  components/ui/            Text, Button, Field, Card, PressableScale...
+```
+
+### Exam rules
+
+Defined in `src/features/exam/engine.ts`:
+
+| Mode   | Questions | Time limit |
+| ------ | --------- | ---------- |
+| Quick  | 10        | 3 min      |
+| Medium | 20        | 10 min     |
+| Full   | 30        | 30 min     |
+
+- Pass mark is 60% (`PASS_THRESHOLD`).
+- Every question is multiple choice with **exactly four options, one correct** —
+  enforced by the `ChoiceSet` tuple type and by `validateBundle()`.
+- Exams draw only from the `signs` and `priority` topics.
+- Questions and their choices are reshuffled per attempt, so answer position is
+  never memorisable.
+- Timed modes auto-submit at zero.
+
+The quick/medium time limits are a judgement call, not an official figure — the
+3-minute quick exam matches the "10 questions. 3 minutes." reminder copy. Change
+them in `EXAM_MODES`.
+
+---
+
+## Supabase auth
+
+1. Create a project at [supabase.com](https://supabase.com).
+2. Copy `.env.example` to `.env` and fill in `EXPO_PUBLIC_SUPABASE_URL` and
+   `EXPO_PUBLIC_SUPABASE_ANON_KEY`.
+3. Restart the dev server — env vars are inlined at build time, not hot-reloaded.
+
+Until those are set, `isSupabaseConfigured` is false: the app still boots and the
+sign-in screen explains what is missing. The **"Explore without an account"**
+button is a guest path so the app is usable before Supabase exists — remove
+`continueAsGuest` from `src/features/auth/auth-provider.tsx` and the button from
+`sign-in.tsx` if you want sign-in to be mandatory.
+
+Sign-up assumes Supabase's default email-confirmation flow, so it shows a
+"check your email" notice rather than dropping the user straight into the tabs.
+
+---
+
+## Notifications
+
+`src/features/notifications/` schedules **local** reminders — no push server,
+works offline.
+
+- **Four per day**, the every-six-hours cadence, at 09:00 / 13:00 / 17:00 /
+  21:00 local time (`REMINDER_HOURS`), each jittered by up to ±25 minutes so
+  they don't feel mechanical.
+- Hours are confined to waking time rather than literal 6-hour spacing, to avoid
+  a 03:00 notification. For strict spacing use `[0, 6, 12, 18]`.
+- **No message repeats within the same day.** A day's four messages are drawn by
+  shuffling the 13-message list and slicing, and the draw is persisted per date
+  so a mid-day reschedule reuses it.
+- All 13 messages are translated into all three languages
+  (`notifications.items.*` in each locale file). Changing language re-queues
+  pending reminders so text always matches the current language.
+- Queued three days ahead and topped up on every app foreground.
+
+**Testing caveat:** in SDK 53+, expo-notifications has reduced functionality in
+Expo Go on Android. Use a development build (`npx expo run:android`) to verify
+reminders properly.
+
+---
+
+## Languages and RTL
+
+Arabic and Sorani are both right-to-left. Native layout mirroring goes through
+`I18nManager.forceRTL`, which is process-wide and **only takes effect after a
+full app restart**. `applyDirection()` reports whether a restart is needed and
+Settings surfaces a notice. Adding `expo-updates` would let you call
+`reloadAsync()` and remove the manual restart.
+
+`src/i18n/locales/en.ts` is the source of truth for the translation shape; `ar`
+and `ckb` are typed against it, so a missing key is a compile error rather than
+a silent fallback.
+
+> The Arabic and Sorani strings were written without a native reviewer. Have a
+> fluent speaker proofread `ar.ts` and `ckb.ts` before release — particularly
+> the reminder copy, which is idiomatic and hard to translate literally.
+
+---
+
+## Known gaps
+
+- Content is placeholder (see above).
+- Sign, violation and priority records have no images yet; the schema has an
+  optional `image` field and the UI renders it when present.
+- Exam history is stored on-device only. Syncing it to Supabase would need a
+  table plus row-level security.
+- No automated tests yet. `src/features/exam/engine.ts` is pure and the obvious
+  first target — `gradeExam` and `buildExam` in particular.
