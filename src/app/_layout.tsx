@@ -1,12 +1,14 @@
 import '@/global.css';
 
+// expo-router v6 (SDK 54) does not re-export the navigation theme helpers, so
+// they come from their own package.
 import {
   DarkTheme,
   DefaultTheme,
-  Stack,
   ThemeProvider,
   type Theme,
-} from 'expo-router';
+} from '@react-navigation/native';
+import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
