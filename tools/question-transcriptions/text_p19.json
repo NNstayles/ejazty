@@ -1,0 +1,55 @@
+[
+{"n":153,"id":"q-spare-tyre-required","topic":"mechanics","correct":0,
+ "ar":["هل من الضروري تواجد الإطار الإحتياطي ومستلزماته في المركبة؟","نعم","كلا","غير ضروري"],
+ "en":["Is it necessary to carry the spare tyre and its equipment in the vehicle?","Yes","No","Not necessary"],
+ "ckb":["ئایا پێویستە تایەی یەدەگ و پێداویستییەکانی لە ئۆتۆمبێلدا هەبن؟","بەڵێ","نەخێر","پێویست نییە"],
+ "exp":{"ar":"نعم، الإطار الاحتياطي ومستلزماته ضرورية في المركبة.","en":"Yes, the spare tyre and its equipment are required.","ckb":"بەڵێ، تایەی یەدەگ و پێداویستییەکانی پێویستن."}},
+
+{"n":154,"id":"q-fuel-leak-inspection","topic":"mechanics","correct":0,
+ "ar":["هل يؤثر تسرب الوقود في نظام الوقود على الفحص الفني السنوي للمركبة؟","نعم يؤثر ويؤدي إلى فشل المركبة في الفحص","كلا لن يؤدي إلى فشل المركبة في الفحص","ليس مهماً"],
+ "en":["Does a leak in the fuel system affect the vehicle's annual technical inspection?","Yes, it causes the vehicle to fail the inspection","No, it will not cause the vehicle to fail","It does not matter"],
+ "ckb":["ئایا دزەکردنی سووتەمەنی کاریگەری هەیە لەسەر پشکنینی تەکنیکی ساڵانە؟","بەڵێ، دەبێتە هۆی سەرنەکەوتن لە پشکنیندا","نەخێر، نابێتە هۆی سەرنەکەوتن","گرنگ نییە"],
+ "exp":{"ar":"تسرب الوقود يؤدي إلى فشل المركبة في الفحص.","en":"A fuel leak causes the vehicle to fail the inspection.","ckb":"دزەکردنی سووتەمەنی دەبێتە هۆی سەرنەکەوتن."}},
+
+{"n":155,"id":"q-overloading-passengers","topic":"rules","correct":0,
+ "ar":["حمل ركاب اكثر من المقرر ممنوع لانه يؤدي الى؟","حوادث لاعاقة وحجب رؤية السائق","ازعاج الركاب","استهلاك المركبة"],
+ "en":["Carrying more passengers than permitted is prohibited because it leads to:","Accidents, obstruction and blocking the driver's view","Discomfort for the passengers","Wear on the vehicle"],
+ "ckb":["هەڵگرتنی سەرنشینی زیاتر لە دیاریکراو قەدەغەیە چونکە دەبێتە هۆی:","ڕووداو و ڕێگرتن و شاردنەوەی بینینی شۆفێر","ناڕەحەتی سەرنشینەکان","داڕزانی ئۆتۆمبێل"],
+ "exp":{"ar":"الحمل الزائد يعيق السائق ويحجب رؤيته ويؤدي إلى الحوادث.","en":"Overloading obstructs the driver's view and causes accidents.","ckb":"باری زیادە بینینی شۆفێر دەشارێتەوە و دەبێتە هۆی ڕووداو."}},
+
+{"n":156,"id":"q-brake-fluid-leak-inspection","topic":"mechanics","correct":0,
+ "ar":["هل يؤثر تسرب زيت الفرامل على الفحص الفني السنوي للمركبة؟","نعم يؤثر ويؤدي إلى فشل المركبة في الفحص","كلا لن يؤدي إلى فشل المركبة في الفحص","ليس مهماً"],
+ "en":["Does a brake-fluid leak affect the vehicle's annual technical inspection?","Yes, it causes the vehicle to fail the inspection","No, it will not cause the vehicle to fail","It does not matter"],
+ "ckb":["ئایا دزەکردنی زەیتی برێک کاریگەری هەیە لەسەر پشکنینی ساڵانە؟","بەڵێ، دەبێتە هۆی سەرنەکەوتن لە پشکنیندا","نەخێر، نابێتە هۆی سەرنەکەوتن","گرنگ نییە"],
+ "exp":{"ar":"تسرب زيت الفرامل يؤدي إلى فشل المركبة في الفحص.","en":"A brake-fluid leak causes the vehicle to fail.","ckb":"دزەکردنی زەیتی برێک دەبێتە هۆی سەرنەکەوتن."}},
+
+{"n":157,"id":"q-handbrake-fault-inspection","topic":"mechanics","correct":0,
+ "ar":["هل يؤثر عطل الهاند بريك على الفحص الفني السنوي للمركبة؟","نعم يؤثر ويؤدي إلى فشل المركبة في الفحص","كلا لن يؤدي إلى فشل المركبة في الفحص","ليس مهماً"],
+ "en":["Does a faulty handbrake affect the vehicle's annual technical inspection?","Yes, it causes the vehicle to fail the inspection","No, it will not cause the vehicle to fail","It does not matter"],
+ "ckb":["ئایا تێکچوونی هاندبرێک کاریگەری هەیە لەسەر پشکنینی ساڵانە؟","بەڵێ، دەبێتە هۆی سەرنەکەوتن لە پشکنیندا","نەخێر، نابێتە هۆی سەرنەکەوتن","گرنگ نییە"],
+ "exp":{"ar":"عطل الهاند بريك يؤدي إلى فشل المركبة في الفحص.","en":"A faulty handbrake causes the vehicle to fail.","ckb":"تێکچوونی هاندبرێک دەبێتە هۆی سەرنەکەوتن."}},
+
+{"n":158,"id":"q-residential-junction-blocked-view","topic":"rules","correct":0,
+ "ar":["عند تقاطع الطرق داخل الاحياء السكنية حيث تحجب المباني والاشجار رؤيتك يجب عليك؟","ان تتوقف عند التقاطع وبعد التاكد من خلوه تبدا بالحركة بتمهل","ان تتوقف في وسط التقاطع وتنظر الى كل الجهات ومن ثم تبدا بالحركة من جديد","ان لاتتوقف وفقط تستخدم التنبية (الهورن) لتنبيه السائقين الاخرين"],
+ "en":["At junctions inside residential areas where buildings and trees block your view you must:","Stop at the junction and, once sure it is clear, move off slowly","Stop in the middle of the junction, look all ways, then move off again","Not stop, and just sound the horn to warn other drivers"],
+ "ckb":["لە چوارڕیانی ناو گەڕەکە نیشتەجێبووەکاندا کە بینا و درەخت بینینت دەشارنەوە، دەبێت:","لە چوارڕیانەکە بوەستیت و دوای دڵنیابوون لە بەتاڵی بە هێواشی بجوڵێیت","لە ناوەڕاستی چوارڕیانەکە بوەستیت و سەیری هەموو لایەک بکەیت","نەوەستیت و تەنها بۆری لێبدەیت"],
+ "exp":{"ar":"يُتوقف عند التقاطع ويُتأكد من خلوه قبل التقدم بتمهل.","en":"Stop at the junction, confirm it is clear, then creep forward.","ckb":"لە چوارڕیانەکە بوەستە، دڵنیابە و بە هێواشی بڕۆ."}},
+
+{"n":159,"id":"q-front-tyre-wear-cause","topic":"mechanics","correct":0,
+ "ar":["ما أسباب ظهور استهلاك الاطارات (خصوصاً الامامية) بسرعة؟","تعليق المركبة وموازنتها يحتاج الى إصلاح وتنظيم","قيادة المركبة من دون ركاب","قيادة المركبة في الطرق الداخلية"],
+ "en":["What causes the tyres (especially the front ones) to wear quickly?","The suspension and wheel alignment need repair and adjustment","Driving the vehicle without passengers","Driving the vehicle on inner-city roads"],
+ "ckb":["هۆکاری داڕزانی خێرای تایەکان (بەتایبەت پێشەوەکان) چییە؟","هەڵواسین و هاوسەنگی ئۆتۆمبێلەکە پێویستی بە چاککردنەوە و ڕێکخستن هەیە","لێخوڕین بەبێ سەرنشین","لێخوڕین لە ڕێگا ناوەکییەکان"],
+ "exp":{"ar":"خلل التعليق والموازنة يسبب استهلاك الإطارات بسرعة.","en":"Faulty suspension and alignment wear the tyres quickly.","ckb":"کێشەی هەڵواسین و هاوسەنگی تایەکان زوو دەڕزێنێت."}},
+
+{"n":160,"id":"q-side-mirrors-inspection","topic":"mechanics","correct":0,
+ "ar":["هل يؤثر إنكسار أو إنعدام المرايا الجانبية على الفحص الفني السنوي للمركبة؟","نعم يؤثر ويؤدي إلى فشل المركبة في الفحص","كلا لن يؤدي إلى فشل المركبة في الفحص","ليس مهماً"],
+ "en":["Do broken or missing side mirrors affect the vehicle's annual technical inspection?","Yes, it causes the vehicle to fail the inspection","No, it will not cause the vehicle to fail","It does not matter"],
+ "ckb":["ئایا شکان یان نەبوونی ئاوێنە لاتەنیشتەکان کاریگەری هەیە لەسەر پشکنینی ساڵانە؟","بەڵێ، دەبێتە هۆی سەرنەکەوتن لە پشکنیندا","نەخێر، نابێتە هۆی سەرنەکەوتن","گرنگ نییە"],
+ "exp":{"ar":"انكسار المرايا الجانبية أو انعدامها يؤدي إلى فشل الفحص.","en":"Broken or missing side mirrors cause the vehicle to fail.","ckb":"شکان یان نەبوونی ئاوێنەکان دەبێتە هۆی سەرنەکەوتن."}},
+
+{"n":161,"id":"q-wiper-fault-inspection","topic":"mechanics","correct":0,
+ "ar":["هل يؤثر عطل الماسحة على الفحص الفني السنوي للمركبة؟","نعم يؤثر ويؤدي إلى فشل المركبة في الفحص","كلا لن يؤدي إلى فشل المركبة في الفحص","ليس مهماً"],
+ "en":["Does a faulty windscreen wiper affect the vehicle's annual technical inspection?","Yes, it causes the vehicle to fail the inspection","No, it will not cause the vehicle to fail","It does not matter"],
+ "ckb":["ئایا تێکچوونی سڕەوە کاریگەری هەیە لەسەر پشکنینی ساڵانە؟","بەڵێ، دەبێتە هۆی سەرنەکەوتن لە پشکنیندا","نەخێر، نابێتە هۆی سەرنەکەوتن","گرنگ نییە"],
+ "exp":{"ar":"عطل الماسحة يؤدي إلى فشل المركبة في الفحص.","en":"A faulty wiper causes the vehicle to fail.","ckb":"تێکچوونی سڕەوە دەبێتە هۆی سەرنەکەوتن."}}
+]

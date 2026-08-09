@@ -1,0 +1,55 @@
+[
+{"n":135,"id":"qp-engine-power-steering-tank","topic":"mechanics","correct":0,"img":"pic-135.jpg",
+ "ar":["ما هو تسمية الجزء المؤشر داخل المحرك؟","خزان سائل باور","خزان سائل البريك","خزان سائل الماسحات"],
+ "en":["What is the name of the part indicated inside the engine bay?","The power-steering fluid reservoir","The brake fluid reservoir","The windscreen washer reservoir"],
+ "ckb":["ناوی ئەو بەشەی ئاماژەی پێدراوە لە ناو بزوێنەردا چییە؟","تانکی شلەی پاوەر","تانکی شلەی برێک","تانکی شلەی سڕەوە"],
+ "exp":{"ar":"الجزء المؤشر هو خزان سائل الباور (التوجيه المعزز).","en":"The part indicated is the power-steering fluid reservoir.","ckb":"تانکی شلەی پاوەرە."}},
+
+{"n":136,"id":"qp-cannot-overtake-motorcycle-solid","topic":"rules","correct":1,"img":"pic-136.jpg",
+ "ar":["هل تستطيع المركبة اجتياز الدراجة النارية في هذه الصورة؟","نعم","كلا لوجود خط ابيض متصل بطول الطريق مما يعني منع الاجتياز","نعم لانها دراجة"],
+ "en":["Can the vehicle overtake the motorcycle in this picture?","Yes","No, because there is a continuous white line along the road, which means overtaking is prohibited","Yes, because it is a motorcycle"],
+ "ckb":["ئایا ئۆتۆمبێلەکە دەتوانێت ماتۆڕسکیلەکە تێبپەڕێنێت؟","بەڵێ","نەخێر، چونکە هێڵێکی سپی بەردەوام بە درێژایی ڕێگا هەیە واتە تێپەڕاندن قەدەغەیە","بەڵێ، چونکە ماتۆڕسکیلە"],
+ "exp":{"ar":"الخط الأبيض المتصل يمنع الاجتياز.","en":"The continuous white line prohibits overtaking.","ckb":"هێڵی سپی بەردەوام تێپەڕاندن قەدەغە دەکات."}},
+
+{"n":137,"id":"qp-engine-brake-fluid-tank","topic":"mechanics","correct":2,"img":"pic-137.jpg",
+ "ar":["ما هو تسمية الجزء المؤشر داخل المحرك؟","خزان سائل الماسحات","خزان سائل باور","خزان سائل البريك"],
+ "en":["What is the name of the part indicated inside the engine bay?","The windscreen washer reservoir","The power-steering fluid reservoir","The brake fluid reservoir"],
+ "ckb":["ناوی ئەو بەشەی ئاماژەی پێدراوە چییە؟","تانکی شلەی سڕەوە","تانکی شلەی پاوەر","تانکی شلەی برێک"],
+ "exp":{"ar":"الجزء المؤشر هو خزان سائل البريك.","en":"The part indicated is the brake fluid reservoir.","ckb":"تانکی شلەی برێکە."}},
+
+{"n":138,"id":"qp-engine-air-filter","topic":"mechanics","correct":1,"img":"pic-138.jpg",
+ "ar":["ما هو تسمية الجزء المؤشر داخل المحرك؟","الباتري","فلتر هواء","خزان سائل بريك"],
+ "en":["What is the name of the part indicated inside the engine bay?","The battery","The air filter","The brake fluid reservoir"],
+ "ckb":["ناوی ئەو بەشەی ئاماژەی پێدراوە چییە؟","باتری","فلتەری هەوا","تانکی شلەی برێک"],
+ "exp":{"ar":"الجزء المؤشر هو فلتر الهواء.","en":"The part indicated is the air filter.","ckb":"فلتەری هەوایە."}},
+
+{"n":139,"id":"qp-engine-battery","topic":"mechanics","correct":1,"img":"pic-139.jpg",
+ "ar":["ما هو تسمية الجزء المؤشر داخل المحرك؟","فلتر هواء","الباتري","خزان سائل الماسحات"],
+ "en":["What is the name of the part indicated inside the engine bay?","The air filter","The battery","The windscreen washer reservoir"],
+ "ckb":["ناوی ئەو بەشەی ئاماژەی پێدراوە چییە؟","فلتەری هەوا","باتری","تانکی شلەی سڕەوە"],
+ "exp":{"ar":"الجزء المؤشر هو الباتري (البطارية).","en":"The part indicated is the battery.","ckb":"باترییە."}},
+
+{"n":140,"id":"qp-engine-oil-dipstick","topic":"mechanics","correct":1,"img":"pic-140.jpg",
+ "ar":["ما هو تسمية الجزء المؤشر داخل المحرك؟","مقياس زيت البريك","مقياس زيت المحرك","مقياس زيت باور"],
+ "en":["What is the name of the part indicated inside the engine bay?","The brake fluid dipstick","The engine oil dipstick","The power-steering fluid dipstick"],
+ "ckb":["ناوی ئەو بەشەی ئاماژەی پێدراوە چییە؟","پێوەری زەیتی برێک","پێوەری زەیتی بزوێنەر","پێوەری زەیتی پاوەر"],
+ "exp":{"ar":"الجزء المؤشر هو مقياس زيت المحرك.","en":"The part indicated is the engine oil dipstick.","ckb":"پێوەری زەیتی بزوێنەرە."}},
+
+{"n":141,"id":"qp-engine-washer-tank","topic":"mechanics","correct":1,"img":"pic-141.jpg",
+ "ar":["ما هو تسمية الجزء المؤشر داخل المحرك؟","خزان سائل البريك","خزان سائل الماسحات","خزان سائل باور"],
+ "en":["What is the name of the part indicated inside the engine bay?","The brake fluid reservoir","The windscreen washer reservoir","The power-steering fluid reservoir"],
+ "ckb":["ناوی ئەو بەشەی ئاماژەی پێدراوە چییە؟","تانکی شلەی برێک","تانکی شلەی سڕەوە","تانکی شلەی پاوەر"],
+ "exp":{"ar":"الجزء المؤشر هو خزان سائل الماسحات.","en":"The part indicated is the windscreen washer reservoir.","ckb":"تانکی شلەی سڕەوەیە."}},
+
+{"n":142,"id":"qp-end-priority-road-sign","topic":"signs","correct":1,"img":"pic-142.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","الطريق الرئيسي لأسبقية المرور (لك الأسبقية)","نهاية طريق اسبقية المرور (نهاية الأسبقية)","الطريق الرئيسي لأسبقية المرور (الأسبقية ليست لك )"],
+ "en":["What does this sign mean?","Main road with priority (you have right of way)","End of the priority road (end of priority)","Main road with priority (you do not have right of way)"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ڕێگا سەرەکی خاوەن پێشینەیی (پێشینەیی هی تۆیە)","کۆتایی ڕێگای پێشینەیی","ڕێگا سەرەکی (پێشینەیی هی تۆ نییە)"],
+ "exp":{"ar":"العلامة تدل على نهاية طريق أسبقية المرور.","en":"The sign marks the end of the priority road.","ckb":"کۆتایی ڕێگای پێشینەیی."}},
+
+{"n":143,"id":"qp-no-seatbelt-penalty","topic":"rules","correct":2,
+ "ar":["عدم استعمال حزام الامان في المركبات التي يتوفر فيها احزمة الامان اثناء سيرها ممنوع وعقوبته؟","الغرامة وسحب الاجازة لمدة شهر واحد","سحب الاجازة","الغرامة"],
+ "en":["Not wearing the seat belt, in vehicles fitted with belts, while the vehicle is moving is prohibited and punished by:","A fine and withdrawal of the licence for one month","Withdrawal of the licence","A fine"],
+ "ckb":["نەبەستنی پشتێنی سەلامەتی لەو ئۆتۆمبێلانەی پشتێنیان تێدایە لە کاتی ڕۆیشتندا قەدەغەیە و سزاکەی:","غەرامە و هەڵگرتنەوەی مۆڵەت بۆ مانگێک","هەڵگرتنەوەی مۆڵەت","غەرامە"],
+ "exp":{"ar":"عقوبة عدم استعمال حزام الأمان هي الغرامة.","en":"The penalty for not wearing the seat belt is a fine.","ckb":"سزاکە غەرامەیە."}}
+]

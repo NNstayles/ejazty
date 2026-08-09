@@ -1,0 +1,55 @@
+[
+{"n":54,"id":"qp-no-stopping-waiting-sign","topic":"signs","correct":1,"img":"pic-054.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع الوقوف لمدة تزيد عن 5 دقائق","ممنوع الوقوف والإنتظار","ممنوع الدخول"],
+ "en":["What does this sign mean?","No stopping for more than 5 minutes","No stopping and no waiting","No entry"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","وەستان زیاتر لە ٥ خولەک قەدەغەیە","وەستان و چاوەڕوانی قەدەغەیە","چوونە ژوورەوە قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع الوقوف والانتظار.","en":"The sign prohibits both stopping and waiting.","ckb":"وەستان و چاوەڕوانی قەدەغەیە."}},
+
+{"n":55,"id":"qp-disabled-parking-sign","topic":"signs","correct":0,"img":"pic-055.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","منطقة وقوف ذوي الإحتياجات الخاصة","مستشفى","منطقة عبور المشاة"],
+ "en":["What does this sign mean?","A parking area for people with disabilities","A hospital","A pedestrian crossing area"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","شوێنی وەستانی خاوەن پێداویستی تایبەت","نەخۆشخانە","ناوچەی پەڕینەوەی پیادە"],
+ "exp":{"ar":"العلامة تدل على منطقة وقوف لذوي الاحتياجات الخاصة.","en":"The sign marks disabled parking.","ckb":"شوێنی وەستانی خاوەن پێداویستی تایبەت."}},
+
+{"n":56,"id":"qp-taxi-rank-sign","topic":"signs","correct":2,"img":"pic-056.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","منطقة وقوف الحافلات","منطقة وقوف المركبات الخاصة والأجرة","منطقة وقوف مركبات الأجرة"],
+ "en":["What does this sign mean?","A bus parking area","A parking area for private and hire vehicles","A taxi rank"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","شوێنی وەستانی پاس","شوێنی وەستانی ئۆتۆمبێلی تایبەت و کرێ","شوێنی وەستانی تاکسی"],
+ "exp":{"ar":"العلامة تدل على منطقة وقوف مركبات الأجرة.","en":"The sign marks a taxi rank.","ckb":"شوێنی وەستانی تاکسی."}},
+
+{"n":57,"id":"qp-covering-plate-or-glass","topic":"mechanics","correct":2,"img":"pic-057.jpg",
+ "ar":["هل يسمح بتغطية لوحة المركبة أو الزجاج بالأعلام أو الصور؟","نعم يسمح شرط أن يكون العلم علم كوردستان","تغطية النوافذ ممنوع فقط","كلا ممنوع، لا يسمح بأي شكل من الاشكال تغطية لوحة المركبة أو النوافذ"],
+ "en":["May the vehicle's plate or glass be covered with flags or pictures?","Yes, provided the flag is the Kurdistan flag","Only covering the windows is prohibited","No, covering the plate or the windows is prohibited in any form"],
+ "ckb":["ئایا ڕێپێدراوە پلێت یان شووشەی ئۆتۆمبێل بە ئاڵا یان وێنە داپۆشرێت؟","بەڵێ، بەمەرجێک ئاڵای کوردستان بێت","تەنها داپۆشینی پەنجەرەکان قەدەغەیە","نەخێر قەدەغەیە، بە هیچ شێوەیەک ڕێپێدراو نییە"],
+ "exp":{"ar":"لا يجوز تغطية لوحة المركبة أو النوافذ بأي شكل.","en":"Covering the plate or windows is prohibited in any form.","ckb":"بە هیچ شێوەیەک ڕێپێدراو نییە."}},
+
+{"n":58,"id":"qp-no-waiting-over-5-min-sign","topic":"signs","correct":0,"img":"pic-058.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع الوقوف لمدة تزيد عن 5 دقائق","ممنوع الوقوف والإنتظار","ممنوع الدخول"],
+ "en":["What does this sign mean?","No stopping for more than 5 minutes","No stopping and no waiting","No entry"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","وەستان زیاتر لە ٥ خولەک قەدەغەیە","وەستان و چاوەڕوانی قەدەغەیە","چوونە ژوورەوە قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع الوقوف لمدة تزيد عن 5 دقائق.","en":"The sign prohibits stopping for more than 5 minutes.","ckb":"وەستان زیاتر لە ٥ خولەک قەدەغەیە."}},
+
+{"n":59,"id":"qp-low-flying-aircraft-sign","topic":"signs","correct":1,"img":"pic-059.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","احذر امامك خط سكة القطار","إحذر من الطيران المنخفض للطائرات في هذه المنطقة","إحذر من عبور الحيوانات البرية"],
+ "en":["What does this sign mean?","Beware: a railway line ahead","Beware of low-flying aircraft in this area","Beware of wild animals crossing"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، هێڵی شەمەندەفەر لە پێشتە","ئاگاداری فڕینی نزمی فڕۆکە بە لەم ناوچەیەدا","ئاگاداری پەڕینەوەی ئاژەڵی کێوی بە"],
+ "exp":{"ar":"العلامة تحذر من الطيران المنخفض للطائرات في المنطقة.","en":"The sign warns of low-flying aircraft.","ckb":"ئاگادارکردنەوە لە فڕینی نزمی فڕۆکە."}},
+
+{"n":60,"id":"qp-no-left-turn-sign","topic":"signs","correct":2,"img":"pic-060.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع الإستداره إلى جهة اليمين","ممنوع الدخول","ممنوع الإستداره إلى جهة اليسار"],
+ "en":["What does this sign mean?","No turning to the right","No entry","No turning to the left"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","سووڕانەوە بۆ ڕاست قەدەغەیە","چوونە ژوورەوە قەدەغەیە","سووڕانەوە بۆ چەپ قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع الاستدارة إلى جهة اليسار.","en":"The sign prohibits turning left.","ckb":"سووڕانەوە بۆ چەپ قەدەغەیە."}},
+
+{"n":61,"id":"qp-bridge-ahead-sign","topic":"signs","correct":0,"img":"pic-061.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","احذر أمامك جسر","ممنوع الوقوف","احذر سيضيق الطريق من الجانبين"],
+ "en":["What does this sign mean?","Beware: a bridge ahead","No parking","Beware: the road narrows on both sides"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، پرد لە پێشتە","وەستان قەدەغەیە","ئاگاداربە، ڕێگاکە لە هەردوو لاوە تەسک دەبێتەوە"],
+ "exp":{"ar":"العلامة تنبه إلى وجود جسر أمامك.","en":"The sign warns of a bridge ahead.","ckb":"ئاگادارکردنەوە لە پرد."}},
+
+{"n":62,"id":"qp-who-may-stop-for-inspection","topic":"rules","correct":0,"img":"pic-062.jpg",
+ "ar":["وفقاً للقانون من يحق له إيقاف المركبات لفحص شروط المتانة والامان؟","رجل المرور","مفوض المرور","ضابط المرور"],
+ "en":["Under the law, who may stop vehicles to check that they meet the soundness and safety requirements?","The traffic officer","The traffic commissioner","The traffic superintendent"],
+ "ckb":["بەپێی یاسا کێ بۆی هەیە ئۆتۆمبێل بوەستێنێت بۆ پشکنینی مەرجەکانی سەلامەتی؟","پۆلیسی هاتوچۆ","مفەوزی هاتوچۆ","ئەفسەری هاتوچۆ"],
+ "exp":{"ar":"رجل المرور هو من يحق له إيقاف المركبات للفحص.","en":"The traffic officer is the one entitled to stop vehicles for inspection.","ckb":"پۆلیسی هاتوچۆ بۆی هەیە."}}
+]

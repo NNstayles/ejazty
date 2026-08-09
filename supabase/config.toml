@@ -1,0 +1,475 @@
+# Supabase project configuration, as code.
+#
+# WHY THIS FILE EXISTS
+# `SECURITY.md` opens by saying that part of this project's security posture
+# "lives in dashboard settings that no file in this repository can assert".
+# That was true, and it is the single biggest structural weakness in the setup:
+# an unset toggle looks identical to a set one, nothing in review catches a
+# regression, and a project restore silently reverts every one of them.
+#
+# `supabase config push` closes that gap. The settings below are the ones a
+# security review actually cares about, and they are now version-controlled,
+# diffable, and reproducible after a restore.
+#
+# ---------------------------------------------------------------------------
+# READ THIS BEFORE THE FIRST PUSH
+# ---------------------------------------------------------------------------
+# `supabase config push` sends a whole configuration, not a patch. Any key this
+# file does not set is sent at the CLI's *default*, which is not necessarily
+# what your project currently has. Two defaults in the stock template would
+# actively break this project if pushed unreviewed:
+#
+#   enable_confirmations = false   would switch off email confirmation, which
+#                                  `signUp()`'s `needsConfirmation` branch
+#                                  assumes is on
+#   site_url = "http://127.0.0.1:3000"
+#                                  would send every recovery mail to localhost
+#
+# Both are set correctly below. But the same class of mistake applies to
+# anything else your project has configured that this file does not mention.
+#
+# So, the first time:
+#
+#   1. supabase config push          <- WITHOUT --yes
+#   2. Read the diff the CLI prints.
+#   3. If it proposes a change outside the [auth] blocks below, or changes a
+#      value you did not expect, abort and apply these settings by hand in the
+#      dashboard instead.
+#
+# After the first successful push the diff should be empty, and a non-empty one
+# means somebody changed something in the dashboard without changing this file.
+#
+# ---------------------------------------------------------------------------
+# NOT COVERED HERE
+# ---------------------------------------------------------------------------
+# Leaked-password protection (HIBP) has no config.toml key and must be enabled
+# in the dashboard: Authentication -> Policies -> "Prevent use of leaked
+# passwords". It is the highest-value single item on that page — it rejects
+# exactly the passwords credential-stuffing lists are built from — and it costs
+# nothing. See SECURITY.md section 4.3.
+
+project_id = "fduvubpfqcboawmqukjy"
+
+[auth]
+enabled = true
+
+# There is no website. The recovery deep link is built with
+# `Linking.createURL('/reset-password')` at runtime; `site_url` is only the
+# fallback used when a `redirectTo` is not allow-listed.
+#
+# That fallback is a DEAD LINK: nothing serves localhost:3000 on a user's phone,
+# so a recovery mail that falls back here reaches a browser error rather than
+# the app. Standalone builds always match `ejazty://reset-password` below and
+# never reach it; since the `exp://` entry was removed (see the note on
+# `additional_redirect_urls`), Expo Go always does.
+#
+# LEAVE THIS AS A DEAD HTTP LINK. The obvious "fix" — pointing it at
+# `ejazty://reset-password` so the fallback at least opens the app — is the
+# wrong trade, for the reason the allow-list note explains at length: a custom
+# scheme is not exclusive, and Android lets any installed app register
+# `ejazty://`. Putting one in `site_url` makes it the destination for every
+# redirect that misses the allow-list AND the default for any future email
+# template, which is a broad hijack surface bought in exchange for convenience
+# while testing. A URL that resolves to nothing hands nothing to anybody.
+#
+# The real fix, when a domain exists, is a verified App Link / Universal Link —
+# an https URL the OS proves belongs to this app. That is the only form worth
+# putting here.
+site_url = "http://localhost:3000"
+
+# ONLY the custom scheme a standalone build produces. Do not add anything else
+# here without reading the next four paragraphs.
+#
+# ---------------------------------------------------------------------------
+# WHY THE `exp://` LINE IS GONE, AND MUST NOT COME BACK
+# ---------------------------------------------------------------------------
+# This list used to carry `exp://192.168.1.225:8081/--/reset-password` so that
+# recovery could be tested under Expo Go. That is a development address, and
+# pushing it put a permanently allow-listed redirect to a host this project does
+# not control into the LIVE project. It is an account-takeover path:
+#
+#   1. The anon key is extractable from any APK, so ANYONE can call
+#      `resetPasswordForEmail(victim, { redirectTo: <any allow-listed URL> })`.
+#      Their supabase-js client mints and stores the PKCE `code_verifier`.
+#   2. The recovery mail reaches the VICTIM's inbox — correctly — but the link
+#      inside it points at 192.168.1.225:8081.
+#   3. Anyone able to answer on that address (same LAN, or that IP reassigned)
+#      receives the one-time `?code=` the moment the victim taps.
+#   4. They exchange it with the verifier from step 1. The account is theirs.
+#
+# PKCE is what normally makes an intercepted code inert — but here the
+# interceptor is also the initiator, so they hold the matching verifier. Pinning
+# `flowType = 'pkce'` does NOT cover this; only the allow-list does.
+#
+# ---------------------------------------------------------------------------
+# HOW TO TEST RECOVERY UNDER EXPO GO WITHOUT REOPENING THIS
+# ---------------------------------------------------------------------------
+# `Linking.createURL('/reset-password')` resolves to `exp://<lan-ip>:8081/--/…`
+# under Expo Go, which will NOT match this list — so the mail falls back to
+# `site_url` and never reaches the app. That is the intended, safe default.
+#
+# Pick one of these instead of editing the line back in:
+#
+#   a. Use a SEPARATE Supabase project for development, and allow-list the
+#      `exp://` form there. Nothing dev-only then exists in the live project.
+#   b. Add it, test, and REMOVE IT IN THE SAME SITTING, via the dashboard rather
+#      than this file — so it cannot be committed and cannot survive a restore.
+#   c. Test recovery on a development or preview build, which produces
+#      `ejazty://reset-password` and matches the line below.
+#
+# (b) is the one that goes wrong: it is a manual step that has to be undone, and
+# forgetting is exactly how this got here. Prefer (a) or (c).
+#
+# See SECURITY.md section 3.
+# The OAuth return address is here too, and it does NOT reopen what the note
+# above closes. The distinction is who starts the flow.
+#
+# Recovery is dangerous because the attacker can be the initiator: anyone
+# holding the anon key — which ships in the bundle by design — can call
+# `resetPasswordForEmail(victim, { redirectTo: <any allow-listed URL> })` while
+# keeping the PKCE `code_verifier` themselves, so whoever answers on that
+# address receives the victim's one-time code and can redeem it. PKCE cannot
+# help, because the interceptor IS the initiator.
+#
+# An OAuth sign-in starts in this install. The `code_verifier` is generated
+# here and held in this app's SecureStore, so a hostile app that registers the
+# same `ejazty://` scheme and wins the race receives a `?code=` it cannot
+# exchange for anything. That argument rests entirely on `flowType: 'pkce'`
+# staying pinned in `src/lib/supabase.ts` — under the implicit flow the
+# redirect would carry a live session and this line would be a takeover path.
+#
+# The `exp://` rule is unchanged and applies to this entry too: an allow-listed
+# entry is allow-listed for EVERY flow, including recovery, so adding one to
+# test OAuth under Expo Go reopens exactly the hole described above. OAuth needs
+# a development build, the same as recovery.
+additional_redirect_urls = [
+  "ejazty://reset-password",
+  "ejazty://auth/callback",
+]
+
+jwt_expiry = 3600
+# Rotation on, with a short reuse window: a refresh token that leaks is usable
+# once before the rotation invalidates the attacker's copy or the user's, which
+# surfaces as a forced sign-out rather than as silent shared access.
+enable_refresh_token_rotation = true
+refresh_token_reuse_interval = 10
+
+enable_signup = true
+# Nothing in this app signs in anonymously — guests are a purely local concept
+# (`continueAsGuest` writes an AsyncStorage flag and never touches Supabase), so
+# an anonymous GoTrue user would be a row nobody creates on purpose.
+enable_anonymous_sign_ins = false
+enable_manual_linking = false
+
+# ---------------------------------------------------------------------------
+# Password policy
+# ---------------------------------------------------------------------------
+# Matches MIN_PASSWORD_LENGTH in `src/features/auth/validation.ts`, which until
+# this line was advisory: GoTrue's own default is 6, and the anon key ships in
+# the bundle — so anything posting straight to /auth/v1/signup could register a
+# password this app would have refused. Raising one means raising the other;
+# `auth.test.ts` pins the constant.
+minimum_password_length = 8
+
+# Deliberately empty. Forced character classes push people toward "Password1!"
+# and are explicitly discouraged by NIST SP 800-63B. Length plus the HIBP check
+# (dashboard, see the header) is the pair that actually works.
+password_requirements = ""
+
+[auth.email]
+enable_signup = true
+
+# "Secure email change". With this off, only the NEW address confirms an email
+# change — so an attacker holding a stolen access token can POST straight to
+# /auth/v1/user, move the account to an address they control, confirm from
+# their own inbox, and then run a password reset. The real owner has no way
+# back, because the address recovery mail would go to is no longer theirs.
+#
+# `updateEmail` in `auth-provider.tsx` re-checks the current password first,
+# and that is the client half — it stops the change being *started* from an
+# unlocked phone. This is the server half: it stops the change *completing*
+# when the session was taken some other way. Neither substitutes for the other.
+double_confirm_changes = true
+
+# OFF, deliberately and by product decision (2026-08-04).
+#
+# `signUp()` returns `{ needsConfirmation }` derived from whether Supabase handed
+# back a session, and the sign-up screen branches on it — so both settings are
+# fully supported by the client. With this off, sign-up returns a session
+# immediately and the screen routes straight to the tabs; the "check your email"
+# notice is dead code until it is turned on.
+#
+# The accepted trade: an address is never proven to belong to whoever registered
+# it. Someone can sign up with an address they do not own, which squats it — the
+# real owner then cannot register, because the address is taken. It does not
+# give them anything else: password recovery mail goes to the real owner, so the
+# squatter cannot be reset into, and there is nothing in the account but exam
+# history they created themselves.
+#
+# Stated explicitly rather than left to the CLI default so this stays a decision
+# rather than drift. Flip to `true` and the app needs no change.
+#
+# ---------------------------------------------------------------------------
+# REAFFIRMED 2026-08-07 (security review). Still off, deliberately.
+# ---------------------------------------------------------------------------
+# The review raised this as an unverified identity anchor (CWE-345) and the
+# decision was to keep it. Recording the reasoning so the next review does not
+# re-litigate it from scratch:
+#
+#   * The squatter gains NO access. Recovery mail goes to the real owner's
+#     inbox, so the address cannot be reset into. `double_confirm_changes` means
+#     moving the account to a different address needs the current one to confirm
+#     as well. There is no path from squatting to a takeover.
+#   * The account holds nothing but exam attempts the squatter created.
+#   * The cost of turning it on is paid by every real user, on the one screen
+#     where drop-off matters most.
+#
+# WHAT IS ACTUALLY BEING ACCEPTED, so it is not understated: an address can be
+# denied to its rightful owner (they cannot register, and nothing on screen
+# explains why), and the project will send account mail to people who never
+# asked for it — which feeds the sending-reputation concern that
+# [auth.email.smtp] exists to address.
+#
+# REVISIT WHEN:
+#   * Anything of value beyond exam history is attached to an account.
+#   * A support burden appears from owners locked out of their own address.
+#   * Any feature is added that treats the address as PROOF of identity rather
+#     than as a delivery channel. That assumption is false today and this line
+#     is why.
+enable_confirmations = false
+
+# Requires the current password before GoTrue will change a password. This is
+# the server half of `features/auth/reauth.ts`, which does the same check in the
+# client — and which a caller posting directly to GoTrue with a stolen token
+# never executes. Deletion gets the equivalent from the `amr` freshness check
+# inside `delete_own_account()`; email change gets it from
+# `double_confirm_changes` above.
+secure_password_change = true
+
+# Per-user throttle on outbound mail. The stock template ships "1s", which lets
+# one address be used to burn the project's hourly send allowance in under a
+# minute — and once that allowance is gone, *legitimate users cannot reset their
+# passwords*. This is the cheapest meaningful bound on the abuse described in
+# SECURITY.md section 4.1, and unlike CAPTCHA it needs no native module and no
+# development build.
+max_frequency = "60s"
+
+# 8, matching what this project already had. The CLI's template default is 6,
+# and omitting this line pushed that default up — shortening the code and making
+# it 100x cheaper to guess. Stated explicitly so it cannot happen again.
+otp_length = 8
+# One hour. Recovery links are single-use, so this is the window in which an
+# intercepted-but-unused link stays live. Supabase's own advisor warns above
+# 3600; shorter is better if your users check mail promptly.
+otp_expiry = 3600
+
+# ---------------------------------------------------------------------------
+# SMTP — the chosen answer to the mail-exhaustion abuse
+# ---------------------------------------------------------------------------
+# THE PROBLEM THIS SOLVES
+# The anon key is extractable from any APK, so anyone can script
+# `resetPasswordForEmail` against arbitrary addresses. What that costs the
+# project is not disclosure — it is the hourly send allowance, and once that is
+# gone *legitimate users cannot reset their passwords* until the hour rolls
+# over. The built-in Supabase SMTP service has a deliberately low ceiling (it is
+# documented as not for production volume), which is what makes the abuse cheap.
+#
+# WHY THIS RATHER THAN CAPTCHA
+# CAPTCHA is the stronger control and it remains the eventual answer — see the
+# block at the bottom of this file. It is deferred because every widget is a
+# NATIVE MODULE and will not run in Expo Go, the workflow this project pins SDK
+# 54 specifically to preserve. Custom SMTP bounds the same abuse, needs no
+# native module, no development build, and no client change at all.
+#
+# It does not make the abuse impossible — a script can still send mail. It makes
+# it expensive and it removes the cliff: a provider ceiling in the tens of
+# thousands per month cannot be exhausted in an afternoon the way a built-in one
+# can, and the per-user `max_frequency` above still caps any single address.
+#
+# ---------------------------------------------------------------------------
+# TO ENABLE
+# ---------------------------------------------------------------------------
+#   1. Pick a transactional provider (Resend, Postmark, SendGrid, SES).
+#   2. Verify the sending domain and publish SPF + DKIM records for it. Skipping
+#      this is how recovery mail lands in spam, which denies password recovery
+#      just as effectively as exhausting a quota does.
+#   3. Put the password in the environment, NEVER in this file — it is
+#      committed. `env()` indirection is the supported form:
+#
+#        export SUPABASE_SMTP_PASS='...'      # or your CI/secret store
+#
+#   4. Uncomment the block below, fill in host/port/user/sender, and
+#      `supabase config push` WITHOUT `--yes`, reading the diff.
+#   5. Send yourself a real password reset and confirm it arrives, is not
+#      flagged as spam, and the link opens the app.
+#   6. Raise `email_sent` under [auth.rate_limit] to match what the provider
+#      allows. That number is currently sized for the built-in ceiling; leaving
+#      it at 30/hour after moving to custom SMTP keeps the old bottleneck.
+#
+# Until this is configured the project runs on the built-in service and the
+# abuse above stays cheap. That is the accepted state, not a finished one.
+#
+# [auth.email.smtp]
+# enabled = true
+# host = "smtp.resend.com"
+# port = 465
+# user = "resend"
+# # Secret by indirection — this file is committed, so no credential goes in it
+# # literally. Same form as the CAPTCHA secret at the bottom.
+# pass = "env(SUPABASE_SMTP_PASS)"
+# # Must be an address on the domain whose SPF/DKIM you published in step 2.
+# admin_email = "no-reply@example.com"
+# sender_name = "Ejazty"
+
+# ---------------------------------------------------------------------------
+# MFA
+# ---------------------------------------------------------------------------
+# TOTP enrolment was already switched on for this project. It is stated here
+# because it is NOT the CLI default: leaving the block out pushed `false` and
+# turned it off. Nothing in the app enrols a factor yet, but a user who already
+# has one must not lose it because a config file forgot to mention it.
+[auth.mfa]
+max_enrolled_factors = 10
+
+[auth.mfa.totp]
+enroll_enabled = true
+verify_enabled = true
+
+[auth.mfa.phone]
+enroll_enabled = false
+verify_enabled = false
+
+# ---------------------------------------------------------------------------
+# Rate limits
+# ---------------------------------------------------------------------------
+# The anon key is extractable from any APK, so "only our app calls this" is
+# never true and these are the only thing bounding scripted abuse until CAPTCHA
+# is enabled.
+#
+# If real users start hitting one of these, raise that specific number — do not
+# raise all of them, and do not disable the block.
+[auth.rate_limit]
+# Project-wide, per hour. The built-in SMTP service has a much lower hard cap of
+# its own, so this only becomes the binding constraint once custom SMTP is
+# configured (see [auth.email.smtp] above, and SECURITY.md section 6) — at which
+# point it is the thing standing between a script and your sending reputation.
+#
+# DO NOT LOWER THIS TO "HARDEN" IT. The instinct is wrong and worth naming,
+# because it looks like a free win: both this and the built-in ceiling are
+# per-hour budgets, so halving the number does not shorten the window in which
+# recovery is denied — it just makes the budget CHEAPER for a script to exhaust
+# (15 requests instead of 30) while also throttling real users sooner. The
+# controls that actually bound this abuse are `max_frequency` per user, a
+# provider ceiling too large to drain, and eventually CAPTCHA.
+#
+# Raise it to match the provider once custom SMTP is live.
+email_sent = 30
+
+# Per IP, per five minutes. 30 is the stock value and is already tight enough
+# that credential stuffing from a single address is impractical; the reason it
+# is written down rather than inherited is so a future dashboard change shows up
+# as a diff here.
+sign_in_sign_ups = 30
+
+# Per IP, per five minutes. Generous on purpose: this one throttles legitimate
+# clients refreshing sessions, and setting it too low signs active users out.
+token_refresh = 150
+
+# Per IP, per five minutes. Covers OTP/recovery-link verification, which is the
+# endpoint an attacker would hammer to brute-force a link.
+token_verifications = 30
+
+# Unused by this app — no anonymous sign-ins, no SMS provider, no web3 — but
+# stated so that enabling one later is a deliberate edit rather than an
+# inherited default.
+anonymous_users = 30
+sms_sent = 30
+web3 = 30
+
+# ---------------------------------------------------------------------------
+# CAPTCHA — deliberately deferred, with a named trigger for revisiting it
+# ---------------------------------------------------------------------------
+# STATUS as of the 2026-08-07 security review: deferred, as an ACCEPTED RISK.
+# Custom SMTP (see [auth.email.smtp] above) was chosen as the interim control
+# because it bounds the same abuse without breaking Expo Go. This is a decision
+# that was taken, not an item that was forgotten.
+#
+# Uncomment and supply a provider secret to enable bot protection on signup,
+# sign-in and recovery. The CLIENT SIDE IS ALREADY DONE: `features/auth/captcha.ts`
+# is the seam, and all four unauthenticated GoTrue call sites already request a
+# token and spread it — including the re-auth inside `updatePassword`, which is
+# the easy one to miss because it looks like an authenticated operation but posts
+# to the same /token?grant_type=password endpoint as sign-in.
+#
+# What is left is a provider, and it is a real decision rather than a toggle:
+# every CAPTCHA widget is a NATIVE MODULE, so it needs a development build and
+# WILL NOT RUN IN EXPO GO — the workflow this project pins SDK 54 specifically to
+# preserve. Weigh that deliberately.
+#
+# WHAT THE DEFERRAL COSTS, STATED PLAINLY
+# Scripted sign-in attempts are bounded per IP by `sign_in_sign_ups` above, and
+# scripted mail by `max_frequency` per user plus the provider ceiling. What
+# remains unbounded is a DISTRIBUTED attacker: the rate limits are per IP, so
+# enough addresses defeat them, and nothing else distinguishes a script from the
+# app. That is the exposure being accepted.
+#
+# REVISIT WHEN ANY OF THESE IS TRUE — do not wait for a review to ask:
+#   * The project leaves Expo Go for a development build for any other reason.
+#     The blocking cost disappears and this becomes a one-file change.
+#   * Mail volume or signup volume rises without a matching rise in real users.
+#   * The project moves to Pro (turn on leaked-password protection at the same
+#     time — see the header note; the two are the same afternoon's work).
+#   * A public launch. "Anyone can extract the anon key" stops being theoretical
+#     the moment the app is on a store listing.
+#
+# Registering one is a single call at start-up once the widget exists:
+#     import { setCaptchaProvider } from '@/features/auth/captcha';
+#     setCaptchaProvider(async (action) => showChallenge(action));
+#
+# [auth.captcha]
+# enabled = true
+# provider = "hcaptcha"
+# secret = "env(SUPABASE_AUTH_CAPTCHA_SECRET)"
+
+# ---------------------------------------------------------------------------
+# EXTERNAL PROVIDERS — Sign in with Apple and Google
+# ---------------------------------------------------------------------------
+# Both are OFF until the credentials below exist, and both are deliberately
+# left for a human: they need accounts this repo cannot create, and a half
+# configured provider fails at the moment a user taps the button rather than at
+# `config push`.
+#
+# `secret` reads from the environment rather than being written here, which is
+# what keeps a client secret out of git. Set them in the shell that runs
+# `supabase config push` — NEVER in `.env`, which is for `EXPO_PUBLIC_` values
+# that are inlined into the bundle by design.
+#
+# Apple (iOS native button):
+#   `client_id` is the app's bundle identifier for the native flow. The native
+#   sheet returns an identity token the app posts via `signInWithIdToken`, so
+#   no client secret is involved on that path. A secret is only needed if the
+#   web flow is ever added for Android.
+#   Requires a paid Apple Developer account and Sign in with Apple enabled on
+#   the App ID.
+#
+# Google (browser flow, both platforms):
+#   Create an OAuth client of type "Web application" in Google Cloud Console
+#   and give it the Supabase callback as an authorised redirect URI:
+#     https://<project-ref>.supabase.co/auth/v1/callback
+#   The app never sees these values — the browser flow keeps them server-side,
+#   which is why it needs no native SDK and no per-platform client ids.
+#
+# `skip_nonce_check` stays FALSE. Turning it on disables replay protection on
+# the identity token, and it exists for development setups that cannot produce
+# a nonce; this one can.
+[auth.external.apple]
+enabled = false
+client_id = ""
+secret = ""
+skip_nonce_check = false
+
+[auth.external.google]
+enabled = false
+client_id = "env(SUPABASE_AUTH_GOOGLE_CLIENT_ID)"
+secret = "env(SUPABASE_AUTH_GOOGLE_SECRET)"
+skip_nonce_check = false

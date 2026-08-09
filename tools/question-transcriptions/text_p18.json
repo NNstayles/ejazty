@@ -1,0 +1,55 @@
+[
+{"n":144,"id":"q-when-to-signal","topic":"rules","correct":0,
+ "ar":["متى يسري على السائق واجب اعطاء الاشارة الضوئيه؟","عندما ينوي الانحراف عن مسلكه","عندما يصل الى منحدر شديد","عندما يصل الى شرطي المرور"],
+ "en":["When does the duty to signal apply to a driver?","When intending to move out of their lane","When reaching a steep descent","When reaching a traffic officer"],
+ "ckb":["کەی ئەرکی ئاماژەدان بە چرا لەسەر شۆفێر جێبەجێ دەبێت؟","کاتێک دەیەوێت لە لاینەکەی لابدات","کاتێک دەگاتە لێژاییەکی توند","کاتێک دەگاتە پۆلیسی هاتوچۆ"],
+ "exp":{"ar":"تُعطى الإشارة عند نية الانحراف عن المسلك.","en":"Signal when you intend to change lane.","ckb":"کاتێک دەتەوێت لاین بگۆڕیت ئاماژە بدە."}},
+
+{"n":145,"id":"q-switch-off-engine-in-jam","topic":"mechanics","correct":1,
+ "ar":["عند توقف الحركة في الشوارع المزدحمة إطفي محرك مركبتك اذا كانت المدة تزيد عن؟","خمسة دقائق","ثلاثة دقائق","سبعة دقائق"],
+ "en":["When traffic is at a standstill on congested streets, switch off your engine if the wait exceeds:","Five minutes","Three minutes","Seven minutes"],
+ "ckb":["کاتێک جوڵە لە شەقامە قەرەباڵغەکاندا دەوەستێت، بزوێنەر بکوژێنەوە ئەگەر ماوەکە زیاتر بوو لە:","پێنج خولەک","سێ خولەک","حەوت خولەک"],
+ "exp":{"ar":"يُطفأ المحرك إذا زادت المدة عن ثلاث دقائق.","en":"Switch off if the wait is longer than three minutes.","ckb":"ئەگەر زیاتر لە سێ خولەک بوو بیکوژێنەوە."}},
+
+{"n":146,"id":"q-engine-knocking-cause","topic":"mechanics","correct":0,
+ "ar":["ما سبب سماع صوت الطرق (الدق) أثناء تشغيل المحرك أو إستخدام المركبة تحت حمل أو بدونه؟","عند إستعمال بنزين ذات درجة اوكتان واطئه","عدم تعرض المحرك لحمل كبير فوق طاقته","كمية البنزين في الخزان قليلة"],
+ "en":["What causes knocking when the engine runs, whether the vehicle is loaded or not?","Using petrol with a low octane rating","The engine not being loaded beyond its capacity","There being little petrol in the tank"],
+ "ckb":["هۆکاری دەنگی لێدان لە کاتی کارکردنی بزوێنەردا چییە؟","بەکارهێنانی بەنزینی ئۆکتانی نزم","بەرنەکەوتنی بزوێنەر بۆ باری زۆر","کەمی بەنزین لە تانکەکەدا"],
+ "exp":{"ar":"صوت الطرق ناتج عن استعمال بنزين بدرجة أوكتان واطئة.","en":"Knocking comes from using low-octane petrol.","ckb":"دەنگی لێدان لە بەنزینی ئۆکتان نزمەوە دێت."}},
+
+{"n":147,"id":"q-slippery-road-danger","topic":"rules","correct":2,
+ "ar":["اهم المخاطر لقيادة المركبة في الطرق الزلقة هي؟","السرعة البطيئة","استخدام حزام الامان","السرعة العالية"],
+ "en":["The greatest danger when driving on slippery roads is:","Low speed","Wearing the seat belt","High speed"],
+ "ckb":["گەورەترین مەترسی لێخوڕین لە ڕێگا خلیسکەکاندا:","خێرایی کەم","بەستنی پشتێنی سەلامەتی","خێرایی بەرز"],
+ "exp":{"ar":"السرعة العالية هي أهم المخاطر على الطرق الزلقة.","en":"High speed is the main danger on slippery roads.","ckb":"خێرایی بەرز گەورەترین مەترسییە."}},
+
+{"n":148,"id":"q-fire-extinguisher-required","topic":"mechanics","correct":0,
+ "ar":["هل من الضروري تواجد جهاز إطفاء الحريق في المركبة؟","نعم","كلا","غير ضروري"],
+ "en":["Is it necessary to carry a fire extinguisher in the vehicle?","Yes","No","Not necessary"],
+ "ckb":["ئایا پێویستە ئامێری ئاگرکوژێنەوە لە ئۆتۆمبێلدا هەبێت؟","بەڵێ","نەخێر","پێویست نییە"],
+ "exp":{"ar":"نعم، وجود جهاز إطفاء الحريق ضروري في المركبة.","en":"Yes, a fire extinguisher is required in the vehicle.","ckb":"بەڵێ، ئامێری ئاگرکوژێنەوە پێویستە."}},
+
+{"n":149,"id":"q-overtaking-on-bridge-legal","topic":"rules","correct":1,
+ "ar":["من الناحية القانونية عندما تسير بمركبتك فوق جسر وتسبقك مركبة اخرى؟","يسمح لك باجتيازه","يمنع اجتيازه","فقط في حالة كنت تقود مركبة حمل لايسمح بالاجتياز"],
+ "en":["Legally, when you are driving over a bridge and another vehicle is ahead of you:","You are allowed to overtake it","Overtaking is prohibited","Overtaking is only prohibited if you are driving a goods vehicle"],
+ "ckb":["لە ڕووی یاساییەوە، کاتێک لەسەر پردێک لێدەخوڕیت و ئۆتۆمبێلێکی تر لە پێشتە:","بۆت هەیە تێیپەڕێنیت","تێپەڕاندن قەدەغەیە","تەنها ئەگەر بارهەڵگر لێبخوڕیت قەدەغەیە"],
+ "exp":{"ar":"الاجتياز فوق الجسور ممنوع.","en":"Overtaking on bridges is prohibited.","ckb":"تێپەڕاندن لەسەر پرد قەدەغەیە."}},
+
+{"n":150,"id":"q-engine-overheating-cause","topic":"mechanics","correct":0,
+ "ar":["أحد أسباب إرتفاع درجة حرارة المحرك؟","قلة ماء منظومة التبريد أو عطل غطاء الراديتر","قيادة المركبة في جو ضبابي","القيادة في جو بارد"],
+ "en":["One cause of the engine overheating is:","Too little coolant, or a faulty radiator cap","Driving in foggy weather","Driving in cold weather"],
+ "ckb":["یەکێک لە هۆکارەکانی بەرزبوونەوەی پلەی گەرمی بزوێنەر:","کەمی ئاوی سیستەمی ساردکردنەوە یان تێکچوونی سەرپۆشی ڕادیەتەر","لێخوڕین لە کەشی تەمناک","لێخوڕین لە کەشی سارد"],
+ "exp":{"ar":"قلة ماء التبريد أو عطل غطاء الراديتر يرفع حرارة المحرك.","en":"Low coolant or a faulty radiator cap makes the engine overheat.","ckb":"کەمی ئاوی ساردکەرەوە یان تێکچوونی سەرپۆش."}},
+
+{"n":151,"id":"q-motorcycle-licence-age","topic":"mechanics","correct":1,
+ "ar":["من الناحية القانونية تمنح اجازة سوق قيادة دراجة نارية لمن اكمل؟","17السابعة عشر من العمر","16السادس عشر من العمر","18الثامنة عشر من العمر"],
+ "en":["Legally, a motorcycle driving licence is granted to someone who has completed:","17 years of age","16 years of age","18 years of age"],
+ "ckb":["لە ڕووی یاساییەوە، مۆڵەتی لێخوڕینی ماتۆڕسکیل بەو کەسە دەدرێت کە تەواوی کردبێت:","١٧ ساڵ","١٦ ساڵ","١٨ ساڵ"],
+ "exp":{"ar":"تُمنح إجازة الدراجة النارية لمن أكمل السادسة عشرة.","en":"A motorcycle licence is granted at 16.","ckb":"مۆڵەتی ماتۆڕسکیل لە تەمەنی ١٦ ساڵییەوە دەدرێت."}},
+
+{"n":152,"id":"q-reflective-triangle-required","topic":"mechanics","correct":0,
+ "ar":["هل من الضروري تواجد المثلث الفسفوري في المركبة؟","نعم","كلا","غير ضروري"],
+ "en":["Is it necessary to carry the reflective triangle in the vehicle?","Yes","No","Not necessary"],
+ "ckb":["ئایا پێویستە سێگۆشەی فۆسفۆری لە ئۆتۆمبێلدا هەبێت؟","بەڵێ","نەخێر","پێویست نییە"],
+ "exp":{"ar":"نعم، وجود المثلث الفسفوري ضروري في المركبة.","en":"Yes, the reflective triangle is required in the vehicle.","ckb":"بەڵێ، سێگۆشەی فۆسفۆری پێویستە."}}
+]

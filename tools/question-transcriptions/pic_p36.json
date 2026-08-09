@@ -1,0 +1,55 @@
+[
+{"n":18,"id":"qp-double-continuous-lines","topic":"signs","correct":0,"img":"pic-018.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","الاجتياز ممنوع","الاجتياز مسموح به","معبر للمشاة"],
+ "en":["What does this marking mean?","Overtaking is prohibited","Overtaking is permitted","A pedestrian crossing"],
+ "ckb":["ئەم نیشانەیە چی دەگەیەنێت؟","تێپەڕاندن قەدەغەیە","تێپەڕاندن ڕێپێدراوە","پەڕینەوەی پیادە"],
+ "exp":{"ar":"الخطان المتصلان يمنعان الاجتياز.","en":"Double continuous lines prohibit overtaking.","ckb":"دوو هێڵی بەردەوام تێپەڕاندن قەدەغە دەکەن."}},
+
+{"n":19,"id":"qp-merge-broken-lines-end","topic":"priority","correct":0,"img":"pic-019.jpg",
+ "ar":["في هذه الصورة لمن الاسبقية؟ عند إندماج مسارين بعدم إستمرار الخطوط المتقطعة","المركبة A","المركبة B","كلتا المركبتين"],
+ "en":["In this picture, who has right of way when two lanes merge and the broken lines do not continue?","Vehicle A","Vehicle B","Both vehicles"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە کاتێک دوو لاین تێکەڵ دەبن و هێڵە پچڕپچڕەکان بەردەوام نین؟","ئۆتۆمبێلی A","ئۆتۆمبێلی B","هەردووکیان"],
+ "exp":{"ar":"الأسبقية للمركبة A بحسب دليل الأسئلة الرسمي.","en":"Vehicle A has priority, per the official question guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Aیە."}},
+
+{"n":20,"id":"qp-road-narrows-left-sign","topic":"signs","correct":2,"img":"pic-020.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر سيضيق الطريق من الجانبين","إحذر سيضيق الطريق من جهة اليمين","إحذر سيضيق الطريق من جهة اليسار"],
+ "en":["What does this sign mean?","Beware: the road narrows on both sides","Beware: the road narrows on the right","Beware: the road narrows on the left"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، ڕێگاکە لە هەردوو لاوە تەسک دەبێتەوە","ئاگاداربە، لە لای ڕاستەوە تەسک دەبێتەوە","ئاگاداربە، لە لای چەپەوە تەسک دەبێتەوە"],
+ "exp":{"ar":"العلامة تحذر من ضيق الطريق من جهة اليسار.","en":"The sign warns that the road narrows on the left.","ckb":"ڕێگاکە لە لای چەپەوە تەسک دەبێتەوە."}},
+
+{"n":21,"id":"qp-broken-line-overtaking","topic":"signs","correct":1,"img":"pic-021.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع القيام بمناورة الاجتياز من الجهة اليسرى","يسمح بالاجتياز عند الحاجة","يمنع القيام بمناورة الاجتياز"],
+ "en":["What does this marking mean?","Overtaking on the left is prohibited","Overtaking is permitted when needed","Overtaking manoeuvres are prohibited"],
+ "ckb":["ئەم نیشانەیە چی دەگەیەنێت؟","تێپەڕاندن لە لای چەپەوە قەدەغەیە","لە کاتی پێویستدا تێپەڕاندن ڕێپێدراوە","تێپەڕاندن قەدەغەیە"],
+ "exp":{"ar":"الخط المتقطع يسمح بالاجتياز عند الحاجة.","en":"A broken line permits overtaking when needed.","ckb":"هێڵی پچڕپچڕ ڕێگا بە تێپەڕاندن دەدات."}},
+
+{"n":22,"id":"qp-falling-rocks-left-sign","topic":"signs","correct":0,"img":"pic-022.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر من تساقط الصخور من جهة اليسار","إحذر من تساقط الصخور من جهة اليمين","إحذر من تساقط الصخور من الجانبين"],
+ "en":["What does this sign mean?","Beware of falling rocks from the left","Beware of falling rocks from the right","Beware of falling rocks from both sides"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداری کەوتنی بەرد بە لە لای چەپەوە","ئاگاداری کەوتنی بەرد بە لە لای ڕاستەوە","لە هەردوو لاوە"],
+ "exp":{"ar":"العلامة تحذر من تساقط الصخور من جهة اليسار.","en":"The sign warns of rocks falling from the left.","ckb":"ئاگادارکردنەوە لە کەوتنی بەرد لە لای چەپەوە."}},
+
+{"n":23,"id":"qp-continuous-and-broken-line","topic":"signs","correct":1,"img":"pic-023.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع القيام بمناورة الاجتياز من الإتجاهين","يسمح القيام بمناورة الاجتياز للمركبات التي تسير في الجهة اليمنى من الطريق عند الحاجة ويمنع القيام بها للمركبات التي تسير في الإتجاه المقابل","مسموح القيام بمناورة الاجتياز للمركبات التي تسير في الجانب الايسر من الطريق"],
+ "en":["What does this marking mean?","Overtaking is prohibited in both directions","Vehicles travelling on the right-hand side may overtake when needed, while vehicles travelling in the opposite direction may not","Vehicles travelling on the left-hand side of the road may overtake"],
+ "ckb":["ئەم نیشانەیە چی دەگەیەنێت؟","تێپەڕاندن لە هەردوو ئاراستە قەدەغەیە","ئەو ئۆتۆمبێلانەی لە لای ڕاستەوە دەڕۆن لە کاتی پێویستدا دەتوانن تێبپەڕێنن، بەڵام ئەوانەی بەرامبەر نا","ئەوانەی لە لای چەپەوە دەڕۆن دەتوانن تێبپەڕێنن"],
+ "exp":{"ar":"الجانب ذو الخط المتقطع يسمح بالاجتياز، والجانب ذو الخط المتصل يمنعه.","en":"The side with the broken line may overtake; the side with the continuous line may not.","ckb":"لای هێڵی پچڕپچڕ دەتوانێت تێبپەڕێنێت، لای بەردەوام نا."}},
+
+{"n":24,"id":"qp-merge-broken-lines-continue","topic":"priority","correct":1,"img":"pic-024.jpg",
+ "ar":["في هذه الصورة لمن الاسبقية عند اندماج مسارين باستمرار الخطوط المتقطعة؟","المركبة A","المركبة B","كلتا المركبتين"],
+ "en":["In this picture, who has right of way when two lanes merge and the broken lines continue?","Vehicle A","Vehicle B","Both vehicles"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە کاتێک دوو لاین تێکەڵ دەبن و هێڵە پچڕپچڕەکان بەردەوامن؟","ئۆتۆمبێلی A","ئۆتۆمبێلی B","هەردووکیان"],
+ "exp":{"ar":"الأسبقية للمركبة B بحسب دليل الأسئلة الرسمي.","en":"Vehicle B has priority, per the official question guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Bیە."}},
+
+{"n":25,"id":"qp-speed-hump-sign","topic":"signs","correct":1,"img":"pic-025.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر من مخاطر متنوعة","إحذر أمامك مطبات اصطناعية","إحذر من العوائق"],
+ "en":["What does this sign mean?","Beware of various hazards","Beware: artificial speed humps ahead","Beware of obstacles"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداری مەترسی جۆراوجۆر بە","ئاگاداربە، قەڵشی دەستکرد لە پێشتە","ئاگاداری بەربەستەکان بە"],
+ "exp":{"ar":"العلامة تحذر من مطبات اصطناعية أمامك.","en":"The sign warns of artificial speed humps ahead.","ckb":"ئاگادارکردنەوە لە قەڵشی دەستکرد."}},
+
+{"n":26,"id":"qp-tunnel-ahead-sign","topic":"signs","correct":0,"img":"pic-026.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر أمامك نفق","الدخول ممنوع","إحذر من الصخور المتساقطة"],
+ "en":["What does this sign mean?","Beware: a tunnel ahead","No entry","Beware of falling rocks"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، تونێل لە پێشتە","چوونە ژوورەوە قەدەغەیە","ئاگاداری بەردی کەوتوو بە"],
+ "exp":{"ar":"العلامة تنبه إلى وجود نفق أمامك.","en":"The sign warns of a tunnel ahead.","ckb":"ئاگادارکردنەوە لە تونێل."}}
+]

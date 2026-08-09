@@ -1,0 +1,272 @@
+[
+ {
+  "n": 99,
+  "id": "qp-priority-green-from-right",
+  "topic": "priority",
+  "correct": 1,
+  "img": "pic-099.jpg",
+  "ar": [
+   "لمن الاسبقية في هذه الصورة؟",
+   "المركبة البيضاء",
+   "المركبة الخضراء لانها قادمة من اليمين",
+   "لا توجد اسبقية"
+  ],
+  "en": [
+   "Who has right of way in this picture?",
+   "The white vehicle",
+   "The green vehicle, because it is coming from the right",
+   "There is no right of way"
+  ],
+  "ckb": [
+   "لەم وێنەیەدا پێشینەیی بۆ کێیە؟",
+   "ئۆتۆمبێلە سپییەکە",
+   "ئۆتۆمبێلە سەوزەکە چونکە لە لای ڕاستەوە دێت",
+   "پێشینەیی نییە"
+  ],
+  "exp": {
+   "ar": "الأسبقية للقادم من اليمين.",
+   "en": "The vehicle coming from the right has priority.",
+   "ckb": "پێشینەیی بۆ ئەوەیە کە لە لای ڕاستەوە دێت."
+  }
+ },
+ {
+  "n": 100,
+  "id": "qp-roadworks-sign",
+  "topic": "signs",
+  "correct": 1,
+  "img": "pic-100.jpg",
+  "ar": [
+   "ماذا تعني هذه العلامة؟",
+   "احذر الطريق منزلق",
+   "احذر أمامك أعمال إنشائية",
+   "احذر أمامك منحدر خطير"
+  ],
+  "en": [
+   "What does this sign mean?",
+   "Beware: slippery road",
+   "Beware: roadworks ahead",
+   "Beware: a dangerous descent ahead"
+  ],
+  "ckb": [
+   "ئەم تابلۆیە چی دەگەیەنێت؟",
+   "ئاگاداربە، ڕێگا خلیسکە",
+   "ئاگاداربە، کاری بیناسازی لە پێشتە",
+   "ئاگاداربە، لێژایی مەترسیدار لە پێشتە"
+  ],
+  "exp": {
+   "ar": "العلامة تحذر من أعمال إنشائية أمامك.",
+   "en": "The sign warns of roadworks ahead.",
+   "ckb": "کاری بیناسازی لە پێشتە."
+  }
+ },
+ {
+  "n": 101,
+  "id": "qp-priority-red-main-straight",
+  "topic": "priority",
+  "correct": 0,
+  "img": "pic-101.jpg",
+  "ar": [
+   "لمن الاسبقية في هذه الصورة؟",
+   "المركبة الحمراء لانها في الشارع الرئيسي وتمشي بالمستقيم",
+   "المركبة البيضاء لانها تمشي باتجاه شبه دائري",
+   "لا توجد اسبقية"
+  ],
+  "en": [
+   "Who has right of way in this picture?",
+   "The red vehicle, because it is on the main street and going straight ahead",
+   "The white vehicle, because it is following a semi-circular path",
+   "There is no right of way"
+  ],
+  "ckb": [
+   "لەم وێنەیەدا پێشینەیی بۆ کێیە؟",
+   "ئۆتۆمبێلە سوورەکە چونکە لە شەقامی سەرەکییە و ڕاست دەڕوات",
+   "ئۆتۆمبێلە سپییەکە",
+   "پێشینەیی نییە"
+  ],
+  "exp": {
+   "ar": "الأسبقية للمركبة السائرة بالمستقيم في الشارع الرئيسي.",
+   "en": "The vehicle going straight on the main street has priority.",
+   "ckb": "پێشینەیی بۆ ئەوەی ڕاست لە شەقامی سەرەکیدا دەڕوات."
+  }
+ },
+ {
+  "n": 102,
+  "id": "qp-left-bend-sign",
+  "topic": "signs",
+  "correct": 2,
+  "img": "pic-102.jpg",
+  "ar": [
+   "ماذا تعني هذه العلامة؟",
+   "احذر أمامك طريق فرعي إلى اليسار",
+   "احذر أمامك التفافات عديدة اولها الى جهة اليسار",
+   "احذر أمامك إلتفافة إلى اليسار"
+  ],
+  "en": [
+   "What does this sign mean?",
+   "Beware: a side road to the left ahead",
+   "Beware: several bends ahead, the first to the left",
+   "Beware: a bend to the left ahead"
+  ],
+  "ckb": [
+   "ئەم تابلۆیە چی دەگەیەنێت؟",
+   "ڕێگای لاوەکی بۆ چەپ لە پێشتە",
+   "چەند سووڕانەوەیەک، یەکەمیان بۆ چەپ",
+   "سووڕانەوەیەک بۆ چەپ لە پێشتە"
+  ],
+  "exp": {
+   "ar": "العلامة تحذر من التفافة واحدة إلى اليسار.",
+   "en": "The sign warns of a single bend to the left.",
+   "ckb": "سووڕانەوەیەک بۆ چەپ."
+  }
+ },
+ {
+  "n": 103,
+  "id": "qp-u-turn-over-solid-line",
+  "topic": "rules",
+  "correct": 1,
+  "img": "pic-103.jpg",
+  "ar": [
+   "المركبة الزرقاء في هذه الصورة تنوي الاستدارة هنا. هل هذا تصرف سليم؟",
+   "نعم صحيح لانه اعطى الاشارة للاستدارة",
+   "كلا ليس صحيحا لان الاشارة الارضية لاتسمح بذلك",
+   "نعم صحيح مالم توجد مركبة قادمة من الجهة المقابلة"
+  ],
+  "en": [
+   "The blue vehicle in this picture intends to turn here. Is that correct behaviour?",
+   "Yes, correct, because it signalled the turn",
+   "No, not correct, because the road marking does not permit it",
+   "Yes, correct, as long as no vehicle is coming the other way"
+  ],
+  "ckb": [
+   "ئۆتۆمبێلە شینەکە لەم وێنەیەدا دەیەوێت لێرە بسووڕێتەوە. ئایا ڕەفتارێکی دروستە؟",
+   "بەڵێ، چونکە ئاماژەی داوە",
+   "نەخێر، چونکە نیشانە زەمینییەکە ڕێگا نادات",
+   "بەڵێ، ئەگەر ئۆتۆمبێل لە بەرامبەرەوە نەیەت"
+  ],
+  "exp": {
+   "ar": "الإشارة الأرضية (الخط المتصل) لا تسمح بالاستدارة هنا.",
+   "en": "The road marking (a continuous line) does not permit the turn here.",
+   "ckb": "نیشانە زەمینییەکە ڕێگا نادات."
+  }
+ },
+ {
+  "n": 104,
+  "id": "qp-speed-limit-60-sign",
+  "topic": "signs",
+  "correct": 1,
+  "img": "pic-104.jpg",
+  "ar": [
+   "ماذا تعني هذه العلامة؟",
+   "ممنوع مرور المركبات التي تزيد وزنها عن 60 طن",
+   "اقصى سرعة مسموح بها 60 كم / ساعة",
+   "السرعة المحددة يسمح تجاوزها 60 كم / ساعة"
+  ],
+  "en": [
+   "What does this sign mean?",
+   "Vehicles weighing more than 60 tonnes are prohibited",
+   "The maximum permitted speed is 60 km/h",
+   "The prescribed speed of 60 km/h may be exceeded"
+  ],
+  "ckb": [
+   "ئەم تابلۆیە چی دەگەیەنێت؟",
+   "ئۆتۆمبێلی قورستر لە ٦٠ تەن قەدەغەیە",
+   "بەرزترین خێرایی ڕێپێدراو ٦٠ کم/کاتژمێرە",
+   "دەکرێت لە ٦٠ کم/کاتژمێر تێبپەڕێت"
+  ],
+  "exp": {
+   "ar": "العلامة تعني أقصى سرعة مسموح بها 60 كم/ساعة. (طُبع نص هذا السؤال في الدليل كعبارة بدل صيغة السؤال؛ أُعيد إلى الصيغة المستعملة في بقية أسئلة العلامات.)",
+   "en": "The sign means a 60 km/h maximum. (The guide misprints this item's stem as a statement; it has been restored to the stem used by every other sign question.)",
+   "ckb": "تابلۆکە واتە بەرزترین خێرایی ٦٠ کم/کاتژمێرە."
+  }
+ },
+ {
+  "n": 105,
+  "id": "qp-priority-white-over-pedestrians",
+  "topic": "priority",
+  "correct": 1,
+  "img": "pic-105.jpg",
+  "ar": [
+   "لمن الاسبقية في هذه الصورة؟",
+   "المشاة الواقفين على الرصيف",
+   "المركبة البيضاء",
+   "لا توجد اسبقية"
+  ],
+  "en": [
+   "Who has right of way in this picture?",
+   "The pedestrians standing on the pavement",
+   "The white vehicle",
+   "There is no right of way"
+  ],
+  "ckb": [
+   "لەم وێنەیەدا پێشینەیی بۆ کێیە؟",
+   "ئەو پیادانەی لەسەر ڕێڕەوی پیادە وەستاون",
+   "ئۆتۆمبێلە سپییەکە",
+   "پێشینەیی نییە"
+  ],
+  "exp": {
+   "ar": "الأسبقية للمركبة البيضاء لأن المشاة لم يطؤوا معبر المشاة بعد.",
+   "en": "The white vehicle has priority, as the pedestrians have not yet stepped onto the crossing.",
+   "ckb": "پێشینەیی بۆ ئۆتۆمبێلە سپییەکەیە."
+  }
+ },
+ {
+  "n": 106,
+  "id": "qp-length-limit-10m-sign",
+  "topic": "signs",
+  "correct": 0,
+  "img": "pic-106.jpg",
+  "ar": [
+   "ماذا تعني هذه العلامة؟",
+   "ممنوع مرور المركبات التي تزيد طولها عن 10 م",
+   "ممنوع مرور المركبات التي تزيد عرضها عن 10 م",
+   "ممنوع مرور مركبات الحمل"
+  ],
+  "en": [
+   "What does this sign mean?",
+   "Vehicles longer than 10 m are prohibited",
+   "Vehicles wider than 10 m are prohibited",
+   "Goods vehicles are prohibited"
+  ],
+  "ckb": [
+   "ئەم تابلۆیە چی دەگەیەنێت؟",
+   "ئۆتۆمبێلی درێژتر لە ١٠ مەتر قەدەغەیە",
+   "ئۆتۆمبێلی پانتر لە ١٠ مەتر قەدەغەیە",
+   "بارهەڵگر قەدەغەیە"
+  ],
+  "exp": {
+   "ar": "العلامة تمنع المركبات التي يزيد طولها عن 10 أمتار.",
+   "en": "The sign prohibits vehicles longer than 10 m.",
+   "ckb": "درێژتر لە ١٠ مەتر قەدەغەیە."
+  }
+ },
+ {
+  "n": 107,
+  "id": "qp-minimum-gap-70m-sign",
+  "topic": "signs",
+  "correct": 0,
+  "img": "pic-107.jpg",
+  "ar": [
+   "انت تقود مركبتك وترى امامك هذه العلامة. ما الذي يجب ان تقوم به؟",
+   "ترك مسافة امان بين مركبتي والمركبة الامامية بمدى لاتقل عن 70 متر",
+   "المشي بسرعة 70كم في الساعة",
+   "انتبه جيدا لوجود منحدر امامي"
+  ],
+  "en": [
+   "You are driving and you see this sign ahead. What must you do?",
+   "Leave a safety gap of no less than 70 metres between my vehicle and the one in front",
+   "Travel at 70 km/h",
+   "Pay close attention: there is a descent ahead"
+  ],
+  "ckb": [
+   "لێدەخوڕیت و ئەم تابلۆیە دەبینیت. دەبێت چی بکەیت؟",
+   "ماوەی سەلامەتی کەمتر نەبێت لە ٧٠ مەتر لە نێوان ئۆتۆمبێلەکەم و ئەوەی پێشەوە",
+   "بە خێرایی ٧٠ کم/کاتژمێر بڕۆم",
+   "ئاگاداربم لە لێژایی پێشەوە"
+  ],
+  "exp": {
+   "ar": "العلامة تُلزم بترك مسافة أمان لا تقل عن 70 متراً.",
+   "en": "The sign requires a minimum 70-metre gap.",
+   "ckb": "ماوەیەکی کەمتر نەبێت لە ٧٠ مەتر."
+  }
+ }
+]

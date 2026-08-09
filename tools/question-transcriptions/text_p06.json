@@ -1,0 +1,55 @@
+[
+{"n":36,"id":"q-uncontrolled-junction-right","topic":"priority","correct":0,
+ "ar":["عندما تقترب من تقاطع طريق خالي من العلامات المرورية وتلاحظ مركبة أتية من اليمين عليك؟","التوقف وإعطاء حق الاسبقيه للمركبة الآتية من اليمين بالمرور اولاً","تستمر بالسير وبنفس السرعة لان الأسبقيه لك","تزيد سرعة مركبتك لتتجاوز التقاطع قبله"],
+ "en":["Approaching a junction with no traffic signs and seeing a vehicle coming from your right, you must:","Stop and give right of way to the vehicle coming from the right","Continue at the same speed because you have priority","Speed up to clear the junction before it"],
+ "ckb":["کاتێک لە چوارڕیانێکی بێ تابلۆ نزیک دەبیتەوە و ئۆتۆمبێلێک لە لای ڕاستەوە دێت، دەبێت:","بوەستیت و مافی پێشینەیی بدەیت بە ئۆتۆمبێلەکەی لای ڕاست","بە هەمان خێرایی بەردەوام بیت چونکە پێشینەیی هی تۆیە","خێرایی زیاد بکەیت بۆ تێپەڕاندنی چوارڕیانەکە پێش ئەو"],
+ "exp":{"ar":"في التقاطع غير المنظم، الأسبقية للمركبة القادمة من اليمين.","en":"At an unmarked junction, the vehicle coming from the right has priority.","ckb":"لە چوارڕیانی بێ ڕێکخستن، پێشینەیی بۆ ئۆتۆمبێلی لای ڕاستە."}},
+
+{"n":37,"id":"q-following-distance-30kmh","topic":"rules","correct":0,
+ "ar":["عند قيادة المركبة بسرعة 30 كم/ساعة يجب ترك مسافة بين المركبة والتي امامها بحدود؟","10متر","5متر","20متر"],
+ "en":["Driving at 30 km/h, the gap you must leave to the vehicle in front is about:","10 metres","5 metres","20 metres"],
+ "ckb":["لە خێرایی ٣٠ کم/کاتژمێردا، ماوەی نێوان ئۆتۆمبێلەکەت و ئەوەی پێشەوە دەبێت نزیکەی:","١٠ مەتر","٥ مەتر","٢٠ مەتر"],
+ "exp":{"ar":"عند سرعة 30 كم/ساعة تُترك مسافة بحدود 10 أمتار.","en":"At 30 km/h leave a gap of roughly 10 metres.","ckb":"لە خێرایی ٣٠ کم/کاتژمێر نزیکەی ١٠ مەتر ماوە بهێڵەوە."}},
+
+{"n":38,"id":"q-night-driving-care","topic":"rules","correct":0,
+ "ar":["القيادة الليلية تتطلب إهتماماً وحذراً أكثر من القيادة أثناء النهار بسبب؟","محدودية الرؤية وفق ما توفر لك أضواء مركبتك","زيادة عدد مستعملي الطريق في الليل","انخفاض قدرة المركبات في الليل"],
+ "en":["Night driving demands more care than daytime driving because:","Vision is limited to what your vehicle's lights reach","There are more road users at night","Vehicles perform worse at night"],
+ "ckb":["لێخوڕین بە شەو زیاتر وریایی دەوێت لە ڕۆژ، چونکە:","بینین سنووردارە بەو ڕووناکییەی چراکانی ئۆتۆمبێلەکەت دەیدات","ژمارەی بەکارهێنەرانی ڕێگا بە شەو زیاترە","توانای ئۆتۆمبێلەکان بە شەو کەمدەبێتەوە"],
+ "exp":{"ar":"في الليل تقتصر الرؤية على المدى الذي تضيئه مصابيح المركبة.","en":"At night you can only see as far as your headlights reach.","ckb":"بە شەو بینین تەنها بەو ماوەیە دەبێت کە چراکان ڕووناکی دەکەنەوە."}},
+
+{"n":39,"id":"q-no-annual-inspection-penalty","topic":"mechanics","correct":0,
+ "ar":["عدم تجديد الفحص الفني سنوياً عقوبتها؟","الغرامة","الحبس","حجز المركبة"],
+ "en":["Failing to renew the annual technical inspection is punishable by:","A fine","Imprisonment","Impounding the vehicle"],
+ "ckb":["نوێنەکردنەوەی پشکنینی تەکنیکی ساڵانە سزاکەی چییە؟","غەرامە","زیندان","دەستبەسەرداگرتنی ئۆتۆمبێل"],
+ "exp":{"ar":"عقوبة عدم تجديد الفحص الفني السنوي هي الغرامة.","en":"The penalty for not renewing the annual inspection is a fine.","ckb":"سزای نوێنەکردنەوەی پشکنینی ساڵانە غەرامەیە."}},
+
+{"n":40,"id":"q-legal-speed-definition","topic":"rules","correct":0,
+ "ar":["السرعة المحددة قانونا في اى طريق؟","هي السرعة المسموح بها والمحددة بالاشارات المرورية في الظروف الطبيعيه","هي السير بسرعة 80كم بداخل المدن و100كم في الطرق الخارجية","هي السرعة التي احددها بنفسي اثناء القيادة وحسب المكان الذي اذهب اليه"],
+ "en":["The legally prescribed speed on any road is:","The speed permitted and set by the traffic signs under normal conditions","80 km/h inside cities and 100 km/h on rural roads","Whatever speed I choose while driving, according to where I am going"],
+ "ckb":["خێرایی دیاریکراوی یاسایی لە هەر ڕێگایەکدا:","ئەو خێراییەیە کە ڕێپێدراوە و بە تابلۆکانی هاتوچۆ دیاریکراوە لە بارودۆخی ئاسایی","٨٠ کم لە ناو شار و ١٠٠ کم لە ڕێگا دەرەکییەکان","ئەو خێراییەیە کە خۆم دیاری دەکەم"],
+ "exp":{"ar":"السرعة القانونية هي المحددة بالإشارات المرورية في الظروف الطبيعية.","en":"The legal speed is the one set by traffic signs under normal conditions.","ckb":"خێرایی یاسایی ئەوەیە کە تابلۆکانی هاتوچۆ لە بارودۆخی ئاساییدا دیاری دەکەن."}},
+
+{"n":41,"id":"q-no-vehicle-document-penalty","topic":"mechanics","correct":2,
+ "ar":["عدم تجديد وثيقة المركبة (السنوية) عقوبتها هي؟","الحبس","حجز المركبة","الغرامة"],
+ "en":["Failing to renew the vehicle's annual document is punishable by:","Imprisonment","Impounding the vehicle","A fine"],
+ "ckb":["نوێنەکردنەوەی بەڵگەنامەی ساڵانەی ئۆتۆمبێل سزاکەی چییە؟","زیندان","دەستبەسەرداگرتنی ئۆتۆمبێل","غەرامە"],
+ "exp":{"ar":"عقوبة عدم تجديد وثيقة المركبة السنوية هي الغرامة.","en":"The penalty for not renewing the annual vehicle document is a fine.","ckb":"سزای نوێنەکردنەوەی بەڵگەنامەی ساڵانە غەرامەیە."}},
+
+{"n":42,"id":"q-continuous-white-lines-two-way","topic":"signs","correct":0,
+ "ar":["الخطوط البيضاء المستمرة في الطرق ذو الاتجاهين تعني؟","ممنوع اجتيازها على الإطلاق","يمكن الاجتياز في حالة عدم وجود مركبة آتية","يمكن الاجتياز في حالة توقف مركبة في المسار الذي تسلكه"],
+ "en":["Continuous white lines on a two-way road mean:","Crossing them is absolutely prohibited","You may cross when no vehicle is coming","You may cross when a vehicle is stopped in your lane"],
+ "ckb":["هێڵە سپییە بەردەوامەکان لە ڕێگای دوو ئاراستەدا واتە:","بە تەواوی قەدەغەیە بەسەریاندا بپەڕیت","دەکرێت بپەڕیت ئەگەر ئۆتۆمبێل نەیەت","دەکرێت بپەڕیت ئەگەر ئۆتۆمبێلێک لە لاینەکەت وەستابێت"],
+ "exp":{"ar":"الخط الأبيض المستمر لا يجوز اجتيازه مطلقاً.","en":"A continuous white line may never be crossed.","ckb":"هێڵی سپی بەردەوام بە هیچ شێوەیەک نابێت بەسەریدا بپەڕیت."}},
+
+{"n":43,"id":"q-racing-public-roads","topic":"rules","correct":0,
+ "ar":["هل يجوز المسابقة أو إجراء الفعاليات على الطرق العامة؟","لا يجوز بشكل مطلق على الطرق العامة","يجوز للمركبات الرياضية","يجوز في ساحات الوقوف"],
+ "en":["May races or events be held on public roads?","Absolutely not on public roads","Permitted for sports vehicles","Permitted in car parks"],
+ "ckb":["ئایا ڕێپێدراوە پێشبڕکێ یان چالاکی لەسەر ڕێگا گشتییەکان ئەنجام بدرێت؟","بە تەواوی قەدەغەیە لەسەر ڕێگا گشتییەکان","بۆ ئۆتۆمبێلە وەرزشییەکان ڕێپێدراوە","لە شوێنی وەستاندا ڕێپێدراوە"],
+ "exp":{"ar":"تُمنع المسابقات والفعاليات على الطرق العامة منعاً مطلقاً.","en":"Races and events are absolutely prohibited on public roads.","ckb":"پێشبڕکێ و چالاکی لەسەر ڕێگا گشتییەکان بە تەواوی قەدەغەیە."}},
+
+{"n":44,"id":"q-blind-pedestrian-crossing","topic":"priority","correct":0,
+ "ar":["عند رؤية شخص كفيف (فاقد البصر) أو شخص يساعده في عبور الشارع يجب أن؟","تتوقف كاملاً وتسمح له بالعبور","تخفض سرعة المركبة وتسمح له بالعبور","تستمر في السير وتقود المركبة بحذر إستعداداً للتوقف المفاجئ"],
+ "en":["On seeing a blind person, or someone helping them cross the street, you must:","Stop completely and let them cross","Slow down and let them cross","Continue driving carefully, ready to stop suddenly"],
+ "ckb":["کاتێک کەسێکی نابینا یان کەسێک کە یارمەتی دەدات لە پەڕینەوەی شەقام دەبینیت، دەبێت:","بە تەواوی بوەستیت و ڕێگای بدەیت بپەڕێتەوە","خێرایی کەم بکەیتەوە و ڕێگای بدەیت","بە وریاییەوە بەردەوام بیت و ئامادەبیت بۆ وەستانی لەناکاو"],
+ "exp":{"ar":"يجب التوقف التام لتمكين الكفيف من العبور بأمان.","en":"You must come to a full stop so the blind pedestrian can cross safely.","ckb":"دەبێت بە تەواوی بوەستیت تا کەسە نابیناکە بە سەلامەتی بپەڕێتەوە."}}
+]

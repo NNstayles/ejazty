@@ -1,17 +1,10 @@
 import { Stack } from 'expo-router';
 
-import { useTheme } from '@/theme/theme-provider';
+import { useStackScreenOptions } from '@/theme/navigation';
 
 export default function LearnLayout() {
-  const { colors } = useTheme();
   return (
-    <Stack
-      screenOptions={{
-        headerStyle: { backgroundColor: colors.background },
-        headerTintColor: colors.text,
-        headerShadowVisible: false,
-        contentStyle: { backgroundColor: colors.background },
-      }}>
+    <Stack screenOptions={useStackScreenOptions()}>
       <Stack.Screen name="index" options={{ headerShown: false }} />
     </Stack>
   );

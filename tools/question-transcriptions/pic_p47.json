@@ -1,0 +1,55 @@
+[
+{"n":117,"id":"qp-priority-b-junction","topic":"priority","correct":1,"img":"pic-117.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة التي على اليمين","المركبة B","المركبة A"],
+ "en":["Who has right of way in this picture?","The vehicle on the right","Vehicle B","Vehicle A"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئەو ئۆتۆمبێلەی لای ڕاستە","ئۆتۆمبێلی B","ئۆتۆمبێلی A"],
+ "exp":{"ar":"الأسبقية للمركبة B بحسب دليل الأسئلة الرسمي.","en":"Vehicle B has priority, per the official guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Bیە."}},
+
+{"n":118,"id":"qp-roundabout-priority-a","topic":"priority","correct":0,"img":"pic-118.jpg",
+ "ar":["لمن الاسبقية في الدوار (الفلكة) في هذه الصورة؟","المركبة A","المركبة B","المركبة C"],
+ "en":["Who has right of way in the roundabout in this picture?","Vehicle A","Vehicle B","Vehicle C"],
+ "ckb":["لەم وێنەیەدا پێشینەیی لە خولانەوەکەدا بۆ کێیە؟","ئۆتۆمبێلی A","ئۆتۆمبێلی B","ئۆتۆمبێلی C"],
+ "exp":{"ar":"الأسبقية للمركبة A بحسب دليل الأسئلة الرسمي.","en":"Vehicle A has priority, per the official guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Aیە."}},
+
+{"n":119,"id":"qp-roundabout-priority-g","topic":"priority","correct":1,"img":"pic-119.jpg",
+ "ar":["لمن الاسبقية في الدوار (الفلكة) في هذه الصورة؟","المركبة H","المركبة G","كلاهما لا يملك الاسبقية"],
+ "en":["Who has right of way in the roundabout in this picture?","Vehicle H","Vehicle G","Neither of them has right of way"],
+ "ckb":["لەم وێنەیەدا پێشینەیی لە خولانەوەکەدا بۆ کێیە؟","ئۆتۆمبێلی H","ئۆتۆمبێلی G","هیچیان پێشینەییان نییە"],
+ "exp":{"ar":"الأسبقية للمركبة G بحسب دليل الأسئلة الرسمي.","en":"Vehicle G has priority, per the official guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Gیە."}},
+
+{"n":120,"id":"qp-green-vehicle-may-continue","topic":"priority","correct":0,"img":"pic-120.jpg",
+ "ar":["انت قائد المركبة الخضراء هل يحق لك الاستمرار في السير؟","نعم يحق لك الاستمرار في السير مع الانتباه","لايحق لك الاستمرار في السير","يجب عليك اعطاء حق الاولوية للمركبة الحمراء لانها قادمة من اليمين"],
+ "en":["You are the driver of the green vehicle. May you continue?","Yes, you may continue, while paying attention","You may not continue","You must give priority to the red vehicle because it comes from the right"],
+ "ckb":["تۆ شۆفێری ئۆتۆمبێلە سەوزەکەیت، ئایا بۆت هەیە بەردەوام بیت؟","بەڵێ، بە وریاییەوە بەردەوام بە","نەخێر","دەبێت پێشینەیی بدەیت بە سوورەکە چونکە لە لای ڕاستەوە دێت"],
+ "exp":{"ar":"يحق لك الاستمرار في السير مع الانتباه بحسب دليل الأسئلة الرسمي.","en":"You may continue while paying attention, per the official guide.","ckb":"بە وریاییەوە بەردەوام بە."}},
+
+{"n":121,"id":"qp-night-oncoming-dipped","topic":"rules","correct":0,"img":"pic-121.jpg",
+ "ar":["في القيادة الليلية ما هي المسافة المقبولة بين مركبتين متقابلين كي تستخدما الضياء الواطئ؟","يجب ان تكون المصابيح مضاءة باستمرار","200متر","150متر"],
+ "en":["When driving at night, what is the acceptable distance between two oncoming vehicles for them to use dipped beam?","The lights must be kept on continuously","200 metres","150 metres"],
+ "ckb":["لە لێخوڕینی شەوانەدا، چ ماوەیەک لە نێوان دوو ئۆتۆمبێلی بەرامبەردا گونجاوە بۆ بەکارهێنانی ڕووناکی نزم؟","دەبێت چراکان بە بەردەوامی داگیرساو بن","٢٠٠ مەتر","١٥٠ مەتر"],
+ "exp":{"ar":"يجب أن تبقى المصابيح مضاءة باستمرار بحسب دليل الأسئلة الرسمي.","en":"The lights must stay on continuously, per the official guide.","ckb":"دەبێت چراکان بە بەردەوامی داگیرساو بن."}},
+
+{"n":122,"id":"qp-night-following-dipped","topic":"rules","correct":0,"img":"pic-122.jpg",
+ "ar":["في القيادة الليلية ما هي المسافة المقبولة في حالة استخدام الضياء الواطئ بين المركبة والتي تلاحقها؟","يجب ان تكون المصابيح مضاءة باستمرار","200متر","300متر"],
+ "en":["When driving at night, what is the acceptable distance for using dipped beam between a vehicle and the one following it?","The lights must be kept on continuously","200 metres","300 metres"],
+ "ckb":["لە لێخوڕینی شەوانەدا، چ ماوەیەک گونجاوە بۆ بەکارهێنانی ڕووناکی نزم لە نێوان ئۆتۆمبێل و ئەوەی بەدوایدا دێت؟","دەبێت چراکان بە بەردەوامی داگیرساو بن","٢٠٠ مەتر","٣٠٠ مەتر"],
+ "exp":{"ar":"يجب أن تبقى المصابيح مضاءة باستمرار بحسب دليل الأسئلة الرسمي.","en":"The lights must stay on continuously, per the official guide.","ckb":"دەبێت چراکان بە بەردەوامی داگیرساو بن."}},
+
+{"n":123,"id":"qp-safe-motorcycle-overtake","topic":"rules","correct":0,"img":"pic-123.jpg",
+ "ar":["ما هي الحالة الصحيحة لسلامة القيادة اثناء اجتياز الدراجة النارية في هاتين الصورتين؟","الحالة A","الحالة B","كلاهما لا يملك الاسبقية"],
+ "en":["Which case is the correct one for safe driving when overtaking the motorcycle in these two pictures?","Case A","Case B","Neither of them has right of way"],
+ "ckb":["کام حاڵەت دروستە بۆ سەلامەتی لە کاتی تێپەڕاندنی ماتۆڕسکیل لەم دوو وێنەیەدا؟","حاڵەتی A","حاڵەتی B","هیچیان"],
+ "exp":{"ar":"الحالة A هي الصحيحة بحسب دليل الأسئلة الرسمي.","en":"Case A is the correct one, per the official guide.","ckb":"حاڵەتی A دروستە."}},
+
+{"n":124,"id":"qp-priority-b-turning","topic":"priority","correct":1,"img":"pic-124.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة A","المركبة B","كلتا المركبتين"],
+ "en":["Who has right of way in this picture?","Vehicle A","Vehicle B","Both vehicles"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئۆتۆمبێلی A","ئۆتۆمبێلی B","هەردووکیان"],
+ "exp":{"ar":"الأسبقية للمركبة B بحسب دليل الأسئلة الرسمي.","en":"Vehicle B has priority, per the official guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Bیە."}},
+
+{"n":125,"id":"qp-no-overtake-near-crossing","topic":"rules","correct":1,"img":"pic-125.jpg",
+ "ar":["تقود مركبتك وترى امامك هذه الاشارة وتسبقك سيارة تمشي بسرعة قليلة وتسبب الضيق لك هل يجوز لك اجتيازه؟","نعم يجوز لك اجتيازه لان الضيق يسبب العصبية","لايجوز لك اجتيازه لان احدى الاماكن التي تمنع فيها القيام بالاجتياز هي قرب امكان العبور","نعم يجوز اجتيازه لان الطريق للمركبات وليست للمشاة"],
+ "en":["You are driving and see this sign ahead, with a slow car in front of you that is frustrating you. May you overtake it?","Yes, you may, because the frustration causes irritation","No, you may not, because one of the places where overtaking is prohibited is near a crossing","Yes, you may, because the road is for vehicles and not for pedestrians"],
+ "ckb":["لێدەخوڕیت و ئەم تابلۆیە دەبینیت، ئۆتۆمبێلێکی هێواش لە پێشتە. ئایا بۆت هەیە تێیبپەڕێنیت؟","بەڵێ، چونکە بێزاری دروست دەکات","نەخێر، چونکە یەکێک لەو شوێنانەی تێپەڕاندنی تێدا قەدەغەیە نزیک پەڕینەوەیە","بەڵێ، چونکە ڕێگا بۆ ئۆتۆمبێلە"],
+ "exp":{"ar":"الاجتياز ممنوع قرب أماكن عبور المشاة.","en":"Overtaking is prohibited near pedestrian crossings.","ckb":"تێپەڕاندن لە نزیک پەڕینەوەی پیادە قەدەغەیە."}}
+]

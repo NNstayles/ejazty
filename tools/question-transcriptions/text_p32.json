@@ -1,0 +1,55 @@
+[
+{"n":270,"id":"q-safety-distance-importance","topic":"rules","correct":1,
+ "ar":["ترك مسافة امان كافية بين المركبة والمركبة المتقدمة ضرورية وتزداد اهمية هذه المسافة اذا كان الطريق؟","مزدحم","مبلل او اذا كانت السياقة بسرعة في طريق المرور السريع","ترابي اومفروش بالحصى"],
+ "en":["Leaving a sufficient safety gap to the vehicle ahead is essential, and this gap matters even more when the road is:","Congested","Wet, or when driving fast on an expressway","Unpaved or gravelled"],
+ "ckb":["هێشتنەوەی ماوەی سەلامەتی پێویستە و گرنگی زیاتر دەبێت ئەگەر ڕێگاکە:","قەرەباڵغ بێت","تەڕ بێت یان لێخوڕین بە خێرایی لە ڕێگای خێرادا بێت","خۆڵاوی یان بەردڕژاو بێت"],
+ "exp":{"ar":"تزداد أهمية مسافة الأمان على الطريق المبلل أو عند السرعة في الطريق السريع.","en":"The gap matters most on a wet road or at speed on an expressway.","ckb":"لە ڕێگای تەڕ یان بە خێرایی زیاتر گرنگە."}},
+
+{"n":271,"id":"q-public-licence-scope","topic":"mechanics","correct":0,
+ "ar":["حامل إجازة السوق العمومية يمكنه قيادة؟","جميع أنواع المركبات في الاقليم عدا الانشائية والزراعية والدراجة النارية","الشاحنات فقط","الدراجات الالية والمركبات العمومية الصغيرة"],
+ "en":["The holder of a public driving licence may drive:","All types of vehicle in the region except construction, agricultural and motorcycles","Lorries only","Motorcycles and small public vehicles"],
+ "ckb":["خاوەنی مۆڵەتی گشتی دەتوانێت چی لێبخوڕێت؟","هەموو جۆرەکانی ئۆتۆمبێل لە هەرێمدا جگە لە بیناسازی و کشتوکاڵی و ماتۆڕسکیل","تەنها بارهەڵگر","ماتۆڕسکیل و ئۆتۆمبێلی گشتی بچووک"],
+ "exp":{"ar":"تخوّل الإجازة العمومية قيادة جميع الأنواع عدا الإنشائية والزراعية والدراجة النارية.","en":"A public licence covers all types except construction, agricultural and motorcycles.","ckb":"هەموو جۆرەکان جگە لە بیناسازی و کشتوکاڵی و ماتۆڕسکیل."}},
+
+{"n":272,"id":"q-speed-near-crossings-schools","topic":"rules","correct":1,
+ "ar":["اقصى سرعة مسموح بها عند الاقتراب من مناطق عبور المشاة وروضة الاطفال والمدارس والدوائر الحكومية هي؟","70كم / ساعة","30كم / ساعة","50كم / ساعة"],
+ "en":["The maximum speed allowed when approaching pedestrian crossings, nurseries, schools and government offices is:","70 km/h","30 km/h","50 km/h"],
+ "ckb":["بەرزترین خێرایی ڕێپێدراو لە نزیکبوونەوە لە پەڕینەوەی پیادە و باخچەی ساوایان و قوتابخانە:","٧٠ کم/کاتژمێر","٣٠ کم/کاتژمێر","٥٠ کم/کاتژمێر"],
+ "exp":{"ar":"أقصى سرعة قرب هذه المناطق 30 كم/ساعة.","en":"The maximum near these areas is 30 km/h.","ckb":"بەرزترین خێرایی ٣٠ کم/کاتژمێرە."}},
+
+{"n":273,"id":"q-allowing-unlicensed-driver-penalty","topic":"rules","correct":1,
+ "ar":["عقوبة الشخص الذي يسمح بقيادة مركبته من قبل شخص غير مجاز هي؟","حجز المركبة","الحبس او الغرامة او بكلتا العقوبتين","تنبيه المالك فقط"],
+ "en":["The penalty for someone who lets an unlicensed person drive their vehicle is:","Impounding the vehicle","Imprisonment or a fine, or both","A warning to the owner only"],
+ "ckb":["سزای ئەو کەسەی ڕێگا دەدات کەسێکی بێ مۆڵەت ئۆتۆمبێلەکەی لێبخوڕێت:","دەستبەسەرداگرتنی ئۆتۆمبێل","زیندان یان غەرامە یان هەردووکیان","تەنها ئاگادارکردنەوەی خاوەنەکە"],
+ "exp":{"ar":"العقوبة الحبس أو الغرامة أو كلتاهما.","en":"The penalty is imprisonment or a fine, or both.","ckb":"زیندان یان غەرامە یان هەردووکیان."}},
+
+{"n":274,"id":"q-child-on-lap-penalty","topic":"rules","correct":2,
+ "ar":["مخالفة وضع الاطفال في حضن السائق هي:","سحب الاجازة السوق","الحبس","الغرامة بمبلغ 40,000 دينار"],
+ "en":["The offence of putting children on the driver's lap carries:","Withdrawal of the driving licence","Imprisonment","A fine of 40,000 dinars"],
+ "ckb":["سزای دانانی منداڵ لە باوەشی شۆفێردا:","هەڵگرتنەوەی مۆڵەتی لێخوڕین","زیندان","غەرامەی ٤٠٬٠٠٠ دینار"],
+ "exp":{"ar":"العقوبة غرامة بمبلغ 40,000 دينار بحسب دليل الأسئلة الرسمي.","en":"The official guide gives a 40,000-dinar fine.","ckb":"بەپێی ڕێنمایی فەرمی، غەرامەی ٤٠٬٠٠٠ دینارە."}},
+
+{"n":275,"id":"q-boiling-radiator","topic":"mechanics","correct":2,
+ "ar":["في حالة غليان ماء المحرك (الراديتر) على السائق؟","فتح غطاء الراديتر لإزالة الضغط","إطفاء المحرك فوراً","ترك المحرك في حاله اشتغال وتبريد الراديتر من خلال صب الماء عليه من الخارج لمدة 20 دقيقة وبعدها فتح غطاء الراديتر"],
+ "en":["If the engine coolant (radiator) boils, the driver should:","Open the radiator cap to release the pressure","Switch the engine off at once","Leave the engine running and cool the radiator by pouring water over the outside for 20 minutes, then open the cap"],
+ "ckb":["ئەگەر ئاوی ڕادیەتەر کوڵا، شۆفێر دەبێت:","سەرپۆشەکە بکاتەوە بۆ لابردنی پەستان","دەستبەجێ بزوێنەر بکوژێنێتەوە","بزوێنەر بەکارکردن بهێڵێتەوە و ڕادیەتەر سارد بکاتەوە بە ڕشتنی ئاو بەسەریدا بۆ ٢٠ خولەک، پاشان سەرپۆشەکە بکاتەوە"],
+ "exp":{"ar":"يُترك المحرك يعمل ويُبرَّد الراديتر من الخارج 20 دقيقة قبل فتح الغطاء.","en":"Leave the engine running, cool the radiator externally for 20 minutes, then open the cap.","ckb":"بزوێنەر بەکارکردن بهێڵەوە و ٢٠ خولەک ساردی بکەرەوە."}},
+
+{"n":276,"id":"q-children-playing-ball","topic":"rules","correct":0,
+ "ar":["كيف يجب ان تتصرف عند الاقتراب من مجموعة اطفال يلعبون الكرة في الشارع او على الرصيف؟","تخفيف السرعة والقيادة بانتباه وحذر تام","عليك الانتباه للكرة فقط","متابعة السير بالسرعة التي كنت تقود بها لعدم اعاقة السير القادم من الخلف"],
+ "en":["How should you behave when approaching a group of children playing ball in the street or on the pavement?","Slow down and drive with full attention and care","You only need to watch the ball","Carry on at the same speed so as not to obstruct traffic behind you"],
+ "ckb":["چۆن ڕەفتار دەکەیت کاتێک لە کۆمەڵێک منداڵ نزیک دەبیتەوە کە تۆپ دەیانەوێت؟","خێرایی کەم بکەرەوە و بە وریایی تەواو لێبخوڕە","تەنها ئاگاداری تۆپەکە بە","بە هەمان خێرایی بەردەوام بە"],
+ "exp":{"ar":"تُخفف السرعة ويُقاد بانتباه وحذر تام قرب الأطفال.","en":"Slow down and drive with complete care near children.","ckb":"خێرایی کەم بکەرەوە و بە وریایی تەواو لێبخوڕە."}},
+
+{"n":277,"id":"q-busy-main-street","topic":"rules","correct":0,
+ "ar":["تسير على شارع رئيسي مكتظ ومزدحم. مالذي يجب عليك فعله؟","الحفاظ على مسافة امان كافية مع المركبات الامامية وعدم الانحراف عن خط السير والانتباه جيدا","تجاوز القافلة بانحراف عن خط السير بمرة واحدة","اجبار السائقين في المقدمة لفتح الطريق لي وتجاوزهم باي شكل كان"],
+ "en":["You are travelling on a busy, congested main street. What should you do?","Keep a sufficient safety gap to the vehicles ahead, stay in your lane and pay close attention","Overtake the queue by pulling out of your lane in one go","Force the drivers ahead to make way and overtake them however you can"],
+ "ckb":["لە شەقامێکی سەرەکی قەرەباڵغدا دەڕۆیت. چی دەکەیت؟","ماوەی سەلامەتی گونجاو بهێڵەوە و لە لاینەکەت لامەدە و باش ئاگاداربە","بە یەک جار لە لاینەکە لابدە و ڕیزەکە تێبپەڕێنە","شۆفێرەکانی پێشەوە ناچار بکە ڕێگا بکەنەوە"],
+ "exp":{"ar":"يُحافظ على مسافة أمان وعدم الانحراف عن خط السير مع الانتباه.","en":"Keep a safe gap, stay in lane and pay attention.","ckb":"ماوەی سەلامەتی بهێڵەوە و لە لاینەکەت بمێنەوە."}},
+
+{"n":278,"id":"q-brake-overheating-signs","topic":"mechanics","correct":2,
+ "ar":["كيف تشخص السخونة الزائدة في الفرامل؟","من اضاءة لمبة المحرك في تابلو المركبة","من الفقدان التدريجي لقوة المحرك","من ضعف الفرملة وانبعاث رائحة محترقة"],
+ "en":["How do you detect overheating in the brakes?","From the engine light on the dashboard","From a gradual loss of engine power","From weak braking and a burning smell"],
+ "ckb":["چۆن گەرمی زیادەی برێک دەناسیتەوە؟","لە داگیرسانی چرای بزوێنەر لە داشبۆرد","لە لەدەستدانی پلەبەپلەی هێزی بزوێنەر","لە لاوازی برێک و هاتنی بۆنی سووتاو"],
+ "exp":{"ar":"تُشخّص السخونة الزائدة من ضعف الفرملة ورائحة الاحتراق.","en":"Overheating shows as weak braking and a burning smell.","ckb":"بە لاوازی برێک و بۆنی سووتاو."}}
+]

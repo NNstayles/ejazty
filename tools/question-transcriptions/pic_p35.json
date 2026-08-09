@@ -1,0 +1,55 @@
+[
+{"n":9,"id":"qp-stop-sign","topic":"signs","correct":0,"img":"pic-009.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","قف في التقاطع وإسمح لمرور المركبات ذات الأسبقية","إسمح بمرور المركبات التي أمامك","قف للاشارة الضوئية الحمراء في الترفكلايت"],
+ "en":["What does this sign mean?","Stop at the junction and give way to vehicles with priority","Give way to the vehicles in front of you","Stop for the red traffic light"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","لە چوارڕیانەکە بوەستە و ڕێگا بدە بەو ئۆتۆمبێلانەی پێشینەییان هەیە","ڕێگا بدە بەو ئۆتۆمبێلانەی لە پێشتن","بۆ چرای سووری هاتوچۆ بوەستە"],
+ "exp":{"ar":"علامة قف: تُلزم بالتوقف وإعطاء الأسبقية.","en":"The stop sign requires you to stop and give way.","ckb":"تابلۆی وەستان: دەبێت بوەستیت و پێشینەیی بدەیت."}},
+
+{"n":10,"id":"qp-two-directions-only-sign","topic":"signs","correct":1,"img":"pic-010.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","الطريق مغلق","يسمح بالمرور فقط لهذين الاتجاهين","الأستداره إلى جهة اليمين واليسار"],
+ "en":["What does this sign mean?","The road is closed","Traffic is permitted only in these two directions","Turn to the right and to the left"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ڕێگاکە داخراوە","تەنها بەم دوو ئاراستەیە ڕێپێدراوە","سووڕانەوە بۆ ڕاست و چەپ"],
+ "exp":{"ar":"العلامة تسمح بالمرور في هذين الاتجاهين فقط.","en":"The sign permits travel in those two directions only.","ckb":"تەنها بەم دوو ئاراستەیە ڕێپێدراوە."}},
+
+{"n":11,"id":"qp-priority-picture-a","topic":"priority","correct":0,"img":"pic-011.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة A","المركبة B","كلتا المركبتين"],
+ "en":["Who has right of way in this picture?","Vehicle A","Vehicle B","Both vehicles"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئۆتۆمبێلی A","ئۆتۆمبێلی B","هەردوو ئۆتۆمبێلەکە"],
+ "exp":{"ar":"الأسبقية للمركبة A بحسب دليل الأسئلة الرسمي.","en":"Vehicle A has priority, per the official question guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Aیە."}},
+
+{"n":12,"id":"qp-general-danger-sign","topic":"signs","correct":2,"img":"pic-012.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر من الأبراج ذات الفولتية العالية","إحذر أمامك طريق منزلق","إحذر من مخاطر متنوعة"],
+ "en":["What does this sign mean?","Beware of high-voltage pylons","Beware: slippery road ahead","Beware of various hazards"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداری تاوەری کارەبای بەرزە بە","ئاگاداربە، ڕێگای خلیسک لە پێشتە","ئاگاداری مەترسی جۆراوجۆر بە"],
+ "exp":{"ar":"علامة تحذير عام من مخاطر متنوعة.","en":"A general warning sign for various hazards.","ckb":"تابلۆی ئاگادارکردنەوەی گشتی."}},
+
+{"n":13,"id":"qp-roundabout-sign","topic":"signs","correct":2,"img":"pic-013.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","قد بإتجاه عقارب الساعة","اتجه الى الامام","دخول الميدان قد باتجاه السهم للاستداره"],
+ "en":["What does this sign mean?","Drive clockwise","Go straight ahead","Entering the roundabout: drive in the direction of the arrows"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","بە ئاراستەی میلی کاتژمێر بڕۆ","بەرەو پێشەوە بڕۆ","چوونە ناو خولانەوە، بە ئاراستەی تیرەکان بڕۆ"],
+ "exp":{"ar":"العلامة تدل على ميدان دوار يُسار فيه باتجاه السهم.","en":"The sign marks a roundabout to be driven in the arrows' direction.","ckb":"تابلۆی خولانەوە، بە ئاراستەی تیرەکان."}},
+
+{"n":14,"id":"qp-priority-picture-b","topic":"priority","correct":1,"img":"pic-014.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة A","المركبة B","كلتا المركبتين"],
+ "en":["Who has right of way in this picture?","Vehicle A","Vehicle B","Both vehicles"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئۆتۆمبێلی A","ئۆتۆمبێلی B","هەردوو ئۆتۆمبێلەکە"],
+ "exp":{"ar":"الأسبقية للمركبة B بحسب دليل الأسئلة الرسمي.","en":"Vehicle B has priority, per the official question guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Bیە."}},
+
+{"n":15,"id":"qp-road-narrows-right-sign","topic":"signs","correct":0,"img":"pic-015.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر سيضيق الطريق من جهة اليمين","إحذر سيضيق الطريق من جهة اليسار","إحذر من الطريق ذو الإتجاهين"],
+ "en":["What does this sign mean?","Beware: the road narrows on the right","Beware: the road narrows on the left","Beware of the two-way road"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، ڕێگاکە لە لای ڕاستەوە تەسک دەبێتەوە","ئاگاداربە، لە لای چەپەوە تەسک دەبێتەوە","ئاگاداری ڕێگای دوو ئاراستە بە"],
+ "exp":{"ar":"العلامة تحذر من ضيق الطريق من جهة اليمين.","en":"The sign warns that the road narrows on the right.","ckb":"ڕێگاکە لە لای ڕاستەوە تەسک دەبێتەوە."}},
+
+{"n":16,"id":"qp-u-turn-sign","topic":"signs","correct":2,"img":"pic-016.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","الإستداره إلى اليمين","الإستداره إلى اليسار","الإستداره إلى الطريق المعاكس"],
+ "en":["What does this sign mean?","Turn to the right","Turn to the left","U-turn onto the opposite carriageway"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","سووڕانەوە بۆ ڕاست","سووڕانەوە بۆ چەپ","سووڕانەوە بۆ ڕێگای بەرامبەر"],
+ "exp":{"ar":"العلامة تدل على الاستدارة إلى الطريق المعاكس.","en":"The sign indicates a U-turn onto the opposite carriageway.","ckb":"سووڕانەوە بۆ ڕێگای بەرامبەر."}},
+
+{"n":17,"id":"qp-road-narrows-both-sign","topic":"signs","correct":0,"img":"pic-017.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر سيضيق الطريق من الجانبين","إحذر أمامك منطقة لعبور تلاميذ المدارس","إحذر سيضيق الطريق من جهة اليمين"],
+ "en":["What does this sign mean?","Beware: the road narrows on both sides","Beware: a school-children crossing area ahead","Beware: the road narrows on the right"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، ڕێگاکە لە هەردوو لاوە تەسک دەبێتەوە","ئاگاداربە، ناوچەی پەڕینەوەی قوتابیان لە پێشتە","ئاگاداربە، لە لای ڕاستەوە تەسک دەبێتەوە"],
+ "exp":{"ar":"العلامة تحذر من ضيق الطريق من الجانبين.","en":"The sign warns that the road narrows on both sides.","ckb":"ڕێگاکە لە هەردوو لاوە تەسک دەبێتەوە."}}
+]

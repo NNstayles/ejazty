@@ -1,0 +1,55 @@
+[
+{"n":81,"id":"qp-learner-closed-yard","topic":"rules","correct":2,"img":"pic-081.jpg",
+ "ar":["يجب على الشخص الذي لا يتمتع بأية خبرة في السياقة أن","يتعلم السياقة قرب المدارس","يتعلم السياقة في المناطق السكنية ومناطق لعب الأطفال","ان يتعلم في ساحة مغلقة"],
+ "en":["A person with no driving experience at all must:","Learn to drive near schools","Learn to drive in residential areas and children's play areas","Learn in an enclosed yard"],
+ "ckb":["ئەو کەسەی هیچ ئەزموونێکی لێخوڕینی نییە دەبێت:","لە نزیک قوتابخانەکان فێربێت","لە ناوچە نیشتەجێبووەکان و شوێنی یاری منداڵان فێربێت","لە گۆڕەپانێکی داخراودا فێربێت"],
+ "exp":{"ar":"يتعلم المبتدئ في ساحة مغلقة بعيداً عن الطريق العام.","en":"A beginner learns in an enclosed yard, away from public roads.","ckb":"لە گۆڕەپانێکی داخراودا فێردەبێت."}},
+
+{"n":82,"id":"qp-one-way-road-sign","topic":"signs","correct":1,"img":"pic-082.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","بداية الطريق السريع","طريق ذو إتجاه واحد","نهاية الطريق مسدود"],
+ "en":["What does this sign mean?","The start of an expressway","A one-way road","A dead end ahead"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","دەستپێکی ڕێگای خێرا","ڕێگای یەک ئاراستە","ڕێگا داخراوە"],
+ "exp":{"ar":"العلامة تدل على طريق ذي اتجاه واحد.","en":"The sign indicates a one-way road.","ckb":"ڕێگای یەک ئاراستە."}},
+
+{"n":83,"id":"qp-no-entry-sign","topic":"signs","correct":0,"img":"pic-083.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","الدخول ممنوع","ممنوع مرور المركبات الصغيرة","المرور ممنوع من كلا الإتجاهين"],
+ "en":["What does this sign mean?","No entry","Small vehicles are prohibited","Traffic is prohibited in both directions"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","چوونە ژوورەوە قەدەغەیە","ئۆتۆمبێلە بچووکەکان قەدەغەن","ڕۆیشتن لە هەردوو ئاراستە قەدەغەیە"],
+ "exp":{"ar":"العلامة تعني ممنوع الدخول.","en":"The sign means no entry.","ckb":"چوونە ژوورەوە قەدەغەیە."}},
+
+{"n":84,"id":"qp-give-way-triangle-circle","topic":"signs","correct":2,"img":"pic-084.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","أسبقية الطريق السريع (لك الأسبقية)","إحذر من تجاوز المركبات على الإتجاه المعاكس","قف و إسمح لمرور المركبات التي تتمتع بالأسبقية"],
+ "en":["What does this sign mean?","Expressway priority (you have right of way)","Beware of vehicles overtaking in the opposite direction","Stop and give way to vehicles that have priority"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","پێشینەیی ڕێگای خێرا","ئاگاداری تێپەڕاندنی بەرامبەر بە","بوەستە و ڕێگا بدە بەو ئۆتۆمبێلانەی پێشینەییان هەیە"],
+ "exp":{"ar":"العلامة تُلزم بالتوقف وإعطاء الأسبقية.","en":"The sign requires stopping and giving way.","ckb":"بوەستە و پێشینەیی بدە."}},
+
+{"n":85,"id":"qp-steep-descent-12-sign","topic":"signs","correct":1,"img":"pic-085.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","أمامك مرتفع شاهق بحدة 12% درجة","أمامك منحدر خطير بحدة 12% درجة","أمامك مطبات بحدة 12% درجة"],
+ "en":["What does this sign mean?","A steep rise of 12% ahead","A dangerous descent of 12% ahead","Speed humps of 12% ahead"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","هەڵدێرێکی بەرز بە ١٢٪ لە پێشتە","لێژاییەکی مەترسیدار بە ١٢٪ لە پێشتە","قەڵشی ١٢٪ لە پێشتە"],
+ "exp":{"ar":"العلامة تحذر من منحدر خطير بنسبة 12%.","en":"The sign warns of a dangerous 12% descent.","ckb":"لێژاییەکی مەترسیدار بە ١٢٪."}},
+
+{"n":86,"id":"qp-residential-no-signs","topic":"rules","correct":0,"img":"pic-086.jpg",
+ "ar":["ماذا تستنتج من هذه الصورة في حالة عدم وجود علامات مرورية؟","الحيطة والحذر حي سكني","طريق زراعي","مكان للاستراحة"],
+ "en":["What do you conclude from this picture when there are no traffic signs?","Take care: a residential area","A farm road","A rest area"],
+ "ckb":["لەم وێنەیەدا کە تابلۆی هاتوچۆ نییە، چی لێدەردەهێنیت؟","وریایی، ناوچەی نیشتەجێبوونە","ڕێگای کشتوکاڵی","شوێنی پشوودان"],
+ "exp":{"ar":"الصورة تدل على حي سكني يستوجب الحيطة والحذر.","en":"The picture shows a residential area calling for care.","ckb":"ناوچەی نیشتەجێبوونە و وریایی دەوێت."}},
+
+{"n":87,"id":"qp-farm-road-no-signs","topic":"rules","correct":1,"img":"pic-087.jpg",
+ "ar":["ماذا تستنتج من هذه الصورة في حالة عدم وجود علامات مرورية؟","منطقة سكنية (الحيطة والحذر)","طريق زراعي","حي سكني مكتظ"],
+ "en":["What do you conclude from this picture when there are no traffic signs?","A residential area (take care)","A farm road","A crowded residential area"],
+ "ckb":["لەم وێنەیەدا کە تابلۆ نییە، چی لێدەردەهێنیت؟","ناوچەی نیشتەجێبوون (وریایی)","ڕێگای کشتوکاڵی","گەڕەکی قەرەباڵغ"],
+ "exp":{"ar":"الصورة تدل على طريق زراعي.","en":"The picture shows a farm road.","ckb":"ڕێگای کشتوکاڵییە."}},
+
+{"n":88,"id":"qp-driving-80-when-snow-starts","topic":"rules","correct":2,"img":"pic-088.jpg",
+ "ar":["ما العمل خلال السياقة بسرعة 80كم/ في الساعة بعد أن بدأ الثلج بالهطول؟","الإستمرار في القيادة بنفس السرعة","زيادة السرعة","الضغط على الفرامل بلطف وتخفيف السرعة"],
+ "en":["What should you do when driving at 80 km/h and snow starts to fall?","Carry on at the same speed","Increase speed","Brake gently and reduce speed"],
+ "ckb":["کاتێک بە ٨٠ کم/کاتژمێر لێدەخوڕیت و بەفر دەست بە باران دەکات، چی دەکەیت؟","بە هەمان خێرایی بەردەوام دەبم","خێرایی زیاد دەکەم","بە نەرمی برێک دەگرم و خێرایی کەم دەکەمەوە"],
+ "exp":{"ar":"يُضغط على الفرامل بلطف مع تخفيف السرعة عند بدء تساقط الثلج.","en":"Brake gently and slow down when snow begins to fall.","ckb":"بە نەرمی برێک بگرە و خێرایی کەم بکەرەوە."}},
+
+{"n":89,"id":"qp-priority-white-vehicle","topic":"priority","correct":0,"img":"pic-089.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة البيضاء","المركبة الحمراء","او كلاهما"],
+ "en":["Who has right of way in this picture?","The white vehicle","The red vehicle","Or both of them"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئۆتۆمبێلە سپییەکە","ئۆتۆمبێلە سوورەکە","یان هەردووکیان"],
+ "exp":{"ar":"الأسبقية للمركبة البيضاء بحسب دليل الأسئلة الرسمي.","en":"The white vehicle has priority, per the official guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلە سپییەکەیە."}}
+]

@@ -1,0 +1,55 @@
+[
+{"n":90,"id":"q-officer-signal-binding","topic":"priority","correct":1,
+ "ar":["إشارة شرطي المرور ملزمة للجميع وإطاعتها واجب؟","نعم في الشوارع الرئيسية والتقاطعات","نعم في كل الحالات والامكنة","نعم في توجيه حركة السير فقط"],
+ "en":["The traffic officer's signal binds everyone and must be obeyed:","Yes, on main streets and at junctions","Yes, in all cases and all places","Yes, only when directing the flow of traffic"],
+ "ckb":["ئاماژەی پۆلیسی هاتوچۆ بۆ هەموان ئەرکە و گوێڕایەڵی پێویستە:","بەڵێ، لە شەقامە سەرەکییەکان و چوارڕیانەکان","بەڵێ، لە هەموو حاڵەت و شوێنێکدا","بەڵێ، تەنها لە ڕێنمایی جوڵەی هاتوچۆدا"],
+ "exp":{"ar":"إشارة شرطي المرور ملزمة في كل الحالات والأمكنة.","en":"The officer's signal is binding in every case and every place.","ckb":"ئاماژەی پۆلیس لە هەموو حاڵەت و شوێنێکدا ئەرکە."}},
+
+{"n":91,"id":"q-priority-emergency-vehicles","topic":"priority","correct":0,
+ "ar":["تكون أسبقية المرور لاحدى الحالات التالية؟","مركبات الطوارئ على كافة المركبات","المركبات الانشائية على كافة المركبات","المركبات الخصوصية على الطوارئ"],
+ "en":["Right of way belongs to which of the following?","Emergency vehicles over all other vehicles","Construction vehicles over all other vehicles","Private vehicles over emergency vehicles"],
+ "ckb":["مافی پێشینەیی بۆ کام لەمانەیە؟","ئۆتۆمبێلی فریاگوزاری بەسەر هەموو ئۆتۆمبێلەکاندا","ئۆتۆمبێلی بیناسازی بەسەر هەموویاندا","ئۆتۆمبێلی تایبەت بەسەر فریاگوزاریدا"],
+ "exp":{"ar":"الأسبقية المطلقة لمركبات الطوارئ على كافة المركبات.","en":"Emergency vehicles have priority over every other vehicle.","ckb":"ئۆتۆمبێلی فریاگوزاری پێشینەیی هەیە بەسەر هەموواندا."}},
+
+{"n":92,"id":"q-driving-after-medication","topic":"rules","correct":0,
+ "ar":["هل يجوز قيادة المركبة بعد تناول ادوية لها تأثير على القدرة والرؤية؟","ممنوع الا بعد إنقضاء الفترة المحددة لزوال تأثيرها","مسموح لان الادوية لا تؤثر على مستوى السياقة","مسموح بعد إنقضاء ساعتين على اخذ الادوية"],
+ "en":["May you drive after taking medicines that affect your ability or vision?","Prohibited until the stated period for their effect to wear off has passed","Allowed, because medicines do not affect driving","Allowed two hours after taking the medicine"],
+ "ckb":["ئایا ڕێپێدراوە دوای خواردنی دەرمانی کاریگەر لەسەر توانا و بینین لێبخوڕیت؟","قەدەغەیە تا ئەو ماوەیە تێپەڕێت کە بۆ نەمانی کاریگەرییەکەی دیاریکراوە","ڕێپێدراوە چونکە دەرمان کاریگەری نییە","دوای دوو کاتژمێر ڕێپێدراوە"],
+ "exp":{"ar":"لا يجوز القيادة إلا بعد زوال تأثير الدواء خلال الفترة المحددة.","en":"Do not drive until the medicine's effect has worn off over the stated period.","ckb":"نابێت لێبخوڕیت تا کاریگەری دەرمانەکە نەڕەوێتەوە."}},
+
+{"n":93,"id":"q-priority-pedestrians-on-crossing","topic":"priority","correct":0,
+ "ar":["تكون أسبقية المرور لاحدى الحالات التالية؟","المشاة الذين وطئوا منطقة العبور على المركبات","المركبات على المشاة الذين وطئوا منطقة العبور","المشاة الذين لم يوطئوا منطقة العبور على المركبات"],
+ "en":["Right of way belongs to which of the following?","Pedestrians who have already stepped onto the crossing, over vehicles","Vehicles, over pedestrians who have stepped onto the crossing","Pedestrians who have not yet stepped onto the crossing, over vehicles"],
+ "ckb":["مافی پێشینەیی بۆ کام لەمانەیە؟","ئەو پیادانەی چوونەتە سەر پەڕینەوەکە بەسەر ئۆتۆمبێلەکاندا","ئۆتۆمبێلەکان بەسەر ئەو پیادانەی چوونەتە سەری","ئەو پیادانەی هێشتا نەچوونەتە سەری"],
+ "exp":{"ar":"الأسبقية للمشاة الذين وطئوا منطقة العبور فعلاً.","en":"Pedestrians who have already stepped onto the crossing have priority.","ckb":"پێشینەیی بۆ ئەو پیادانەیە کە چوونەتە سەر پەڕینەوەکە."}},
+
+{"n":94,"id":"q-first-aid-burn-victim","topic":"firstaid","correct":2,
+ "ar":["يجب ان يعالج المحترق بـ؟","وضع الكريم مرهم في مكان الحرق","تغطية المكان المحترق ونقله إلى المستشفى","نزع ملابس المحترق بسرعة"],
+ "en":["A burn casualty should be treated by:","Putting cream or ointment on the burn","Covering the burnt area and taking them to hospital","Quickly removing the burnt person's clothing"],
+ "ckb":["کەسی سووتاو دەبێت بەم شێوەیە چارەسەر بکرێت:","دانانی کرێم لەسەر شوێنی سووتانەکە","داپۆشینی شوێنە سووتاوەکە و گواستنەوەی بۆ نەخۆشخانە","بە خێرایی داکەندنی جلەکانی کەسە سووتاوەکە"],
+ "exp":{"ar":"تُنزع ملابس المحترق بسرعة بحسب دليل الأسئلة الرسمي.","en":"The official guide gives the answer as removing the burnt person's clothing quickly.","ckb":"بەپێی ڕێنمایی فەرمی، جلەکانی کەسە سووتاوەکە بە خێرایی دادەکەنرێت."}},
+
+{"n":95,"id":"q-driving-unroadworthy-vehicle","topic":"mechanics","correct":0,
+ "ar":["هل يجوز قيادة مركبة غير صالحة للسير؟","لا يجوز قيادة مركبة غير صالحة للقيادة ولا تحمل وثيقة فحص فني سارية المفعول","مسموح إذ كان الخلل ليس في جهاز الموقف (البريك)","مسموح إذ كان الخلل في منظومة الانارة"],
+ "en":["May an unroadworthy vehicle be driven?","No, a vehicle unfit to drive and without a valid inspection document may not be driven","Allowed if the fault is not in the braking system","Allowed if the fault is in the lighting system"],
+ "ckb":["ئایا ڕێپێدراوە ئۆتۆمبێلی ناتەندروست لێبخوڕدرێت؟","نەخێر، ئۆتۆمبێلی نەشیاو بۆ لێخوڕین و بێ بەڵگەنامەی پشکنینی کارا نابێت لێبخوڕدرێت","ڕێپێدراوە ئەگەر کێشەکە لە برێکدا نەبێت","ڕێپێدراوە ئەگەر کێشەکە لە سیستەمی ڕووناکیدا بێت"],
+ "exp":{"ar":"يمنع سوق مركبة غير صالحة أو بلا وثيقة فحص فني سارية.","en":"An unfit vehicle, or one without a valid inspection document, must not be driven.","ckb":"ئۆتۆمبێلی نەشیاو یان بێ بەڵگەنامەی کارا نابێت لێبخوڕدرێت."}},
+
+{"n":96,"id":"q-civil-defence-phone","topic":"rules","correct":2,
+ "ar":["رقم هاتف الدفاع المدني (طوارئ)؟","188","104","115"],
+ "en":["The Civil Defence (emergency) telephone number is:","188","104","115"],
+ "ckb":["ژمارەی تەلەفۆنی بەرگری شارستانی (فریاگوزاری):","١٨٨","١٠٤","١١٥"],
+ "exp":{"ar":"رقم الدفاع المدني للطوارئ هو 115.","en":"The Civil Defence emergency number is 115.","ckb":"ژمارەی فریاگوزاری بەرگری شارستانی ١١٥ە."}},
+
+{"n":97,"id":"q-mobile-phone-while-driving","topic":"rules","correct":0,
+ "ar":["اين يسمح بإستعمال جهاز الهاتف النقال (الموبايل) أثناء القيادة؟","يسمح بإستعمال جهاز الهاتف النقال أثناء توقف المركبة في المواقف او الاماكن المسموح بها للتوقف فقط","أثناء القيادة في الطرق الخارجية","إذ كان السائق يمسك بجهاز الهاتف في اليد اليسرى"],
+ "en":["Where is using a mobile phone permitted while driving?","Only while the vehicle is stopped in a car park or a place where stopping is allowed","While driving on rural roads","If the driver holds the phone in the left hand"],
+ "ckb":["لەکوێ ڕێپێدراوە مۆبایل بەکاربهێنرێت لە کاتی لێخوڕیندا؟","تەنها کاتێک ئۆتۆمبێلەکە لە شوێنی وەستان یان شوێنی ڕێپێدراودا وەستاوە","لە کاتی لێخوڕین لە ڕێگا دەرەکییەکان","ئەگەر شۆفێرەکە بە دەستی چەپ مۆبایلەکە بگرێت"],
+ "exp":{"ar":"يُسمح باستعمال الهاتف فقط والمركبة متوقفة في مكان مسموح.","en":"The phone may only be used while the vehicle is stopped somewhere stopping is allowed.","ckb":"تەنها کاتێک ئۆتۆمبێل لە شوێنی ڕێپێدراودا وەستاوە."}},
+
+{"n":98,"id":"q-disobeying-lights-penalty","topic":"rules","correct":0,
+ "ar":["عدم امتثال السائق لإشارات المرور الضوئية أو إشارة رجل المرور عقوبته هو؟","الغرامة","السجن","السجن و الغرامة"],
+ "en":["A driver failing to obey the traffic lights or the traffic officer's signal is punished by:","A fine","Imprisonment","Imprisonment and a fine"],
+ "ckb":["سزای ئەو شۆفێرەی گوێڕایەڵی چرای هاتوچۆ یان ئاماژەی پۆلیس نەبێت:","غەرامە","زیندان","زیندان و غەرامە"],
+ "exp":{"ar":"عقوبة عدم الامتثال هي الغرامة.","en":"The penalty for failing to obey is a fine.","ckb":"سزای گوێڕایەڵنەبوون غەرامەیە."}}
+]

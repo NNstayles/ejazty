@@ -1,0 +1,55 @@
+[
+{"n":99,"id":"q-against-traffic-direction-penalty","topic":"rules","correct":0,
+ "ar":["قيادة مركبة بصورة معاكسة لوجهة المرور (عكس السير) المقرر من سلطات المرور عقوبته؟","الغرامة","حجز المركبة","غرامة وحجز المركبة"],
+ "en":["Driving a vehicle against the direction of traffic set by the traffic authorities is punished by:","A fine","Impounding the vehicle","A fine and impounding the vehicle"],
+ "ckb":["لێخوڕینی ئۆتۆمبێل بە پێچەوانەی ئاراستەی دیاریکراوی دەسەڵاتەکانی هاتوچۆ سزاکەی:","غەرامە","دەستبەسەرداگرتنی ئۆتۆمبێل","غەرامە و دەستبەسەرداگرتن"],
+ "exp":{"ar":"عقوبتها الغرامة.","en":"The penalty is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":100,"id":"q-far-right-lane-streets","topic":"rules","correct":2,
+ "ar":["الشوارع التي يجوز إستعمال الجهة اليمنى القصوى فيها أثناء القيادة هي؟","الشارع ذو مسارين واكثر","الشارع ذو الاتجاه الواحد","جميع الشوارع"],
+ "en":["The streets on which the far right-hand side may be used while driving are:","Streets with two or more lanes","One-way streets","All streets"],
+ "ckb":["ئەو شەقامانەی دەکرێت لای ڕاستی دوورترین تێیاندا بەکاربهێنرێت:","شەقامی دوو لاین یان زیاتر","شەقامی یەک ئاراستە","هەموو شەقامەکان"],
+ "exp":{"ar":"يُستعمل أقصى اليمين في جميع الشوارع.","en":"The far right is used on all streets.","ckb":"دوورترین لای ڕاست لە هەموو شەقامەکاندا بەکاردەهێنرێت."}},
+
+{"n":101,"id":"q-no-lights-at-night-penalty","topic":"rules","correct":2,
+ "ar":["قيادة المركبة بدون أضوية أمامية وخلفية ليلاً عقوبته؟","الحبس","الغرامة والحبس","الغرامة"],
+ "en":["Driving at night without front and rear lights is punished by:","Imprisonment","A fine and imprisonment","A fine"],
+ "ckb":["لێخوڕین بە شەو بەبێ چرای پێشەوە و دواوە سزاکەی:","زیندان","غەرامە و زیندان","غەرامە"],
+ "exp":{"ar":"عقوبتها الغرامة.","en":"The penalty is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":102,"id":"q-reverse-direction-one-way","topic":"rules","correct":0,
+ "ar":["متى يسمح بالسياقة بعكس إتجاه السير في شارع باتجاه واحد؟","بأمر من شرطي المرور في حالات خاصة تستوجب ذلك","السائقين الاخرين يستطيعون السماح بذلك","ممنوع بشكل مطلق حتى لو كان بأمر من شرطي المرور"],
+ "en":["When is driving against the flow on a one-way street allowed?","On the order of a traffic officer in special cases that require it","Other drivers can permit it","Absolutely prohibited, even on a traffic officer's order"],
+ "ckb":["کەی ڕێپێدراوە بە پێچەوانەی ئاراستە لە شەقامی یەک ئاراستەدا بڕۆیت؟","بە فەرمانی پۆلیسی هاتوچۆ لە حاڵەتی تایبەتدا","شۆفێرەکانی تر دەتوانن ڕێگا بدەن","بە تەواوی قەدەغەیە تەنانەت بە فەرمانی پۆلیسیش"],
+ "exp":{"ar":"يجوز فقط بأمر من شرطي المرور في حالات خاصة.","en":"Only on the order of a traffic officer in special cases.","ckb":"تەنها بە فەرمانی پۆلیسی هاتوچۆ لە حاڵەتی تایبەتدا."}},
+
+{"n":103,"id":"q-no-registration-plates-penalty","topic":"mechanics","correct":2,
+ "ar":["قيادة مركبة خالية من لوحات التسجيل عقوبته؟","حجز المركبة","حجز المركبة مع الحبس","الغرامة"],
+ "en":["Driving a vehicle with no registration plates is punished by:","Impounding the vehicle","Impounding the vehicle and imprisonment","A fine"],
+ "ckb":["لێخوڕینی ئۆتۆمبێلی بێ پلێتی تۆمارکردن سزاکەی:","دەستبەسەرداگرتنی ئۆتۆمبێل","دەستبەسەرداگرتن لەگەڵ زیندان","غەرامە"],
+ "exp":{"ar":"عقوبتها الغرامة.","en":"The penalty is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":104,"id":"q-driving-on-pavement","topic":"rules","correct":0,
+ "ar":["متى يسمح بالسياقة على الرصيف؟","ممنوع بشكل مطلق","مسموح في حالة خلو الرصيف من المشاة","مسموح في حالة الرصيف الذي يزيد عرضه عن 5 م"],
+ "en":["When is driving on the pavement allowed?","Absolutely prohibited","Allowed when the pavement is clear of pedestrians","Allowed where the pavement is more than 5 m wide"],
+ "ckb":["کەی ڕێپێدراوە بەسەر ڕێڕەوی پیادەدا لێبخوڕیت؟","بە تەواوی قەدەغەیە","ڕێپێدراوە ئەگەر پیادەی لەسەر نەبێت","ڕێپێدراوە ئەگەر پانییەکەی زیاتر لە ٥ مەتر بێت"],
+ "exp":{"ar":"السياقة على الرصيف ممنوعة بشكل مطلق.","en":"Driving on the pavement is absolutely prohibited.","ckb":"لێخوڕین بەسەر ڕێڕەوی پیادەدا بە تەواوی قەدەغەیە."}},
+
+{"n":105,"id":"q-parking-on-bridge-or-tunnel","topic":"rules","correct":0,
+ "ar":["متى يسمح بإيقاف مركبة على جسر أو داخل نفق؟","ممنوع منعاً باتاً","مسموح في النهار","مسموح إذ كان الجسر أو النفق له اكثر من ثلاث مسارات"],
+ "en":["When may a vehicle be stopped on a bridge or inside a tunnel?","Strictly prohibited","Allowed in daylight","Allowed if the bridge or tunnel has more than three lanes"],
+ "ckb":["کەی ڕێپێدراوە ئۆتۆمبێل لەسەر پرد یان ناو تونێل بوەستێت؟","بە تەواوی قەدەغەیە","بە ڕۆژ ڕێپێدراوە","ڕێپێدراوە ئەگەر زیاتر لە سێ لاینی هەبێت"],
+ "exp":{"ar":"الوقوف على الجسور وداخل الأنفاق ممنوع منعاً باتاً.","en":"Stopping on bridges or in tunnels is strictly prohibited.","ckb":"وەستان لەسەر پرد و ناو تونێل بە تەواوی قەدەغەیە."}},
+
+{"n":106,"id":"q-tractor-lane","topic":"rules","correct":0,
+ "ar":["في أي مسلك يستطيع سائق الساحبة الزراعية (التراكتور) قيادتها؟","استخدام كتف الطريق في الطرق الخارجية","في كل اجزاء الطريق","مسلك اليسار في الطرق الخارجية"],
+ "en":["In which lane may the driver of an agricultural tractor drive?","Using the hard shoulder on rural roads","In any part of the road","The left-hand lane on rural roads"],
+ "ckb":["لە کام لاینێکدا شۆفێری تراکتۆری کشتوکاڵی دەتوانێت لێبخوڕێت؟","بەکارهێنانی شانی ڕێگا لە ڕێگا دەرەکییەکان","لە هەموو بەشەکانی ڕێگا","لاینی چەپ لە ڕێگا دەرەکییەکان"],
+ "exp":{"ar":"يستخدم التراكتور كتف الطريق في الطرق الخارجية.","en":"A tractor uses the hard shoulder on rural roads.","ckb":"تراکتۆر شانی ڕێگا بەکاردەهێنێت لە ڕێگا دەرەکییەکان."}},
+
+{"n":107,"id":"q-where-tractors-allowed","topic":"rules","correct":0,
+ "ar":["في اي الطرق يسمح بإستخدام الساحبات الزراعية (التراكتور)؟","على الطرق الزراعية وشوارع حدود القرى","على الطرق السريعة","على الطرق الداخلية"],
+ "en":["On which roads may agricultural tractors be used?","On farm roads and the streets within village boundaries","On expressways","On inner-city roads"],
+ "ckb":["لە کام ڕێگایەکدا ڕێپێدراوە تراکتۆری کشتوکاڵی بەکاربهێنرێت؟","لەسەر ڕێگا کشتوکاڵییەکان و شەقامی سنووری گوندەکان","لەسەر ڕێگا خێراکان","لەسەر ڕێگا ناوەکییەکان"],
+ "exp":{"ar":"تُستخدم على الطرق الزراعية وشوارع حدود القرى.","en":"They are used on farm roads and village-boundary streets.","ckb":"لەسەر ڕێگا کشتوکاڵییەکان و شەقامی سنووری گوندەکان."}}
+]

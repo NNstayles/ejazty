@@ -1,19 +1,31 @@
 import type { ContentBundle } from '../../schema';
-import { informativeSigns } from './signs-informative';
-import { regulatorySigns } from './signs-regulatory';
-import { warningSigns } from './signs-warning';
+import { officialQuestions } from './questions';
+import { officialQuestionsPictures } from './questions-pictures';
+import { officialQuestionsText27 } from './questions-text-027';
+import { signQuestions } from './sign-questions';
+import { signs } from './signs';
+
+export { signs };
 
 /**
  * Verified material transcribed from the ministry publications.
  *
  * Signs are complete (all 111 records from the traffic-signs manual, with the
- * original artwork). Questions, violations and road-priority rules are not yet
- * transcribed — see README.
+ * original artwork). Questions are the whole bank — text series 1–281 and
+ * picture series 1–150 — plus one identification question per sign.
+ *
+ * No notes: the study notes written from this material live in `data/study/`,
+ * because they are condensations rather than transcriptions and their sources
+ * name the questions they were condensed from.
  */
 export const officialBundle: ContentBundle = {
-  signs: [...regulatorySigns, ...warningSigns, ...informativeSigns],
-  violations: [],
-  rules: [],
-  priority: [],
-  questions: [],
+  signs,
+  notes: [],
+  dashboard: [],
+  questions: [
+    ...officialQuestions,
+    ...officialQuestionsText27,
+    ...officialQuestionsPictures,
+    ...signQuestions,
+  ],
 };

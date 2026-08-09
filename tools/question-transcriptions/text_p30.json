@@ -1,0 +1,55 @@
+[
+{"n":252,"id":"q-keep-far-right-when-slow","topic":"rules","correct":0,
+ "ar":["يلزم سائق المركبة بالسير في أقصى يمين الشارع أثناء قيادة المركبة في الحالات التالية؟","إذ كان يقود مركبته بسرعة تقل عن الحد الاقصى المقرر للسرعة","خلال اجتيازه للمركبة التي أمامه","خلال قيادته المركبة بسرعة في مسلك آخر"],
+ "en":["A driver must keep to the far right of the street in the following case:","When driving at less than the maximum prescribed speed","While overtaking the vehicle in front","While driving fast in another lane"],
+ "ckb":["شۆفێر دەبێت لە دوورترین لای ڕاستی شەقامدا بڕوات لەم حاڵەتەدا:","ئەگەر بە خێراییەکی کەمتر لە سنووری بەرز لێبخوڕێت","لە کاتی تێپەڕاندنی ئۆتۆمبێلی پێشەوە","لە کاتی لێخوڕینی خێرا لە لاینێکی تر"],
+ "exp":{"ar":"يلتزم أقصى اليمين من يقود بسرعة أقل من الحد الأقصى.","en":"Keep far right if driving below the maximum speed.","ckb":"ئەگەر خێراییەکەت کەمتر بێت لە دوورترین لای ڕاست بڕۆ."}},
+
+{"n":253,"id":"q-stop-for-pedestrians-on-crossing","topic":"priority","correct":0,
+ "ar":["يجب التوقف للمشاة والسماح لهم بالعبور في مناطق العبور إذا كانوا؟","وطؤا منطقة العبور","وقفوا على الرصيف","وقفوا في الجزرة الوسطية"],
+ "en":["You must stop for pedestrians and let them cross at crossings if they:","Have stepped onto the crossing","Are standing on the pavement","Are standing on the central island"],
+ "ckb":["دەبێت بۆ پیادەکان بوەستیت و ڕێگایان بدەیت بپەڕنەوە ئەگەر:","چوونەتە سەر پەڕینەوەکە","لەسەر ڕێڕەوی پیادە وەستاون","لە دوورگەی ناوەڕاست وەستاون"],
+ "exp":{"ar":"يجب التوقف لمن وطئ منطقة العبور من المشاة.","en":"Stop for pedestrians who have stepped onto the crossing.","ckb":"بۆ ئەوانەی چوونەتە سەر پەڕینەوەکە بوەستە."}},
+
+{"n":254,"id":"q-pedestrian-visible-clothing","topic":"rules","correct":1,
+ "ar":["من الممكن رؤية المشاة بصورة اوضح من قبل سائق المركبة في الظلام او في الجو المعتم إذا كان مرتدياً ملابس؟","غامقة","فاتحة اللون او عاكسة","ملونة"],
+ "en":["A driver can see a pedestrian more clearly in the dark or in gloomy weather if they are wearing clothes that are:","Dark","Light-coloured or reflective","Coloured"],
+ "ckb":["شۆفێر پیادە ڕوونتر دەبینێت لە تاریکیدا ئەگەر جلی ئەم جۆرەی لەبەردابێت:","تاریک","ڕەنگ ڕووناک یان ڕەنگدانەوەیی","ڕەنگاوڕەنگ"],
+ "exp":{"ar":"الملابس فاتحة اللون أو العاكسة تجعل المشاة أوضح للسائق.","en":"Light or reflective clothing makes pedestrians more visible.","ckb":"جلی ڕووناک یان ڕەنگدانەوەیی پیادە ڕوونتر دەکات."}},
+
+{"n":255,"id":"q-headlamp-colour","topic":"mechanics","correct":0,
+ "ar":["لون المصباح الرئيسي (العالي والناصي) للمركبات يجب ان يكون باللون؟","الأبيض","الاحمر","الاخضر"],
+ "en":["The colour of a vehicle's main headlamp (main and dipped beam) must be:","White","Red","Green"],
+ "ckb":["ڕەنگی چرای سەرەکی (بەرز و نزم) دەبێت چی بێت؟","سپی","سوور","سەوز"],
+ "exp":{"ar":"لون المصباح الرئيسي يجب أن يكون أبيض.","en":"The main headlamp must be white.","ckb":"دەبێت سپی بێت."}},
+
+{"n":256,"id":"q-bend-without-speed-sign","topic":"rules","correct":0,
+ "ar":["عند عدم وجود علامة تشير الى الحد الاقصى للسرعة المسموح بها عند اي منعطف يجب ان؟","تعادل تقدير حدة المنعطف وتقلل السرعة تبعا لذلك","تفترض انه من الافضل ان تجتاز هذا المنعطف باقصى سرعة","تستمر بالسير بالسرعة التي كنت تقود بها قبل الوصول الى المنعطف"],
+ "en":["Where no sign shows the maximum permitted speed at a bend, you must:","Judge how sharp the bend is and reduce speed accordingly","Assume it is better to take the bend at maximum speed","Carry on at the speed you were driving before reaching the bend"],
+ "ckb":["ئەگەر تابلۆی سنووری خێرایی لە سووڕانەوەیەکدا نەبوو، دەبێت:","تیژی سووڕانەوەکە خەمڵێنیت و خێرایی بەپێی ئەو کەم بکەیتەوە","وابزانیت باشترە بە بەرزترین خێرایی تێیبپەڕیت","بە هەمان خێرایی پێشوو بەردەوام بیت"],
+ "exp":{"ar":"يُقدَّر حدة المنعطف وتُخفض السرعة تبعاً لذلك.","en":"Judge the sharpness of the bend and slow accordingly.","ckb":"تیژی سووڕانەوەکە بخەمڵێنە و خێرایی کەم بکەرەوە."}},
+
+{"n":257,"id":"q-low-tyre-pressure","topic":"mechanics","correct":0,
+ "ar":["الضغط المنخفض في الاطارات يؤدي الى؟","تلف الاطار نتيجة سخونة وتلف كتف الاطار","سهولة تسيير المركبة","الشعور بالراحة اثناء الركوب"],
+ "en":["Low tyre pressure leads to:","Damage to the tyre from heat, and damage to the tyre shoulder","Easier handling of the vehicle","A more comfortable ride"],
+ "ckb":["پەستانی نزم لە تایەکاندا دەبێتە هۆی:","تێکچوونی تایە بەهۆی گەرمی و تێکچوونی شانی تایە","ئاسانی جوڵانی ئۆتۆمبێل","هەستکردن بە ئاسوودەیی"],
+ "exp":{"ar":"الضغط المنخفض يُتلف الإطار نتيجة السخونة ويتلف كتفه.","en":"Low pressure damages the tyre through heat and wears its shoulder.","ckb":"پەستانی نزم تایە تێکدەدات بەهۆی گەرمی."}},
+
+{"n":258,"id":"q-expressway-prohibited-users","topic":"rules","correct":2,
+ "ar":["طريق السريع للمرور لا يجوز استخدامه من قبل؟","سيارات الصالون","سيارات الحمل الكبيرة","المشاة والدراجات الهوائية والمكائن الزراعية والانشائية"],
+ "en":["The expressway may not be used by:","Saloon cars","Large goods vehicles","Pedestrians, bicycles, and agricultural and construction machinery"],
+ "ckb":["ڕێگای خێرا نابێت لەلایەن ئەمانەوە بەکاربهێنرێت:","ئۆتۆمبێلی سالۆن","بارهەڵگرە گەورەکان","پیادە و دووچەرخە و ئامێری کشتوکاڵی و بیناسازی"],
+ "exp":{"ar":"يُمنع المشاة والدراجات الهوائية والمكائن الزراعية والإنشائية من الطرق السريعة.","en":"Pedestrians, bicycles and farm or construction machinery are barred from expressways.","ckb":"پیادە و دووچەرخە و ئامێری کشتوکاڵی قەدەغەن."}},
+
+{"n":259,"id":"q-high-tyre-pressure","topic":"mechanics","correct":1,
+ "ar":["الضغط العالي للهواء في الاطارات يؤدي الى؟","عدم الشعور بالراحة اثناء الركوب","تلف الاطار وزيادة احتمال انفجاره","يتلف اجزاء تعليق المركبة"],
+ "en":["Excessive air pressure in the tyres leads to:","An uncomfortable ride","Damage to the tyre and a greater chance of a blowout","Damage to the vehicle's suspension parts"],
+ "ckb":["پەستانی بەرزی هەوا لە تایەکاندا دەبێتە هۆی:","نائاسوودەیی لە کاتی سواربووندا","تێکچوونی تایە و زیادبوونی ئەگەری تەقینەوەی","تێکچوونی بەشەکانی هەڵواسین"],
+ "exp":{"ar":"الضغط العالي يُتلف الإطار ويزيد احتمال انفجاره.","en":"Over-inflation damages the tyre and raises the risk of a blowout.","ckb":"پەستانی بەرز تایە تێکدەدات و ئەگەری تەقینەوەی زیاد دەکات."}},
+
+{"n":260,"id":"q-drowsiness-while-driving","topic":"rules","correct":1,
+ "ar":["إذا شعرت بالنعاس أثناء القيادة من الافضل؟","تشغيل الراديو بصوت مرتفع جداً","التوقف والاستراحة وتغيير السائق إذ أمكن ذلك","تشغيل مكيف الهواء أو فتح نوافذ المركبة"],
+ "en":["If you feel drowsy while driving, it is best to:","Turn the radio up very loud","Stop, rest, and change driver if possible","Turn on the air conditioning or open the windows"],
+ "ckb":["ئەگەر لە کاتی لێخوڕیندا هەستت بە خەواڵووبوون کرد، باشترە:","ڕادیۆ بە دەنگی زۆر بەرز داگیرسێنیت","بوەستیت و پشوو بدەیت و شۆفێر بگۆڕیت ئەگەر بکرێت","کۆندیشن داگیرسێنیت یان پەنجەرەکان بکەیتەوە"],
+ "exp":{"ar":"الأفضل التوقف والاستراحة وتغيير السائق إن أمكن.","en":"Stop, rest and swap drivers if you can.","ckb":"بوەستە، پشوو بدە و شۆفێر بگۆڕە."}}
+]

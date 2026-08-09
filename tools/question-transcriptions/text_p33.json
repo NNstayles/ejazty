@@ -1,0 +1,19 @@
+[
+{"n":279,"id":"q-tyre-damage-causes","topic":"mechanics","correct":2,
+ "ar":["الأسباب التي تسرع من تلف إطارات المركبات؟","القيادة بإطارات ذات ضغط هواء واطئ","إرتفاع درجات الحرارة والحمولة الزائدة","كل ماذكر اعلاه"],
+ "en":["The causes that speed up wear on a vehicle's tyres are:","Driving on under-inflated tyres","High temperatures and excess load","All of the above"],
+ "ckb":["ئەو هۆکارانەی داڕزانی تایەکان خێرا دەکەن:","لێخوڕین بە تایەی پەستان نزم","بەرزی پلەی گەرمی و باری زیادە","هەموو ئەوانەی سەرەوە"],
+ "exp":{"ar":"جميع ما ذُكر يسرّع تلف الإطارات.","en":"All of the listed causes speed up tyre wear.","ckb":"هەموو ئەوانەی باسکران."}},
+
+{"n":280,"id":"q-traffic-police-phone","topic":"rules","correct":0,
+ "ar":["رقم هاتف الطوارئ لشرطة المرور","188","122","104"],
+ "en":["The traffic police emergency telephone number is:","188","122","104"],
+ "ckb":["ژمارەی تەلەفۆنی فریاگوزاری پۆلیسی هاتوچۆ:","١٨٨","١٢٢","١٠٤"],
+ "exp":{"ar":"رقم الطوارئ لشرطة المرور هو 188.","en":"The traffic police emergency number is 188.","ckb":"ژمارەکە ١٨٨ە."}},
+
+{"n":281,"id":"q-non-iraqi-licence","topic":"mechanics","correct":1,
+ "ar":["يجوز منح غير العراقي اجازة سوق؟","عمومي فقط","خصوصي فقط","خصوصي و عمومي"],
+ "en":["A non-Iraqi may be granted a driving licence that is:","Public only","Private only","Private and public"],
+ "ckb":["بۆ ناعێراقی مۆڵەتی لێخوڕین دەدرێت:","تەنها گشتی","تەنها تایبەت","تایبەت و گشتی"],
+ "exp":{"ar":"يُمنح غير العراقي إجازة سوق خصوصي فقط.","en":"A non-Iraqi may only be granted a private licence.","ckb":"تەنها مۆڵەتی تایبەت."}}
+]

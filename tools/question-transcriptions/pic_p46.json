@@ -1,0 +1,55 @@
+[
+{"n":108,"id":"qp-axle-weight-2t-sign","topic":"signs","correct":2,"img":"pic-108.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","يسمح مرور المركبات التي تزيد وزن حمولتها عن 2 طن","ممنوع مرور المركبات التي تزيد عرضها عن 2 م","ممنوع مرور المركبات التي تزيد وزن حمولتها عن 2 طن"],
+ "en":["What does this sign mean?","Vehicles with a load over 2 tonnes are permitted","Vehicles wider than 2 m are prohibited","Vehicles with a load weighing more than 2 tonnes are prohibited"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئۆتۆمبێلی قورستر لە ٢ تەن ڕێپێدراوە","ئۆتۆمبێلی پانتر لە ٢ مەتر قەدەغەیە","ئۆتۆمبێلی خاوەن باری قورستر لە ٢ تەن قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع المركبات التي تزيد حمولتها عن 2 طن.","en":"The sign prohibits vehicles loaded above 2 tonnes.","ckb":"باری قورستر لە ٢ تەن قەدەغەیە."}},
+
+{"n":109,"id":"qp-school-crossing-sign","topic":"signs","correct":1,"img":"pic-109.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","احذر امامك تصليحات واشغال على الطريق","احذر امامك منطقة عبور اطفال المدارس","احذر من مخاطر متنوعة ومتعددة المصادر"],
+ "en":["What does this sign mean?","Beware: repairs and works on the road ahead","Beware: a school-children crossing area ahead","Beware of various hazards from several sources"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، چاککردنەوە و کار لەسەر ڕێگا","ئاگاداربە، ناوچەی پەڕینەوەی منداڵانی قوتابخانە","ئاگاداری مەترسی جۆراوجۆر بە"],
+ "exp":{"ar":"العلامة تحذر من منطقة عبور أطفال المدارس.","en":"The sign warns of a school-children crossing.","ckb":"ناوچەی پەڕینەوەی منداڵانی قوتابخانە."}},
+
+{"n":110,"id":"qp-reversing-at-junction","topic":"rules","correct":1,"img":"pic-110.jpg",
+ "ar":["هل يجوز رجوع المركبة البيضاء للخلف في هذه الصورة؟","يجوز","لا يجوز","يجوز عند وجود اشارة الرجوع"],
+ "en":["May the white vehicle reverse in this picture?","It is permitted","It is not permitted","It is permitted if the reversing light is on"],
+ "ckb":["ئایا ڕێپێدراوە ئۆتۆمبێلە سپییەکە بەرەو دواوە بچێت لەم وێنەیەدا؟","ڕێپێدراوە","ڕێپێدراو نییە","ڕێپێدراوە ئەگەر ئاماژەی گەڕانەوە هەبێت"],
+ "exp":{"ar":"لا يجوز الرجوع للخلف في هذا الموقع.","en":"Reversing is not permitted in this situation.","ckb":"ڕێپێدراو نییە."}},
+
+{"n":111,"id":"qp-farm-animals-sign","topic":"signs","correct":0,"img":"pic-111.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","احذر الطريق يمر بمنطقة زراعية واحتمالية وجود الحيوانات الداجنة واردة","احذر من الحيوانات الشاردة","احذر من راكبي الاحصنة"],
+ "en":["What does this sign mean?","Beware: the road passes through farmland and domestic animals may be present","Beware of stray animals","Beware of horse riders"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، ڕێگاکە بە ناوچەی کشتوکاڵیدا تێدەپەڕێت و ئەگەری بوونی ئاژەڵی ماڵی هەیە","ئاگاداری ئاژەڵی ون بە","ئاگاداری ئەسپ‌سواران بە"],
+ "exp":{"ar":"العلامة تنبه إلى مرور الطريق بمنطقة زراعية واحتمال وجود حيوانات داجنة.","en":"The sign warns that the road crosses farmland where livestock may be present.","ckb":"ڕێگاکە بە ناوچەی کشتوکاڵیدا تێدەپەڕێت."}},
+
+{"n":112,"id":"qp-continuous-line-along-road","topic":"rules","correct":0,"img":"pic-112.jpg",
+ "ar":["عند وجود خط متواصل بطول الطريق ماذا يجب عليك ان تراعي؟","لاتقوم بمناورة الاجتياز للسيارات المتقدمة","ان تقوم بمناورة الاجتياز اذا سمح لك حركة المرور في الاتجاه المعاكس بذلك","ان تجتازها وتمشي عليها فقط عند القيام بمناورة الاجتياز"],
+ "en":["Where there is a continuous line along the road, what must you observe?","Do not overtake the vehicles ahead","Overtake if the traffic in the opposite direction allows it","Cross it and drive on it only when overtaking"],
+ "ckb":["ئەگەر هێڵێکی بەردەوام بە درێژایی ڕێگا هەبوو، دەبێت چی ڕەچاو بکەیت؟","ئۆتۆمبێلەکانی پێشەوە تێمەپەڕێنە","تێبپەڕێنە ئەگەر هاتوچۆی بەرامبەر ڕێگای دا","تەنها لە کاتی تێپەڕاندندا بەسەریدا بڕۆ"],
+ "exp":{"ar":"الخط المتواصل يمنع الاجتياز.","en":"A continuous line prohibits overtaking.","ckb":"هێڵی بەردەوام تێپەڕاندن قەدەغە دەکات."}},
+
+{"n":113,"id":"qp-steering-wheel-grip","topic":"mechanics","correct":0,"img":"pic-113.jpg",
+ "ar":["ما هي الطريقة الصحيحة لمسك مقود المركبة (الستيرن)؟","مسك المقود بكلتا اليدين في وضع الساعة عشرة وعشرة دقائق","مسك المقود باليد اليمنى فقط","مسك المقود بكلتا اليدين في وضع الساعة ثمانية وعشرون دقيقة"],
+ "en":["What is the correct way to hold the steering wheel?","Hold it with both hands at the ten-past-ten position","Hold it with the right hand only","Hold it with both hands at the twenty-eight-minutes-past-eight position"],
+ "ckb":["ڕێگای دروستی گرتنی ئستێرن چییە؟","بە هەردوو دەست لە دۆخی کاتژمێر دە و دە خولەک","تەنها بە دەستی ڕاست","بە هەردوو دەست لە دۆخی هەشت و بیست و هەشت خولەک"],
+ "exp":{"ar":"يُمسك المقود بكلتا اليدين في وضع الساعة عشرة وعشر دقائق.","en":"Hold the wheel with both hands at ten-past-ten.","ckb":"بە هەردوو دەست لە دۆخی دە و دە خولەک."}},
+
+{"n":114,"id":"qp-priority-b-from-right","topic":"priority","correct":1,"img":"pic-114.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","ايهما الاقرب للتقاطع","المركبة B لانها قادمة من جهة اليمين","المركبة A"],
+ "en":["Who has right of way in this picture?","Whichever is closer to the junction","Vehicle B, because it is coming from the right","Vehicle A"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئەوەی نزیکترە لە چوارڕیانەکە","ئۆتۆمبێلی B چونکە لە لای ڕاستەوە دێت","ئۆتۆمبێلی A"],
+ "exp":{"ar":"الأسبقية للمركبة B لأنها قادمة من جهة اليمين.","en":"Vehicle B has priority because it comes from the right.","ckb":"پێشینەیی بۆ Bیە چونکە لە لای ڕاستەوە دێت."}},
+
+{"n":115,"id":"qp-a-cannot-overtake-solid","topic":"rules","correct":1,"img":"pic-115.jpg",
+ "ar":["المركبة (A) في هذه الصورة لاتستطيع القيام بمناورة الاجتياز لان؟","سرعتها منخفضة","لوجود خط ابيض متصل بطول الطريق من جهتها","السائق غير كفوء"],
+ "en":["Vehicle (A) in this picture cannot overtake because:","Its speed is low","There is a continuous white line along the road on its side","The driver is not competent"],
+ "ckb":["ئۆتۆمبێلی (A) لەم وێنەیەدا ناتوانێت تێبپەڕێنێت چونکە:","خێراییەکەی نزمە","هێڵێکی سپی بەردەوام لە لای ئەوەوە هەیە","شۆفێرەکە شارەزا نییە"],
+ "exp":{"ar":"الخط الأبيض المتصل على جهتها يمنع الاجتياز.","en":"The continuous white line on its side prohibits overtaking.","ckb":"هێڵی سپی بەردەوام ڕێگری دەکات."}},
+
+{"n":116,"id":"qp-obey-officer-over-signs","topic":"priority","correct":0,"img":"pic-116.jpg",
+ "ar":["تقود مركبتك ويشير اليك رجل المرور بسلك اتجاه معاكس لاتجاه السير. ماذا تفعل؟","التزم باشارة رجل المرور اليدوية حتى لوكان ذلك يخالف قواعد المرور واللوحات الارشادية","اخالف اشارة رجل المرور لان اشارته عكس اتجاه السير في الطريق","اقف في مكاني ولاتحرك"],
+ "en":["You are driving and the traffic officer signals you to take a direction against the flow of traffic. What do you do?","Obey the officer's hand signal, even if it conflicts with the traffic rules and the signs","Disobey the officer, because the signal is against the road's direction of travel","Stay where I am and do not move"],
+ "ckb":["لێدەخوڕیت و پۆلیسی هاتوچۆ ئاماژەت بۆ دەکات بە ئاراستەی پێچەوانە بڕۆیت. چی دەکەیت؟","گوێڕایەڵی ئاماژەی دەستی پۆلیس دەبم، تەنانەت ئەگەر پێچەوانەی یاسا و تابلۆکانیش بێت","گوێڕایەڵی نابم","لە شوێنی خۆم دەوەستم و ناجوڵێم"],
+ "exp":{"ar":"إشارة رجل المرور اليدوية تعلو على القواعد واللوحات.","en":"The officer's hand signal overrides the rules and the signs.","ckb":"ئاماژەی پۆلیس بەسەر یاسا و تابلۆکاندایە."}}
+]

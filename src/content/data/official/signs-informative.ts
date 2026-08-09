@@ -205,13 +205,13 @@ export const informativeSigns: TrafficSign[] = [
     id: 'mark-overtake-allowed-right', category: 'roadmarking', verified: true, source: { ...S, locator: 'ص ٢٤' },
     image: require('@/assets/signs/mark-overtake-allowed-right.png'),
     title: { ar: 'مسموح التجاوز في اتجاه واحد [اليمين]', en: 'Overtaking allowed in one direction (right)', ckb: 'تێپەڕاندن لە یەک ئاراستە ڕێپێدراوە (ڕاست)' },
-    meaning: { ar: 'الخط المتقطّع على يسار السائق يسمح بالتخطِّي من ناحية هذا الخط، ويمنع المركبات القادمة من الاتجاه المعاكس.', en: 'The broken line on the driver’s left permits overtaking from that side, and prohibits it for vehicles coming the other way.', ckb: 'هێڵە پچڕپچڕەکەی لای چەپی شۆفێر ڕێگە بە تێپەڕاندن دەدات لەو لاوە، و قەدەغەی دەکات بۆ هاتووەکانی ئاراستەی پێچەوانە.' },
+    meaning: { ar: 'الخط المتقطّع على يسار السائق يسمح بالتخطِّي من ناحية هذا الخط، ويمنع المركبات القادمة من الاتجاه المعاكس.', en: 'The broken line on the driver\'s left permits overtaking from that side, and prohibits it for vehicles coming the other way.', ckb: 'هێڵە پچڕپچڕەکەی لای چەپی شۆفێر ڕێگە بە تێپەڕاندن دەدات لەو لاوە، و قەدەغەی دەکات بۆ هاتووەکانی ئاراستەی پێچەوانە.' },
   },
   {
     id: 'mark-overtake-allowed-left', category: 'roadmarking', verified: true, source: { ...S, locator: 'ص ٢٤' },
     image: require('@/assets/signs/mark-overtake-allowed-left.png'),
     title: { ar: 'مسموح التجاوز في اتجاه واحد [اليسار]', en: 'Overtaking allowed in one direction (left)', ckb: 'تێپەڕاندن لە یەک ئاراستە ڕێپێدراوە (چەپ)' },
-    meaning: { ar: 'الخط المتقطع على يمين السائق يسمح بالتخطِّي للمركبات القادمة في الاتجاه المعاكس من ناحية الخط المتقطع فقط.', en: 'The broken line on the driver’s right permits overtaking only for vehicles coming from the opposite direction, on the side of the broken line.', ckb: 'هێڵە پچڕپچڕەکەی لای ڕاستی شۆفێر تەنها ڕێگە بە تێپەڕاندن دەدات بۆ ئەوانەی لە ئاراستەی پێچەوانەوە دێن.' },
+    meaning: { ar: 'الخط المتقطع على يمين السائق يسمح بالتخطِّي للمركبات القادمة في الاتجاه المعاكس من ناحية الخط المتقطع فقط.', en: 'The broken line on the driver\'s right permits overtaking only for vehicles coming from the opposite direction, on the side of the broken line.', ckb: 'هێڵە پچڕپچڕەکەی لای ڕاستی شۆفێر تەنها ڕێگە بە تێپەڕاندن دەدات بۆ ئەوانەی لە ئاراستەی پێچەوانەوە دێن.' },
   },
   {
     id: 'mark-hatched-separation', category: 'roadmarking', verified: true, source: { ...S, locator: 'ص ٢٤' },
@@ -272,31 +272,44 @@ export const informativeSigns: TrafficSign[] = [
   {
     id: 'light-amber-prepare', category: 'trafficlight', verified: true, priority: true, source: { ...S, locator: 'ص ٢٧' },
     image: require('@/assets/signs/light-amber-prepare.png'),
-    title: { ar: '[أصفر] تهيأ للوقوف', en: 'Amber — prepare to stop', ckb: '[زەرد] ئامادەبە بۆ وەستان' },
+    title: { ar: '[أصفر] تهيأ للوقوف', en: 'Amber: prepare to stop', ckb: '[زەرد] ئامادەبە بۆ وەستان' },
     meaning: { ar: 'تعني هذه الإشارة أن يقوم سائق السيارة بالاستعداد للتوقّف.', en: 'The driver must prepare to stop.', ckb: 'دەبێت شۆفێر ئامادە بێت بۆ وەستان.' },
   },
   {
     id: 'light-red-stop', category: 'trafficlight', verified: true, priority: true, source: { ...S, locator: 'ص ٢٧' },
     image: require('@/assets/signs/light-red-stop.png'),
-    title: { ar: '[أحمر] قف', en: 'Red — stop', ckb: '[سوور] وەستە' },
+    title: { ar: '[أحمر] قف', en: 'Red: stop', ckb: '[سوور] وەستە' },
     meaning: { ar: 'تعني هذه الإشارة أن يتوقّف سائق السيارة توقّفًا تامًّا.', en: 'The driver must come to a complete stop.', ckb: 'دەبێت شۆفێر بە تەواوی بوەستێت.' },
   },
   {
     id: 'light-green-go', category: 'trafficlight', verified: true, priority: true, source: { ...S, locator: 'ص ٢٧' },
     image: require('@/assets/signs/light-green-go.png'),
-    title: { ar: '[أخضر] سر', en: 'Green — go', ckb: '[سەوز] بڕۆ' },
+    title: { ar: '[أخضر] سر', en: 'Green: go', ckb: '[سەوز] بڕۆ' },
     meaning: { ar: 'تعني هذه الإشارة أن يقوم سائق السيارة بعبور الطّريق.', en: 'The driver may proceed across the road.', ckb: 'دەبێت شۆفێر بەناو ڕێگاکەدا تێپەڕێت.' },
   },
   {
     id: 'light-pedestrian-green', category: 'trafficlight', verified: true, source: { ...S, locator: 'ص ٢٨' },
     image: require('@/assets/signs/light-pedestrian-green.png'),
-    title: { ar: '[أخضر] اعبر بحذر', en: 'Green — cross with care', ckb: '[سەوز] بە وریاییەوە بپەڕەوە' },
+    title: {
+      ar: '[أخضر] اعبر بحذر (إشارة المشاة)',
+      en: 'Green: cross with care (pedestrian signal)',
+      ckb: '[سەوز] بە وریاییەوە بپەڕەوە (ئاماژەی پیادە)',
+    },
     meaning: { ar: 'تعني هذه الإشارة أنّه يجب على المشاة العبور بحذر.', en: 'Pedestrians must cross with care.', ckb: 'دەبێت پیادەکان بە وریاییەوە بپەڕنەوە.' },
   },
   {
     id: 'light-pedestrian-red', category: 'trafficlight', verified: true, source: { ...S, locator: 'ص ٢٨' },
     image: require('@/assets/signs/light-pedestrian-red.png'),
-    title: { ar: '[أحمر] قف', en: 'Red — stop', ckb: '[سوور] وەستە' },
+    // The manual prints this as "[أحمر] قف", identical to the vehicle signal on
+    // the previous page; the two are told apart only by the section heading
+    // (إشارات المشاة). The audience is named here so the title stands on its
+    // own — an identification question cannot offer two options reading
+    // "Red — stop" and mark one of them wrong.
+    title: {
+      ar: '[أحمر] قف (إشارة المشاة)',
+      en: 'Red: stop (pedestrian signal)',
+      ckb: '[سوور] وەستە (ئاماژەی پیادە)',
+    },
     meaning: { ar: 'تعني هذه الإشارة أنه يجب على المشاة التوقّف التام.', en: 'Pedestrians must come to a complete stop.', ckb: 'دەبێت پیادەکان بە تەواوی بوەستن.' },
   },
 ];

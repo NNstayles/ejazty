@@ -1,0 +1,55 @@
+[
+{"n":135,"id":"q-night-high-beam-except-meeting","topic":"rules","correct":0,
+ "ar":["أثناء القيادة الليلية يجب إستخدام الضياء العالي بصورة مستمرة إلا في حالة التقابل مع مركبة مواجهة أو الاقتراب من المركبة التي أمامك؟","نعم","كلا","يجب استخدام الضياء الواطئ"],
+ "en":["When driving at night, main beam should be used continuously except when meeting an oncoming vehicle or closing on the vehicle ahead?","Yes","No","Dipped beam must be used"],
+ "ckb":["لە لێخوڕینی شەوانەدا دەبێت ڕووناکی بەرز بە بەردەوامی بەکاربهێنرێت جگە لە کاتی بەریەککەوتن یان نزیکبوونەوە لە ئۆتۆمبێلی پێشەوە؟","بەڵێ","نەخێر","دەبێت ڕووناکی نزم بەکاربهێنرێت"],
+ "exp":{"ar":"نعم، مع التحويل إلى الواطئ عند التقابل أو الاقتراب.","en":"Yes, dip it when meeting or closing on another vehicle.","ckb":"بەڵێ، بەڵام لە کاتی بەریەککەوتندا بۆ نزم بگۆڕە."}},
+
+{"n":136,"id":"q-assault-officer-with-injury","topic":"rules","correct":2,
+ "ar":["كل من اعتدى على رجل المرور اثناء تأدية واجبه واذا حصل نتيجة الاعتداء والمقاومة جرح او اذى يعاقب ب؟","يسحب منه اجازة السوق مدى الحياة","دفع غرامة مالية","الحبس مدة لا تزيد على خمسة سنوات"],
+ "en":["Anyone who assaults a traffic officer on duty, where the assault and resistance cause a wound or harm, is punished by:","Lifetime withdrawal of the driving licence","Payment of a fine","Imprisonment for a term not exceeding five years"],
+ "ckb":["هەر کەسێک پەلاماری پۆلیسی هاتوچۆ بدات و بریندارکردن یان زیانی لێبکەوێتەوە، سزا دەدرێت بە:","هەڵگرتنەوەی مۆڵەت بۆ هەتاهەتایە","دانی غەرامەی دارایی","زیندانی ماوەیەک کە لە پێنج ساڵ زیاتر نەبێت"],
+ "exp":{"ar":"العقوبة الحبس مدة لا تزيد على خمس سنوات.","en":"The penalty is imprisonment for up to five years.","ckb":"سزاکە زیندانە بۆ ماوەی نەزیاتر لە پێنج ساڵ."}},
+
+{"n":137,"id":"q-exceeding-max-speed","topic":"rules","correct":2,
+ "ar":["السير بسرعة اعلى من الحد الاقصى للطريق مسموح به فقط؟","عند تجاوز مركبة اخرى","عندما تكون المركبات الاخرى تسير بسرعة اكثر من الحد الاقصى","لا يسمح به قانونياً على الاطلاق"],
+ "en":["Travelling faster than the road's maximum limit is permitted only:","When overtaking another vehicle","When other vehicles are travelling above the limit","It is never legally permitted"],
+ "ckb":["ڕۆیشتن بە خێراتر لە سنووری بەرزی ڕێگا تەنها کەی ڕێپێدراوە؟","لە کاتی تێپەڕاندنی ئۆتۆمبێلێکی تر","کاتێک ئۆتۆمبێلەکانی تر خێراتر دەڕۆن","بە هیچ شێوەیەک بە یاسا ڕێپێدراو نییە"],
+ "exp":{"ar":"تجاوز الحد الأقصى للسرعة غير مسموح قانوناً على الإطلاق.","en":"Exceeding the speed limit is never legally permitted.","ckb":"تێپەڕاندنی سنووری خێرایی بە هیچ شێوەیەک ڕێپێدراو نییە."}},
+
+{"n":138,"id":"q-bald-spare-tyre","topic":"mechanics","correct":2,
+ "ar":["إذ كان الاطار الاحتياطي مستهلك او أملس وإضطررت لإستبداله، هل ستكون القيادة بالاطار الاحتياطي قانونية؟","نعم مادام الإطار مملوء الهواء وبالضغط المطلوب","نعم ولكن ينبغي عليك إصلاح الاطار المثقوب خلال اربع وعشرون ساعة","لا، فالقيادة بإطار أملس أمر غير قانوني حتى لو كان إطاراً إحتياطياً"],
+ "en":["If the spare tyre is worn or bald and you have to fit it, is driving on that spare legal?","Yes, as long as it is inflated to the required pressure","Yes, but you must repair the punctured tyre within twenty-four hours","No, driving on a bald tyre is illegal even if it is the spare"],
+ "ckb":["ئەگەر تایەی یەدەگ داڕزاو یان لووس بێت و ناچار بیت بیگۆڕیت، ئایا لێخوڕین بەو تایەیە یاساییە؟","بەڵێ، تا ئەو کاتەی بە پەستانی پێویست پڕە","بەڵێ، بەڵام دەبێت لە ماوەی ٢٤ کاتژمێردا چاکی بکەیتەوە","نەخێر، لێخوڕین بە تایەی لووس نایاساییە تەنانەت ئەگەر یەدەگیش بێت"],
+ "exp":{"ar":"القيادة بإطار أملس غير قانونية ولو كان احتياطياً.","en":"Driving on a bald tyre is illegal, spare or not.","ckb":"لێخوڕین بە تایەی لووس نایاساییە."}},
+
+{"n":139,"id":"q-moving-off-priority","topic":"priority","correct":1,
+ "ar":["بحسب اسبقيات المرور عندما تنوي البدء بتحريك المركبة والدخول الى الطريق يجب ان؟","تبدا بالحركة فورا دون النظر الى الشارع","تتمهل وتنتظر الى الشارع من خلال المراة وعندما تحين الفرصة تبدا بالحركة","لاتعطي الفرصة للمركبات التي تمشي في الطريق باستثناء مركبات الطواريء"],
+ "en":["Under the rules of priority, when you intend to move off and join the road you must:","Move off at once without looking at the street","Take your time, watch the street in the mirror, and move off when the opportunity comes","Not give way to vehicles already on the road, except emergency vehicles"],
+ "ckb":["بەپێی پێشینەییەکانی هاتوچۆ، کاتێک دەتەوێت بجوڵێیت و بچیتە ناو ڕێگا، دەبێت:","دەستبەجێ بجوڵێیت بەبێ سەیرکردنی شەقام","هێواش بیت و لە ئاوێنەوە شەقامەکە ببینیت و کاتێک دەرفەت هات بجوڵێیت","ڕێگا نەدەیت بەو ئۆتۆمبێلانەی لە ڕێگادان"],
+ "exp":{"ar":"يُنتظر ويُراقب الشارع عبر المرآة ثم تبدأ الحركة عند سنوح الفرصة.","en":"Wait, watch the street in the mirror, and pull out when it is safe.","ckb":"چاوەڕێ بکە، لە ئاوێنەوە سەیر بکە و کاتێک دەرفەت هات بجوڵێ."}},
+
+{"n":140,"id":"q-eco-driving-speed","topic":"mechanics","correct":2,
+ "ar":["كيف تحافظ على البيئة وتكن صديقاً لها؟","بقيادة المركبة بالسرعة القصوى 110 كم / ساعة","بقيادة المركبة بالسرعة 100 كم / ساعة","بقيادة المركبة بالسرعة الاقتصادية والتي تتراوح بين 60كم و70 كم / ساعة"],
+ "en":["How do you protect the environment and stay friendly to it?","By driving at the maximum speed of 110 km/h","By driving at 100 km/h","By driving at the economical speed, between 60 and 70 km/h"],
+ "ckb":["چۆن ژینگە دەپارێزیت و دۆستی دەبیت؟","بە لێخوڕین بە بەرزترین خێرایی ١١٠ کم/کاتژمێر","بە لێخوڕین بە ١٠٠ کم/کاتژمێر","بە لێخوڕین بە خێرایی ئابووری نێوان ٦٠ و ٧٠ کم/کاتژمێر"],
+ "exp":{"ar":"القيادة بالسرعة الاقتصادية بين 60 و70 كم/ساعة أفضل للبيئة.","en":"Driving at the economical 60–70 km/h is best for the environment.","ckb":"لێخوڕین بە خێرایی ئابووری ٦٠–٧٠ باشترە بۆ ژینگە."}},
+
+{"n":141,"id":"q-engine-warm-up-time","topic":"mechanics","correct":1,
+ "ar":["كيف تحافظ على البيئة وتكن صديقاً لها؟","ترك محرك المركبة يشتغل للتسخين لأكثر من ثلاثة دقائق في الشتاء","ترك محرك المركبة يشتغل للتسخين دقيقة واحدة في الشتاء او الصيف","ترك محرك المركبة يشتغل للتسخين لاكثر من خمسة دقائق في الشتاء"],
+ "en":["How do you protect the environment and stay friendly to it?","Leave the engine warming up for more than three minutes in winter","Leave the engine warming up for one minute, in winter or summer","Leave the engine warming up for more than five minutes in winter"],
+ "ckb":["چۆن ژینگە دەپارێزیت و دۆستی دەبیت؟","بزوێنەر زیاتر لە سێ خولەک بۆ گەرمبوون بەجێبهێڵیت لە زستاندا","بزوێنەر یەک خولەک بۆ گەرمبوون بەجێبهێڵیت لە زستان یان هاویندا","بزوێنەر زیاتر لە پێنج خولەک بەجێبهێڵیت لە زستاندا"],
+ "exp":{"ar":"يكفي تشغيل المحرك للتسخين دقيقة واحدة صيفاً أو شتاءً.","en":"One minute of warm-up is enough, summer or winter.","ckb":"یەک خولەک گەرمبوونەوە بەسە، هاوین یان زستان."}},
+
+{"n":142,"id":"q-breakdown-procedure","topic":"rules","correct":0,
+ "ar":["ما هي الاجراءات التي يجب أن تتبع في حالة عطل المركبة في الشارع؟","تشغيل إضوية التحذير الرباعية ومحاولة تحريك المركبة لإيقافها في مسلك أقصى اليمين بأسرع وقت ثم وضع المثلث الفسفوري","ترك المركبة في موقعها ووضع المثلث الفسفوري خلفها بمسافة 50 م","البدء بتصليح المركبة في موقع توقفها ايا كان المسار"],
+ "en":["What must you do if the vehicle breaks down in the street?","Switch on the hazard lights, move the vehicle to the far right lane as quickly as possible, then place the reflective triangle","Leave the vehicle where it is and place the reflective triangle 50 m behind it","Begin repairing the vehicle where it stopped, whatever lane that is"],
+ "ckb":["لە کاتی تێکچوونی ئۆتۆمبێل لە شەقامدا چی دەکەیت؟","چرا ئاگادارکەرەوە چوارەکان داگیرسێنە و بە خێرایی ئۆتۆمبێلەکە بۆ لاینی دوورترین ڕاست ببە، پاشان سێگۆشەی فۆسفۆری دابنێ","ئۆتۆمبێلەکە لە شوێنی خۆی بهێڵەوە و سێگۆشەکە ٥٠ مەتر لە دواوە دابنێ","لە هەمان شوێندا دەست بکە بە چاککردنەوەی"],
+ "exp":{"ar":"تُشغّل أضوية التحذير وتُنقل المركبة إلى أقصى اليمين ثم يوضع المثلث.","en":"Hazards on, move to the far right, then set out the triangle.","ckb":"چراکان داگیرسێنە، بۆ لای ڕاست ببە و سێگۆشەکە دابنێ."}},
+
+{"n":143,"id":"q-battery-acid-on-skin","topic":"firstaid","correct":2,
+ "ar":["سائل بطارية المركبة هو حامض عند ملامسة الجلد يجب ان؟","ينقل الشخص الى المستشفى","تركه لحين وصول مركبة الاسعاف لغرض نقله","يجب غسل المنطقة التي تلامس الحامض بالماء باسرع وقت"],
+ "en":["The vehicle battery's fluid is acid; if it touches the skin you must:","Take the person to hospital","Leave them until the ambulance arrives to move them","Wash the area the acid touched with water as quickly as possible"],
+ "ckb":["شلەی باتری ئۆتۆمبێل ترشە، ئەگەر بەر پێست کەوت دەبێت:","کەسەکە بۆ نەخۆشخانە بگوێزرێتەوە","بەجێبهێڵدرێت تا ئەمبولانس دێت","ئەو ناوچەیەی بەر ترشەکە کەوتووە بە خێرایی بە ئاو بشۆردرێت"],
+ "exp":{"ar":"تُغسل المنطقة الملامسة للحامض بالماء بأسرع وقت.","en":"Wash the affected area with water as quickly as possible.","ckb":"ناوچە بەرکەوتووەکە بە خێرایی بە ئاو بشۆ."}}
+]

@@ -1,0 +1,55 @@
+[
+{"n":72,"id":"qp-priority-road-sign","topic":"signs","correct":2,"img":"pic-072.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","الطريق الرئيسي لأسبقية المرور (الأسبقية ليست لك)","نهاية طريق أسبقية المرور (نهاية الأسبقية)","الطريق الرئيسي لأسبقية المرور (لك الأسبقية)"],
+ "en":["What does this sign mean?","Main road with priority (you do not have right of way)","End of the priority road (end of priority)","Main road with priority (you have right of way)"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ڕێگا سەرەکی خاوەن پێشینەیی (پێشینەیی هی تۆ نییە)","کۆتایی ڕێگای پێشینەیی","ڕێگا سەرەکی خاوەن پێشینەیی (پێشینەیی هی تۆیە)"],
+ "exp":{"ar":"العلامة تدل على الطريق الرئيسي وأن لك الأسبقية.","en":"The sign marks the priority road, so you have right of way.","ckb":"ڕێگا سەرەکی و پێشینەیی هی تۆیە."}},
+
+{"n":73,"id":"qp-winding-road-right-first","topic":"signs","correct":0,"img":"pic-073.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","احذر أمامك طريق ذو التفافات الأول نحو اليمين","احذر أمامك طريق ذو التفافات الأول نحو اليسار","احذر أمامك التفافات لكلا الجانبين"],
+ "en":["What does this sign mean?","Beware: a winding road ahead, the first bend to the right","Beware: a winding road ahead, the first bend to the left","Beware: bends to both sides ahead"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، ڕێگای خواروخێچ، یەکەم سووڕانەوە بۆ ڕاست","یەکەم سووڕانەوە بۆ چەپ","سووڕانەوە بۆ هەردوو لا"],
+ "exp":{"ar":"العلامة تحذر من طريق ملتوٍ أول التفافاته نحو اليمين.","en":"The sign warns of a winding road with the first bend to the right.","ckb":"یەکەم سووڕانەوە بۆ ڕاستە."}},
+
+{"n":74,"id":"qp-parked-on-crossing","topic":"rules","correct":0,"img":"pic-074.jpg",
+ "ar":["في هذه الصورة المركبة البيضاء مركونة هنا هل يجوز ذلك؟","ممنوع الوقوف هنا","يسمح بالوقوف هنا","ممنوع عبور المشاة"],
+ "en":["In this picture the white vehicle is parked here. Is that allowed?","Parking here is prohibited","Parking here is permitted","Pedestrian crossing is prohibited"],
+ "ckb":["لەم وێنەیەدا ئۆتۆمبێلە سپییەکە لێرە وەستاوە، ئایا ڕێپێدراوە؟","وەستان لێرە قەدەغەیە","وەستان لێرە ڕێپێدراوە","پەڕینەوەی پیادە قەدەغەیە"],
+ "exp":{"ar":"الوقوف على ممر عبور المشاة ممنوع.","en":"Parking on the pedestrian crossing is prohibited.","ckb":"وەستان لەسەر پەڕینەوەی پیادە قەدەغەیە."}},
+
+{"n":75,"id":"qp-winding-road-left-first","topic":"signs","correct":0,"img":"pic-075.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","احذر أمامك طريق ذو التفافات الأول نحو اليسار","احذر أمامك طريق ذو التفافات الأول نحو اليمين","احذر أمامك طريق ذو التفافات لكلا الجانبين"],
+ "en":["What does this sign mean?","Beware: a winding road ahead, the first bend to the left","Beware: a winding road ahead, the first bend to the right","Beware: a winding road with bends to both sides"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، یەکەم سووڕانەوە بۆ چەپ","یەکەم سووڕانەوە بۆ ڕاست","سووڕانەوە بۆ هەردوو لا"],
+ "exp":{"ar":"العلامة تحذر من طريق ملتوٍ أول التفافاته نحو اليسار.","en":"The sign warns of a winding road with the first bend to the left.","ckb":"یەکەم سووڕانەوە بۆ چەپە."}},
+
+{"n":76,"id":"qp-fuel-station-sign","topic":"signs","correct":1,"img":"pic-076.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ورشة تصليح","محطة وقود","مكان لوقوف المركبات"],
+ "en":["What does this sign mean?","A repair workshop","A filling station","A parking place for vehicles"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","کارگەی چاککردنەوە","بۆریگەی سووتەمەنی","شوێنی وەستانی ئۆتۆمبێل"],
+ "exp":{"ar":"العلامة تدل على محطة وقود.","en":"The sign indicates a filling station.","ckb":"بۆریگەی سووتەمەنی."}},
+
+{"n":77,"id":"qp-straight-ahead-only-sign","topic":"signs","correct":2,"img":"pic-077.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","الأسبقية لك","الأسبقية ليست لك","يجب السير فقط إلى الأمام"],
+ "en":["What does this sign mean?","You have right of way","You do not have right of way","You must proceed straight ahead only"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","پێشینەیی هی تۆیە","پێشینەیی هی تۆ نییە","تەنها دەبێت بەرەو پێشەوە بڕۆیت"],
+ "exp":{"ar":"العلامة تلزم بالسير إلى الأمام فقط.","en":"The sign requires proceeding straight ahead only.","ckb":"تەنها بەرەو پێشەوە."}},
+
+{"n":78,"id":"qp-snowy-winding-road","topic":"rules","correct":0,"img":"pic-078.jpg",
+ "ar":["تقود في ظرف كهذا كما مبين في الصورة الطريق ضيق وذو انعطاف ومغطاة بالثلج ما الذي يجب فعله في هذه الحالة؟","الضغط على الفرامل بنعومة وتخفيف السرعة","زيادة السرعة للخروج من المنطقة بأقصى سرعة","القيادة بنفس السرعة التي كنت امشي بها من قبل"],
+ "en":["You are driving in conditions like those in the picture: the road is narrow, winding and snow-covered. What should you do?","Brake gently and reduce speed","Speed up to get out of the area as fast as possible","Carry on at the same speed as before"],
+ "ckb":["لە بارودۆخێکی وەک وێنەکەدا لێدەخوڕیت، ڕێگاکە تەسک و خواروخێچ و بە بەفر داپۆشراوە. چی دەکەیت؟","بە نەرمی برێک بگرە و خێرایی کەم بکەرەوە","خێرایی زیاد بکە بۆ دەرچوون لە ناوچەکە","بە هەمان خێرایی پێشوو بەردەوام بە"],
+ "exp":{"ar":"يُضغط على الفرامل بنعومة مع تخفيف السرعة على الطريق الثلجي.","en":"Brake gently and slow down on a snow-covered road.","ckb":"بە نەرمی برێک بگرە و خێرایی کەم بکەرەوە."}},
+
+{"n":79,"id":"qp-no-large-vehicles-sign","topic":"signs","correct":0,"img":"pic-079.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع مرور المركبات الكبيرة (تريلة)","يسمح بمرور المركبات الكبيرة (تريلة)","ممنوع وقوف المركبات الكبيرة"],
+ "en":["What does this sign mean?","Large vehicles (articulated lorries) are prohibited","Large vehicles (articulated lorries) are permitted","Parking of large vehicles is prohibited"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئۆتۆمبێلە گەورەکان (تریلە) قەدەغەن","ڕێپێدراون","وەستانی ئۆتۆمبێلە گەورەکان قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع مرور المركبات الكبيرة.","en":"The sign prohibits large vehicles.","ckb":"ئۆتۆمبێلە گەورەکان قەدەغەن."}},
+
+{"n":80,"id":"qp-no-tractors-sign","topic":"signs","correct":0,"img":"pic-080.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع مرور الجرارات","الطريق مخصص لمرور الجرارات","أمامك طريق لمرور الجرارات (الآليات الزراعية)"],
+ "en":["What does this sign mean?","Tractors are prohibited","The road is reserved for tractors","A road for tractors (agricultural machinery) ahead"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","تراکتۆر قەدەغەیە","ڕێگاکە تایبەتە بە تراکتۆر","ڕێگای تراکتۆر لە پێشتە"],
+ "exp":{"ar":"العلامة تمنع مرور الجرارات.","en":"The sign prohibits tractors.","ckb":"تراکتۆر قەدەغەیە."}}
+]

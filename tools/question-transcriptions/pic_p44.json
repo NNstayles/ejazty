@@ -1,0 +1,55 @@
+[
+{"n":90,"id":"qp-priority-red-vehicle","topic":"priority","correct":1,"img":"pic-090.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة البيضاء","المركبة الحمراء","او كلاهما"],
+ "en":["Who has right of way in this picture?","The white vehicle","The red vehicle","Or both of them"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئۆتۆمبێلە سپییەکە","ئۆتۆمبێلە سوورەکە","یان هەردووکیان"],
+ "exp":{"ar":"الأسبقية للمركبة الحمراء بحسب دليل الأسئلة الرسمي.","en":"The red vehicle has priority, per the official guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلە سوورەکەیە."}},
+
+{"n":91,"id":"qp-priority-main-road-white","topic":"priority","correct":1,"img":"pic-091.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة الحمراء الخارجة من محطة الوقود","المركبة البيضاء لانها تسير في الطريق الرئيسي","كلاهما"],
+ "en":["Who has right of way in this picture?","The red vehicle coming out of the filling station","The white vehicle, because it is travelling on the main road","Both of them"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئۆتۆمبێلە سوورەکەی لە بۆریگەی سووتەمەنییەوە دێت","ئۆتۆمبێلە سپییەکە چونکە لە ڕێگا سەرەکییەکەدا دەڕوات","هەردووکیان"],
+ "exp":{"ar":"الأسبقية للمركبة السائرة في الطريق الرئيسي.","en":"The vehicle on the main road has priority.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی ڕێگا سەرەکییەکەیە."}},
+
+{"n":92,"id":"qp-beware-roadside-surroundings","topic":"rules","correct":0,"img":"pic-092.jpg",
+ "ar":["في هذه الصورة ما الذي يجب توخي الحذر منه؟","الأطراف المحيطة بالشارع","كاميرات مراقبة السرعة","المحمول"],
+ "en":["In this picture, what must you be careful of?","The surroundings at the sides of the street","Speed cameras","The mobile phone"],
+ "ckb":["لەم وێنەیەدا دەبێت ئاگاداری چی بیت؟","دەوروبەری شەقامەکە","کامێرای چاودێری خێرایی","مۆبایل"],
+ "exp":{"ar":"يجب الحذر من الأطراف المحيطة بالشارع (كخروج طفل خلف مركبة).","en":"Be careful of the roadside surroundings, such as a child emerging behind a car.","ckb":"ئاگاداری دەوروبەری شەقامەکە بە."}},
+
+{"n":93,"id":"qp-training-violation-responsibility","topic":"rules","correct":1,"img":"pic-093.jpg",
+ "ar":["في حالة حدوث أية مخالفة أثناء التدريب على السياقة","يكون المتدرب مسؤولاً عن المخالفة","يكون المدرب مسؤولاً عن المخالفة","لا يكون أي منهما مسؤولاً عن المخالفة"],
+ "en":["If any offence occurs during driving instruction:","The trainee is responsible for the offence","The instructor is responsible for the offence","Neither of them is responsible for the offence"],
+ "ckb":["ئەگەر لە کاتی ڕاهێنانی لێخوڕیندا سەرپێچییەک ڕوویدا:","ڕاهێنەرەکە بەرپرسیارە","مامۆستای ڕاهێنان بەرپرسیارە","هیچیان بەرپرسیار نین"],
+ "exp":{"ar":"المدرب هو المسؤول عن المخالفة أثناء التدريب.","en":"The instructor bears responsibility for offences during training.","ckb":"مامۆستای ڕاهێنان بەرپرسیارە."}},
+
+{"n":94,"id":"qp-priority-pedestrians-stepped","topic":"priority","correct":1,"img":"pic-094.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة البيضاء","المشاة لانهم وطؤا باقدامهم على الشارع في معبر المشاة","لا توجد اسبقية"],
+ "en":["Who has right of way in this picture?","The white vehicle","The pedestrians, because they have stepped onto the street at the crossing","There is no right of way"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئۆتۆمبێلە سپییەکە","پیادەکان، چونکە پێیان ناوەتە سەر شەقامەکە لە پەڕینەوەکەدا","پێشینەیی نییە"],
+ "exp":{"ar":"الأسبقية للمشاة الذين وطئوا معبر المشاة.","en":"The pedestrians who have stepped onto the crossing have priority.","ckb":"پێشینەیی بۆ پیادەکانە."}},
+
+{"n":95,"id":"qp-when-adjust-mirrors","topic":"mechanics","correct":1,"img":"pic-095.jpg",
+ "ar":["متى يجب ضبط المرايا؟","اثناء القيادة يجب ضبط المرايا","قبل قيادة المركبة يجب ضبط المرايا الثلاث","يمكن ضبط المرايا في اي وقت"],
+ "en":["When should the mirrors be adjusted?","The mirrors should be adjusted while driving","All three mirrors should be adjusted before driving off","The mirrors can be adjusted at any time"],
+ "ckb":["کەی دەبێت ئاوێنەکان ڕێک بخرێن؟","لە کاتی لێخوڕیندا","پێش لێخوڕین دەبێت هەر سێ ئاوێنەکە ڕێک بخرێن","لە هەر کاتێکدا"],
+ "exp":{"ar":"تُضبط المرايا الثلاث قبل قيادة المركبة.","en":"Adjust all three mirrors before you drive off.","ckb":"پێش لێخوڕین هەر سێکیان ڕێک بخە."}},
+
+{"n":96,"id":"qp-steep-rise-12-sign","topic":"signs","correct":2,"img":"pic-096.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","احذر أمامك مطبات بحدة 12% درجة","احذر أمامك منحدر خطير بحدة 12% درجة","احذر أمامك مرتفع شاهق بحدة 12% درجة"],
+ "en":["What does this sign mean?","Beware: speed humps of 12% ahead","Beware: a dangerous descent of 12% ahead","Beware: a steep rise of 12% ahead"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","قەڵشی ١٢٪ لە پێشتە","لێژاییەکی مەترسیدار بە ١٢٪","هەڵدێرێکی بەرز بە ١٢٪ لە پێشتە"],
+ "exp":{"ar":"العلامة تحذر من مرتفع شاهق بنسبة 12%.","en":"The sign warns of a steep 12% rise.","ckb":"هەڵدێرێکی بەرز بە ١٢٪."}},
+
+{"n":97,"id":"qp-horse-rider-on-road","topic":"rules","correct":0,"img":"pic-097.jpg",
+ "ar":["كيف تتصرف عند مشاهدتك لهذه الحالة؟","احذر و اخفض السرعة","اسرع كي أتجاوزه","استمر في السير حسب السرعة المقررة للطريق"],
+ "en":["How do you act when you see this situation?","Take care and reduce speed","Speed up so as to get past","Carry on at the road's prescribed speed"],
+ "ckb":["کاتێک ئەم بارودۆخە دەبینیت چی دەکەیت؟","وریابە و خێرایی کەم بکەرەوە","خێرا بە بۆ تێپەڕاندنی","بە خێرایی دیاریکراوی ڕێگاکە بەردەوام بە"],
+ "exp":{"ar":"يجب الحذر وتخفيض السرعة عند وجود فارس على الطريق.","en":"Take care and slow down when a horse rider is on the road.","ckb":"وریابە و خێرایی کەم بکەرەوە."}},
+
+{"n":98,"id":"qp-loose-gravel-sign","topic":"signs","correct":1,"img":"pic-098.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر من تساقط الصخور من جهة اليمين","احذر لوجود الحصى على الطريق","احذر الطريق منزلق"],
+ "en":["What does this sign mean?","Beware of falling rocks from the right","Beware: loose gravel on the road","Beware: slippery road"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداری کەوتنی بەرد بە لە لای ڕاستەوە","ئاگاداربە، بەردی وردی لەسەر ڕێگایە","ئاگاداربە، ڕێگا خلیسکە"],
+ "exp":{"ar":"العلامة تحذر من وجود الحصى على الطريق.","en":"The sign warns of loose gravel on the road.","ckb":"بەردی ورد لەسەر ڕێگایە."}}
+]

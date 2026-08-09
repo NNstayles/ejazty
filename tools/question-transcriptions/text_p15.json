@@ -1,0 +1,55 @@
+[
+{"n":117,"id":"q-carry-licence-every-time","topic":"mechanics","correct":2,
+ "ar":["هل يلزم حمل اجازة السياقة في كل مرة تقوم فيها بالقيادة؟","لايلزم و يكفي ان يكون لديك اجازة السياقة","لا وانما يلزم هذا في الرحلات الطويلة فقط","نعم"],
+ "en":["Must you carry your driving licence every time you drive?","No, it is enough simply to hold a licence","No, only on long journeys","Yes"],
+ "ckb":["ئایا پێویستە هەر جارێک لێدەخوڕیت مۆڵەتی لێخوڕین لەگەڵ خۆت بێت؟","پێویست نییە، بەسە مۆڵەتت هەبێت","نەخێر، تەنها لە گەشتە دوورەکاندا","بەڵێ"],
+ "exp":{"ar":"يلزم حمل إجازة السياقة في كل مرة تقود فيها.","en":"You must carry the licence every time you drive.","ckb":"دەبێت هەر جارێک لێدەخوڕیت مۆڵەتەکەت لەگەڵ بێت."}},
+
+{"n":118,"id":"q-junction-vehicle-from-right","topic":"priority","correct":0,
+ "ar":["عندما تقترب من تقاطع طريق وترى مركبة اتية من اليمين يجب عليك ان؟","تستعد للتوقف وتعطي السائق الاخر حق المرور","تزيد من سرعة المركبة لتعبر التقاطع","تستخدم جهاز التنبيه(الهورن) لتنبيه السائق لعدم الاقتراب من التقاطع"],
+ "en":["When you approach a junction and see a vehicle coming from the right, you must:","Prepare to stop and give the other driver right of way","Speed up to cross the junction","Sound the horn to warn the other driver away from the junction"],
+ "ckb":["کاتێک لە چوارڕیانێک نزیک دەبیتەوە و ئۆتۆمبێلێک لە لای ڕاستەوە دەبینیت، دەبێت:","ئامادەبیت بۆ وەستان و مافی ڕۆیشتن بدەیت بە شۆفێرەکەی تر","خێرایی زیاد بکەیت بۆ پەڕینەوەی چوارڕیانەکە","بۆری لێبدەیت بۆ ئاگادارکردنەوەی شۆفێرەکە"],
+ "exp":{"ar":"يُستعد للتوقف وتُعطى الأسبقية للقادم من اليمين.","en":"Prepare to stop and give way to the vehicle from the right.","ckb":"ئامادەبە بۆ وەستان و پێشینەیی بدە بە ئەوەی لای ڕاستەوە دێت."}},
+
+{"n":119,"id":"q-check-before-moving-off","topic":"rules","correct":2,
+ "ar":["عند دخولك للسير والبدء بالحركة يجب عليك ان تنظر في مرايا مركبتك للتاكد من ان؟","الشارع خالي من المشاة","الشارع خالي من السيارات","الشارع خالي من جميع انواع المركبات والمشاة"],
+ "en":["Before joining traffic and moving off you must look in your mirrors to check that:","The street is clear of pedestrians","The street is clear of cars","The street is clear of every kind of vehicle and of pedestrians"],
+ "ckb":["پێش دەستپێکردنی جوڵان دەبێت لە ئاوێنەکان بڕوانیت بۆ دڵنیابوون لەوەی:","شەقامەکە لە پیادە بەتاڵە","شەقامەکە لە ئۆتۆمبێل بەتاڵە","شەقامەکە لە هەموو جۆرەکانی ئۆتۆمبێل و پیادە بەتاڵە"],
+ "exp":{"ar":"يُتأكد من خلو الشارع من جميع المركبات والمشاة قبل الحركة.","en":"Check the street is clear of all vehicles and pedestrians before moving off.","ckb":"دڵنیابە لە بەتاڵی شەقامەکە لە هەموو ئۆتۆمبێل و پیادە."}},
+
+{"n":120,"id":"q-driving-in-fog-procedure","topic":"rules","correct":0,
+ "ar":["ما هي الاجراءات التي يجب ان تقوم بها عند القيادة في جو ضبابي؟","تقليل السرعة وإستخدام الضياء الواطئ (الناصي)","القيادة بشكل إعتيادي وإستخدام أضوية التحذير","إستخدام الضياء العالي والوقوف على كتف الطريق"],
+ "en":["What must you do when driving in fog?","Reduce speed and use the dipped beam","Drive normally and use the hazard lights","Use main beam and stop on the hard shoulder"],
+ "ckb":["لە کاتی لێخوڕین لە کەشی تەمناکدا دەبێت چی بکەیت؟","خێرایی کەم بکەیتەوە و ڕووناکی نزم بەکاربهێنیت","بە ئاسایی لێبخوڕیت و چرا ئاگادارکەرەوەکان بەکاربهێنیت","ڕووناکی بەرز بەکاربهێنیت و لەسەر شانی ڕێگا بوەستیت"],
+ "exp":{"ar":"تُخفض السرعة ويُستخدم الضياء الواطئ في الضباب.","en":"Slow down and use dipped beam in fog.","ckb":"خێرایی کەم بکەرەوە و ڕووناکی نزم بەکاربهێنە."}},
+
+{"n":121,"id":"q-overtaking-two-in-same-lane","topic":"rules","correct":2,
+ "ar":["متى يسمح باجتياز مركبتين تسيران امامك في نفس المسار؟","اذا كان مجال الرؤية ضيقا والطريق كان مزدحما","اذا كانت المركبتين من نوع مركبات الحمل","في حال لم يكن هناك موانع للاجتياز اوعندما يكون بالامكان اكمال الاجتياز دون خطر"],
+ "en":["When may you overtake two vehicles travelling ahead of you in the same lane?","When visibility is restricted and the road is busy","When both vehicles are goods vehicles","When there is nothing barring the manoeuvre, or when it can be completed without danger"],
+ "ckb":["کەی ڕێپێدراوە دوو ئۆتۆمبێل تێپەڕێنیت کە لە هەمان لایندان؟","ئەگەر بینین تەسک و ڕێگا قەرەباڵغ بێت","ئەگەر هەردووکیان بارهەڵگر بن","ئەگەر هیچ ڕێگرێک نەبێت یان بتوانرێت بەبێ مەترسی تەواو بکرێت"],
+ "exp":{"ar":"يجوز عند انتفاء الموانع وإمكان إكمال الاجتياز دون خطر.","en":"Permitted when nothing bars it and it can be completed safely.","ckb":"ڕێپێدراوە کاتێک ڕێگر نییە و بەبێ مەترسی تەواو دەبێت."}},
+
+{"n":122,"id":"q-meeting-on-uneven-narrow-road","topic":"rules","correct":2,
+ "ar":["ماهو واجب السائقين عندما يتقابلون بمركباتهم في الطرق الغير مستوية والضيقة؟","ان يسلكوا الجانب الايسر من الطريق","ان يسرعوا لكي ينجوا من الخطر","ان يتمهلوا ويتجهوا الى اقصى اليمين اولى حافة الطريق ليتجنبوا الاصطدام"],
+ "en":["What must drivers do when they meet on uneven, narrow roads?","Take the left-hand side of the road","Speed up to escape the danger","Slow down and move to the far right, to the road's edge, to avoid a collision"],
+ "ckb":["ئەرکی شۆفێران چییە کاتێک لە ڕێگای ناتەخت و تەسکدا بەریەککەوتن؟","لای چەپی ڕێگا بگرنە بەر","خێرا بن بۆ ڕزگاربوون لە مەترسی","هێواش بن و بەرەو دوورترین لای ڕاست و لێواری ڕێگا بڕۆن بۆ دوورکەوتنەوە لە پێکدادان"],
+ "exp":{"ar":"يتمهل السائقان ويتجهان إلى أقصى اليمين لتجنب الاصطدام.","en":"Both slow down and move as far right as possible to avoid a collision.","ckb":"هەردووکیان هێواش دەبن و بەرەو دوورترین لای ڕاست دەڕۆن."}},
+
+{"n":123,"id":"q-narrow-steep-two-way-duty","topic":"priority","correct":2,
+ "ar":["ماهو واجب السائقين عندما يتقابلون في طريق ضيق ذو صعود شاهق ومستخدم للذهاب والاياب؟","ان يمشوا بالسرعة العادية ودون ان يفتح الطريق احدهم للاخر","ان يقف المركبة الصاعدة ان اقتضت الحاجة ويعطي المجال للمركبة النازلة","ان يقف المركبة النازلة ان اقتضت الحاجة ويعطي المجال للمركبة الصاعدة"],
+ "en":["What must drivers do when they meet on a narrow road with a steep climb used in both directions?","Carry on at normal speed without either giving way","The ascending vehicle stops if necessary and gives way to the descending one","The descending vehicle stops if necessary and gives way to the ascending one"],
+ "ckb":["ئەرکی شۆفێران چییە لە ڕێگای تەسکی هەڵدێری توندی دوو ئاراستەدا؟","بە خێرایی ئاسایی بڕۆن و ڕێگا بۆ یەکتر نەکەنەوە","ئۆتۆمبێلی سەرکەوتوو بوەستێت و ڕێگا بدات بە دابەزیو","ئۆتۆمبێلی دابەزیو بوەستێت و ڕێگا بدات بە سەرکەوتوو"],
+ "exp":{"ar":"تقف المركبة النازلة وتفسح المجال للمركبة الصاعدة.","en":"The descending vehicle stops and gives way to the ascending one.","ckb":"ئۆتۆمبێلی دابەزیو دەوەستێت و ڕێگا دەدات بە سەرکەوتوو."}},
+
+{"n":124,"id":"q-safety-element-inspection","topic":"mechanics","correct":0,
+ "ar":["احد العناصر المهمة للسلامة والامان في المركبات اثناء السير في الطرق هو؟","توفر متطلبات السلامة والامان (الفحص الفني الدوري للمركبات)","لا علاقة للسلامة والامان بفحص المركبات","لا تعتمد مديريات المرور على الفحص الفني في تجديد سنوية المركبة"],
+ "en":["One of the important elements of vehicle safety while travelling on the road is:","Meeting the safety requirements (the periodic technical inspection of vehicles)","Safety has nothing to do with vehicle inspection","Traffic directorates do not rely on the technical inspection to renew the vehicle's annual document"],
+ "ckb":["یەکێک لە پێکهاتە گرنگەکانی سەلامەتی ئۆتۆمبێل لە کاتی ڕۆیشتندا:","دابینکردنی مەرجەکانی سەلامەتی (پشکنینی تەکنیکی خولی)","سەلامەتی پەیوەندی بە پشکنینەوە نییە","بەڕێوەبەرایەتی هاتوچۆ پشت بە پشکنین نابەستێت"],
+ "exp":{"ar":"الفحص الفني الدوري من عناصر السلامة الأساسية.","en":"The periodic technical inspection is a basic element of safety.","ckb":"پشکنینی تەکنیکی خولی یەکێکە لە پێکهاتە بنەڕەتییەکانی سەلامەتی."}},
+
+{"n":125,"id":"q-medicines-affecting-driving","topic":"rules","correct":2,
+ "ar":["الادوية التي تؤثر على القيادة والتي يجب عدم تناولها قبل واثناء القيادة؟","المهدئات والمسكنات والمنومات","بعض الادوية الخاصة بعلاج ضغط الدم والغثيان والحساسية والتهابات العدوى الفطرية","جميع ماذكر"],
+ "en":["Which medicines affect driving and must not be taken before or while driving?","Sedatives, painkillers and sleeping pills","Some medicines for blood pressure, nausea, allergies and fungal infections","All of the above"],
+ "ckb":["کام دەرمانانە کاریگەرن لەسەر لێخوڕین و نابێت پێش و لە کاتی لێخوڕیندا بخورێن؟","هێورکەرەوە و ئازارشکێن و خەوهێنەرەکان","هەندێک دەرمانی پەستانی خوێن و ڕشانەوە و هەستیاری و هەوکردنی کەڕووی","هەموو ئەوانەی باسکران"],
+ "exp":{"ar":"جميع ما ذُكر من الأدوية يؤثر على القيادة.","en":"All of the listed medicines affect driving.","ckb":"هەموو ئەو دەرمانانەی باسکران کاریگەرن لەسەر لێخوڕین."}}
+]

@@ -1,0 +1,55 @@
+[
+{"n":27,"id":"q-slow-before-u-turn","topic":"rules","correct":0,
+ "ar":["يجب تخفيض سرعة المركبة عند الاستدارة؟","قبل الاقتراب من الاستدارة","عند دخول الاستدارة","في نهاية الاستدارة"],
+ "en":["When must you reduce the vehicle's speed for a turn?","Before approaching the turn","On entering the turn","At the end of the turn"],
+ "ckb":["دەبێت خێرایی ئۆتۆمبێل کەم بکرێتەوە لە کاتی سووڕانەوەدا؟","پێش نزیکبوونەوە لە سووڕانەوەکە","لە کاتی چوونە ناو سووڕانەوەکە","لە کۆتایی سووڕانەوەکە"],
+ "exp":{"ar":"يجب تخفيض السرعة قبل الاقتراب من الاستدارة، لا بعد الدخول فيها.","en":"Speed must come down before you approach the turn, not once you are already in it.","ckb":"دەبێت خێرایی پێش نزیکبوونەوە لە سووڕانەوەکە کەم بکرێتەوە، نەک دوای چوونە ناوی."}},
+
+{"n":28,"id":"q-approaching-school-bus","topic":"rules","correct":0,
+ "ar":["عندما تقود مركبتك في شارع ذو اتجاه واحد أو ذو إتجاهين وتقترب من باص مدرسي عليك؟","أن تخفض سرعة مركبتك وتستمر في السياقة بحذر","أن تقف على بعد 10 م من الباص المدرسي","تتجاوز الباص المدرسي بأسرع وقت"],
+ "en":["When driving on a one-way or two-way street and approaching a school bus, you must:","Reduce your speed and continue driving carefully","Stop 10 m short of the school bus","Overtake the school bus as quickly as possible"],
+ "ckb":["کاتێک لە شەقامێکی یەک ئاراستە یان دوو ئاراستەدا لێدەخوڕیت و لە پاسی خوێندنگە نزیک دەبیتەوە، دەبێت:","خێرایی کەم بکەیتەوە و بە وریاییەوە بەردەوام بیت","لە دووری ١٠ مەتر لە پاسەکە بوەستیت","بە خێراترین کات پاسی خوێندنگە تێپەڕێنیت"],
+ "exp":{"ar":"يُخفض السائق سرعته ويستمر بحذر عند الاقتراب من باص مدرسي.","en":"Slow down and proceed with caution when approaching a school bus.","ckb":"خێرایی کەم بکەرەوە و بە وریاییەوە بەردەوام بە کاتێک لە پاسی خوێندنگە نزیک دەبیتەوە."}},
+
+{"n":29,"id":"q-emergency-vehicle-approach","topic":"priority","correct":1,
+ "ar":["عند سماعك لصوت أو رؤيتك لأضوية تحذير مركبة طوارئ عليك؟","خفض سرعة مركبتك والمحافظة على السير في نفس المسلك الذي تسلكه","تأكد من خلو مسلك أقصى اليمين من الطريق وأتجه اليه وافتح الطريق لمركبة الطواريء","زد سرعة مركبتك لتفسح المجال لمركبة الطوارئ"],
+ "en":["On hearing the siren or seeing the warning lights of an emergency vehicle, you must:","Slow down and stay in the lane you are already in","Check that the far right lane is clear, move into it and clear the way for the emergency vehicle","Speed up to make room for the emergency vehicle"],
+ "ckb":["کاتێک دەنگ یان ڕووناکی ئاگادارکەرەوەی ئۆتۆمبێلی فریاگوزاری دەبیستیت یان دەبینیت، دەبێت:","خێرایی کەم بکەیتەوە و لە هەمان لاین بمێنیتەوە","دڵنیابە لەوەی لاینی دوورترین ڕاست بەتاڵە و بەرەو ئەو بچۆ و ڕێگا بۆ ئۆتۆمبێلی فریاگوزاری خاڵی بکە","خێرایی زیاد بکە بۆ ئەوەی ڕێگا بۆ ئۆتۆمبێلی فریاگوزاری بکەیتەوە"],
+ "exp":{"ar":"يجب إفساح الطريق لمركبة الطوارئ بالانتقال إلى أقصى اليمين بعد التأكد من خلوه.","en":"Give way to the emergency vehicle by moving to the far right once you have checked it is clear.","ckb":"ڕێگا بدە بە ئۆتۆمبێلی فریاگوزاری بە گواستنەوە بۆ دوورترین لای ڕاست دوای دڵنیابوون لە بەتاڵییەکەی."}},
+
+{"n":30,"id":"q-wrong-way-penalty","topic":"rules","correct":0,
+ "ar":["قيادة المركبة عكس إتجاه السير عقوبتها؟","الغرامة","الحبس والغرامة","سحب الإجازة مدى الحياة"],
+ "en":["Driving against the direction of traffic is punishable by:","A fine","Imprisonment and a fine","Lifetime withdrawal of the licence"],
+ "ckb":["لێخوڕینی ئۆتۆمبێل بە پێچەوانەی ئاراستەی هاتوچۆ سزاکەی چییە؟","غەرامە","زیندان و غەرامە","هەڵگرتنەوەی مۆڵەت بۆ هەتاهەتایە"],
+ "exp":{"ar":"عقوبتها الغرامة بحسب دليل الأسئلة الرسمي.","en":"The official question guide gives the penalty as a fine.","ckb":"بەپێی ڕێنمایی فەرمی پرسیارەکان، سزاکە غەرامەیە."}},
+
+{"n":31,"id":"q-dirt-road-onto-paved","topic":"priority","correct":0,
+ "ar":["عندما تخرج الى الشارع المعبد من شارع ترابي يجب عليك؟","اعطاء حق الاسبقيه للمركبات التي تسير في الشارع المعبد","اعطاء حق الاسبقيه للمركبات التي على الشارع المبلط فقط اذا كان الشارع باتجاهين","لايوجد حق باعطاء الاسبقيه بل ذلك يعتمد على الرغبة والطيبة من قبلك"],
+ "en":["When you come out onto a paved road from a dirt road you must:","Give right of way to vehicles travelling on the paved road","Give right of way to vehicles on the paved road only if it is a two-way street","There is no right of way; it depends on your own goodwill"],
+ "ckb":["کاتێک لە ڕێگایەکی خۆڵاوییەوە دەچیتە سەر ڕێگای قیرتاوکراو، دەبێت:","مافی پێشینەیی بدەیت بە ئۆتۆمبێلەکانی سەر ڕێگا قیرتاوکراوەکە","تەنها ئەگەر ڕێگاکە دوو ئاراستە بێت مافی پێشینەیی بدەیت","مافی پێشینەیی نییە، بەڵکو بە خواستی خۆت دەبێت"],
+ "exp":{"ar":"للمركبات على الشارع المعبد حق الأسبقية دائماً على القادم من شارع ترابي.","en":"Vehicles already on the paved road always have priority over one entering from a dirt road.","ckb":"ئۆتۆمبێلەکانی سەر ڕێگا قیرتاوکراوەکە هەمیشە مافی پێشینەییان هەیە."}},
+
+{"n":32,"id":"q-double-yellow-kerb-lines","topic":"signs","correct":1,
+ "ar":["الخطان المستمران بلون أصفر في الجهة اليمنى من مسلك الطريق بالقرب من الرصيف يعني","يمنع الوقوف أيام العطل الرسمية","يمنع الوقوف بشكل مطلق","مسموح الوقوف"],
+ "en":["Two continuous yellow lines on the right-hand side of the carriageway near the kerb mean:","Parking is prohibited on official holidays","Parking is absolutely prohibited","Parking is allowed"],
+ "ckb":["دوو هێڵی بەردەوامی زەرد لە لای ڕاستی ڕێگا نزیک ڕێڕەوی پیادە واتە:","لە ڕۆژانی پشووی فەرمیدا وەستان قەدەغەیە","وەستان بە تەواوی قەدەغەیە","وەستان ڕێپێدراوە"],
+ "exp":{"ar":"الخطان الأصفران المستمران يمنعان الوقوف بشكل مطلق.","en":"Double continuous yellow lines prohibit parking absolutely.","ckb":"دوو هێڵی بەردەوامی زەرد وەستان بە تەواوی قەدەغە دەکەن."}},
+
+{"n":33,"id":"q-overtaking-at-pedestrian-crossing","topic":"rules","correct":1,
+ "ar":["الاجتياز في مناطق عبور المشاة أو بالقرب منها مسموح او ممنوع؟","مسموح الاجتياز إذا لم يكن هناك مشاة في منطقة عبور المشاة","ممنوع الاجتياز او محاولة الاجتياز بالقرب او على مناطق عبور المشاة بشكل مطلق","مسموح الاجتياز قبل الوصول الى مكان عبور المشاة في الطرق الخارجية"],
+ "en":["Is overtaking at or near a pedestrian crossing permitted or prohibited?","Permitted if there are no pedestrians on the crossing","Overtaking, or attempting to overtake, at or near a pedestrian crossing is absolutely prohibited","Permitted before reaching the crossing on rural roads"],
+ "ckb":["تێپەڕاندن لە ناوچەی پەڕینەوەی پیادە یان نزیکی ڕێپێدراوە یان قەدەغە؟","ڕێپێدراوە ئەگەر پیادە لەسەر پەڕینەوەکە نەبێت","تێپەڕاندن یان هەوڵی تێپەڕاندن لە نزیک یان لەسەر ناوچەی پەڕینەوەی پیادە بە تەواوی قەدەغەیە","لە ڕێگا دەرەکییەکاندا پێش گەیشتن بە شوێنی پەڕینەوە ڕێپێدراوە"],
+ "exp":{"ar":"الاجتياز ممنوع بشكل مطلق عند مناطق عبور المشاة أو بالقرب منها.","en":"Overtaking is absolutely prohibited at or near pedestrian crossings.","ckb":"تێپەڕاندن لە نزیک یان لەسەر پەڕینەوەی پیادە بە تەواوی قەدەغەیە."}},
+
+{"n":34,"id":"q-flashing-amber-light","topic":"signs","correct":0,
+ "ar":["الضوء الاصفر (المتقطع) في الطرق يعني؟","احذر هناك مخاطر أمامك","توقف","تهيئ للحركة"],
+ "en":["A flashing amber light on the road means:","Caution: there are hazards ahead","Stop","Prepare to move off"],
+ "ckb":["ڕووناکی زەردی پچڕپچڕ لە ڕێگادا واتە:","ئاگاداربە، مەترسی لە بەردەمتدایە","بوەستە","ئامادەبە بۆ جوڵان"],
+ "exp":{"ar":"الضوء الأصفر المتقطع تنبيه إلى وجود خطر يستوجب الحذر.","en":"A flashing amber light warns of a hazard and calls for caution.","ckb":"ڕووناکی زەردی پچڕپچڕ ئاگادارکردنەوەیە لە مەترسی و داوای وریایی دەکات."}},
+
+{"n":35,"id":"q-emergency-warning-devices","topic":"rules","correct":0,
+ "ar":["هل يجوز إستخدام الاشارات التحذيرية او وضع أو إستعمال الاجهزة التحذيرية الضوئية أو الصوتية التي يقتصر إستخدامها على مركبات الطوارئ؟","كلا لا يجوز بشكل مطلق","يجوز لبعض الاشخاص بشكل استثنائي","يجوز للشاحنات الكبيرة"],
+ "en":["May you use, fit or operate the warning lights or sirens reserved for emergency vehicles?","No, it is absolutely prohibited","Permitted for certain people as an exception","Permitted for large lorries"],
+ "ckb":["ئایا بۆت هەیە ئەو ئامێرە ئاگادارکەرەوە ڕووناکی یان دەنگییانە بەکاربهێنیت کە تەنها بۆ ئۆتۆمبێلی فریاگوزارین؟","نەخێر، بە تەواوی قەدەغەیە","بۆ هەندێک کەس بە شێوەی ئیستیسنایی ڕێپێدراوە","بۆ بارهەڵگرە گەورەکان ڕێپێدراوە"],
+ "exp":{"ar":"يقتصر استخدام هذه الأجهزة على مركبات الطوارئ ولا يجوز لغيرها مطلقاً.","en":"These devices are reserved for emergency vehicles and may not be used by anyone else.","ckb":"ئەم ئامێرانە تەنها بۆ ئۆتۆمبێلی فریاگوزارین و بۆ کەسی تر ڕێپێدراو نییە."}}
+]

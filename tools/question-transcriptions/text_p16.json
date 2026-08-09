@@ -1,0 +1,55 @@
+[
+{"n":126,"id":"q-safe-refuelling","topic":"mechanics","correct":2,
+ "ar":["من اجل الحصول على تعبئة وقود امنة يجب؟","اطفاء المحرك اثناء التزود بالوقود","عدم التدخين في محطات الوقود","جميع ماذكر"],
+ "en":["For safe refuelling you must:","Switch off the engine while refuelling","Not smoke at the filling station","All of the above"],
+ "ckb":["بۆ پڕکردنەوەی سووتەمەنی بە سەلامەتی دەبێت:","بزوێنەر بکوژێنرێتەوە لە کاتی پڕکردنەوەدا","جگەرە نەکێشرێت لە بۆریگەی سووتەمەنی","هەموو ئەوانەی باسکران"],
+ "exp":{"ar":"يُطفأ المحرك ويُمنع التدخين أثناء التزود بالوقود.","en":"Switch off the engine and do not smoke while refuelling.","ckb":"بزوێنەر بکوژێنەوە و جگەرە مەکێشە."}},
+
+{"n":127,"id":"q-after-alcohol-or-drugs","topic":"rules","correct":0,
+ "ar":["إذا تناولت مواد كحولية أو مخدرة غير قانونية؟","يجب عدم القيادة","يجب شرب القهوة قبل القيادة","يمكنك القيادة بسرعة واطئة وفي طرق خالية فقط"],
+ "en":["If you have taken alcohol or illegal drugs:","You must not drive","You must drink coffee before driving","You may drive slowly and only on empty roads"],
+ "ckb":["ئەگەر کحول یان ماددەی هۆشبەری نایاسایی وەرگرت:","نابێت لێبخوڕیت","دەبێت پێش لێخوڕین قاوە بخۆیتەوە","دەتوانیت بە خێرایی نزم و تەنها لە ڕێگای بەتاڵدا لێبخوڕیت"],
+ "exp":{"ar":"يجب عدم القيادة مطلقاً بعد تناول الكحول أو المخدرات.","en":"You must not drive at all after alcohol or drugs.","ckb":"بە هیچ شێوەیەک نابێت لێبخوڕیت."}},
+
+{"n":128,"id":"q-blue-exhaust-smoke","topic":"mechanics","correct":0,
+ "ar":["ما سبب ظهور دخان أزرق اللون من إنبوبة العادم (صالنصة)؟","إستهلاك المحرك أو كسر المكابس أو حلقاتها","قلة الزيت في المحرك","إستخدام زيت كثيف اللزوجة"],
+ "en":["What causes blue smoke from the exhaust pipe?","Engine wear, or broken pistons or piston rings","Too little oil in the engine","Using oil that is too thick"],
+ "ckb":["هۆکاری دەرچوونی دووکەڵی شین لە بۆری دووکەڵ چییە؟","داڕزانی بزوێنەر یان شکانی پیستۆن یان بازنەکانی","کەمی زەیت لە بزوێنەردا","بەکارهێنانی زەیتی زۆر ئەستوور"],
+ "exp":{"ar":"الدخان الأزرق يدل على استهلاك المحرك أو كسر المكابس أو حلقاتها.","en":"Blue smoke indicates engine wear or broken pistons or rings.","ckb":"دووکەڵی شین ئاماژەیە بۆ داڕزانی بزوێنەر یان شکانی پیستۆن."}},
+
+{"n":129,"id":"q-age-public-vehicle-licence","topic":"mechanics","correct":1,
+ "ar":["من الناحية القانونية الشخص الذي يرغب في الحصول على اجازة المركبات العمومية يجب ان يكون مكملا ل؟","18الثامنة عشر من العمر","20العشرين من العمر","22الثانية والعشرين من العمر"],
+ "en":["Legally, a person wishing to obtain a public-vehicle licence must have completed:","18 years of age","20 years of age","22 years of age"],
+ "ckb":["لە ڕووی یاساییەوە، ئەو کەسەی دەیەوێت مۆڵەتی ئۆتۆمبێلی گشتی وەربگرێت دەبێت تەواوی کردبێت:","١٨ ساڵ","٢٠ ساڵ","٢٢ ساڵ"],
+ "exp":{"ar":"يشترط إكمال العشرين من العمر لإجازة المركبات العمومية.","en":"A public-vehicle licence requires the applicant to be 20.","ckb":"بۆ مۆڵەتی ئۆتۆمبێلی گشتی تەمەنی ٢٠ ساڵ پێویستە."}},
+
+{"n":130,"id":"q-night-following-gap","topic":"rules","correct":1,
+ "ar":["أثناء القيادة في الليل يجب؟","القيادة على مسافة أقرب الى المركبة التي امامك حتى يتمكن السائق من رؤيتك بوضوح","ترك مسافة اطول خلف المركبة التي امامك","إستخدام أضواء التحذير من الخطر عند تخطي مركبة اخرى"],
+ "en":["When driving at night you must:","Drive closer to the vehicle in front so its driver can see you clearly","Leave a longer gap behind the vehicle in front","Use the hazard lights when overtaking another vehicle"],
+ "ckb":["لە کاتی لێخوڕین بە شەو دەبێت:","نزیکتر لە ئۆتۆمبێلی پێشەوە لێبخوڕیت","ماوەیەکی درێژتر لە پشت ئۆتۆمبێلی پێشەوە بهێڵیتەوە","چرا ئاگادارکەرەوەکان بەکاربهێنیت لە کاتی تێپەڕاندندا"],
+ "exp":{"ar":"تُترك مسافة أطول خلف المركبة التي أمامك ليلاً.","en":"Leave a longer gap behind the vehicle ahead at night.","ckb":"بە شەو ماوەیەکی درێژتر بهێڵەوە."}},
+
+{"n":131,"id":"q-age-construction-vehicle-licence","topic":"mechanics","correct":0,
+ "ar":["من الناحية القانونية الشخص الذي يرغب في الحصول على اجازة المركبات الانشائية يجب ان يكون مكملا ل؟","20سنة من العمر","18سنة من العمر","22سنة من العمر"],
+ "en":["Legally, a person wishing to obtain a construction-vehicle licence must have completed:","20 years of age","18 years of age","22 years of age"],
+ "ckb":["لە ڕووی یاساییەوە، ئەو کەسەی مۆڵەتی ئۆتۆمبێلی بیناسازی دەوێت دەبێت تەواوی کردبێت:","٢٠ ساڵ","١٨ ساڵ","٢٢ ساڵ"],
+ "exp":{"ar":"يشترط إكمال 20 سنة لإجازة المركبات الإنشائية.","en":"A construction-vehicle licence requires the applicant to be 20.","ckb":"بۆ مۆڵەتی ئۆتۆمبێلی بیناسازی تەمەنی ٢٠ ساڵ پێویستە."}},
+
+{"n":132,"id":"q-night-three-second-rule","topic":"rules","correct":0,
+ "ar":["عند القيادة الليلية وسط صف من المركبات ما هي المسافة التي يجب تركها بين مركبتك والمركبات التي أمامك (حسب نظام الثلاث ثواني)؟","اربع ثوان تقريباً حيث إنه من السهل الخطأ في تقدير المسافات ليلاً","ثانيتان تقريباً حتى يمكنك مراقبة المركبات التي امامك عن قرب ورؤيتها عندما تقف","نفس مسافة الثلاث ثوان التي تتركها نهاراً"],
+ "en":["Driving at night in a line of vehicles, what gap should you leave to the vehicles ahead (under the three-second rule)?","About four seconds, because distances are easy to misjudge at night","About two seconds, so you can watch the vehicles ahead closely and see them stop","The same three-second gap you leave during the day"],
+ "ckb":["لە لێخوڕینی شەوانە لە ناو ڕیزێک ئۆتۆمبێلدا، چ ماوەیەک بهێڵیتەوە (بەپێی سیستەمی سێ چرکە)؟","نزیکەی چوار چرکە، چونکە بە شەو هەڵە لە خەمڵاندنی ماوە ئاسانە","نزیکەی دوو چرکە","هەمان ماوەی سێ چرکەی ڕۆژانە"],
+ "exp":{"ar":"تُترك نحو أربع ثوانٍ ليلاً لصعوبة تقدير المسافات.","en":"Leave about four seconds at night, as distances are hard to judge.","ckb":"بە شەو نزیکەی چوار چرکە بهێڵەوە."}},
+
+{"n":133,"id":"q-age-private-vehicle-licence","topic":"mechanics","correct":0,
+ "ar":["من الناحية القانونية الشخص الذي يسعى للحصول على اجازة المركبات الخصوصية يجب ان يكون مكملا ل؟","18سنة من العمر","20سنة من العمر","22سنة من العمر"],
+ "en":["Legally, a person seeking a private-vehicle licence must have completed:","18 years of age","20 years of age","22 years of age"],
+ "ckb":["لە ڕووی یاساییەوە، ئەو کەسەی مۆڵەتی ئۆتۆمبێلی تایبەتی دەوێت دەبێت تەواوی کردبێت:","١٨ ساڵ","٢٠ ساڵ","٢٢ ساڵ"],
+ "exp":{"ar":"يشترط إكمال 18 سنة لإجازة المركبات الخصوصية.","en":"A private-vehicle licence requires the applicant to be 18.","ckb":"بۆ مۆڵەتی ئۆتۆمبێلی تایبەت تەمەنی ١٨ ساڵ پێویستە."}},
+
+{"n":134,"id":"q-assaulting-traffic-officer","topic":"rules","correct":1,
+ "ar":["كل من هدد واعتدى على رجل المرور اثناء تأدية واجبه يعاقب بعقوبة؟","الغرامة","مدة لا تزيد على ثلاث سنوات","لايتخذ بحقه اي اجراء"],
+ "en":["Anyone who threatens or assaults a traffic officer in the course of duty is punished by:","A fine","A term not exceeding three years","No action is taken against them"],
+ "ckb":["هەر کەسێک هەڕەشە بکات یان پەلاماری پۆلیسی هاتوچۆ بدات لە کاتی ئەرکەکەیدا، سزا دەدرێت بە:","غەرامە","ماوەیەک کە لە سێ ساڵ زیاتر نەبێت","هیچ کارێکی لە دژ ناکرێت"],
+ "exp":{"ar":"العقوبة مدة لا تزيد على ثلاث سنوات.","en":"The penalty is a term not exceeding three years.","ckb":"سزاکە ماوەیەکە کە لە سێ ساڵ زیاتر نییە."}}
+]

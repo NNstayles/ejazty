@@ -1,0 +1,55 @@
+[
+{"n":162,"id":"q-hard-shoulder-width","topic":"rules","correct":0,
+ "ar":["كتف الطريق هو جزء الطريق الذي يكون على جانبي الطريق ويكون اما مبلط او ترابي لا يتجاوز عرضه عن؟","2,5متر","3,5متر","4,0متر"],
+ "en":["The hard shoulder is the part at the sides of the road, either paved or unpaved, no wider than:","2.5 metres","3.5 metres","4.0 metres"],
+ "ckb":["شانی ڕێگا ئەو بەشەیە لە هەردوو لای ڕێگاوە و پانییەکەی تێناپەڕێت لە:","٢٫٥ مەتر","٣٫٥ مەتر","٤٫٠ مەتر"],
+ "exp":{"ar":"عرض كتف الطريق لا يتجاوز 2.5 متر.","en":"The hard shoulder is no wider than 2.5 m.","ckb":"پانی شانی ڕێگا لە ٢٫٥ مەتر تێناپەڕێت."}},
+
+{"n":163,"id":"q-parking-beside-parked-vehicle","topic":"rules","correct":0,
+ "ar":["هل يجوز ايقاف المركبة بجانب مركبة اخرى واقفة بجانب الطريق؟","لايجوز وممنوع منعا باتا","مسموح به اذا كان عرض الطريق يساعد على ذلك","نعم يجوز لمدة قصيرة"],
+ "en":["May a vehicle be parked beside another vehicle already parked at the roadside?","No, it is strictly prohibited","Allowed if the width of the road permits","Yes, for a short time"],
+ "ckb":["ئایا ڕێپێدراوە ئۆتۆمبێل لەتەنیشت ئۆتۆمبێلێکی تری وەستاو بوەستێت؟","نەخێر، بە تەواوی قەدەغەیە","ڕێپێدراوە ئەگەر پانی ڕێگاکە ڕێگا بدات","بەڵێ، بۆ ماوەیەکی کورت"],
+ "exp":{"ar":"الوقوف بجانب مركبة واقفة ممنوع منعاً باتاً.","en":"Parking beside an already parked vehicle is strictly prohibited.","ckb":"وەستان لەتەنیشت ئۆتۆمبێلی وەستاو بە تەواوی قەدەغەیە."}},
+
+{"n":164,"id":"q-parking-bridge-tunnel-allowed","topic":"rules","correct":0,
+ "ar":["متى يسمح بايقاف المركبة فوق جسر او بداخل النفق؟","لايسمح وممنوع منعا باتا","ممنوع فقط في الليل","مسموح اذا كان الوقوف لمدة قصيرة"],
+ "en":["When is parking on a bridge or inside a tunnel allowed?","It is not allowed and is strictly prohibited","Prohibited only at night","Allowed if the stop is brief"],
+ "ckb":["کەی ڕێپێدراوە ئۆتۆمبێل لەسەر پرد یان ناو تونێل بوەستێت؟","ڕێپێدراو نییە، بە تەواوی قەدەغەیە","تەنها بە شەو قەدەغەیە","ڕێپێدراوە ئەگەر بۆ ماوەیەکی کورت بێت"],
+ "exp":{"ar":"ممنوع منعاً باتاً إيقاف المركبة فوق جسر أو داخل نفق.","en":"Parking on a bridge or in a tunnel is strictly prohibited.","ckb":"وەستان لەسەر پرد یان ناو تونێل بە تەواوی قەدەغەیە."}},
+
+{"n":165,"id":"q-engine-oil-change-interval","topic":"mechanics","correct":0,
+ "ar":["متى يتم تبديل زيت المحرك؟","يتم تبديل زيت المحرك حسب قياس عداد المركبه بالمسافة التي قطعتها ونوعية ومواصفات الزيت","يتم تبديل زيت المحرك كل 1000 كم","يتم تبديل زيت المحرك في فصل الشتاء والصيف"],
+ "en":["When should the engine oil be changed?","According to the odometer reading for the distance covered, and the type and specification of the oil","Every 1,000 km","In winter and in summer"],
+ "ckb":["کەی زەیتی بزوێنەر دەگۆڕدرێت؟","بەپێی ژمێرەری ئۆتۆمبێل بۆ ئەو ماوەیەی بڕیوێتی و جۆر و تایبەتمەندی زەیتەکە","هەر ١٠٠٠ کم","لە وەرزی زستان و هاویندا"],
+ "exp":{"ar":"يُبدل الزيت وفق المسافة المقطوعة ونوعية الزيت ومواصفاته.","en":"Change it according to distance covered and the oil's specification.","ckb":"بەپێی ماوەی بڕاو و جۆری زەیتەکە بگۆڕە."}},
+
+{"n":166,"id":"q-drink-drive-penalty","topic":"rules","correct":2,
+ "ar":["كل من قاد مركبته تحت تأثير الكحول او المخدر يعاقب بـ؟","اعطائه ورقة محاسبة","حجز المركبة","الحبس او الغرامة او بكلتا العقوبتين"],
+ "en":["Anyone driving under the influence of alcohol or drugs is punished by:","Being issued a penalty notice","Impounding the vehicle","Imprisonment or a fine, or both"],
+ "ckb":["هەر کەسێک لەژێر کاریگەری کحول یان ماددەی هۆشبەردا لێبخوڕێت، سزا دەدرێت بە:","دانی پەڕەی سزا","دەستبەسەرداگرتنی ئۆتۆمبێل","زیندان یان غەرامە یان هەردووکیان"],
+ "exp":{"ar":"العقوبة الحبس أو الغرامة أو كلتاهما.","en":"The penalty is imprisonment or a fine, or both.","ckb":"سزاکە زیندان یان غەرامە یان هەردووکیانە."}},
+
+{"n":167,"id":"q-engine-warning-light-inspection","topic":"mechanics","correct":2,
+ "ar":["هل يؤثر إضاءة زر المحرك في ال داشبورد على فشل المركبة في الفحص الفني السنوي؟","نعم يؤثر ويؤدي إلى فشل المركبة في الفحص","كلا لن يؤدي إلى فشل المركبة في الفحص","ستنخفض الدرجة فقط"],
+ "en":["Does the engine warning light being on in the dashboard cause the vehicle to fail the annual inspection?","Yes, it causes the vehicle to fail","No, it will not cause the vehicle to fail","Only the score will be reduced"],
+ "ckb":["ئایا داگیرسانی چرای بزوێنەر لە داشبۆرد دەبێتە هۆی سەرنەکەوتن لە پشکنینی ساڵانەدا؟","بەڵێ، دەبێتە هۆی سەرنەکەوتن","نەخێر، نابێتە هۆی سەرنەکەوتن","تەنها پلەکە کەم دەبێتەوە"],
+ "exp":{"ar":"إضاءة زر المحرك تُخفض الدرجة فقط ولا تُفشل المركبة.","en":"The engine light only reduces the score; it does not fail the vehicle.","ckb":"تەنها پلەکە کەم دەکاتەوە و نابێتە هۆی سەرنەکەوتن."}},
+
+{"n":168,"id":"q-original-xenon-lights-inspection","topic":"mechanics","correct":0,
+ "ar":["إذا كانت الإضاءات العالية والناصية للمركبة من الزينون الأصلي، هل سيؤثر ذلك على فشل المركبة في الفحص الفني السنوي؟","نعم لايؤثر و يؤدي إلى نجاح المركبة في الفحص","كلا لن يؤدي إلى نجاح المركبة في الفحص","ليس مهماً"],
+ "en":["If the vehicle's main and dipped beams are original xenon units, will that cause it to fail the annual inspection?","No, it does not affect it; the vehicle passes the inspection","No, it will not cause the vehicle to pass","It does not matter"],
+ "ckb":["ئەگەر ڕووناکی بەرز و نزمی ئۆتۆمبێلەکە زینۆنی ڕەسەن بن، ئایا دەبێتە هۆی سەرنەکەوتن لە پشکنیندا؟","نەخێر، کاریگەری نییە و ئۆتۆمبێلەکە سەردەکەوێت","نەخێر، نابێتە هۆی سەرکەوتن","گرنگ نییە"],
+ "exp":{"ar":"الزينون الأصلي لا يؤثر وتنجح المركبة في الفحص.","en":"Original xenon does not affect it; the vehicle passes.","ckb":"زینۆنی ڕەسەن کاریگەری نییە و سەردەکەوێت."}},
+
+{"n":169,"id":"q-overtaking-side-two-lane","topic":"rules","correct":2,
+ "ar":["يسمح بالاجتياز في الطريق ذو المسلكين؟","من جهة اليمين","اذا كانت هناك علامة شاخصة تمنع ذلك","من جهة اليسار"],
+ "en":["On a two-lane road, overtaking is permitted:","On the right-hand side","If there is a sign prohibiting it","On the left-hand side"],
+ "ckb":["لە ڕێگای دوو لایندا تێپەڕاندن ڕێپێدراوە:","لە لای ڕاستەوە","ئەگەر تابلۆیەک قەدەغەی بکات","لە لای چەپەوە"],
+ "exp":{"ar":"الاجتياز يكون من جهة اليسار.","en":"Overtaking is done on the left.","ckb":"تێپەڕاندن لە لای چەپەوە دەبێت."}},
+
+{"n":170,"id":"q-bonnet-lock-inspection","topic":"mechanics","correct":0,
+ "ar":["في حالة عدم فتح قفل الغطاء (البونيد) للمركبة، هل سيؤثر ذلك على الفحص الفني السنوي؟","نعم يؤثر ويؤدي إلى فشل المركبة في الفحص","كلا لن يؤدي إلى فشل المركبة في الفحص","ليس مهماً"],
+ "en":["If the vehicle's bonnet catch will not open, does that affect the annual technical inspection?","Yes, it causes the vehicle to fail the inspection","No, it will not cause the vehicle to fail","It does not matter"],
+ "ckb":["ئەگەر قوفڵی سەرپۆشی بزوێنەر نەکرێتەوە، ئایا کاریگەری هەیە لەسەر پشکنینی ساڵانە؟","بەڵێ، دەبێتە هۆی سەرنەکەوتن لە پشکنیندا","نەخێر، نابێتە هۆی سەرنەکەوتن","گرنگ نییە"],
+ "exp":{"ar":"عدم فتح قفل البونيد يؤدي إلى فشل المركبة في الفحص.","en":"A bonnet catch that will not open causes the vehicle to fail.","ckb":"نەکرانەوەی قوفڵی سەرپۆش دەبێتە هۆی سەرنەکەوتن."}}
+]

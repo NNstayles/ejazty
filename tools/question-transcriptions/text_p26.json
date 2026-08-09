@@ -1,0 +1,55 @@
+[
+{"n":216,"id":"q-negligent-driving-penalty","topic":"rules","correct":1,
+ "ar":["قيادة المركبة بإهمال أو رعونة ممنوع وعقوبته؟","الحبس وحجز المركبة","الغرامة","حجز المركبة"],
+ "en":["Driving negligently or recklessly is prohibited and punished by:","Imprisonment and impounding the vehicle","A fine","Impounding the vehicle"],
+ "ckb":["لێخوڕین بە بێئاگایی یان سەرکەشی قەدەغەیە و سزاکەی:","زیندان و دەستبەسەرداگرتنی ئۆتۆمبێل","غەرامە","دەستبەسەرداگرتنی ئۆتۆمبێل"],
+ "exp":{"ar":"عقوبة القيادة بإهمال أو رعونة هي الغرامة.","en":"The penalty for negligent or reckless driving is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":217,"id":"q-uncovered-load-penalty","topic":"rules","correct":2,
+ "ar":["عدم تغطية حمولة مركبات الحمل بصورة محكمة ممنوع وعقوبته؟","حجز الحمولة","حجز المركبة","الغرامة"],
+ "en":["Failing to cover a goods vehicle's load securely is prohibited and punished by:","Impounding the load","Impounding the vehicle","A fine"],
+ "ckb":["نەداپۆشینی باری بارهەڵگر بە شێوەیەکی توند قەدەغەیە و سزاکەی:","دەستبەسەرداگرتنی بارەکە","دەستبەسەرداگرتنی ئۆتۆمبێل","غەرامە"],
+ "exp":{"ar":"عقوبة عدم تغطية الحمولة بإحكام هي الغرامة.","en":"The penalty for not covering the load securely is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":218,"id":"q-when-licence-cancelled","topic":"mechanics","correct":0,
+ "ar":["متى تلغى إجازة السوق؟","في حالة فقدان اللياقة الصحية بقرار من اللجنة الطبية","قيادة المركبة في الاتجاه المعاكس لحركة السير","صدور حكم قضائي بسجن السائق"],
+ "en":["When is a driving licence cancelled?","When medical fitness is lost, by decision of the medical committee","Driving against the direction of traffic","When a court sentences the driver to prison"],
+ "ckb":["کەی مۆڵەتی لێخوڕین هەڵدەوەشێتەوە؟","لە کاتی لەدەستدانی لەبارێتی تەندروستی بە بڕیاری لیژنەی پزیشکی","لێخوڕین بە پێچەوانەی ئاراستەی هاتوچۆ","دەرچوونی بڕیاری دادگا بە زیندانیکردنی شۆفێر"],
+ "exp":{"ar":"تُلغى الإجازة عند فقدان اللياقة الصحية بقرار اللجنة الطبية.","en":"The licence is cancelled on loss of medical fitness, by the medical committee's decision.","ckb":"بە بڕیاری لیژنەی پزیشکی لە کاتی لەدەستدانی لەبارێتی تەندروستی."}},
+
+{"n":219,"id":"q-parking-prohibited-place-penalty","topic":"rules","correct":2,
+ "ar":["ايقاف المركبة في الأماكن التي يمنع الوقوف فيها ممنوع وعقوبته؟","حجز المركبة","حبس السائق","الغرامة"],
+ "en":["Parking where parking is prohibited is punished by:","Impounding the vehicle","Imprisoning the driver","A fine"],
+ "ckb":["وەستاندنی ئۆتۆمبێل لە شوێنی قەدەغەدا سزاکەی:","دەستبەسەرداگرتنی ئۆتۆمبێل","زیندانیکردنی شۆفێر","غەرامە"],
+ "exp":{"ar":"عقوبة الوقوف في مكان ممنوع هي الغرامة.","en":"The penalty for parking where prohibited is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":220,"id":"q-tinted-glass-penalty","topic":"mechanics","correct":2,
+ "ar":["استخدام الزجاج المضلل في نوافذ المركبات أو وضع الستائر حاجبة للرؤيا ممنوع وعقوبته؟","حجز المركبة","حبس السائق","الغرامة"],
+ "en":["Using tinted glass in vehicle windows, or fitting curtains that block the view, is prohibited and punished by:","Impounding the vehicle","Imprisoning the driver","A fine"],
+ "ckb":["بەکارهێنانی شووشەی تاریک لە پەنجەرەکان یان دانانی پەردەی بینین‌شێوێن قەدەغەیە و سزاکەی:","دەستبەسەرداگرتنی ئۆتۆمبێل","زیندانیکردنی شۆفێر","غەرامە"],
+ "exp":{"ar":"عقوبة الزجاج المضلل أو الستائر الحاجبة للرؤية هي الغرامة.","en":"The penalty for tinted glass or view-blocking curtains is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":221,"id":"q-illegal-u-turn-penalty","topic":"rules","correct":2,
+ "ar":["الاستدارة في الاماكن الغير مسموح فيها بالاستدارة ممنوع وعقوبته؟","حجز المركبة","حبس السائق","الغرامة"],
+ "en":["Turning where turning is not permitted is prohibited and punished by:","Impounding the vehicle","Imprisoning the driver","A fine"],
+ "ckb":["سووڕانەوە لە شوێنی نەڕێپێدراودا قەدەغەیە و سزاکەی:","دەستبەسەرداگرتنی ئۆتۆمبێل","زیندانیکردنی شۆفێر","غەرامە"],
+ "exp":{"ar":"عقوبة الاستدارة في مكان غير مسموح هي الغرامة.","en":"The penalty for turning where it is not allowed is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":222,"id":"q-not-stopping-side-to-main-penalty","topic":"rules","correct":1,
+ "ar":["عدم التوقف عند الخروج من شارع فرعي إلى شارع رئيسي ممنوع وعقوبته؟","حجز المركبة","الغرامة","حجز المركبة والغرامة"],
+ "en":["Failing to stop when coming out of a side street onto a main street is prohibited and punished by:","Impounding the vehicle","A fine","Impounding the vehicle and a fine"],
+ "ckb":["نەوەستان لە کاتی دەرچوون لە شەقامی لاوەکییەوە بۆ سەرەکی قەدەغەیە و سزاکەی:","دەستبەسەرداگرتنی ئۆتۆمبێل","غەرامە","دەستبەسەرداگرتن و غەرامە"],
+ "exp":{"ar":"عقوبة عدم التوقف عند الخروج إلى شارع رئيسي هي الغرامة.","en":"The penalty is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":223,"id":"q-blocked-lane-left-turner","topic":"rules","correct":2,
+ "ar":["انت تقود مركبتك في حركة سير كثيفة ومسارك مسدود بسيارة تنعطف الى اليسار ماذا يجب ان تفعل؟","تحاول ان تحشر مركبتك على رصيف المشاة على يمين المركبة","تستخدم جهاز التنبيه الى ان تنعطف المركبة","تنتظر الى ان تنعطف المركبة و من ثم تتقدم"],
+ "en":["You are driving in heavy traffic and your lane is blocked by a car turning left. What should you do?","Try to squeeze your vehicle onto the pavement to the right of it","Sound the horn until it turns","Wait until it has turned, then move forward"],
+ "ckb":["لە هاتوچۆیەکی قەرەباڵغدا لاینەکەت بە ئۆتۆمبێلێک داخراوە کە بەرەو چەپ دەسووڕێتەوە. چی دەکەیت؟","هەوڵدەدەم ئۆتۆمبێلەکەم بخەمە سەر ڕێڕەوی پیادە","بۆری لێدەدەم تا دەسووڕێتەوە","چاوەڕێ دەکەم تا دەسووڕێتەوە پاشان دەڕۆم"],
+ "exp":{"ar":"يُنتظر حتى تنعطف المركبة ثم تتقدم.","en":"Wait until it completes the turn, then proceed.","ckb":"چاوەڕێ بکە تا دەسووڕێتەوە، پاشان بڕۆ."}},
+
+{"n":224,"id":"q-not-yielding-pedestrians-penalty","topic":"priority","correct":2,
+ "ar":["عدم إعطاء الاسبقية للمشاة الذين دخلوا منطقة العبور ممنوع وعقوبته؟","حجز المركبة","سحب الاجازة لمدة سنة واحدة","الغرامة"],
+ "en":["Failing to give right of way to pedestrians who have entered the crossing is prohibited and punished by:","Impounding the vehicle","Withdrawal of the licence for one year","A fine"],
+ "ckb":["نەدانی پێشینەیی بە پیادەکانی ناو پەڕینەوەکە قەدەغەیە و سزاکەی:","دەستبەسەرداگرتنی ئۆتۆمبێل","هەڵگرتنەوەی مۆڵەت بۆ ماوەی ساڵێک","غەرامە"],
+ "exp":{"ar":"عقوبة عدم إعطاء الأسبقية للمشاة هي الغرامة.","en":"The penalty for not yielding to pedestrians is a fine.","ckb":"سزاکە غەرامەیە."}}
+]

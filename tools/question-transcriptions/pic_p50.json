@@ -1,0 +1,37 @@
+[
+{"n":144,"id":"qp-when-horn-allowed","topic":"rules","correct":2,
+ "ar":["متى يجوز استخدام جهاز التنبيه (الهورن)؟","في الاماكن المزدحمة","قرب المدارس والمستشفيات","في حالات الضرورة التي تدعي الى استخدامه او تفادي خطر محتمل"],
+ "en":["When may the horn be used?","In crowded places","Near schools and hospitals","In cases of necessity that call for it, or to avoid a possible danger"],
+ "ckb":["کەی ڕێپێدراوە بۆری بەکاربهێنرێت؟","لە شوێنە قەرەباڵغەکان","لە نزیک قوتابخانە و نەخۆشخانە","لە کاتی پێویستیدا یان بۆ دوورکەوتنەوە لە مەترسییەکی ئەگەری"],
+ "exp":{"ar":"يُستخدم المنبه عند الضرورة أو لتفادي خطر محتمل.","en":"Use the horn only when necessary or to avoid a possible danger.","ckb":"تەنها لە کاتی پێویستیدا یان بۆ دوورکەوتنەوە لە مەترسی."}},
+
+{"n":145,"id":"qp-no-visibility-rain-fog","topic":"rules","correct":2,
+ "ar":["في حالة انعدام الرؤية الجيدة وخصوصاً أثناء هطول الامطار الغزيرة او الضباب؟","حاول الاستمرار بالقيادة","استخدام ماسحات المطر بالسرعة البطيئة","حاول التوقف تماماً وبشكل نظامي"],
+ "en":["When good visibility is lost, especially during heavy rain or fog:","Try to carry on driving","Use the windscreen wipers on the slow setting","Try to stop completely and in an orderly manner"],
+ "ckb":["لە کاتی نەمانی بینینی باش، بەتایبەت لە بارانی بەخوڕ یان تەمدا:","هەوڵ بدە بەردەوام بیت لە لێخوڕین","سڕەوەکان بە خێرایی هێواش بەکاربهێنە","هەوڵ بدە بە تەواوی و بە شێوەیەکی ڕێکوپێک بوەستیت"],
+ "exp":{"ar":"عند انعدام الرؤية يُحاول التوقف تماماً وبشكل نظامي.","en":"When visibility is lost, try to stop completely and safely.","ckb":"هەوڵ بدە بە تەواوی بوەستیت."}},
+
+{"n":146,"id":"qp-before-overtaking-signal","topic":"rules","correct":0,
+ "ar":["عندما تنوي القيام بمناورة الاجتياز للمركبة المتقدمة يجب عليك اولا؟","تشغيل الاشارات","استخدام الهورن او جهاز التنبيه","تسير بنفس السرعة دون اعطاء اية اشارة"],
+ "en":["When you intend to overtake the vehicle ahead, you must first:","Switch on the indicators","Use the horn or warning device","Carry on at the same speed without giving any signal"],
+ "ckb":["کاتێک دەتەوێت ئۆتۆمبێلی پێشەوە تێبپەڕێنیت، سەرەتا دەبێت:","ئاماژەکان داگیرسێنیت","بۆری بەکاربهێنیت","بە هەمان خێرایی بەبێ ئاماژە بڕۆیت"],
+ "exp":{"ar":"يُشغّل المؤشر أولاً قبل مناورة الاجتياز.","en":"Signal first before starting the overtaking manoeuvre.","ckb":"سەرەتا ئاماژە بدە."}},
+
+{"n":147,"id":"qp-best-way-monitor-speed","topic":"rules","correct":0,
+ "ar":["أفضل طريقة لمراقبة سرعتك أثناء القيادة هي...؟","النظر الى عداد السرعة في مركبتك","النظر الى مرافق الطريق","الانصات الى صوت المحرك"],
+ "en":["The best way to monitor your speed while driving is...","Looking at the speedometer in your vehicle","Looking at the roadside features","Listening to the engine note"],
+ "ckb":["باشترین ڕێگا بۆ چاودێری خێراییەکەت لە کاتی لێخوڕیندا:","سەیرکردنی ژمێرەری خێرایی لە ئۆتۆمبێلەکەت","سەیرکردنی دەوروبەری ڕێگا","گوێگرتن لە دەنگی بزوێنەر"],
+ "exp":{"ar":"تُراقب السرعة بالنظر إلى عداد السرعة.","en":"Monitor your speed by looking at the speedometer.","ckb":"بە سەیرکردنی ژمێرەری خێرایی."}},
+
+{"n":148,"id":"qp-u-turn-at-traffic-lights","topic":"rules","correct":1,
+ "ar":["هل يسمح لك بالاستدارة راجعاً؟ (على شكل حرف U) عند إشارات المرور الضوئية؟","نعم في جميع الاوقات","لا، ما لم تكن هناك إشارة (مسموح بالانعطاف) على شكل حرف U","نعم إذا لم يكن هناك خطر وقوع تصادم مع مركبة اخرى"],
+ "en":["Are you allowed to make a U-turn at traffic lights?","Yes, at all times","No, unless there is a sign permitting a U-turn","Yes, if there is no risk of colliding with another vehicle"],
+ "ckb":["ئایا ڕێپێدراوە لە چرای هاتوچۆدا بە شێوەی U بسووڕێیتەوە؟","بەڵێ، لە هەموو کاتێکدا","نەخێر، مەگەر تابلۆیەک هەبێت کە ڕێگا بدات","بەڵێ، ئەگەر مەترسی پێکدادان نەبێت"],
+ "exp":{"ar":"لا يجوز إلا بوجود إشارة تسمح بالانعطاف على شكل حرف U.","en":"Not permitted unless a sign allows the U-turn.","ckb":"تەنها ئەگەر تابلۆ ڕێگای دا."}},
+
+{"n":149,"id":"qp-emergency-stop-triangle","topic":"rules","correct":0,
+ "ar":["ما هي الاجراءات التي يجب إتباعها عند إيقاف مركبة إضطرارياً على أي طريق؟","وضع مثلث التحذير الفسفوري في مكان يمكن رؤيته من بعد لا يقل عن 50 م في الطرق الداخلية و 130م في الطرق الخارجية من المركبة المتوقفة إضطرارياً","وضع مثلث التحذير الفسفوري على بعد 20 م أياً كان نوع الطريق","إضاءة مصباح التحذير تكفي للتحذير عن توقف المركبة إضطرارياً"],
+ "en":["What procedures must be followed when a vehicle is stopped in an emergency on any road?","Place the reflective warning triangle where it can be seen from no less than 50 m on inner roads and 130 m on rural roads from the vehicle","Place the reflective warning triangle 20 m away, whatever the road type","Switching on the hazard lamp is enough to warn of the emergency stop"],
+ "ckb":["کاتێک ئۆتۆمبێل بە ناچاری لە هەر ڕێگایەکدا دەوەستێت، چی دەکەیت؟","سێگۆشەی ئاگادارکەرەوە لە شوێنێک دابنێ کە لە دووری کەمتر نەبێت لە ٥٠ مەتر لە ڕێگا ناوەکی و ١٣٠ مەتر لە ڕێگا دەرەکییەکان ببینرێت","لە دووری ٢٠ مەتر دایبنێ","داگیرساندنی چرای ئاگادارکەرەوە بەسە"],
+ "exp":{"ar":"يوضع المثلث بحيث يُرى من 50 م داخل المدن و130 م خارجها.","en":"Place the triangle so it is visible from 50 m on inner roads and 130 m on rural roads.","ckb":"٥٠ مەتر لە ناوەکی و ١٣٠ مەتر لە دەرەکی."}}
+]

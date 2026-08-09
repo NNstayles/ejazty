@@ -1,0 +1,263 @@
+[
+ {
+  "n": 81,
+  "id": "q-priority-straight-over-turning",
+  "topic": "priority",
+  "correct": 0,
+  "ar": [
+   "تكون أسبقية المرور لاحدى الحالات التالية؟",
+   "السير المستقيم على السير المستدير",
+   "السير المستدير على السير المستقيم",
+   "السير في الطريق الفرعي على الرئيسي"
+  ],
+  "en": [
+   "Right of way belongs to which of the following?",
+   "Traffic going straight over traffic turning",
+   "Traffic turning over traffic going straight",
+   "Traffic on the side road over the main road"
+  ],
+  "ckb": [
+   "مافی پێشینەیی بۆ کام لەمانەیە؟",
+   "ڕۆیشتنی ڕاست بەسەر سووڕانەوەدا",
+   "سووڕانەوە بەسەر ڕۆیشتنی ڕاستدا",
+   "ڕۆیشتن لە ڕێگای لاوەکی بەسەر سەرەکیدا"
+  ],
+  "exp": {
+   "ar": "الأسبقية للسير المستقيم على السير المستدير.",
+   "en": "Traffic going straight ahead has priority over turning traffic.",
+   "ckb": "پێشینەیی بۆ ڕۆیشتنی ڕاستە بەسەر سووڕانەوەدا."
+  }
+ },
+ {
+  "n": 82,
+  "id": "q-paid-passengers-private-vehicle",
+  "topic": "rules",
+  "correct": 0,
+  "ar": [
+   "هل يجوز نقل ركاب بأجر في المركبات الخصوصية؟",
+   "ممنوع ولا يجوز ذلك",
+   "مسموح بعد الساعة 12 ليلاً",
+   "مسموح في حالة عدم توفر مركبات اجرة(تكسي)"
+  ],
+  "en": [
+   "May passengers be carried for a fare in private vehicles?",
+   "It is prohibited and not permitted",
+   "Allowed after 12 midnight",
+   "Allowed when no taxis are available"
+  ],
+  "ckb": [
+   "ئایا ڕێپێدراوە سەرنشین بە کرێ لە ئۆتۆمبێلی تایبەتدا بگوێزرێتەوە؟",
+   "قەدەغەیە و ڕێپێدراو نییە",
+   "دوای کاتژمێر ١٢ی شەو ڕێپێدراوە",
+   "کاتێک تاکسی نەبێت ڕێپێدراوە"
+  ],
+  "exp": {
+   "ar": "نقل الركاب بأجر في المركبات الخصوصية ممنوع.",
+   "en": "Carrying passengers for a fare in a private vehicle is prohibited.",
+   "ckb": "گواستنەوەی سەرنشین بە کرێ لە ئۆتۆمبێلی تایبەتدا قەدەغەیە."
+  }
+ },
+ {
+  "n": 83,
+  "id": "q-priority-leading-over-following",
+  "topic": "priority",
+  "correct": 0,
+  "ar": [
+   "تكون أسبقية المرور لاحدى الحالات التالية؟",
+   "المركبة المتقدمة على المركبة اللاحقة",
+   "المركبة اللاحقة على المركبة المتقدمة",
+   "المركبة الواقفة على المركبة المتحركة"
+  ],
+  "en": [
+   "Right of way belongs to which of the following?",
+   "The leading vehicle over the following vehicle",
+   "The following vehicle over the leading vehicle",
+   "A stopped vehicle over a moving one"
+  ],
+  "ckb": [
+   "مافی پێشینەیی بۆ کام لەمانەیە؟",
+   "ئۆتۆمبێلی پێشەوە بەسەر ئۆتۆمبێلی دواوەدا",
+   "ئۆتۆمبێلی دواوە بەسەر پێشەوەدا",
+   "ئۆتۆمبێلی وەستاو بەسەر جوڵاودا"
+  ],
+  "exp": {
+   "ar": "الأسبقية للمركبة المتقدمة على اللاحقة.",
+   "en": "The leading vehicle has priority over the one following.",
+   "ckb": "پێشینەیی بۆ ئۆتۆمبێلی پێشەوەیە."
+  }
+ },
+ {
+  "n": 84,
+  "id": "q-double-parking",
+  "topic": "rules",
+  "correct": 1,
+  "ar": [
+   "هل يجوز إيقاف مركبة بجانب مركبة اخرى واقفة بجانب الطريق (وقوف صف ثانٍ)؟",
+   "ممنوع في الطرق الخارجية",
+   "ممنوع منعاً باتاً في جميع الطرق",
+   "ممنوع إذ كان عرض الطريق أقل من 15 م"
+  ],
+  "en": [
+   "May a vehicle be parked alongside another already parked at the roadside (double parking)?",
+   "Prohibited on rural roads",
+   "Strictly prohibited on all roads",
+   "Prohibited if the road is less than 15 m wide"
+  ],
+  "ckb": [
+   "ئایا ڕێپێدراوە ئۆتۆمبێل لەتەنیشت ئۆتۆمبێلێکی تری وەستاو بوەستێت (وەستانی ڕیزی دووەم)؟",
+   "لە ڕێگا دەرەکییەکان قەدەغەیە",
+   "لە هەموو ڕێگاکاندا بە تەواوی قەدەغەیە",
+   "قەدەغەیە ئەگەر پانی ڕێگاکە کەمتر لە ١٥ مەتر بێت"
+  ],
+  "exp": {
+   "ar": "الوقوف بصف ثانٍ ممنوع منعاً باتاً في جميع الطرق.",
+   "en": "Double parking is strictly prohibited on every road.",
+   "ckb": "وەستانی ڕیزی دووەم لە هەموو ڕێگاکاندا بە تەواوی قەدەغەیە."
+  }
+ },
+ {
+  "n": 85,
+  "id": "q-tampering-with-registration",
+  "topic": "mechanics",
+  "correct": 0,
+  "ar": [
+   "هل يجوز التلاعب أو إجراء تغييرات في اجازة تسجيل المركبه (السنوية) أو إجازة السوق؟",
+   "يمنع منعاً باتاً التلاعب أو إجراء أي تغيرات إلا من قبل مديرية المرور",
+   "يسمح في حالات عدم وضوح بعض الكلمات والارقام التي تحويها",
+   "يسمح في حالة إستخدام نسخة مستنسخة"
+  ],
+  "en": [
+   "May the vehicle registration (annual document) or the driving licence be altered or tampered with?",
+   "Tampering or any alteration is strictly prohibited except by the Traffic Directorate",
+   "Allowed where some of the words or numbers it contains are unclear",
+   "Allowed when using a photocopy"
+  ],
+  "ckb": [
+   "ئایا ڕێپێدراوە دەستکاری یان گۆڕانکاری لە بەڵگەنامەی ساڵانە یان مۆڵەتی لێخوڕین بکرێت؟",
+   "دەستکاری یان هەر گۆڕانکارییەک بە تەواوی قەدەغەیە جگە لەلایەن بەڕێوەبەرایەتی هاتوچۆوە",
+   "ڕێپێدراوە ئەگەر هەندێک وشە و ژمارە ڕوون نەبن",
+   "ڕێپێدراوە لە کاتی بەکارهێنانی کۆپی"
+  ],
+  "exp": {
+   "ar": "لا يجوز التعديل إلا من قبل مديرية المرور.",
+   "en": "Only the Traffic Directorate may make changes.",
+   "ckb": "تەنها بەڕێوەبەرایەتی هاتوچۆ بۆی هەیە گۆڕانکاری بکات."
+  }
+ },
+ {
+  "n": 86,
+  "id": "q-priority-inside-junction",
+  "topic": "priority",
+  "correct": 0,
+  "ar": [
+   "تكون أسبقية المرور لاحدى الحالات التالية؟",
+   "المركبة التي في التقاطع أو الساحة على التي تحاول الدخول إلى التقاطع أو الساحة",
+   "المركبة التي تحاول الدخول إلى التقاطع أو الساحة على المركبة التي في التقاطع",
+   "المركبة اللاحقة على المركبة المتقدمة"
+  ],
+  "en": [
+   "Right of way belongs to which of the following?",
+   "A vehicle already in the junction or square over one trying to enter it",
+   "A vehicle trying to enter the junction or square over one already in it",
+   "The following vehicle over the leading vehicle"
+  ],
+  "ckb": [
+   "مافی پێشینەیی بۆ کام لەمانەیە؟",
+   "ئەو ئۆتۆمبێلەی لە ناو چوارڕیانەکەدایە بەسەر ئەوەی هەوڵی چوونە ناوی دەدات",
+   "ئەوەی هەوڵی چوونە ناوی دەدات بەسەر ئەوەی تێیدایە",
+   "ئۆتۆمبێلی دواوە بەسەر پێشەوەدا"
+  ],
+  "exp": {
+   "ar": "الأسبقية للمركبة الموجودة داخل التقاطع أو الساحة.",
+   "en": "A vehicle already inside the junction or square has priority.",
+   "ckb": "پێشینەیی بۆ ئەو ئۆتۆمبێلەیە کە لە ناو چوارڕیانەکەدایە."
+  }
+ },
+ {
+  "n": 87,
+  "id": "q-pedestrians-obey-signs",
+  "topic": "rules",
+  "correct": 0,
+  "ar": [
+   "هل على المشاة الامتثال لعلامات السير و أوامر شرطي المرور؟",
+   "نعم على المشاة الإمتثال لجميع علامات السير و أوامر شرطي المرور في أي مكان",
+   "نعم على المشاة الإمتثال للعلامات التي على الطريق فقط",
+   "نعم على المشاة الإمتثال للعلامات التي على الرصيف فقط"
+  ],
+  "en": [
+   "Must pedestrians obey traffic signs and the traffic officer's orders?",
+   "Yes, pedestrians must obey all traffic signs and the officer's orders anywhere",
+   "Yes, but only the signs on the road",
+   "Yes, but only the signs on the pavement"
+  ],
+  "ckb": [
+   "ئایا پیادەکان دەبێت گوێڕایەڵی تابلۆکان و فەرمانی پۆلیسی هاتوچۆ بن؟",
+   "بەڵێ، لە هەر شوێنێک گوێڕایەڵی هەموو تابلۆکان و فەرمانەکان بن",
+   "بەڵێ، تەنها ئەو تابلۆیانەی لەسەر ڕێگان",
+   "بەڵێ، تەنها ئەو تابلۆیانەی لەسەر ڕێڕەوی پیادەن"
+  ],
+  "exp": {
+   "ar": "يلتزم المشاة بجميع علامات السير وأوامر شرطي المرور في أي مكان.",
+   "en": "Pedestrians must obey every traffic sign and the officer's orders, anywhere.",
+   "ckb": "پیادەکان لە هەر شوێنێک گوێڕایەڵی هەموو تابلۆکان دەبن."
+  }
+ },
+ {
+  "n": 88,
+  "id": "q-priority-from-right-at-crossroads",
+  "topic": "priority",
+  "correct": 0,
+  "ar": [
+   "تكون أسبقية المرور لاحدى الحالات التالية؟",
+   "للمركبات القادمة من جهة اليمين في التقاطعات النافذة",
+   "للمركبات القادمة من جهة اليسار في التقاطعات النافذة",
+   "المركبات القادمة من الجهة المعاكسة"
+  ],
+  "en": [
+   "Right of way belongs to which of the following?",
+   "Vehicles coming from the right at open crossroads",
+   "Vehicles coming from the left at open crossroads",
+   "Vehicles coming from the opposite direction"
+  ],
+  "ckb": [
+   "مافی پێشینەیی بۆ کام لەمانەیە؟",
+   "ئۆتۆمبێلەکانی لای ڕاست لە چوارڕیانی کراوەدا",
+   "ئۆتۆمبێلەکانی لای چەپ لە چوارڕیانی کراوەدا",
+   "ئۆتۆمبێلەکانی ئاراستەی بەرامبەر"
+  ],
+  "exp": {
+   "ar": "الأسبقية للمركبات القادمة من اليمين في التقاطعات النافذة.",
+   "en": "At open crossroads, vehicles coming from the right have priority.",
+   "ckb": "لە چوارڕیانی کراوەدا پێشینەیی بۆ ئۆتۆمبێلەکانی لای ڕاستە."
+  }
+ },
+ {
+  "n": 89,
+  "id": "q-priority-ascending-over-descending",
+  "topic": "priority",
+  "correct": 0,
+  "ar": [
+   "تكون أسبقية المرور لاحدى الحالات التالية؟",
+   "المركبة الصاعدة على المركبة النازلة",
+   "المركبة النازلة على المركبة الصاعدة",
+   "المركبة الواقفة على المتحركة"
+  ],
+  "en": [
+   "Right of way belongs to which of the following?",
+   "The ascending vehicle over the descending one",
+   "The descending vehicle over the ascending one",
+   "A stopped vehicle over a moving one"
+  ],
+  "ckb": [
+   "مافی پێشینەیی بۆ کام لەمانەیە؟",
+   "ئۆتۆمبێلی سەرکەوتوو بەسەر دابەزیودا",
+   "ئۆتۆمبێلی دابەزیو بەسەر سەرکەوتوودا",
+   "ئۆتۆمبێلی وەستاو بەسەر جوڵاودا"
+  ],
+  "exp": {
+   "ar": "الأسبقية للمركبة الصاعدة على النازلة.",
+   "en": "An ascending vehicle has priority over a descending one.",
+   "ckb": "پێشینەیی بۆ ئۆتۆمبێلی سەرکەوتووە بەسەر دابەزیودا."
+  }
+ }
+]

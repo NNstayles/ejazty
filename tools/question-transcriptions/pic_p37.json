@@ -1,0 +1,55 @@
+[
+{"n":27,"id":"qp-level-crossing-100m-marker","topic":"signs","correct":1,"img":"pic-027.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر أمامك خط سكة الحديد","توخى الحذر طول 100 متر","توخى الحذر بطول 200 متر"],
+ "en":["What does this sign mean?","Beware: a railway line ahead","Take care for the next 100 metres","Take care for the next 200 metres"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، هێڵی شەمەندەفەر لە پێشتە","بۆ ماوەی ١٠٠ مەتر وریابە","بۆ ماوەی ٢٠٠ مەتر وریابە"],
+ "exp":{"ar":"العلامة تدل على توخي الحذر بطول 100 متر.","en":"The marker means take care for 100 metres.","ckb":"بۆ ماوەی ١٠٠ مەتر وریابە."}},
+
+{"n":28,"id":"qp-gap-between-parked-vehicles","topic":"rules","correct":0,"img":"pic-028.jpg",
+ "ar":["ما هي ادنى مسافة التي يجب أن تترك بين مركبة واخرى عند الوقوف؟","1متر","1/2متر","2متر"],
+ "en":["What is the minimum distance that must be left between one parked vehicle and another?","1 metre","Half a metre","2 metres"],
+ "ckb":["کەمترین ماوە کە دەبێت لە نێوان دوو ئۆتۆمبێلی وەستاودا بهێڵدرێتەوە:","١ مەتر","نیو مەتر","٢ مەتر"],
+ "exp":{"ar":"أدنى مسافة بين المركبتين عند الوقوف متر واحد.","en":"The minimum gap between parked vehicles is one metre.","ckb":"کەمترین ماوە یەک مەترە."}},
+
+{"n":29,"id":"qp-two-way-road-sign","topic":"signs","correct":2,"img":"pic-029.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","احذر امامك تقاطع","احذر الطريق يضيق من اليمين واليسار","احذر الطريق ذو اتجاهين"],
+ "en":["What does this sign mean?","Beware: a junction ahead","Beware: the road narrows on the right and left","Beware: two-way road"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، چوارڕیان لە پێشتە","ئاگاداربە، ڕێگاکە لە ڕاست و چەپەوە تەسک دەبێتەوە","ئاگاداربە، ڕێگای دوو ئاراستە"],
+ "exp":{"ar":"العلامة تحذر من طريق ذي اتجاهين.","en":"The sign warns of a two-way road.","ckb":"ئاگادارکردنەوە لە ڕێگای دوو ئاراستە."}},
+
+{"n":30,"id":"qp-broken-line-left-side","topic":"signs","correct":0,"img":"pic-030.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","يسمح القيام بمناورة الاجتياز للمركبات التي تسير في الجهة اليسرى من الطريق","ممنوع القيام بمناورة الاجتياز من الإتجاهين","يسمح القيام بمناورة الاجتياز من الإتجاهين"],
+ "en":["What does this marking mean?","Vehicles travelling on the left-hand side of the road may overtake","Overtaking is prohibited in both directions","Overtaking is permitted in both directions"],
+ "ckb":["ئەم نیشانەیە چی دەگەیەنێت؟","ئەو ئۆتۆمبێلانەی لە لای چەپەوە دەڕۆن دەتوانن تێبپەڕێنن","تێپەڕاندن لە هەردوو ئاراستە قەدەغەیە","لە هەردوو ئاراستە ڕێپێدراوە"],
+ "exp":{"ar":"الجانب ذو الخط المتقطع (اليسرى هنا) يسمح بالاجتياز.","en":"The side with the broken line may overtake.","ckb":"لای هێڵی پچڕپچڕ دەتوانێت تێبپەڕێنێت."}},
+
+{"n":31,"id":"qp-radar-enforced-sign","topic":"signs","correct":2,"img":"pic-031.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر التصوير ممنوع","إحذر من الرياح الجانبية","إحذر الطريق مراقب بالرادار"],
+ "en":["What does this sign mean?","Beware: photography prohibited","Beware of side winds","Beware: the road is monitored by radar"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، وێنەگرتن قەدەغەیە","ئاگاداری بای لاتەنیشت بە","ئاگاداربە، ڕێگاکە بە ڕادار چاودێری دەکرێت"],
+ "exp":{"ar":"العلامة تنبه إلى أن الطريق مراقب بالرادار.","en":"The sign warns that the road is radar-monitored.","ckb":"ڕێگاکە بە ڕادار چاودێری دەکرێت."}},
+
+{"n":32,"id":"qp-bicycle-crossing-sign","topic":"signs","correct":2,"img":"pic-032.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع مرور الدراجات الهوائية","طريق خاص بسير الدراجات الهوائية","احذر عبور الدراجات الهوائية"],
+ "en":["What does this sign mean?","Bicycles prohibited","A road reserved for bicycles","Beware: bicycles crossing"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","تێپەڕبوونی دووچەرخە قەدەغەیە","ڕێگای تایبەت بە دووچەرخە","ئاگاداربە، پەڕینەوەی دووچەرخە"],
+ "exp":{"ar":"العلامة تحذر من عبور الدراجات الهوائية.","en":"The sign warns of bicycles crossing.","ckb":"ئاگادارکردنەوە لە پەڕینەوەی دووچەرخە."}},
+
+{"n":33,"id":"qp-no-overtaking-sign","topic":"signs","correct":2,"img":"pic-033.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","حافظ على مسافة مناسبة بين مركبتك والمركبة التي تتحرك أمامك","لك الأسبقية","ممنوع القيام بمناورة الاجتياز"],
+ "en":["What does this sign mean?","Keep a suitable distance from the vehicle moving ahead of you","You have right of way","Overtaking is prohibited"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ماوەی گونجاو بهێڵەوە لەگەڵ ئۆتۆمبێلی پێشەوە","پێشینەیی هی تۆیە","تێپەڕاندن قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع القيام بمناورة الاجتياز.","en":"The sign prohibits overtaking.","ckb":"تێپەڕاندن قەدەغەیە."}},
+
+{"n":34,"id":"qp-median-hatching-markings","topic":"signs","correct":1,"img":"pic-034.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","الإلتفاف ممنوع","التجاوز ممنوع من كلا الإتجاهين ويمنع السير في الجزرة الوسطية على الخطوط","منطقة عبور المشاة"],
+ "en":["What does this marking mean?","Turning is prohibited","Overtaking is prohibited in both directions, and driving on the hatched central island is prohibited","A pedestrian crossing area"],
+ "ckb":["ئەم نیشانەیە چی دەگەیەنێت؟","سووڕانەوە قەدەغەیە","تێپەڕاندن لە هەردوو ئاراستە قەدەغەیە و ڕۆیشتن لەسەر دوورگەی ناوەڕاست قەدەغەیە","ناوچەی پەڕینەوەی پیادە"],
+ "exp":{"ar":"يمنع التجاوز من كلا الاتجاهين ويمنع السير على الجزرة الوسطية.","en":"Overtaking is prohibited both ways, as is driving on the hatched island.","ckb":"تێپەڕاندن لە هەردوو لاوە قەدەغەیە."}},
+
+{"n":35,"id":"qp-parking-near-bus-stop","topic":"rules","correct":0,"img":"pic-035.jpg",
+ "ar":["ما هي المسافة المسموح بها لوقوف المركبات بالقرب من موقف الباصات؟","20م قبل و 10 بعد موقف الباص","ممكن التوقف في موقف الباصات لمدة 3 دقائق","15م قبل و 10 م بعد موقف الباص"],
+ "en":["What distance is allowed for parking near a bus stop?","20 m before and 10 m after the bus stop","You may stop at the bus stop for 3 minutes","15 m before and 10 m after the bus stop"],
+ "ckb":["چ ماوەیەک ڕێپێدراوە بۆ وەستانی ئۆتۆمبێل لە نزیک وێستگەی پاس؟","٢٠ مەتر پێش و ١٠ مەتر دوای وێستگەکە","دەکرێت بۆ ٣ خولەک لە وێستگەکەدا بوەستیت","١٥ مەتر پێش و ١٠ مەتر دوای وێستگەکە"],
+ "exp":{"ar":"المسافة 20 م قبل الموقف و10 م بعده.","en":"The distance is 20 m before and 10 m after the stop.","ckb":"٢٠ مەتر پێش و ١٠ مەتر دوای وێستگەکە."}}
+]

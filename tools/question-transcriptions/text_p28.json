@@ -1,0 +1,55 @@
+[
+{"n":234,"id":"q-opening-left-door-penalty","topic":"rules","correct":1,
+ "ar":["فتح باب المركبة من جهة اليسار قبل التاكد من خلو جهة المرور ممنوع وعقوبته؟","الغرامة بمقدار30,000 دينار","الغرامة بمقدار 15,000 دينار","الغرامة بمقدار20.000 دينار"],
+ "en":["Opening the vehicle's left-hand door before checking that the traffic side is clear is prohibited and punished by:","A fine of 30,000 dinars","A fine of 15,000 dinars","A fine of 20,000 dinars"],
+ "ckb":["کردنەوەی دەرگای لای چەپی ئۆتۆمبێل پێش دڵنیابوون لە بەتاڵی لای هاتوچۆ قەدەغەیە و سزاکەی:","غەرامەی ٣٠٬٠٠٠ دینار","غەرامەی ١٥٬٠٠٠ دینار","غەرامەی ٢٠٬٠٠٠ دینار"],
+ "exp":{"ar":"العقوبة غرامة بمقدار 15,000 دينار بحسب دليل الأسئلة الرسمي.","en":"The official guide gives the penalty as a 15,000-dinar fine.","ckb":"بەپێی ڕێنمایی فەرمی، غەرامەی ١٥٬٠٠٠ دینارە."}},
+
+{"n":235,"id":"q-window-stickers-penalty","topic":"mechanics","correct":0,
+ "ar":["وضع ملصقات الزينة وكتابة ورسم على الزجاج الامامي والخلفي للمركبات ممنوع وعقوبته؟","الغرامة","حجز المركبة","سحب الاجازة لمدة شهر واحد"],
+ "en":["Putting decorative stickers, writing or drawings on a vehicle's front and rear glass is prohibited and punished by:","A fine","Impounding the vehicle","Withdrawal of the licence for one month"],
+ "ckb":["دانانی ستیکەری ڕازاندنەوە و نووسین و وێنە لەسەر شووشەی پێشەوە و دواوە قەدەغەیە و سزاکەی:","غەرامە","دەستبەسەرداگرتنی ئۆتۆمبێل","هەڵگرتنەوەی مۆڵەت بۆ مانگێک"],
+ "exp":{"ar":"عقوبة الملصقات والكتابة على الزجاج هي الغرامة.","en":"The penalty is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":236,"id":"q-max-width-without-escort","topic":"rules","correct":1,
+ "ar":["لا يجوز سير اية مركبة في طريق المرور السريع يزيد عرضها عن ......... ، ما لم يرافقها مركبة من مركبات المرور لارشادها وتنبيه مستعملي الطريق ليلاً ونهاراً","2متر","2.5متر","3متر"],
+ "en":["No vehicle wider than ......... may travel on an expressway unless escorted by a traffic vehicle guiding it and warning other road users, day and night:","2 metres","2.5 metres","3 metres"],
+ "ckb":["نابێت هیچ ئۆتۆمبێلێک لە ڕێگای خێرادا بڕوات کە پانییەکەی زیاتر بێت لە ......... مەگەر ئۆتۆمبێلێکی هاتوچۆ هاوڕێیەتی بکات:","٢ مەتر","٢٫٥ مەتر","٣ مەتر"],
+ "exp":{"ar":"الحد هو 2.5 متر ما لم ترافقها مركبة مرور.","en":"The limit is 2.5 m unless escorted by a traffic vehicle.","ckb":"سنوورەکە ٢٫٥ مەترە."}},
+
+{"n":237,"id":"q-lorry-lane","topic":"rules","correct":0,
+ "ar":["في اية جهة من الشارع تستطيع الشاحنات السير عليها؟","في مسلك اقصى اليمين","تستطيع الشاحنات السير في أي مسار بالسرعة المحددة لها","تستطيع الشاحنات ذوات المحورين من السير في أي مسلك تشاء"],
+ "en":["On which side of the street may lorries travel?","In the far right-hand lane","Lorries may travel in any lane at the speed set for them","Two-axle lorries may travel in whichever lane they wish"],
+ "ckb":["لە کام لای شەقامدا بارهەڵگرەکان دەتوانن بڕۆن؟","لە لاینی دوورترین ڕاست","لە هەر لاینێک بە خێرایی دیاریکراو","بارهەڵگری دوو تەوەری لە هەر لاینێک"],
+ "exp":{"ar":"تسير الشاحنات في مسلك أقصى اليمين.","en":"Lorries travel in the far right lane.","ckb":"لە لاینی دوورترین ڕاستدا دەڕۆن."}},
+
+{"n":238,"id":"q-dipped-lights-daytime","topic":"rules","correct":2,
+ "ar":["يجب استخدام الضياء الواطئ في النهار إذا كان هناك؟","مشاة","رتل من المركبات","ضباب او غبار"],
+ "en":["Dipped beam must be used in the daytime when there is:","Pedestrians","A convoy of vehicles","Fog or dust"],
+ "ckb":["دەبێت ڕووناکی نزم بە ڕۆژ بەکاربهێنرێت ئەگەر ئەمە هەبوو:","پیادە","ڕیزێک ئۆتۆمبێل","تەم یان تۆز"],
+ "exp":{"ar":"يُستخدم الضياء الواطئ نهاراً عند الضباب أو الغبار.","en":"Use dipped beam in daylight in fog or dust.","ckb":"لە تەم یان تۆزدا ڕووناکی نزم بەکاربهێنە."}},
+
+{"n":239,"id":"q-material-falling-from-lorries","topic":"rules","correct":0,
+ "ar":["ماهي عقوبة ترك المواد المتساقطة من الشاحنات (كالاتربة والحصى ومواد البناء)؟","يتحمل السائق مسؤولية رفع المواد وتنظيف الشارع وتعويض الاضرار","غرامة","الحبس"],
+ "en":["What is the penalty for leaving material that has fallen from lorries (such as soil, gravel and building materials)?","The driver bears responsibility for removing the material, cleaning the street and compensating for damage","A fine","Imprisonment"],
+ "ckb":["سزای بەجێهێشتنی ئەو ماددانەی لە بارهەڵگرەوە دەکەونە خوارەوە (وەک خۆڵ و بەرد) چییە؟","شۆفێر بەرپرسیارە لە لابردنی ماددەکان و پاککردنەوەی شەقام و قەرەبووکردنەوەی زیانەکان","غەرامە","زیندان"],
+ "exp":{"ar":"يتحمل السائق رفع المواد وتنظيف الشارع وتعويض الأضرار.","en":"The driver must remove the material, clean the street and pay for damage.","ckb":"شۆفێر بەرپرسیارە لە لابردن و پاککردنەوە و قەرەبوو."}},
+
+{"n":240,"id":"q-leaving-debris-penalty","topic":"rules","correct":2,
+ "ar":["عقوبة ترك أي مواد مخلفة على الطريق بعد إصلاح المركبة العاطلة كاجزاء الإطارات المتفجرة وغيرها هي؟","حجز المركبة","الحبس","الغرامة"],
+ "en":["The penalty for leaving debris on the road after repairing a broken-down vehicle, such as pieces of a blown tyre, is:","Impounding the vehicle","Imprisonment","A fine"],
+ "ckb":["سزای بەجێهێشتنی پاشماوە لەسەر ڕێگا دوای چاککردنەوەی ئۆتۆمبێلی تێکچوو:","دەستبەسەرداگرتنی ئۆتۆمبێل","زیندان","غەرامە"],
+ "exp":{"ar":"عقوبة ترك المخلفات على الطريق هي الغرامة.","en":"The penalty is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":241,"id":"q-left-turn-signal","topic":"rules","correct":1,
+ "ar":["الاستدارة نحو جهة اليسار تتم عن طريق؟","إخراج اليد اليسرى من نافذة المركبة","إستخدام الاشارة الضوئية لجهة اليسار","إستخدام إشارة الوقوف الاضطراري"],
+ "en":["A turn to the left is made by:","Putting the left hand out of the vehicle window","Using the left-hand indicator","Using the hazard warning lights"],
+ "ckb":["سووڕانەوە بەرەو چەپ بە چی دەکرێت؟","دەرهێنانی دەستی چەپ لە پەنجەرەوە","بەکارهێنانی ئاماژەی ڕووناکی لای چەپ","بەکارهێنانی ئاماژەی وەستانی ناچاری"],
+ "exp":{"ar":"تُستخدم الإشارة الضوئية لجهة اليسار عند الاستدارة يساراً.","en":"Use the left indicator when turning left.","ckb":"ئاماژەی چەپ بەکاربهێنە."}},
+
+{"n":242,"id":"q-idling-over-three-minutes","topic":"mechanics","correct":0,
+ "ar":["هل يجوز ترك محرك المركبة يعمل على سرعة التباطؤ (السلولي) لفترة تزيد عن ثلاث دقائق","كلا لا حاجة لاكثر من دقيقة واحدة","يجوز وليس له تأثير على المحرك","لا يجوز لانه يؤدي الى زيادة حرارة المحرك"],
+ "en":["May the engine be left idling for more than three minutes?","No, there is no need for more than one minute","It is allowed and has no effect on the engine","It is not allowed because it makes the engine overheat"],
+ "ckb":["ئایا ڕێپێدراوە بزوێنەر زیاتر لە سێ خولەک لەسەر خێرایی هێواش کار بکات؟","نەخێر، پێویست ناکات زیاتر لە یەک خولەک","ڕێپێدراوە و کاریگەری نییە","ڕێپێدراو نییە چونکە گەرمی بزوێنەر زیاد دەکات"],
+ "exp":{"ar":"لا حاجة لتشغيل المحرك على التباطؤ أكثر من دقيقة واحدة.","en":"There is no need to idle for more than one minute.","ckb":"پێویست ناکات زیاتر لە یەک خولەک."}}
+]

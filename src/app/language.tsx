@@ -16,7 +16,7 @@ export default function LanguageScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const router = useRouter();
-  const { language, setLanguage, completeOnboarding, onboarded } = usePreferences();
+  const { language, setLanguage, completeOnboarding } = usePreferences();
   const [selected, setSelected] = useState<LanguageCode>(language);
   const [busy, setBusy] = useState(false);
 
@@ -30,7 +30,15 @@ export default function LanguageScreen() {
   const confirm = async () => {
     setBusy(true);
     await completeOnboarding();
-    router.replace(onboarded ? '/' : '/sign-in');
+    // Back to the entry gate rather than straight to sign-in. This used to
+    // branch on `onboarded`, which is read from the render *before*
+    // `completeOnboarding` — so it was always the stale `false`, and the branch
+    // that was supposed to handle an already-onboarded user was dead code.
+    // Handing the decision back to `index.tsx` is both correct and one rule
+    // instead of two: it waits for `auth.ready` and sends a user who already
+    // has a session to the tabs rather than to a sign-in screen they do not
+    // need.
+    router.replace('/');
   };
 
   return (

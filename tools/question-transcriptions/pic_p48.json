@@ -1,0 +1,55 @@
+[
+{"n":126,"id":"qp-priority-b-turn-left","topic":"priority","correct":1,"img":"pic-126.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة A","المركبة B","كلتا المركبتين"],
+ "en":["Who has right of way in this picture?","Vehicle A","Vehicle B","Both vehicles"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئۆتۆمبێلی A","ئۆتۆمبێلی B","هەردووکیان"],
+ "exp":{"ar":"الأسبقية للمركبة B بحسب دليل الأسئلة الرسمي.","en":"Vehicle B has priority, per the official guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Bیە."}},
+
+{"n":127,"id":"qp-priority-b-straight","topic":"priority","correct":1,"img":"pic-127.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة A","المركبة B","المركبة الاقرب للتقاطع"],
+ "en":["Who has right of way in this picture?","Vehicle A","Vehicle B","The vehicle closer to the junction"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئۆتۆمبێلی A","ئۆتۆمبێلی B","ئەوەی نزیکترە لە چوارڕیانەکە"],
+ "exp":{"ar":"الأسبقية للمركبة B بحسب دليل الأسئلة الرسمي.","en":"Vehicle B has priority, per the official guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Bیە."}},
+
+{"n":128,"id":"qp-priority-both-together","topic":"priority","correct":2,"img":"pic-128.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة A","المركبة B","الاثنان في آن واحد"],
+ "en":["Who has right of way in this picture?","Vehicle A","Vehicle B","Both at the same time"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئۆتۆمبێلی A","ئۆتۆمبێلی B","هەردووکیان لە یەک کاتدا"],
+ "exp":{"ar":"الأسبقية للمركبتين في آن واحد بحسب دليل الأسئلة الرسمي.","en":"Both have priority at the same time, per the official guide.","ckb":"هەردووکیان لە یەک کاتدا."}},
+
+{"n":129,"id":"qp-road-narrows-action","topic":"rules","correct":0,"img":"pic-129.jpg",
+ "ar":["الاجراء الصحيح في حال رؤيتك لهذه العلامة هي؟","تخفيض سرعة مركبتك وسلك الجانب الايمن من الطريق وعدم الاجتياز","تخفيض سرعة مركبتك وسلك الجانب الايسر مع امكانية الاجتياز","زيادة سرعة مركبتك وسلك الجانب الايسر من الطريق وعدم الاجتياز"],
+ "en":["What is the correct action when you see this sign?","Reduce speed, keep to the right-hand side of the road and do not overtake","Reduce speed, keep to the left-hand side, with overtaking possible","Increase speed, keep to the left-hand side and do not overtake"],
+ "ckb":["کردەی دروست کاتێک ئەم تابلۆیە دەبینیت چییە؟","خێرایی کەم بکەرەوە و لای ڕاستی ڕێگا بگرە و تێمەپەڕێنە","خێرایی کەم بکەرەوە و لای چەپ بگرە","خێرایی زیاد بکە و لای چەپ بگرە"],
+ "exp":{"ar":"تُخفض السرعة ويُسلك الجانب الأيمن دون اجتياز.","en":"Slow down, keep right and do not overtake.","ckb":"خێرایی کەم بکەرەوە و لای ڕاست بگرە."}},
+
+{"n":130,"id":"qp-priority-with-stop-sign","topic":"priority","correct":1,"img":"pic-130.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة بوجود علامة التوقف؟","المركبة A","المركبة B","المركبة الاقرب للتقاطع"],
+ "en":["Who has right of way in this picture, given the stop sign?","Vehicle A","Vehicle B","The vehicle closer to the junction"],
+ "ckb":["لەم وێنەیەدا بە بوونی تابلۆی وەستان، پێشینەیی بۆ کێیە؟","ئۆتۆمبێلی A","ئۆتۆمبێلی B","ئەوەی نزیکترە لە چوارڕیانەکە"],
+ "exp":{"ar":"الأسبقية للمركبة B بحسب دليل الأسئلة الرسمي.","en":"Vehicle B has priority, per the official guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Bیە."}},
+
+{"n":131,"id":"qp-slippery-sign-action","topic":"rules","correct":0,"img":"pic-131.jpg",
+ "ar":["ما الاجراء الواجب اتخاذه عند رؤية هذه العلامة اثناء القيادة؟","تقليل السرعة وعدم تغير المسار ومناورة الاجتياز","زيادة السرعة للخروج من المنطقة بسرعة","اعطاء الطريق للمركبات الاخرى لاجتيازك وتقليل السرعة"],
+ "en":["What action must be taken when you see this sign while driving?","Reduce speed and avoid changing lane or overtaking","Increase speed to leave the area quickly","Give way to other vehicles to overtake you and reduce speed"],
+ "ckb":["کاتێک ئەم تابلۆیە دەبینیت چی دەکەیت؟","خێرایی کەم بکەرەوە و لاین مەگۆڕە و تێمەپەڕێنە","خێرایی زیاد بکە بۆ دەرچوون لە ناوچەکە","ڕێگا بدە بەوانەی تر تێت بپەڕێنن"],
+ "exp":{"ar":"تُقلل السرعة ويُتجنب تغيير المسار والاجتياز على الطريق الزلق.","en":"Slow down and avoid lane changes or overtaking on a slippery road.","ckb":"خێرایی کەم بکەرەوە و لاین مەگۆڕە."}},
+
+{"n":132,"id":"qp-priority-with-give-way-sign","topic":"priority","correct":0,"img":"pic-132.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة بوجود علامة الاسبقية؟","المركبة A","المركبة B","المركبتين معاً"],
+ "en":["Who has right of way in this picture, given the priority sign?","Vehicle A","Vehicle B","Both vehicles together"],
+ "ckb":["لەم وێنەیەدا بە بوونی تابلۆی پێشینەیی، پێشینەیی بۆ کێیە؟","ئۆتۆمبێلی A","ئۆتۆمبێلی B","هەردووکیان پێکەوە"],
+ "exp":{"ar":"الأسبقية للمركبة A بحسب دليل الأسئلة الرسمي.","en":"Vehicle A has priority, per the official guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Aیە."}},
+
+{"n":133,"id":"qp-correct-parking-method","topic":"rules","correct":1,"img":"pic-133.jpg",
+ "ar":["ما هي طريقة الصحيحة في رص المركبة البيضاء في الصورة ادناه؟","طريقة الرص في الدخول بإتجاه السير","طريقة الرص في الدخول بإتجاه عكس السير (الرجوع للخلف)","لا يسمح بكلتا الطريقين"],
+ "en":["What is the correct way to park the white vehicle in the picture below?","Parking by driving in facing the direction of travel","Parking by entering against the direction of travel (reversing in)","Neither method is permitted"],
+ "ckb":["ڕێگای دروستی وەستاندنی ئۆتۆمبێلە سپییەکە لەم وێنەیەدا چییە؟","بە ئاراستەی ڕۆیشتن بچێتە ژوورەوە","بە پێچەوانەی ئاراستەی ڕۆیشتن (بە دواوە چوون)","هیچیان ڕێپێدراو نییە"],
+ "exp":{"ar":"الرص الصحيح يكون بالرجوع للخلف عكس اتجاه السير.","en":"The correct method is to reverse in, against the direction of travel.","ckb":"بە دواوەچوون دروستە."}},
+
+{"n":134,"id":"qp-priority-b-final","topic":"priority","correct":0,"img":"pic-134.jpg",
+ "ar":["لمن الاسبقية في هذه الصورة؟","المركبة B","المركبة A","الاقرب للتقاطع"],
+ "en":["Who has right of way in this picture?","Vehicle B","Vehicle A","The one closer to the junction"],
+ "ckb":["لەم وێنەیەدا پێشینەیی بۆ کێیە؟","ئۆتۆمبێلی B","ئۆتۆمبێلی A","ئەوەی نزیکترە لە چوارڕیانەکە"],
+ "exp":{"ar":"الأسبقية للمركبة B بحسب دليل الأسئلة الرسمي.","en":"Vehicle B has priority, per the official guide.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی Bیە."}}
+]

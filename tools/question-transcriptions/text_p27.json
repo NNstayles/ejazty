@@ -1,0 +1,55 @@
+[
+{"n":225,"id":"q-prevent-ejection","topic":"rules","correct":0,
+ "ar":["في حالات الاصطدام من المحتمل ان ترمى الى خارج مركبتك. يمكن الوقاية من هذا عن طريق؟","ربط حزام الامان بالطريقة الصحيحة","المسك بقوة بلوحة عدادات السيارة","شراء مركبة مزودة بالاكياس الهوائية"],
+ "en":["In a collision you may be thrown out of your vehicle. This can be prevented by:","Wearing the seat belt correctly","Gripping the instrument panel tightly","Buying a vehicle fitted with airbags"],
+ "ckb":["لە پێکداداندا لەوانەیە فڕێ بدرێیتە دەرەوەی ئۆتۆمبێلەکەت. بەم شێوەیە ڕێگری لێدەکرێت:","بەستنی پشتێنی سەلامەتی بە شێوەی دروست","گرتنی توندی تابلۆی ژمێرەرەکان","کڕینی ئۆتۆمبێلی خاوەن کیسەی هەوا"],
+ "exp":{"ar":"ربط حزام الأمان بالطريقة الصحيحة يمنع القذف خارج المركبة.","en":"Wearing the seat belt correctly prevents ejection.","ckb":"بەستنی دروستی پشتێن ڕێگری لە فڕێدان دەکات."}},
+
+{"n":226,"id":"q-parking-lorries-in-alleys-penalty","topic":"rules","correct":2,
+ "ar":["ترك او مبيت مركبات الحمل والكبيرة في الازقة والشوارع الداخلية ممنوع ولا يشمل ذلك ايقافها ضمن المدة المتضمنة للتفريغ او التحميل والشخص الذي يخالف ذلك يعاقب ب؟","سحب اجازة السوق لمدة 6اشهر","حجز المركبة","الغرامة"],
+ "en":["Leaving or parking goods and large vehicles overnight in alleys and inner streets is prohibited, excluding stops for loading or unloading, and an offender is punished by:","Withdrawal of the driving licence for 6 months","Impounding the vehicle","A fine"],
+ "ckb":["بەجێهێشتن یان شەوگاری بارهەڵگر و ئۆتۆمبێلی گەورە لە کۆڵان و شەقامە ناوەکییەکاندا قەدەغەیە، و سەرپێچیکەر سزا دەدرێت بە:","هەڵگرتنەوەی مۆڵەت بۆ ٦ مانگ","دەستبەسەرداگرتنی ئۆتۆمبێل","غەرامە"],
+ "exp":{"ar":"عقوبة ترك مركبات الحمل في الأزقة هي الغرامة.","en":"The penalty is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":227,"id":"q-broken-white-lines-meaning","topic":"signs","correct":0,
+ "ar":["من العلامات الارضية التي تسمح بالانتقال بين المسارات والقيام بمناورة الاجتياز هي خطوط؟","البيضاء المتقطعة","البيضاء المتصلة","البيضاء المتصلة والمزدوجة"],
+ "en":["The road markings that allow moving between lanes and performing an overtaking manoeuvre are:","Broken white lines","Continuous white lines","Double continuous white lines"],
+ "ckb":["ئەو نیشانە زەمینییانەی ڕێگا بە گۆڕینی لاین و تێپەڕاندن دەدەن:","هێڵە سپییە پچڕپچڕەکان","هێڵە سپییە بەردەوامەکان","هێڵە سپییە بەردەوام و دووانەکان"],
+ "exp":{"ar":"الخطوط البيضاء المتقطعة تسمح بالانتقال بين المسارات والاجتياز.","en":"Broken white lines allow lane changes and overtaking.","ckb":"هێڵە پچڕپچڕەکان ڕێگا دەدەن."}},
+
+{"n":228,"id":"q-unclear-plate-penalty","topic":"mechanics","correct":1,
+ "ar":["قيادة مركبة ذات لوحة تسجيل غير واضحة أو تالفة ممنوع وعقوبته؟","الحبس","الغرامة","سحب الاجازة لمدة شهر واحد"],
+ "en":["Driving a vehicle with an unclear or damaged registration plate is prohibited and punished by:","Imprisonment","A fine","Withdrawal of the licence for one month"],
+ "ckb":["لێخوڕینی ئۆتۆمبێلی خاوەن پلێتی ناڕوون یان تێکچوو قەدەغەیە و سزاکەی:","زیندان","غەرامە","هەڵگرتنەوەی مۆڵەت بۆ مانگێک"],
+ "exp":{"ar":"عقوبة اللوحة غير الواضحة أو التالفة هي الغرامة.","en":"The penalty is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":229,"id":"q-stop-line-meaning","topic":"signs","correct":0,
+ "ar":["من العلامات الارضية التي ترسم على الطرق خط عرضي متصل بالقرب من اعمدة الاشارات الضوئية (الترافك لايت) ماذا تعني هذه العلامة؟","قف","انتبه","لاتعني شيئا وهي للجمالية فقط"],
+ "en":["Among the road markings is a continuous transverse line drawn near the traffic-light poles. What does this marking mean?","Stop","Take care","It means nothing and is only decorative"],
+ "ckb":["لە نیشانە زەمینییەکان هێڵێکی پانی بەردەوام لە نزیک کۆڵەکەی چرای هاتوچۆ دەکێشرێت. واتای چییە؟","بوەستە","ئاگاداربە","هیچ واتایەکی نییە و تەنها بۆ جوانییە"],
+ "exp":{"ar":"الخط العرضي المتصل قرب الإشارة الضوئية يعني قف.","en":"The continuous transverse line at the lights means Stop.","ckb":"هێڵی پانی بەردەوام واتە بوەستە."}},
+
+{"n":230,"id":"q-overtaking-on-right-penalty","topic":"rules","correct":0,
+ "ar":["اجتياز السائق لمركبة اخرى من الجهة اليمنى او الاجتياز الخاطئ ممنوع وعقوبته؟","الغرامة","حجز المركبة","حجز المركبة والغرامة"],
+ "en":["A driver overtaking another vehicle on the right, or overtaking improperly, is prohibited and punished by:","A fine","Impounding the vehicle","Impounding the vehicle and a fine"],
+ "ckb":["تێپەڕاندنی ئۆتۆمبێلێکی تر لە لای ڕاستەوە یان تێپەڕاندنی هەڵە قەدەغەیە و سزاکەی:","غەرامە","دەستبەسەرداگرتنی ئۆتۆمبێل","دەستبەسەرداگرتن و غەرامە"],
+ "exp":{"ar":"عقوبة الاجتياز من اليمين أو الاجتياز الخاطئ هي الغرامة.","en":"The penalty is a fine.","ckb":"سزاکە غەرامەیە."}},
+
+{"n":231,"id":"q-indicator-use","topic":"rules","correct":1,
+ "ar":["تستخدم الاضاءة المتقطعة الصفراء (الاشارات) على جانبي المركبة؟","في حالة السير بسرعات منخفضة","في حالة الانعطاف وتغير المسار","في حالة السير بسرعات عالية"],
+ "en":["The flashing amber lights (indicators) on the sides of the vehicle are used:","When travelling at low speeds","When turning and changing lane","When travelling at high speeds"],
+ "ckb":["ڕووناکی زەردی پچڕپچڕ (ئاماژەکان) لە هەردوو لای ئۆتۆمبێل کەی بەکاردێن؟","لە کاتی ڕۆیشتن بە خێرایی نزم","لە کاتی سووڕانەوە و گۆڕینی لاین","لە کاتی ڕۆیشتن بە خێرایی بەرز"],
+ "exp":{"ar":"تُستخدم الإشارات عند الانعطاف وتغيير المسار.","en":"Indicators are used when turning and changing lane.","ckb":"ئاماژەکان لە کاتی سووڕانەوە و گۆڕینی لاین بەکاردێن."}},
+
+{"n":232,"id":"q-towing-broken-vehicles","topic":"mechanics","correct":0,
+ "ar":["يجب قطر أو نقل المركبات المتعطلة بواسطة؟","مركبات متخصصة لنقل المركبة (Recovery vehicles)","سحبها بوساطة مركبة صغيرة عن طريق الحبال","سحبها بوساطة مركبة كبيرة (شاحنة)"],
+ "en":["Broken-down vehicles must be towed or moved by:","Specialised vehicle-transport units (recovery vehicles)","Towing with a small vehicle using ropes","Towing with a large vehicle (a lorry)"],
+ "ckb":["ئۆتۆمبێلە تێکچووەکان دەبێت بە چی بگوێزرێنەوە؟","ئۆتۆمبێلی تایبەت بۆ گواستنەوە (Recovery vehicles)","ڕاکێشان بە ئۆتۆمبێلی بچووک بە پەت","ڕاکێشان بە ئۆتۆمبێلی گەورە (بارهەڵگر)"],
+ "exp":{"ar":"تُنقل المركبات المتعطلة بمركبات متخصصة (Recovery vehicles).","en":"Broken-down vehicles are moved by specialised recovery vehicles.","ckb":"بە ئۆتۆمبێلی تایبەتی گواستنەوە."}},
+
+{"n":233,"id":"q-safety-rules-violation-penalty","topic":"rules","correct":0,
+ "ar":["مخالفة قواعد سير الامان ممنوع وعقوبته؟","الغرامة","حجز المركبة","سحب اجازة السوق لمدة شهر واحد"],
+ "en":["Breaching the road-safety rules is prohibited and punished by:","A fine","Impounding the vehicle","Withdrawal of the driving licence for one month"],
+ "ckb":["سەرپێچی یاساکانی سەلامەتی هاتوچۆ قەدەغەیە و سزاکەی:","غەرامە","دەستبەسەرداگرتنی ئۆتۆمبێل","هەڵگرتنەوەی مۆڵەت بۆ مانگێک"],
+ "exp":{"ar":"عقوبة مخالفة قواعد سير الأمان هي الغرامة.","en":"The penalty is a fine.","ckb":"سزاکە غەرامەیە."}}
+]

@@ -1,0 +1,55 @@
+[
+{"n":189,"id":"q-vehicle-fire-causes","topic":"mechanics","correct":0,
+ "ar":["من اهم اسباب اندلاع الحريق في المركبة هو؟","التدخين في محطات الوقود والاهمال في استخدام السكائر والولاعة او الكبريت","قيادة المركبة بدون اضوية امامية وخلفية","قيادة المركبة باطارات ملساء"],
+ "en":["One of the main causes of a vehicle fire is:","Smoking at filling stations and careless use of cigarettes, lighters or matches","Driving without front and rear lights","Driving on bald tyres"],
+ "ckb":["یەکێک لە سەرەکیترین هۆکارەکانی ئاگرکەوتنەوە لە ئۆتۆمبێلدا:","جگەرەکێشان لە بۆریگەی سووتەمەنی و بێئاگایی لە بەکارهێنانی جگەرە و داگیرسێنەر","لێخوڕین بەبێ چرای پێشەوە و دواوە","لێخوڕین بە تایەی لووس"],
+ "exp":{"ar":"التدخين قرب الوقود والإهمال في استخدام السكائر والولاعة سبب رئيسي للحريق.","en":"Smoking near fuel and careless use of cigarettes or lighters is a main cause.","ckb":"جگەرەکێشان لە نزیک سووتەمەنی هۆکاری سەرەکی ئاگرکەوتنەوەیە."}},
+
+{"n":190,"id":"q-oil-level-on-dipstick","topic":"mechanics","correct":2,
+ "ar":["يجب ان يكون مستوى زيت المحرك على عصا القياس؟","على الحرف (L)","على الحرف (H)","بين الحرفين (L) و (H)"],
+ "en":["The engine oil level on the dipstick must be:","At the letter (L)","At the letter (H)","Between the letters (L) and (H)"],
+ "ckb":["ئاستی زەیتی بزوێنەر لەسەر دارەکەی پێوان دەبێت:","لەسەر پیتی (L)","لەسەر پیتی (H)","لە نێوان پیتەکانی (L) و (H)"],
+ "exp":{"ar":"يجب أن يكون مستوى الزيت بين الحرفين (L) و(H).","en":"The oil level must sit between (L) and (H).","ckb":"ئاستی زەیت دەبێت لە نێوان (L) و (H) بێت."}},
+
+{"n":191,"id":"q-mobile-use-when-parked","topic":"rules","correct":0,
+ "ar":["إستعمال الهاتف النقال (الموبايل) يتم؟","عند وقوف المركبة وقوفاً كاملاً في الاماكن المخصصة للوقوف لحين إنتهاء المكالمة","إستخدامه بعد تخفيض سرعة المركبة","إستخدامه عند التوقف في الاشارات الضوئية (الترافيك لايت)"],
+ "en":["A mobile phone may be used:","When the vehicle is fully stopped in a designated parking place, until the call ends","After reducing the vehicle's speed","When stopped at the traffic lights"],
+ "ckb":["بەکارهێنانی مۆبایل کەی دەبێت؟","کاتێک ئۆتۆمبێلەکە بە تەواوی لە شوێنی دیاریکراودا وەستاوە تا تەواوبوونی پەیوەندییەکە","دوای کەمکردنەوەی خێرایی","کاتێک لە چرای هاتوچۆدا وەستاویت"],
+ "exp":{"ar":"يُستعمل الهاتف عند الوقوف التام في مكان مخصص للوقوف.","en":"Use the phone only when fully parked in a designated place.","ckb":"تەنها کاتێک بە تەواوی لە شوێنی دیاریکراودا وەستاویت."}},
+
+{"n":192,"id":"q-vehicle-boot-use","topic":"mechanics","correct":1,
+ "ar":["يستخدم صندوق المركبة؟","لنقل الركاب","مكان لوضع عدة الصيانة والطوارئ والاسعافات الضرورية فقط","مكان لحمل الحيوانات والطيور المنزلية"],
+ "en":["The vehicle's boot is used:","To carry passengers","As a place for maintenance tools, emergency equipment and essential first-aid supplies only","As a place to carry household animals and birds"],
+ "ckb":["سندوقی ئۆتۆمبێل بۆ چی بەکاردێت؟","بۆ گواستنەوەی سەرنشین","تەنها بۆ دانانی ئامێری چاککردنەوە و فریاگوزاری و پێداویستی سەرەتایی","بۆ هەڵگرتنی ئاژەڵ و باڵندەی ماڵی"],
+ "exp":{"ar":"الصندوق مخصص لعدة الصيانة والطوارئ والإسعافات فقط.","en":"The boot is for maintenance tools, emergency kit and first aid only.","ckb":"سندوق تەنها بۆ ئامێری چاککردنەوە و فریاگوزارییە."}},
+
+{"n":193,"id":"q-pavement-purpose","topic":"rules","correct":1,
+ "ar":["الرصيف يقع على جانبي الشوارع الداخلية ويستخدم ل؟","وقوف المركبات","سير المشاة","سير الدراجات النارية"],
+ "en":["The pavement lies along the sides of inner-city streets and is used for:","Parking vehicles","Pedestrians to walk on","Motorcycles to ride on"],
+ "ckb":["ڕێڕەوی پیادە لە هەردوو لای شەقامە ناوەکییەکانە و بۆ چی بەکاردێت؟","وەستانی ئۆتۆمبێل","ڕۆیشتنی پیادەکان","ڕۆیشتنی ماتۆڕسکیل"],
+ "exp":{"ar":"الرصيف مخصص لسير المشاة.","en":"The pavement is for pedestrians to walk on.","ckb":"ڕێڕەوی پیادە بۆ ڕۆیشتنی پیادەکانە."}},
+
+{"n":194,"id":"q-driver-must-stop-safe-place","topic":"rules","correct":2,
+ "ar":["على السائق ان؟","يستمر في قيادة المركبة","استعمال الاضوية العالية","يوقف المركبة في مكان امن"],
+ "en":["The driver must:","Carry on driving the vehicle","Use the main beam","Stop the vehicle in a safe place"],
+ "ckb":["شۆفێر دەبێت:","بەردەوام بێت لە لێخوڕین","ڕووناکی بەرز بەکاربهێنێت","ئۆتۆمبێلەکە لە شوێنێکی سەلامەتدا بوەستێنێت"],
+ "exp":{"ar":"يوقف السائق المركبة في مكان آمن.","en":"The driver should stop the vehicle in a safe place.","ckb":"شۆفێر دەبێت لە شوێنێکی سەلامەتدا بوەستێت."}},
+
+{"n":195,"id":"q-priority-vehicles-on-road","topic":"priority","correct":2,
+ "ar":["الاسبقية تكون للمركبات؟","الخارجة من مواقف المركبات (الكراج)","الخارجة من محطات تعبئة الوقود","التي تسير في الطريق على من يروم الدخول اليها"],
+ "en":["Priority belongs to vehicles:","Coming out of car parks (garages)","Coming out of filling stations","Already travelling on the road, over those wishing to join it"],
+ "ckb":["پێشینەیی بۆ کام ئۆتۆمبێلانەیە؟","ئەوانەی لە شوێنی وەستانەوە دەردەچن","ئەوانەی لە بۆریگەی سووتەمەنییەوە دەردەچن","ئەوانەی لە ڕێگادا دەڕۆن بەسەر ئەوانەی دەیانەوێت بچنە ناوی"],
+ "exp":{"ar":"الأسبقية للمركبة السائرة في الطريق على الراغب بالدخول إليه.","en":"Vehicles already on the road have priority over those joining.","ckb":"پێشینەیی بۆ ئەوانەیە کە لە ڕێگادان."}},
+
+{"n":196,"id":"q-overtaking-clear-view","topic":"rules","correct":0,
+ "ar":["جميع الاماكن التي يسمح بالاجتياز يجب ان؟","تكون الرؤية فيها واضحة","يكون الطريق مبلل","الخط الابيض في منتصف الطريق ذو اتجاه واحد متصل"],
+ "en":["In every place where overtaking is allowed, it is required that:","Visibility there is clear","The road is wet","The white line in the middle of a one-way road is continuous"],
+ "ckb":["لە هەموو ئەو شوێنانەی تێپەڕاندن ڕێپێدراوە دەبێت:","بینین ڕوون بێت","ڕێگاکە تەڕ بێت","هێڵی سپی ناوەڕاست بەردەوام بێت"],
+ "exp":{"ar":"يُشترط وضوح الرؤية في كل مكان يُسمح فيه بالاجتياز.","en":"Clear visibility is required wherever overtaking is allowed.","ckb":"لە هەموو شوێنێکدا دەبێت بینین ڕوون بێت."}},
+
+{"n":197,"id":"q-priority-in-square","topic":"priority","correct":1,
+ "ar":["تكون الاسبقية في التقاطعات للمركبات التي؟","التي تدخل الساحة","في الساحة","لا توجد اسبقية"],
+ "en":["At junctions, priority belongs to the vehicles that are:","Entering the square","Already in the square","There is no priority"],
+ "ckb":["لە چوارڕیانەکاندا پێشینەیی بۆ کام ئۆتۆمبێلانەیە؟","ئەوانەی دەچنە ناو گۆڕەپانەکە","ئەوانەی لە گۆڕەپانەکەدان","پێشینەیی نییە"],
+ "exp":{"ar":"الأسبقية للمركبات الموجودة داخل الساحة.","en":"Priority belongs to vehicles already in the square.","ckb":"پێشینەیی بۆ ئەوانەیە کە لە گۆڕەپانەکەدان."}}
+]

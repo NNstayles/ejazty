@@ -1,0 +1,55 @@
+[
+{"n":63,"id":"q-parking-on-expressway-allowed","topic":"rules","correct":0,
+ "ar":["هل يجوز إيقاف أو وقوف المركبات في الطرق السريعه؟","نعم يجوز في الاماكن المخصصة للوقوف أو التوقف في الطرق السريعة","نعم يجوز الايقاف أو الوقوف في ممر مركبات الطوارئ","نعم يجوز إيقاف المركبات في المناطق المجهزة بعلامات مرورية لمنع الوقوف"],
+ "en":["May vehicles stop or park on expressways?","Yes, in the places designated for parking or stopping on expressways","Yes, stopping or parking in the emergency-vehicle lane is allowed","Yes, vehicles may stop in areas signed as no-parking"],
+ "ckb":["ئایا ڕێپێدراوە ئۆتۆمبێل لە ڕێگا خێراکاندا بوەستێت یان پارک بکات؟","بەڵێ، لەو شوێنانەی بۆ وەستان دیاریکراون لە ڕێگا خێراکان","بەڵێ، لە لاینی ئۆتۆمبێلی فریاگوزاری ڕێپێدراوە","بەڵێ، لەو ناوچانەی تابلۆی قەدەغەی وەستانیان هەیە"],
+ "exp":{"ar":"الوقوف مسموح فقط في الأماكن المخصصة له على الطرق السريعة.","en":"Stopping is only allowed in the designated places on an expressway.","ckb":"وەستان تەنها لە شوێنە دیاریکراوەکاندا ڕێپێدراوە."}},
+
+{"n":64,"id":"q-air-filter-service","topic":"mechanics","correct":2,
+ "ar":["ينظف أو يبدل مصفي الهواء (فلتر الشوتة)","كل 5000 كم","كل 10000كم","ينظف دورياً حسب البيئة التي تستخدم فيها المركبة باعتماد مواصفات المركبة"],
+ "en":["The air filter should be cleaned or replaced:","Every 5,000 km","Every 10,000 km","Periodically, according to the environment the vehicle is used in and the vehicle's specifications"],
+ "ckb":["فلتەری هەوا کەی پاک دەکرێتەوە یان دەگۆڕدرێت؟","هەر ٥٠٠٠ کم","هەر ١٠٠٠٠ کم","بە شێوەی خولی بەپێی ئەو ژینگەیەی ئۆتۆمبێلەکە تێیدا بەکاردەهێنرێت و تایبەتمەندییەکانی"],
+ "exp":{"ar":"ينظف دورياً وفق بيئة الاستعمال ومواصفات المركبة.","en":"Clean it periodically according to the operating environment and the vehicle's specification.","ckb":"بە خولی بەپێی ژینگەی بەکارهێنان و تایبەتمەندی ئۆتۆمبێلەکە."}},
+
+{"n":65,"id":"q-required-documents-when-driving","topic":"mechanics","correct":0,
+ "ar":["ما هي أهم الوثائق التي يجب توفرها في المركبة أثناء قيادتك لها؟","رخصة قيادة المركبة، سارية المفعول ولنفس صنف المركبة مع سنوية المركبة ويجب ان تكون سارية المفعول","هوية الاحوال الشخصية والجنسية العراقية","كاتالوك المركبة"],
+ "en":["Which documents must be in the vehicle while you are driving it?","A valid driving licence for that class of vehicle, plus the vehicle's valid annual document","The civil status identity card and the Iraqi nationality certificate","The vehicle's handbook"],
+ "ckb":["گرنگترین بەڵگەنامەکان کە دەبێت لە ئۆتۆمبێلدا هەبن لە کاتی لێخوڕین:","مۆڵەتی لێخوڕینی کارا بۆ هەمان جۆری ئۆتۆمبێل، لەگەڵ بەڵگەنامەی ساڵانەی کارای ئۆتۆمبێلەکە","ناسنامەی بارودۆخی شارستانی و ڕەگەزنامەی عێراقی","کاتالۆگی ئۆتۆمبێل"],
+ "exp":{"ar":"يجب حمل إجازة سوق سارية لنفس الصنف مع سنوية المركبة السارية.","en":"Carry a valid licence for that vehicle class together with the vehicle's valid annual document.","ckb":"مۆڵەتی کارا بۆ هەمان جۆر لەگەڵ بەڵگەنامەی ساڵانەی کارا."}},
+
+{"n":66,"id":"q-motorcycle-protective-gear","topic":"rules","correct":0,
+ "ar":["سائق الدراجة النارية عليه استخدام مايلي؟","خوذة خاصة لقيادة الدراجة مع نظارات و واقيات للركبة واليد","فقط حذاء خاص بقيادة الدراجات","ملابس إعتيادية مع غطاء رأس إعتيادي"],
+ "en":["A motorcyclist must use:","A proper motorcycle helmet with goggles and knee and hand protectors","Only special motorcycling boots","Ordinary clothes with an ordinary head covering"],
+ "ckb":["شۆفێری ماتۆڕسکیل دەبێت ئەمانە بەکاربهێنێت:","کڵاوی پارێزەری تایبەت بە ماتۆڕسکیل لەگەڵ چاویلکە و پارێزەری ئەژنۆ و دەست","تەنها پێڵاوی تایبەت بە ماتۆڕسکیل","جلی ئاسایی لەگەڵ سەرپۆشی ئاسایی"],
+ "exp":{"ar":"يلزم ارتداء خوذة مع نظارات وواقيات للركبة واليد.","en":"A helmet with goggles and knee and hand protection is required.","ckb":"کڵاوی پارێزەر لەگەڵ چاویلکە و پارێزەری ئەژنۆ و دەست پێویستە."}},
+
+{"n":67,"id":"q-writing-on-vehicle-body","topic":"mechanics","correct":2,
+ "ar":["لا يجوز كتابة أي كلمات أو جمل على المركبات غير تلك الواجبة بحكم التعليمات على هيكل المركبة؟","على المركبات الخصوصي","على المركبات التاكسي","على الشاحنات حسب التعليمات"],
+ "en":["No words or sentences may be written on a vehicle body other than those required by the regulations:","On private vehicles","On taxis","On lorries, as the regulations require"],
+ "ckb":["نابێت هیچ وشە یان ڕستەیەک لەسەر لەشی ئۆتۆمبێل بنووسرێت جگە لەوانەی بەپێی ڕێنماییەکان پێویستن:","لەسەر ئۆتۆمبێلی تایبەت","لەسەر تاکسی","لەسەر بارهەڵگرەکان بەپێی ڕێنماییەکان"],
+ "exp":{"ar":"يُسمح بالكتابة على الشاحنات وفق التعليمات فقط.","en":"Writing is permitted on lorries only as the regulations prescribe.","ckb":"نووسین تەنها لەسەر بارهەڵگرەکان بەپێی ڕێنمایی ڕێپێدراوە."}},
+
+{"n":68,"id":"q-abnormal-vehicle-noise","topic":"mechanics","correct":0,
+ "ar":["ماذا يتوجب عليك عمله إذا أصدرت مركبتك ضوضاء غير اعتيادية؟","لا يجوز سياقة مركبة تصدر عنها ضوضاء غير اعتيادي","مسموح سياقة مركبة تصدر عنها ضوضاء غير اعتيادي وبدون أي قيد","مسموح سياقة مركبة تصدر عنها ضوضاء غير اعتيادي ولكن بقيود محددة"],
+ "en":["What must you do if your vehicle makes an abnormal noise?","A vehicle that makes an abnormal noise may not be driven","Driving it is allowed with no restriction","Driving it is allowed but under specific restrictions"],
+ "ckb":["ئەگەر ئۆتۆمبێلەکەت دەنگێکی نائاسایی دەرکرد، دەبێت چی بکەیت؟","نابێت ئۆتۆمبێلێک لێبخوڕدرێت کە دەنگی نائاسایی لێدێت","بێ هیچ مەرجێک ڕێپێدراوە","بە مەرجی دیاریکراو ڕێپێدراوە"],
+ "exp":{"ar":"يمنع سوق مركبة تصدر ضوضاء غير اعتيادية.","en":"A vehicle producing abnormal noise must not be driven.","ckb":"ئۆتۆمبێلی خاوەن دەنگی نائاسایی نابێت لێبخوڕدرێت."}},
+
+{"n":69,"id":"q-throwing-items-from-window","topic":"rules","correct":1,
+ "ar":["عقوبة رمي المواد أي كان نوعها من نوافذ المركبات هي؟","حجز المركبة","الغرامة","الغرامة مع حجز المركبة"],
+ "en":["The penalty for throwing anything, of any kind, out of a vehicle window is:","Impounding the vehicle","A fine","A fine together with impounding the vehicle"],
+ "ckb":["سزای فڕێدانی هەر شتێک لە پەنجەرەی ئۆتۆمبێلەوە چییە؟","دەستبەسەرداگرتنی ئۆتۆمبێل","غەرامە","غەرامە لەگەڵ دەستبەسەرداگرتن"],
+ "exp":{"ar":"عقوبة رمي المواد من نوافذ المركبة هي الغرامة.","en":"The penalty for throwing things from a vehicle window is a fine.","ckb":"سزای فڕێدانی شت لە پەنجەرەوە غەرامەیە."}},
+
+{"n":70,"id":"q-when-stopping-prohibited","topic":"rules","correct":0,
+ "ar":["متى وأين تمنع المركبات من التوقف أو الايقاف؟","إذ كانت الموقع الذي تقف فيه يؤدي الى عرقلة السير أو حجب علامة مرورية أو يؤدي الى حادثة أو بالقرب من نقطة ماء حريق أو الوقوف في أماكن خاصة بذوي الاحتياجات الخاصة","إذ كان محرك المركبة لا يشتغل","إذ كانت لا تحمل ركاب"],
+ "en":["When and where are vehicles prohibited from stopping or parking?","Where stopping would obstruct traffic, hide a traffic sign, cause an accident, sit near a fire hydrant, or occupy a space reserved for people with disabilities","When the vehicle's engine will not start","When it is carrying no passengers"],
+ "ckb":["کەی و لەکوێ ئۆتۆمبێل لە وەستان قەدەغە دەکرێت؟","ئەگەر شوێنەکە ببێتە هۆی تێکدانی هاتوچۆ یان شاردنەوەی تابلۆ یان ڕووداو، یان نزیک لە سەرچاوەی ئاوی ئاگرکوژێنەوە، یان لە شوێنی تایبەت بە خاوەن پێداویستی تایبەت","ئەگەر بزوێنەری ئۆتۆمبێلەکە کار نەکات","ئەگەر سەرنشینی هەڵنەگرتبێت"],
+ "exp":{"ar":"يمنع الوقوف حيث يعرقل السير أو يحجب علامة أو يشغل مكاناً مخصصاً لذوي الاحتياجات الخاصة.","en":"Parking is prohibited where it obstructs traffic, hides a sign or takes a disabled space.","ckb":"وەستان قەدەغەیە لە شوێنی تێکدانی هاتوچۆ یان شاردنەوەی تابلۆ یان شوێنی تایبەت."}},
+
+{"n":71,"id":"q-responsible-driver-trait","topic":"rules","correct":1,
+ "ar":["اي من الصفات التالية تعود الى سائق يتمتع بشعور الحس بالمسؤلية؟","القيادة دون القلق بشان قواعد المرور والاسبقيات","الذي يفكر بنتائج افعاله","الذي لايتردد في تعريض نفسه واحبائه للخطر"],
+ "en":["Which of the following describes a driver with a sense of responsibility?","Driving without worrying about traffic rules and priorities","One who thinks about the consequences of their actions","One who does not hesitate to put themselves and their loved ones at risk"],
+ "ckb":["کام لەم تایبەتمەندییانە بۆ شۆفێرێکی بەرپرسیارە؟","لێخوڕین بەبێ نیگەرانی لە یاساکانی هاتوچۆ و پێشینەییەکان","ئەوەی بیر لە ئەنجامی کردەوەکانی دەکاتەوە","ئەوەی دوودڵ نییە لە خستنە مەترسی خۆی و خۆشەویستانی"],
+ "exp":{"ar":"السائق المسؤول هو من يفكر بنتائج أفعاله.","en":"A responsible driver is one who thinks about the consequences of their actions.","ckb":"شۆفێری بەرپرسیار ئەوەیە بیر لە ئەنجامی کردەوەکانی دەکاتەوە."}}
+]

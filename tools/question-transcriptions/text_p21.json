@@ -1,0 +1,55 @@
+[
+{"n":171,"id":"q-overtaking-prohibited-near-crossing","topic":"rules","correct":1,
+ "ar":["يمنع القيام بمناورة الاجتياز؟","من جهة اليسار","قرب مناطق عبور المشاة","دون تنبيه السائق الذي تروم اجتياز مركبته"],
+ "en":["An overtaking manoeuvre is prohibited:","On the left-hand side","Near pedestrian crossings","Without warning the driver of the vehicle you intend to overtake"],
+ "ckb":["مانۆڕی تێپەڕاندن قەدەغەیە:","لە لای چەپەوە","لە نزیک ناوچەی پەڕینەوەی پیادە","بەبێ ئاگادارکردنەوەی شۆفێری ئەو ئۆتۆمبێلەی دەتەوێت تێیپەڕێنیت"],
+ "exp":{"ar":"يمنع الاجتياز قرب مناطق عبور المشاة.","en":"Overtaking is prohibited near pedestrian crossings.","ckb":"تێپەڕاندن لە نزیک پەڕینەوەی پیادە قەدەغەیە."}},
+
+{"n":172,"id":"q-exhaust-amplifier-inspection","topic":"mechanics","correct":1,
+ "ar":["في حالة نصب مضخم صوت لـ إكزوز المركبة، هل سيؤثر ذلك على الفحص الفني السنوي؟","نعم لايؤثر ويؤدي إلى نجاح المركبة في الفحص","كلا يؤدي إلى فشل المركبة في الفحص،و يجب أن يكون حسب المصنع","ليس مهماً"],
+ "en":["If a sound amplifier is fitted to the vehicle's exhaust, does that affect the annual technical inspection?","No, it does not affect it; the vehicle passes","No, it causes the vehicle to fail; it must be as the manufacturer made it","It does not matter"],
+ "ckb":["ئەگەر بەرزکەرەوەی دەنگ بۆ ئێکزۆزی ئۆتۆمبێل دانرابێت، کاریگەری هەیە لەسەر پشکنینی ساڵانە؟","نەخێر، کاریگەری نییە و سەردەکەوێت","نەخێر، دەبێتە هۆی سەرنەکەوتن و دەبێت بەپێی کارگە بێت","گرنگ نییە"],
+ "exp":{"ar":"مضخم صوت الإكزوز يؤدي إلى فشل المركبة؛ يجب أن يكون حسب المصنع.","en":"An exhaust amplifier fails the vehicle; it must be as the factory fitted it.","ckb":"بەرزکەرەوەی دەنگ دەبێتە هۆی سەرنەکەوتن؛ دەبێت بەپێی کارگە بێت."}},
+
+{"n":173,"id":"q-mobile-allowed-when-stopped","topic":"rules","correct":2,
+ "ar":["يجوز استخدام الهاتف النقال (الموبايل) من قبل السائق عند؟","جلوس راكب امامي معه","حمل النقال باليد اليسرى","توقف المركبة بشكل كامل في مكان آمن"],
+ "en":["A driver may use a mobile phone when:","A front-seat passenger is sitting with them","Holding the phone in the left hand","The vehicle is completely stopped in a safe place"],
+ "ckb":["شۆفێر کەی دەتوانێت مۆبایل بەکاربهێنێت؟","کاتێک سەرنشینێکی پێشەوە لەگەڵیدایە","کاتێک بە دەستی چەپ مۆبایلەکە دەگرێت","کاتێک ئۆتۆمبێلەکە بە تەواوی لە شوێنێکی سەلامەتدا وەستاوە"],
+ "exp":{"ar":"يُسمح باستخدام الهاتف عند التوقف التام في مكان آمن.","en":"Phone use is allowed only when fully stopped somewhere safe.","ckb":"تەنها کاتێک بە تەواوی لە شوێنێکی سەلامەتدا وەستاوە."}},
+
+{"n":174,"id":"q-brake-pipe-oil-leak-inspection","topic":"mechanics","correct":1,
+ "ar":["هل يؤثر تسرب الزيت في أنبوب الفرامل على الفحص الفني السنوي للمركبة؟","نعم يؤثر ويؤدي إلى نجاح المركبة في الفحص","كلا لن يؤدي إلى نجاح المركبة في الفحص","ليس مهماً"],
+ "en":["Does an oil leak in the brake pipe affect the vehicle's annual technical inspection?","Yes, it affects it and makes the vehicle pass the inspection","No, it will not let the vehicle pass the inspection","It does not matter"],
+ "ckb":["ئایا دزەکردنی زەیت لە بۆری برێکدا کاریگەری هەیە لەسەر پشکنینی ساڵانە؟","بەڵێ، کاریگەری هەیە و وا دەکات سەربکەوێت","نەخێر، ناهێڵێت ئۆتۆمبێلەکە سەربکەوێت","گرنگ نییە"],
+ "exp":{"ar":"تسرب الزيت في أنبوب الفرامل يمنع نجاح المركبة في الفحص.","en":"An oil leak in the brake pipe stops the vehicle passing.","ckb":"دزەکردنی زەیت لە بۆری برێک ناهێڵێت سەربکەوێت."}},
+
+{"n":175,"id":"q-seatbelt-benefits","topic":"rules","correct":1,
+ "ar":["فوائد حزام الأمان؟","للسائق فقط","للسائق والراكبين","ليست له فوائد وليس مهماً"],
+ "en":["The benefits of the seat belt are:","For the driver only","For the driver and the passengers","It has no benefit and is not important"],
+ "ckb":["سوودەکانی پشتێنی سەلامەتی:","تەنها بۆ شۆفێر","بۆ شۆفێر و سەرنشینەکان","هیچ سوودێکی نییە و گرنگ نییە"],
+ "exp":{"ar":"حزام الأمان يفيد السائق والراكبين معاً.","en":"The seat belt benefits both the driver and the passengers.","ckb":"پشتێنی سەلامەتی بۆ شۆفێر و سەرنشینەکانە."}},
+
+{"n":176,"id":"q-cold-engine-warm-up","topic":"mechanics","correct":2,
+ "ar":["لاتحاول قيادة مركبتك بمحرك بارد ولا تترك المحرك يشتغل للتسخين لاكثر من؟","ثلاثة دقائق في الشتاء","خمسة دقائق في الشتاء","دقيقة واحدة في الشتاء"],
+ "en":["Do not try to drive with a cold engine, and do not leave the engine warming up for more than:","Three minutes in winter","Five minutes in winter","One minute in winter"],
+ "ckb":["هەوڵ مەدە بە بزوێنەری سارد لێبخوڕیت و بزوێنەر بۆ گەرمبوون زیاتر لەمە بەجێمەهێڵە:","سێ خولەک لە زستاندا","پێنج خولەک لە زستاندا","یەک خولەک لە زستاندا"],
+ "exp":{"ar":"يكفي تشغيل المحرك للتسخين دقيقة واحدة في الشتاء.","en":"One minute of warm-up in winter is enough.","ckb":"یەک خولەک گەرمبوونەوە لە زستاندا بەسە."}},
+
+{"n":177,"id":"q-battery-stability-benefits","topic":"mechanics","correct":2,
+ "ar":["ماهي فوائد إستقرار البطارية؟","سرعة إشتغال المركبة","المحافظة على السلف","يحمي المركبة من أي مشكلة مثل تعطل وإنقطاع التيار الكهربائي والحرائق"],
+ "en":["What are the benefits of the battery being secured?","The vehicle starts faster","It protects the starter motor","It protects the vehicle from problems such as breakdown, loss of electrical power and fires"],
+ "ckb":["سوودەکانی جێگیری باتری چین؟","خێرایی کارپێکردنی ئۆتۆمبێل","پاراستنی سلف","ئۆتۆمبێل دەپارێزێت لە هەر کێشەیەک وەک تێکچوون و پچڕانی کارەبا و ئاگرکەوتنەوە"],
+ "exp":{"ar":"استقرار البطارية يحمي المركبة من التعطل وانقطاع التيار والحرائق.","en":"A secured battery protects against breakdown, power loss and fire.","ckb":"جێگیری باتری دەپارێزێت لە تێکچوون و پچڕانی کارەبا و ئاگر."}},
+
+{"n":178,"id":"q-being-overtaken","topic":"rules","correct":0,
+ "ar":["في حالة محاولة مركبة إجتياز مركبتك عليك؟","أن تساعده من خلال الحفاظ على بقاءك في المسلك الايمن وتقليل سرعة مركبتك","إخراج يدك لإعطاء الاشارة بالتجاوز","تزيد من سرعة مركبتك كي لا يتم التجاوز"],
+ "en":["If another vehicle is trying to overtake you, you must:","Help by keeping to the right-hand lane and reducing your speed","Put your hand out to signal them past","Speed up so the overtake cannot be completed"],
+ "ckb":["ئەگەر ئۆتۆمبێلێک هەوڵی تێپەڕاندنت دەدات، دەبێت:","یارمەتی بدەیت بە مانەوە لە لاینی ڕاست و کەمکردنەوەی خێرایی","دەستت دەربهێنیت بۆ ئاماژەدان","خێرایی زیاد بکەیت تا تێپەڕاندن نەکرێت"],
+ "exp":{"ar":"يُساعد المجتاز بالبقاء في المسلك الأيمن وتقليل السرعة.","en":"Help the overtaker by staying right and easing off.","ckb":"یارمەتی بدە بە مانەوە لە لای ڕاست و کەمکردنەوەی خێرایی."}},
+
+{"n":179,"id":"q-air-resistance-consequence","topic":"mechanics","correct":1,
+ "ar":["يجب عدم زيادة مقاومة الهواء التي تتعرض لها المركبة بزيادة اجنحة للسيارة او اي شيء اخر تسبب مقاومة الهواء لان زيادة مقاومة الهواء تؤدي الى؟","تلف الاطارات","استهلاك وقود اضافي","اطالة عمر المركبة"],
+ "en":["Air resistance on the vehicle should not be increased by adding wings or anything else that causes drag, because greater air resistance leads to:","Damage to the tyres","Extra fuel consumption","A longer life for the vehicle"],
+ "ckb":["نابێت بەرگری هەوا زیاد بکرێت بە زیادکردنی باڵ یان هەر شتێکی تر، چونکە زیادبوونی بەرگری هەوا دەبێتە هۆی:","تێکچوونی تایەکان","خەرجکردنی سووتەمەنی زیادە","درێژکردنەوەی تەمەنی ئۆتۆمبێل"],
+ "exp":{"ar":"زيادة مقاومة الهواء تؤدي إلى استهلاك وقود إضافي.","en":"Greater air resistance causes extra fuel consumption.","ckb":"زیادبوونی بەرگری هەوا سووتەمەنی زیادە دەخوات."}}
+]

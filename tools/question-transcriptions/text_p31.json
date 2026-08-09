@@ -1,0 +1,55 @@
+[
+{"n":261,"id":"q-absolute-no-stopping-places","topic":"rules","correct":2,
+ "ar":["لايجوز التوقف أو الانتظار في الاماكن التالية بشكل مطلق؟","مسالك وممرات الطريق","فوق الجسور وداخل الانفاق وعلى خطوط عبور المشاة","كل ماتم ذكره"],
+ "en":["Stopping or waiting is absolutely prohibited in the following places:","The road's lanes and carriageways","On bridges, inside tunnels and on pedestrian crossings","All of the above"],
+ "ckb":["وەستان یان چاوەڕوانی لەم شوێنانەدا بە تەواوی قەدەغەیە:","لاین و ڕێڕەوەکانی ڕێگا","لەسەر پرد و ناو تونێل و لەسەر پەڕینەوەی پیادە","هەموو ئەوانەی باسکران"],
+ "exp":{"ar":"يمنع التوقف في جميع تلك الأماكن.","en":"Stopping is prohibited in all of those places.","ckb":"لە هەموو ئەو شوێنانەدا قەدەغەیە."}},
+
+{"n":262,"id":"q-horn-prohibited-places","topic":"rules","correct":2,
+ "ar":["يمنع إستخدام المنبه (الهورن) بالاماكن التالية؟","مناطق الدوائر الحكومية","المناطق السكنية","المدارس والمستشفيات وجميع الاماكن بصورة عامة إلا عند الضرورة القصوى"],
+ "en":["Using the horn is prohibited in the following places:","Areas around government offices","Residential areas","Schools, hospitals and everywhere in general, except in cases of extreme necessity"],
+ "ckb":["بەکارهێنانی بۆری لەم شوێنانەدا قەدەغەیە:","ناوچەی فەرمانگە حکومییەکان","ناوچە نیشتەجێبووەکان","قوتابخانە و نەخۆشخانە و هەموو شوێنێک بە گشتی جگە لە پێویستی زۆر"],
+ "exp":{"ar":"يمنع استخدام المنبه في جميع الأماكن إلا عند الضرورة القصوى.","en":"The horn is prohibited everywhere except in extreme necessity.","ckb":"لە هەموو شوێنێک قەدەغەیە جگە لە پێویستی زۆر."}},
+
+{"n":263,"id":"q-double-parking-crowded-places","topic":"rules","correct":0,
+ "ar":["هل يجوز التوقف في صف ثاني امام الاماكن المزدحمة كالمساجد وغيرها؟","لا يجوز مطلقاً","يمكن التوقف","نعم يجوز التوقف في الجانب الايسر"],
+ "en":["May you double-park in front of crowded places such as mosques?","Never permitted","You may stop","Yes, you may stop on the left-hand side"],
+ "ckb":["ئایا ڕێپێدراوە لە ڕیزی دووەم لە بەردەم شوێنە قەرەباڵغەکان وەک مزگەوت بوەستیت؟","بە هیچ شێوەیەک ڕێپێدراو نییە","دەکرێت بوەستیت","بەڵێ، لە لای چەپەوە"],
+ "exp":{"ar":"الوقوف بصف ثانٍ أمام الأماكن المزدحمة لا يجوز مطلقاً.","en":"Double parking outside crowded places is never permitted.","ckb":"بە هیچ شێوەیەک ڕێپێدراو نییە."}},
+
+{"n":264,"id":"q-when-reversing-allowed","topic":"rules","correct":0,
+ "ar":["متى يسمح بالرجوع الى الخلف بالمركبة؟","عند ركن المركبة و في حالات الضرورة القصوى وفي الاماكن التي يكون فيها مدى الرؤوية جيدة ولمسافة لا تزيد عن 5 م وبسرعة واطئة جداً","عند السير في الطريق السريع ولمسافة 50متر","عندما تكون محاصرا في شارع مزدحم"],
+ "en":["When is reversing the vehicle permitted?","When parking, and in cases of extreme necessity, in places with good visibility, for no more than 5 m and at a very low speed","When travelling on the expressway, for 50 metres","When you are boxed in on a congested street"],
+ "ckb":["کەی ڕێپێدراوە بە دواوە بچیت؟","لە کاتی پارککردن و لە حاڵەتی پێویستی زۆردا، لە شوێنی بینینی باش، بۆ ماوەی نەزیاتر لە ٥ مەتر و بە خێرایی زۆر نزم","لە ڕێگای خێرادا بۆ ٥٠ مەتر","کاتێک لە شەقامێکی قەرەباڵغدا گیراویت"],
+ "exp":{"ar":"يُسمح بالرجوع عند الركن والضرورة القصوى بمسافة لا تزيد عن 5 م وبسرعة واطئة.","en":"Reversing is allowed when parking or in extreme necessity, under 5 m and very slowly.","ckb":"لە کاتی پارککردن و پێویستی زۆردا، کەمتر لە ٥ مەتر."}},
+
+{"n":265,"id":"q-warning-devices-restricted-to","topic":"rules","correct":1,
+ "ar":["لا يجوز استعمال الاجهزة التحذيرية أو الضوئية ويقتصر استعمالها فقط للمركبات؟","التي تحمل لوحات تسجيل الاجرة","مركبات الطوارئ والشرطة والمرور والدفاع المدني","المركبات التي تحمل لوحات تسجيل الحمل"],
+ "en":["Warning or light devices may not be used; their use is restricted to the vehicles of:","Vehicles carrying taxi registration plates","Emergency, police, traffic and civil defence vehicles","Vehicles carrying goods registration plates"],
+ "ckb":["ئامێرە ئاگادارکەرەوە یان ڕووناکییەکان تەنها بۆ ئەم ئۆتۆمبێلانەن:","ئەوانەی پلێتی تاکسییان هەیە","ئۆتۆمبێلی فریاگوزاری و پۆلیس و هاتوچۆ و بەرگری شارستانی","ئەوانەی پلێتی بارهەڵگرییان هەیە"],
+ "exp":{"ar":"يقتصر استعمالها على مركبات الطوارئ والشرطة والمرور والدفاع المدني.","en":"Their use is limited to emergency, police, traffic and civil defence vehicles.","ckb":"تەنها بۆ فریاگوزاری و پۆلیس و هاتوچۆ و بەرگری شارستانی."}},
+
+{"n":266,"id":"q-hot-engine-radiator-cap","topic":"mechanics","correct":2,
+ "ar":["عندما يكون المحرك ساخناً ماذا يجب ان تفعل؟","يتم رفع غطاء ماء الراديتر وتركها لحين ان يبرد المحرك","يتم رفع غطاء ماء الراديتر واضافة الماء لحين برودة الراديتر","لا تقم مطلقاً برفع غطاء ماء الراديتر عندما يكون المحرك ساخناً واحذر من اضافة الماء"],
+ "en":["When the engine is hot, what should you do?","Lift the radiator cap and leave it until the engine cools","Lift the radiator cap and add water until the radiator cools","Never lift the radiator cap while the engine is hot, and beware of adding water"],
+ "ckb":["کاتێک بزوێنەر گەرمە چی دەکەیت؟","سەرپۆشی ڕادیەتەر هەڵدەگریت و بەجێی دەهێڵیت","سەرپۆشەکە هەڵدەگریت و ئاوی بۆ زیاد دەکەیت","هەرگیز سەرپۆشی ڕادیەتەر هەڵمەگرە کاتێک بزوێنەر گەرمە و ئاگاداربە لە زیادکردنی ئاو"],
+ "exp":{"ar":"لا يُرفع غطاء الراديتر والمحرك ساخن، ويُحذر من إضافة الماء.","en":"Never open the radiator cap on a hot engine, and beware of adding water.","ckb":"هەرگیز سەرپۆشەکە هەڵمەگرە کاتێک گەرمە."}},
+
+{"n":267,"id":"q-child-in-front-seat","topic":"rules","correct":0,
+ "ar":["هل يجوز قيادة مركبة بجلوس طفل في المعقد الامامي او في حضن امه او احد الركاب؟","ممنوع و لايجوز بشكل مطلق","نعم يجوز اذا كان الطفل يقل عمره عن 2 سنة","نعم يجوز اذا كان عمره يقل عن 5 سنوات"],
+ "en":["May a vehicle be driven with a child sitting in the front seat, or on their mother's or a passenger's lap?","Prohibited and never permitted","Yes, if the child is under 2 years old","Yes, if the child is under 5 years old"],
+ "ckb":["ئایا ڕێپێدراوە منداڵ لە کورسی پێشەوە یان لە باوەشی دایکیدا دانیشێت؟","قەدەغەیە و بە هیچ شێوەیەک ڕێپێدراو نییە","بەڵێ، ئەگەر تەمەنی کەمتر لە ٢ ساڵ بێت","بەڵێ، ئەگەر کەمتر لە ٥ ساڵ بێت"],
+ "exp":{"ar":"جلوس الطفل في المقعد الأمامي أو في الحضن ممنوع مطلقاً.","en":"A child in the front seat or on a lap is never permitted.","ckb":"بە هیچ شێوەیەک ڕێپێدراو نییە."}},
+
+{"n":268,"id":"q-children-under-ten-seating","topic":"rules","correct":2,
+ "ar":["يكون جلوس الاطفال و الذين لا يتجاوز عمرهم عن 10 سنوات","في صندوق المركبة","في احضان الراكب الامامي","في المقعد الخلفي وفي الكرسي المخصص بجلوسهم"],
+ "en":["Children aged 10 or under must sit:","In the boot of the vehicle","On the front passenger's lap","In the rear seat, in the child seat provided for them"],
+ "ckb":["منداڵانی تەمەن ١٠ ساڵ و کەمتر دەبێت لەکوێ دانیشن؟","لە سندوقی ئۆتۆمبێل","لە باوەشی سەرنشینی پێشەوە","لە کورسی دواوە و لە کورسی تایبەتی خۆیاندا"],
+ "exp":{"ar":"يجلس الأطفال في المقعد الخلفي وفي الكرسي المخصص لهم.","en":"Children sit in the rear, in the child seat provided.","ckb":"لە کورسی دواوە و کورسی تایبەتیان."}},
+
+{"n":269,"id":"q-high-beam-prohibited-when","topic":"rules","correct":2,
+ "ar":["يمنع استعمال الضوء العالي عند؟","اثناء الذهاب الى التنزه والسفر","في الطرق الداخلية","التقابل مع مركبة اخرى او عند الاقتراب من مركبة متقدمة"],
+ "en":["Using main beam is prohibited when:","Going on an outing or a journey","On inner-city roads","Meeting another vehicle, or closing on a vehicle ahead"],
+ "ckb":["بەکارهێنانی ڕووناکی بەرز کەی قەدەغەیە؟","لە کاتی گەشت و سەفەردا","لە ڕێگا ناوەکییەکان","لە کاتی بەریەککەوتن لەگەڵ ئۆتۆمبێلێکی تر یان نزیکبوونەوە لە ئۆتۆمبێلی پێشەوە"],
+ "exp":{"ar":"يمنع الضوء العالي عند التقابل أو الاقتراب من مركبة متقدمة.","en":"Main beam is prohibited when meeting or closing on another vehicle.","ckb":"لە کاتی بەریەککەوتن یان نزیکبوونەوە قەدەغەیە."}}
+]

@@ -1,0 +1,55 @@
+[
+{"n":45,"id":"q-horn-when-and-how","topic":"rules","correct":0,
+ "ar":["متى وكيف يجب إستخدام المنبه (الهورن)؟","يستخدم الهورن في حالات الضرورة القصوى والتي تستدعي تنبيه الاخرين ولمرة واحدة ولفترة قصيرة","يستخدم لتنبيه السائقين المخالفين بمخالفتهم","يستخدم للسلام أو الشكر أو إستدعاء أحد"],
+ "en":["When and how should the horn be used?","Only in cases of extreme necessity that require warning others, once and briefly","To tell offending drivers about their offence","To greet, thank or call someone"],
+ "ckb":["کەی و چۆن دەبێت بۆری (هۆرن) بەکاربهێنرێت؟","تەنها لە کاتی پێویستی زۆردا کە پێویستی بە ئاگادارکردنەوەی کەسانی تر هەیە، یەک جار و بۆ ماوەیەکی کورت","بۆ ئاگادارکردنەوەی شۆفێرە سەرپێچیکەرەکان","بۆ سڵاو یان سوپاس یان بانگکردنی کەسێک"],
+ "exp":{"ar":"يقتصر استعمال المنبه على الضرورة القصوى، ولمرة واحدة ولفترة قصيرة.","en":"The horn is for extreme necessity only: one short sound.","ckb":"بۆری تەنها بۆ پێویستی زۆرە، یەک جار و بە کورتی."}},
+
+{"n":46,"id":"q-night-speed-dual-carriageway","topic":"rules","correct":0,
+ "ar":["أعلى سرعة قيادة المركبات بإختلاف أنواعها ليلاً في الطرق المزدوجة هي؟","نصف السرعة المحددة قانوناً لذلك الطريق","نفس السرعة المحددة قانوناً","80كم / ساعة"],
+ "en":["At night on dual carriageways, the maximum speed for vehicles of every type is:","Half the speed legally set for that road","The same as the legally set speed","80 km/h"],
+ "ckb":["بەرزترین خێرایی بە شەو لە ڕێگا دووانییەکاندا بۆ هەموو جۆرەکانی ئۆتۆمبێل:","نیوەی ئەو خێراییەی بە یاسا بۆ ئەو ڕێگایە دیاریکراوە","هەمان خێرایی یاسایی","٨٠ کم/کاتژمێر"],
+ "exp":{"ar":"ليلاً تُخفض السرعة إلى نصف السرعة المحددة قانوناً للطريق المزدوج.","en":"At night the limit drops to half the road's legal speed.","ckb":"بە شەو خێرایی دەبێتە نیوەی خێرایی یاسایی ڕێگاکە."}},
+
+{"n":47,"id":"q-obscured-junction","topic":"rules","correct":0,
+ "ar":["التقاطعات التي تحجبها الاشجار والمباني تقلل الرؤية عليك:","التوقف عند بداية التقاطع وتتأكد من خلو الشارع وتتقدم ببطء لتجاوز التقاطع","تبطئ السرعة وتتجاوز التقاطع","تستعمل المنبه الهورن للتحذير وتتجاوز التقاطع"],
+ "en":["At junctions where trees and buildings block your view you must:","Stop at the start of the junction, check the road is clear, then move forward slowly to cross","Slow down and cross the junction","Sound the horn as a warning and cross the junction"],
+ "ckb":["لەو چوارڕیانانەی درەخت و بینا بینین کەم دەکەنەوە، دەبێت:","لە سەرەتای چوارڕیانەکە بوەستیت، دڵنیابیت لە بەتاڵی ڕێگاکە و بە هێواشی بڕۆیت","خێرایی کەم بکەیتەوە و بپەڕیتەوە","بۆری لێبدەیت و بپەڕیتەوە"],
+ "exp":{"ar":"عند انعدام الرؤية يجب التوقف والتأكد قبل التقدم ببطء.","en":"Where the view is blocked, stop and check before creeping forward.","ckb":"لە شوێنی بینین کەم، بوەستە و دڵنیابە پێش ئەوەی بە هێواشی بڕۆیت."}},
+
+{"n":48,"id":"q-max-speed-small-vehicles","topic":"rules","correct":1,
+ "ar":["أقصى سرعة لقيادة المركبات الصغيرة","90كم / ساعة","100كم / ساعة","120كم / ساعة"],
+ "en":["The maximum driving speed for small vehicles is:","90 km/h","100 km/h","120 km/h"],
+ "ckb":["بەرزترین خێرایی بۆ ئۆتۆمبێلە بچووکەکان:","٩٠ کم/کاتژمێر","١٠٠ کم/کاتژمێر","١٢٠ کم/کاتژمێر"],
+ "exp":{"ar":"أقصى سرعة للمركبات الصغيرة 100 كم/ساعة.","en":"The maximum for small vehicles is 100 km/h.","ckb":"بەرزترین خێرایی بۆ ئۆتۆمبێلە بچووکەکان ١٠٠ کم/کاتژمێرە."}},
+
+{"n":49,"id":"q-expressway-speed-kurdistan","topic":"rules","correct":1,
+ "ar":["ما هي اقصى سرعة مسموح بها للمركبات في الطرق السريعة في إقليم كوردستان؟","لا توجد سرعة محددة ممكن القيادة بأية سرعة","سرعة 110 كم/ساعة للمركبات الصغيرة و 80 كم/ساعة للشاحنات في الطرق السريعة","سرعة 80 كم/ساعة لجميع المركبات"],
+ "en":["What is the maximum speed allowed on expressways in the Kurdistan Region?","There is no set speed; you may drive at any speed","110 km/h for small vehicles and 80 km/h for lorries on expressways","80 km/h for all vehicles"],
+ "ckb":["بەرزترین خێرایی ڕێپێدراو لە ڕێگا خێراکانی هەرێمی کوردستان چەندە؟","خێرایی دیاریکراو نییە، بە هەر خێراییەک دەکرێت","١١٠ کم/کاتژمێر بۆ ئۆتۆمبێلە بچووکەکان و ٨٠ کم/کاتژمێر بۆ بارهەڵگرەکان","٨٠ کم/کاتژمێر بۆ هەموو ئۆتۆمبێلەکان"],
+ "exp":{"ar":"110 كم/ساعة للمركبات الصغيرة و80 كم/ساعة للشاحنات على الطرق السريعة.","en":"110 km/h for small vehicles and 80 km/h for lorries on expressways.","ckb":"١١٠ کم/کاتژمێر بۆ ئۆتۆمبێلە بچووکەکان و ٨٠ بۆ بارهەڵگرەکان."}},
+
+{"n":50,"id":"q-mountain-road-hot-brakes","topic":"rules","correct":1,
+ "ar":["في الطرق الجبلية يلزم استخدام الفرامل باستمرار ونتيجة لذلك تسخن؟مالذي يجب القيام به في هذه الحالة؟","تستمر في القيادة بسرعة اكبر لتبرد ديسكات الفرامل","تتوقف وتنتظر الى ان تبرد الفرامل","استعمال الهاندبريك الى ان تبرد الفرامل بشكل كامل"],
+ "en":["On mountain roads the brakes are used constantly and overheat. What should you do?","Drive faster so the brake discs cool down","Stop and wait until the brakes cool","Use the handbrake until the brakes have fully cooled"],
+ "ckb":["لە ڕێگا شاخاوییەکاندا بەردەوام برێک بەکاردەهێنرێت و گەرم دەبێت. دەبێت چی بکەیت؟","بە خێراتر لێبخوڕە بۆ ئەوەی برێکەکان سارد ببنەوە","بوەستە و چاوەڕێبکە تا برێکەکان سارد دەبنەوە","هاندبرێک بەکاربهێنە تا برێکەکان بە تەواوی سارد دەبنەوە"],
+ "exp":{"ar":"عند سخونة الفرامل يجب التوقف وانتظار بردها قبل المتابعة.","en":"When the brakes overheat, stop and let them cool before continuing.","ckb":"کاتێک برێک گەرم دەبێت، بوەستە و چاوەڕێی ساردبوونەوەی بکە."}},
+
+{"n":51,"id":"q-main-road-priority","topic":"priority","correct":2,
+ "ar":["اسبقية المرور ل؟","المركبة التي تسير في الطريق الفرعي على الطريق الرئيسي","المركبة الواقفة على المركبة السائرة","المركبة التي تسير في الطريق الرئيسي على التي تسير في الطريق الفرعي"],
+ "en":["Right of way belongs to:","The vehicle on the side road over the main road","A stopped vehicle over a moving one","The vehicle on the main road over the one on the side road"],
+ "ckb":["مافی پێشینەیی بۆ کێیە؟","ئۆتۆمبێلی ڕێگای لاوەکی بەسەر ڕێگای سەرەکیدا","ئۆتۆمبێلی وەستاو بەسەر ئۆتۆمبێلی ڕۆیشتوودا","ئۆتۆمبێلی ڕێگای سەرەکی بەسەر ئەوەی ڕێگای لاوەکی"],
+ "exp":{"ar":"الأسبقية للمركبة السائرة في الطريق الرئيسي.","en":"Priority goes to the vehicle travelling on the main road.","ckb":"پێشینەیی بۆ ئۆتۆمبێلی ڕێگای سەرەکییە."}},
+
+{"n":52,"id":"q-rejoining-traffic-after-stop","topic":"rules","correct":1,
+ "ar":["عند محاولة الدخول لمسار السير في أي طريق في حالة التوقف يجب أن:","تشغل اضوية التحذير الرباعية لتنبيه المركبات التي تسير على الطريق","تشغل الاشارة الضوئية نحو اليمين بعد التأكد من خلو الطريق (مسلك أقصى اليمين للسير)","تشغيل الاشارة الضوئية اليسار والدخول مباشرةً الى مسلك الطريق"],
+ "en":["When pulling out into the traffic lane from a stop you must:","Switch on the hazard lights to warn vehicles on the road","Signal right after checking the road is clear (the far right lane)","Signal left and pull straight out into the lane"],
+ "ckb":["کاتێک لە وەستانەوە دەچیتەوە ناو لاینی هاتوچۆ، دەبێت:","چرا ئاگادارکەرەوە چوارەکان دابگیرسێنیت","دوای دڵنیابوون لە بەتاڵی ڕێگا، ئاماژەی ڕاست بدەیت (لاینی دوورترین ڕاست)","ئاماژەی چەپ بدەیت و ڕاستەوخۆ بچیتە ناو لاینەکە"],
+ "exp":{"ar":"يُشغّل مؤشر اليمين بعد التأكد من خلو الطريق قبل الدخول.","en":"Signal right after checking the road is clear, then join.","ckb":"دوای دڵنیابوون لە بەتاڵی ڕێگا ئاماژەی ڕاست بدە و بچۆ ناوی."}},
+
+{"n":53,"id":"q-median-island-pedestrians","topic":"rules","correct":1,
+ "ar":["في حالة وجود جزرة وسطية في الطريق على المشاة الذين يرومون العبور في مناطق عبور المشاة؟","العبور بسرعة للوصول للجزرة الوسطية","العبور الى الجزرة الوسطية بعد التأكد من خلو الطريق من المركبات كمرحلة اولى والانتظار للتأكد من خلو الطريق في الجهة الاخرى من المركبات وإكمال العبور","العبور من أوسع منطقة في الطريق"],
+ "en":["Where the road has a central island, pedestrians wishing to cross at a crossing should:","Cross quickly to reach the central island","Cross to the central island once the road is clear as a first stage, then wait until the other side is clear and complete the crossing","Cross at the widest part of the road"],
+ "ckb":["ئەگەر دوورگەی ناوەڕاست لە ڕێگادا هەبێت، پیادەکانی پەڕینەوە دەبێت:","بە خێرایی بپەڕنەوە بۆ گەیشتن بە دوورگەکە","وەک قۆناغی یەکەم دوای دڵنیابوون لە بەتاڵی ڕێگا بپەڕنە دوورگەی ناوەڕاست، پاشان چاوەڕێ بکەن تا لای تریش بەتاڵ بێت و پەڕینەوەکە تەواو بکەن","لە فراوانترین شوێنی ڕێگا بپەڕنەوە"],
+ "exp":{"ar":"يتم العبور على مرحلتين: إلى الجزرة الوسطية أولاً ثم إكمال العبور بعد التأكد.","en":"Cross in two stages: to the central island first, then complete once clear.","ckb":"بە دوو قۆناغ بپەڕەوە: سەرەتا بۆ دوورگەی ناوەڕاست، پاشان تەواوی بکە."}}
+]

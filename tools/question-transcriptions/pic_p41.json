@@ -1,0 +1,55 @@
+[
+{"n":63,"id":"qp-no-right-turn-sign","topic":"signs","correct":1,"img":"pic-063.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع الإستداره إلى الاتجاه المعاكس","ممنوع الإستداره إلى جهة اليمين","ممنوع الإستداره إلى جهة اليسار"],
+ "en":["What does this sign mean?","No U-turn onto the opposite carriageway","No turning to the right","No turning to the left"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","سووڕانەوە بۆ ئاراستەی بەرامبەر قەدەغەیە","سووڕانەوە بۆ ڕاست قەدەغەیە","سووڕانەوە بۆ چەپ قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع الاستدارة إلى جهة اليمين.","en":"The sign prohibits turning right.","ckb":"سووڕانەوە بۆ ڕاست قەدەغەیە."}},
+
+{"n":64,"id":"qp-no-u-turn-sign","topic":"signs","correct":0,"img":"pic-064.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع الإستداره","ممنوع الوقوف","ممنوع الدخول"],
+ "en":["What does this sign mean?","No U-turn","No parking","No entry"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","سووڕانەوە قەدەغەیە","وەستان قەدەغەیە","چوونە ژوورەوە قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع الاستدارة.","en":"The sign prohibits a U-turn.","ckb":"سووڕانەوە قەدەغەیە."}},
+
+{"n":65,"id":"qp-weight-limit-10t-sign","topic":"signs","correct":2,"img":"pic-065.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","يمنع مرور المركبات التي يزيد طولها عن 10 أمتار","يسمح بمرور المركبات التي يزيد طولها عن 10 أمتار","يمنع مرور المركبات التي تزيد وزن حمولتها عن 10 أطنان"],
+ "en":["What does this sign mean?","Vehicles longer than 10 metres are prohibited","Vehicles longer than 10 metres are permitted","Vehicles with a load weighing more than 10 tonnes are prohibited"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئۆتۆمبێلی درێژتر لە ١٠ مەتر قەدەغەیە","ڕێپێدراوە","ئۆتۆمبێلی خاوەن باری قورستر لە ١٠ تەن قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع المركبات التي تزيد حمولتها عن 10 أطنان.","en":"The sign prohibits vehicles loaded above 10 tonnes.","ckb":"باری قورستر لە ١٠ تەن قەدەغەیە."}},
+
+{"n":66,"id":"qp-width-limit-sign","topic":"signs","correct":1,"img":"pic-066.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","يمنع مرور المركبات التي تزيد إرتفاعها عن 2.5 متر","يمنع مرور المركبات التي تزيد عرضها عن 2.5 متر","يمنع مرور المركبات التي تزيد طولها عن 2.5 متر"],
+ "en":["What does this sign mean?","Vehicles taller than 2.5 metres are prohibited","Vehicles wider than 2.5 metres are prohibited","Vehicles longer than 2.5 metres are prohibited"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئۆتۆمبێلی بەرزتر لە ٢٫٥ مەتر قەدەغەیە","ئۆتۆمبێلی پانتر لە ٢٫٥ مەتر قەدەغەیە","ئۆتۆمبێلی درێژتر لە ٢٫٥ مەتر قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع المركبات التي يزيد عرضها عن 2.5 متر.","en":"The sign prohibits vehicles wider than 2.5 m.","ckb":"پانتر لە ٢٫٥ مەتر قەدەغەیە."}},
+
+{"n":67,"id":"qp-driving-without-licence-penalty","topic":"rules","correct":0,"img":"pic-067.jpg",
+ "ar":["يعاقب السائق الذي لا يملك رخصة القيادة بـ؟","الحبس","الغرامة","الحبس والغرامة"],
+ "en":["A driver who holds no driving licence is punished by:","Imprisonment","A fine","Imprisonment and a fine"],
+ "ckb":["ئەو شۆفێرەی مۆڵەتی لێخوڕینی نییە سزا دەدرێت بە:","زیندان","غەرامە","زیندان و غەرامە"],
+ "exp":{"ar":"عقوبة القيادة بلا رخصة هي الحبس بحسب دليل الأسئلة الرسمي.","en":"The official guide gives imprisonment as the penalty for driving unlicensed.","ckb":"بەپێی ڕێنمایی فەرمی، سزاکە زیندانە."}},
+
+{"n":68,"id":"qp-height-limit-sign","topic":"signs","correct":0,"img":"pic-068.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","يمنع مرور المركبات التي تزيد إرتفاعها عن 3.5 متر","يسمح بمرور المركبات التي تزيد إرتفاعها عن 3.5 متر","يمنع مرور الشاحنات"],
+ "en":["What does this sign mean?","Vehicles taller than 3.5 metres are prohibited","Vehicles taller than 3.5 metres are permitted","Lorries are prohibited"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئۆتۆمبێلی بەرزتر لە ٣٫٥ مەتر قەدەغەیە","ڕێپێدراوە","بارهەڵگر قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع المركبات التي يزيد ارتفاعها عن 3.5 متر.","en":"The sign prohibits vehicles taller than 3.5 m.","ckb":"بەرزتر لە ٣٫٥ مەتر قەدەغەیە."}},
+
+{"n":69,"id":"qp-no-horn-sign","topic":"signs","correct":1,"img":"pic-069.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","نهاية حظر إستخدام بوق التنبيه","إستخدام بوق التنبيه ممنوع","يسمح باستخدام بوق التنبيه"],
+ "en":["What does this sign mean?","End of the ban on using the horn","Using the horn is prohibited","Using the horn is permitted"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","کۆتایی قەدەغەی بەکارهێنانی بۆری","بەکارهێنانی بۆری قەدەغەیە","ڕێپێدراوە"],
+ "exp":{"ar":"العلامة تمنع استخدام بوق التنبيه.","en":"The sign prohibits use of the horn.","ckb":"بەکارهێنانی بۆری قەدەغەیە."}},
+
+{"n":70,"id":"qp-driving-under-influence-nature","topic":"rules","correct":0,"img":"pic-070.jpg",
+ "ar":["تعتبر السياقة تحت تأثير المسكرات والمخدرات؟","جريمه و خطيرة","خطرة","طبيعية"],
+ "en":["Driving under the influence of alcohol or drugs is considered:","A crime, and dangerous","Dangerous","Normal"],
+ "ckb":["لێخوڕین لەژێر کاریگەری کحول و ماددەی هۆشبەردا بە چی دادەنرێت؟","تاوان و مەترسیدار","مەترسیدار","ئاسایی"],
+ "exp":{"ar":"السياقة تحت تأثير المسكرات والمخدرات جريمة وخطيرة.","en":"Driving under the influence is a crime and dangerous.","ckb":"تاوان و مەترسیدارە."}},
+
+{"n":71,"id":"qp-no-photography-sign","topic":"signs","correct":0,"img":"pic-071.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","التصوير ممنوع","يسمح بالتصوير","يسمح للسياح بالتصوير"],
+ "en":["What does this sign mean?","Photography is prohibited","Photography is permitted","Tourists may take photographs"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","وێنەگرتن قەدەغەیە","وێنەگرتن ڕێپێدراوە","بۆ گەشتیاران ڕێپێدراوە"],
+ "exp":{"ar":"العلامة تمنع التصوير.","en":"The sign prohibits photography.","ckb":"وێنەگرتن قەدەغەیە."}}
+]

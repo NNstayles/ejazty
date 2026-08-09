@@ -1,0 +1,55 @@
+[
+{"n":45,"id":"qp-parking-place-sign","topic":"signs","correct":2,"img":"pic-045.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","محطة وقود","مركز تصليح","مكان لوقوف المركبات"],
+ "en":["What does this sign mean?","A filling station","A repair centre","A parking place for vehicles"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","بۆریگەی سووتەمەنی","ناوەندی چاککردنەوە","شوێنی وەستانی ئۆتۆمبێل"],
+ "exp":{"ar":"العلامة تدل على مكان لوقوف المركبات.","en":"The sign indicates a parking place.","ckb":"شوێنی وەستانی ئۆتۆمبێل."}},
+
+{"n":46,"id":"qp-warning-triangle-distance","topic":"rules","correct":1,"img":"pic-046.jpg",
+ "ar":["على أي بعد يتم تثبيت إشارة الفسفور المثلث في حالة تعطل المركبة؟","100متر عن المركبة داخل المدينة","50متراً داخل المدينة و 100 - 150 متراً وفقاً للسرعة المحددة للطريق","ليس من الضروري وضع الإشارة"],
+ "en":["At what distance is the reflective triangle placed when the vehicle breaks down?","100 metres from the vehicle inside the city","50 metres inside the city, and 100–150 metres according to the road's speed limit","There is no need to put out the sign"],
+ "ckb":["لە چ دوورییەکدا سێگۆشەی فۆسفۆری دادەنرێت کاتێک ئۆتۆمبێل تێکدەچێت؟","١٠٠ مەتر لە ئۆتۆمبێلەکەوە لە ناو شار","٥٠ مەتر لە ناو شار و ١٠٠–١٥٠ مەتر بەپێی خێرایی دیاریکراوی ڕێگاکە","پێویست ناکات دابنرێت"],
+ "exp":{"ar":"50 م داخل المدينة و100-150 م خارجها وفقاً لسرعة الطريق.","en":"50 m inside the city, 100–150 m outside according to the road's speed.","ckb":"٥٠ مەتر لە ناو شار و ١٠٠–١٥٠ مەتر لە دەرەوە."}},
+
+{"n":47,"id":"qp-hospital-sign","topic":"signs","correct":0,"img":"pic-047.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","مستشفى","فندق","مطعم"],
+ "en":["What does this sign mean?","A hospital","A hotel","A restaurant"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","نەخۆشخانە","هوتێل","چێشتخانە"],
+ "exp":{"ar":"العلامة تدل على مستشفى.","en":"The sign indicates a hospital.","ckb":"نەخۆشخانە."}},
+
+{"n":48,"id":"qp-no-entry-both-directions","topic":"signs","correct":0,"img":"pic-048.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع المرور في الاتجاهين","أمامك نقطة جمركية توقف","الوقوف ممنوع"],
+ "en":["What does this sign mean?","Traffic is prohibited in both directions","A customs point ahead, so stop","No parking"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ڕۆیشتن لە هەردوو ئاراستە قەدەغەیە","خاڵی گومرگی لە پێشتە، بوەستە","وەستان قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع المرور في الاتجاهين.","en":"The sign prohibits traffic in both directions.","ckb":"ڕۆیشتن لە هەردوو ئاراستە قەدەغەیە."}},
+
+{"n":49,"id":"qp-dead-end-sign","topic":"signs","correct":1,"img":"pic-049.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","طريق ذو إتجاه واحد","الطريق مسدود","نهاية الطريق السريع"],
+ "en":["What does this sign mean?","A one-way road","A dead end","End of expressway"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ڕێگای یەک ئاراستە","ڕێگا داخراوە","کۆتایی ڕێگای خێرا"],
+ "exp":{"ar":"العلامة تدل على طريق مسدود.","en":"The sign indicates a dead end.","ckb":"ڕێگا داخراوە."}},
+
+{"n":50,"id":"qp-pedestrian-crossing-sign","topic":"signs","correct":0,"img":"pic-050.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","منطقة عبور المشاة","منطقة وقوف ذوي الإحتياجات الخاصة","احذر أمامك مدرسة"],
+ "en":["What does this sign mean?","A pedestrian crossing area","A parking area for people with disabilities","Beware: a school ahead"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ناوچەی پەڕینەوەی پیادە","شوێنی وەستانی خاوەن پێداویستی تایبەت","ئاگاداربە، قوتابخانە لە پێشتە"],
+ "exp":{"ar":"العلامة تدل على منطقة عبور المشاة.","en":"The sign marks a pedestrian crossing area.","ckb":"ناوچەی پەڕینەوەی پیادە."}},
+
+{"n":51,"id":"qp-speed-limit-100-80-sign","topic":"signs","correct":0,"img":"pic-051.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","أقصى سرعة مسموح بها للمركبات الصغيرة 100كم و للشاحنات 80كم","أقصى سرعة مسموح بها للمركبات الصغيرة 80كم وللشاحنات 60كم","أقصى المستويات المحددة للسرعة"],
+ "en":["What does this sign mean?","The maximum speed is 100 km/h for small vehicles and 80 km/h for lorries","The maximum speed is 80 km/h for small vehicles and 60 km/h for lorries","The highest prescribed speed levels"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","بەرزترین خێرایی ١٠٠ کم بۆ ئۆتۆمبێلی بچووک و ٨٠ کم بۆ بارهەڵگر","٨٠ کم بۆ بچووکەکان و ٦٠ کم بۆ بارهەڵگر","بەرزترین ئاستە دیاریکراوەکانی خێرایی"],
+ "exp":{"ar":"100 كم/ساعة للمركبات الصغيرة و80 كم/ساعة للشاحنات.","en":"100 km/h for small vehicles, 80 km/h for lorries.","ckb":"١٠٠ کم بۆ بچووکەکان و ٨٠ کم بۆ بارهەڵگر."}},
+
+{"n":52,"id":"qp-private-licence-double-cab","topic":"mechanics","correct":0,"img":"pic-052.jpg",
+ "ar":["هل يمكن لحامل اجازة المركبة الخصوصية قيادة مركبة من نوع بيك آب دبل قمارة؟","نعم يمكن، بشرط عدم إستخدام المركبة للأجرة وأن يكتب عليها \"نقل خاص\"","كلا، اجازة المركبات الخصوصية محددة للمركبات الخصوصية فقط","نعم وبدون شروط"],
+ "en":["May the holder of a private-vehicle licence drive a double-cab pick-up?","Yes, provided the vehicle is not used for hire and is marked \"private transport\"","No, a private licence covers private vehicles only","Yes, with no conditions"],
+ "ckb":["ئایا خاوەنی مۆڵەتی ئۆتۆمبێلی تایبەت دەتوانێت پیکئەپی دوو قەمارە لێبخوڕێت؟","بەڵێ، بەمەرجێک بۆ کرێ بەکارنەهێنرێت و لەسەری بنووسرێت \"گواستنەوەی تایبەت\"","نەخێر، تەنها بۆ ئۆتۆمبێلی تایبەتە","بەڵێ بەبێ هیچ مەرجێک"],
+ "exp":{"ar":"يجوز بشرط عدم استخدامها للأجرة وكتابة \"نقل خاص\" عليها.","en":"Permitted provided it is not used for hire and is marked as private transport.","ckb":"ڕێپێدراوە بەو مەرجەی بۆ کرێ نەبێت."}},
+
+{"n":53,"id":"qp-weighbridge-sign","topic":"signs","correct":1,"img":"pic-053.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","منطقة عبور المشاة","منطقة وزن الشاحنات الكبيرة","مستشفى"],
+ "en":["What does this sign mean?","A pedestrian crossing area","A weighing area for large lorries","A hospital"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ناوچەی پەڕینەوەی پیادە","ناوچەی کێشانی بارهەڵگرە گەورەکان","نەخۆشخانە"],
+ "exp":{"ar":"العلامة تدل على منطقة وزن الشاحنات الكبيرة.","en":"The sign marks a weighbridge for large lorries.","ckb":"ناوچەی کێشانی بارهەڵگرە گەورەکان."}}
+]

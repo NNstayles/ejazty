@@ -1,0 +1,55 @@
+[
+{"n":180,"id":"q-fuel-leak-other-parts","topic":"mechanics","correct":2,
+ "ar":["هل يعتبر تسرب الوقود من الأجزاء الأخرى للمركبة خطرة؟","فقط إذا كان التسرب في خزان الوقود","فقط إذا كان التسرب في الأنابيب","التسرب خطر في جميع أجزاء المركبة"],
+ "en":["Is a fuel leak from the vehicle's other parts dangerous?","Only if the leak is in the fuel tank","Only if the leak is in the pipes","A leak is dangerous anywhere on the vehicle"],
+ "ckb":["ئایا دزەکردنی سووتەمەنی لە بەشەکانی تری ئۆتۆمبێل مەترسیدارە؟","تەنها ئەگەر لە تانکی سووتەمەنیدا بێت","تەنها ئەگەر لە بۆرییەکاندا بێت","دزەکردن لە هەموو بەشەکانی ئۆتۆمبێلدا مەترسیدارە"],
+ "exp":{"ar":"تسرب الوقود خطر في أي جزء من المركبة.","en":"A fuel leak is dangerous anywhere on the vehicle.","ckb":"دزەکردنی سووتەمەنی لە هەر بەشێکدا مەترسیدارە."}},
+
+{"n":181,"id":"q-used-oil-disposal","topic":"mechanics","correct":2,
+ "ar":["عند تبديل زيت المحرك يسكب الزيت المبدل؟","في المجاري","على الارض","في الاماكن المخصصة له"],
+ "en":["When the engine oil is changed, the used oil should be poured:","Into the drains","On the ground","In the places designated for it"],
+ "ckb":["لە کاتی گۆڕینی زەیتی بزوێنەردا، زەیتە بەکارهاتووەکە بۆ کوێ دەڕژێنرێت؟","بۆ ناو ئاوەڕۆ","بەسەر زەویدا","لەو شوێنانەی بۆی دیاریکراون"],
+ "exp":{"ar":"يُسكب الزيت المبدل في الأماكن المخصصة له.","en":"Used oil goes in the places designated for it.","ckb":"زەیتی بەکارهاتوو لە شوێنی دیاریکراودا دەڕژێنرێت."}},
+
+{"n":182,"id":"q-annual-inspection-benefits","topic":"mechanics","correct":2,
+ "ar":["ما هي فوائد إجراء الفحص الفني السنوي وتأهيل المركبة؟","لحماية المركبة","لحماية السائق","لحماية المركبة والسائق وأشخاص آخرين"],
+ "en":["What are the benefits of the annual technical inspection and vehicle certification?","To protect the vehicle","To protect the driver","To protect the vehicle, the driver and other people"],
+ "ckb":["سوودەکانی پشکنینی تەکنیکی ساڵانە چین؟","بۆ پاراستنی ئۆتۆمبێل","بۆ پاراستنی شۆفێر","بۆ پاراستنی ئۆتۆمبێل و شۆفێر و کەسانی تر"],
+ "exp":{"ar":"الفحص السنوي يحمي المركبة والسائق والآخرين.","en":"The annual inspection protects the vehicle, the driver and others.","ckb":"پشکنینی ساڵانە ئۆتۆمبێل و شۆفێر و کەسانی تر دەپارێزێت."}},
+
+{"n":183,"id":"q-load-overhang-sides","topic":"rules","correct":0,
+ "ar":["ان تجاوز الحمولة (من جانبي المركبة) محددة بمسافة مقدارها","الحد الاقصى15 سم","الحد الاقصى 50 سم","الحد الاقصى 80 سم"],
+ "en":["A load overhanging the sides of the vehicle is limited to:","A maximum of 15 cm","A maximum of 50 cm","A maximum of 80 cm"],
+ "ckb":["تێپەڕاندنی بار لە هەردوو لای ئۆتۆمبێلەوە سنووردارە بە:","زۆرترین ١٥ سم","زۆرترین ٥٠ سم","زۆرترین ٨٠ سم"],
+ "exp":{"ar":"الحد الأقصى لتجاوز الحمولة من الجانبين 15 سم.","en":"The maximum side overhang is 15 cm.","ckb":"زۆرترین تێپەڕاندن لە لاکانەوە ١٥ سمە."}},
+
+{"n":184,"id":"q-first-aid-at-accident-scene","topic":"firstaid","correct":2,
+ "ar":["يجب اجراء الاسعافات الاولية للمصابين في الحوادث المرورية؟","في المستشفى","في مسكن المصاب","في موقع الحادث وعدم تحريك المصابين قدر الامكان"],
+ "en":["First aid for casualties of road accidents should be given:","At the hospital","At the casualty's home","At the scene of the accident, moving the casualties as little as possible"],
+ "ckb":["فریاگوزاری سەرەتایی بۆ برینداران لە ڕووداوەکاندا لەکوێ دەکرێت؟","لە نەخۆشخانە","لە ماڵی برینداری","لە شوێنی ڕووداوەکە و بەبێ جوڵاندنی برینداران تا دەکرێت"],
+ "exp":{"ar":"تُجرى الإسعافات في موقع الحادث دون تحريك المصابين قدر الإمكان.","en":"Give first aid at the scene and move casualties as little as possible.","ckb":"لە شوێنی ڕووداوەکە و بەبێ جوڵاندنیان."}},
+
+{"n":185,"id":"q-windscreen-cracks","topic":"mechanics","correct":2,
+ "ar":["مخاطر بروز صدع وشقوق في النافذة الأمامية المواجهة للسائق؟","يؤثر على جمال المركبة","ليس لها أي مخاطر، وتؤثر فقط في أيام البرد والحر","يؤثر على رؤية السائق"],
+ "en":["The danger of cracks and splits appearing in the windscreen in front of the driver is that:","It affects the vehicle's appearance","There is no danger; it only matters in cold and hot weather","It affects the driver's vision"],
+ "ckb":["مەترسی دروستبوونی درز و شەق لە پەنجەرەی پێشەوەی بەرامبەر شۆفێر:","کاریگەری لەسەر جوانی ئۆتۆمبێل دەبێت","هیچ مەترسییەکی نییە","کاریگەری لەسەر بینینی شۆفێر دەبێت"],
+ "exp":{"ar":"الصدوع في النافذة الأمامية تؤثر على رؤية السائق.","en":"Cracks in the windscreen affect the driver's vision.","ckb":"درز لە شووشەی پێشەوە بینینی شۆفێر تێکدەدات."}},
+
+{"n":186,"id":"q-night-driving-most-important","topic":"rules","correct":2,
+ "ar":["عند القيادة في الليل الاهم بالنسبة لك ان؟","تكون مستعدا لاستخدام الفرامل بسرعة اكبر","تستخدم الاضواء العالية طوال الوقت","تقود بحدود ماتوفره اضواء مركبتك"],
+ "en":["When driving at night, the most important thing for you is to:","Be ready to brake more quickly","Use main beam the whole time","Drive within the range your vehicle's lights give you"],
+ "ckb":["لە لێخوڕینی شەوانەدا گرنگترین شت بۆ تۆ:","ئامادەبیت بۆ بەکارهێنانی خێراتری برێک","بە درێژایی کات ڕووناکی بەرز بەکاربهێنیت","لە سنووری ئەو ڕووناکییەدا لێبخوڕیت کە چراکانت دەیدەن"],
+ "exp":{"ar":"يُقاد ضمن حدود ما توفره أضواء المركبة من رؤية.","en":"Drive within the range your headlights actually light.","ckb":"لە سنووری ڕووناکی چراکانتدا لێبخوڕە."}},
+
+{"n":187,"id":"q-battery-charged-by","topic":"mechanics","correct":1,
+ "ar":["تشحن بطارية المركبة بواسطة؟","الديلكو","الداينمو","الفيت بمب"],
+ "en":["The vehicle's battery is charged by:","The distributor","The dynamo (alternator)","The fuel pump"],
+ "ckb":["باتری ئۆتۆمبێل بە چی پڕ دەکرێتەوە؟","دیلکۆ","داینەمۆ","پەمپی سووتەمەنی"],
+ "exp":{"ar":"تُشحن البطارية بواسطة الداينمو.","en":"The battery is charged by the dynamo (alternator).","ckb":"باتری بە داینەمۆ پڕ دەکرێتەوە."}},
+
+{"n":188,"id":"q-load-overhang-front-rear","topic":"rules","correct":0,
+ "ar":["إن تجاوز الحمولة لمقدمة و مؤخرة المركبة محددة بمسافة مقدارها؟","الحد الاقصى 50سم مع وضع علم احمر اللون","الحد الاقصى 1 متر مع وضع علم احمر اللون","الحد الاقصى 1.5 متر مع وضع علم احمر اللون"],
+ "en":["A load overhanging the front and rear of the vehicle is limited to:","A maximum of 50 cm, with a red flag attached","A maximum of 1 metre, with a red flag attached","A maximum of 1.5 metres, with a red flag attached"],
+ "ckb":["تێپەڕاندنی بار لە پێشەوە و دواوەی ئۆتۆمبێل سنووردارە بە:","زۆرترین ٥٠ سم لەگەڵ دانانی ئاڵای سوور","زۆرترین ١ مەتر لەگەڵ ئاڵای سوور","زۆرترین ١٫٥ مەتر لەگەڵ ئاڵای سوور"],
+ "exp":{"ar":"الحد الأقصى 50 سم مع وضع علم أحمر اللون.","en":"The maximum is 50 cm, with a red flag attached.","ckb":"زۆرترین ٥٠ سمە لەگەڵ ئاڵای سوور."}}
+]

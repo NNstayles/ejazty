@@ -1,0 +1,263 @@
+[
+ {
+  "n": 72,
+  "id": "q-owner-duty-unlicensed-driver",
+  "topic": "rules",
+  "correct": 0,
+  "ar": [
+   "على صاحب المركبة او من يملك السيطرة عليها؟",
+   "عدم السماح للأشخاص الذين لا يحملون إجازة سياقة من قيادة سيارته",
+   "السماح باستخدام سيارته من قبل كل شخص يطلب إعارتها",
+   "السماح بإستخدام سيارته من دون توفر متطلبات السلامة والامان (وثيقة الفحص الفني) فيها"
+  ],
+  "en": [
+   "The vehicle's owner, or whoever controls it, must:",
+   "Not allow people without a driving licence to drive it",
+   "Allow anyone who asks to borrow it to use it",
+   "Allow it to be used without the safety requirements (the technical inspection document)"
+  ],
+  "ckb": [
+   "خاوەنی ئۆتۆمبێل یان ئەوەی کۆنترۆڵی هەیە دەبێت:",
+   "ڕێگا نەدات بەو کەسانەی مۆڵەتی لێخوڕینیان نییە لێیبخوڕن",
+   "ڕێگا بدات بە هەر کەسێک کە داوای بکات",
+   "ڕێگا بدات بەبێ بوونی مەرجەکانی سەلامەتی (بەڵگەنامەی پشکنینی تەکنیکی)"
+  ],
+  "exp": {
+   "ar": "لا يجوز السماح لمن لا يحمل إجازة سوق بقيادة المركبة.",
+   "en": "The owner must not let an unlicensed person drive the vehicle.",
+   "ckb": "خاوەنەکە نابێت ڕێگا بدات بە کەسی بێ مۆڵەت لێیبخوڕێت."
+  }
+ },
+ {
+  "n": 73,
+  "id": "q-parking-left-side-two-way",
+  "topic": "rules",
+  "correct": 0,
+  "ar": [
+   "هل يسمح بإيقاف المركبة في الجهة اليسرى لشارع باتجاهين؟",
+   "كلا لا يسمح بشكل مطلق",
+   "يسمح بشرط إيقاف المركبة بجوار الرصيف بشكل صحيح",
+   "يسمح بشرط ان يكون الشارع له أكثر من مسارين"
+  ],
+  "en": [
+   "May a vehicle be parked on the left-hand side of a two-way street?",
+   "No, it is absolutely not allowed",
+   "Allowed provided the vehicle is parked correctly beside the kerb",
+   "Allowed provided the street has more than two lanes"
+  ],
+  "ckb": [
+   "ئایا ڕێپێدراوە ئۆتۆمبێل لە لای چەپی شەقامێکی دوو ئاراستە بوەستێنرێت؟",
+   "نەخێر، بە تەواوی ڕێپێدراو نییە",
+   "ڕێپێدراوە بە مەرجی وەستاندنی دروست لەتەنیشت ڕێڕەوی پیادە",
+   "ڕێپێدراوە بە مەرجی ئەوەی شەقامەکە زیاتر لە دوو لاینی هەبێت"
+  ],
+  "exp": {
+   "ar": "يمنع الوقوف على الجهة اليسرى في شارع ذي اتجاهين منعاً مطلقاً.",
+   "en": "Parking on the left of a two-way street is absolutely prohibited.",
+   "ckb": "وەستان لە لای چەپی شەقامی دوو ئاراستە بە تەواوی قەدەغەیە."
+  }
+ },
+ {
+  "n": 74,
+  "id": "q-traffic-officer-precedence",
+  "topic": "priority",
+  "correct": 0,
+  "ar": [
+   "تكون أسبقية المرور ل؟",
+   "إشارة رجل المرور اليدوية على الاشارة الضوئية وعلامات الطرق",
+   "الاشارة الضوئية وعلامات الطرق على إشارة رجل المرور",
+   "علامات الطرق على الاشارات الضوئية"
+  ],
+  "en": [
+   "Precedence goes to:",
+   "The traffic officer's hand signal over the traffic light and the road signs",
+   "The traffic light and road signs over the traffic officer's signal",
+   "Road signs over traffic lights"
+  ],
+  "ckb": [
+   "پێشینەیی بۆ کامیانە؟",
+   "ئاماژەی دەستی پۆلیسی هاتوچۆ بەسەر چرا و تابلۆکاندا",
+   "چرا و تابلۆکان بەسەر ئاماژەی پۆلیسی هاتوچۆدا",
+   "تابلۆکان بەسەر چراکاندا"
+  ],
+  "exp": {
+   "ar": "إشارة رجل المرور اليدوية تعلو على الإشارة الضوئية وعلامات الطرق.",
+   "en": "The traffic officer's hand signal overrides both the lights and the road signs.",
+   "ckb": "ئاماژەی دەستی پۆلیس بەسەر چرا و تابلۆکاندایە."
+  }
+ },
+ {
+  "n": 75,
+  "id": "q-lighting-time-by-law",
+  "topic": "rules",
+  "correct": 0,
+  "ar": [
+   "ما هو وقت الانارة حسب القانون؟",
+   "إستخدام الاضوية مبكراً قبل حلول الظلام (بدأ من قبل الغروب ولغاية ما بعد الشروق)",
+   "أثناء القيادة في طريق مزدحم",
+   "في النهار أثناء القيادة في الطرق الخارجية"
+  ],
+  "en": [
+   "What is the lighting-up time under the law?",
+   "Use the lights early, before dark: from before sunset until after sunrise",
+   "While driving on a congested road",
+   "In the daytime when driving on rural roads"
+  ],
+  "ckb": [
+   "کاتی ڕووناککردنەوە بەپێی یاسا کەیە؟",
+   "بەکارهێنانی چراکان زوو پێش تاریکی (لە پێش ئاوابوونەوە تا دوای خۆرهەڵاتن)",
+   "لە کاتی لێخوڕین لە ڕێگای قەرەباڵغ",
+   "بە ڕۆژ لە ڕێگا دەرەکییەکان"
+  ],
+  "exp": {
+   "ar": "تُشغّل الأضوية من قبل الغروب ولغاية ما بعد الشروق.",
+   "en": "Lights are used from before sunset until after sunrise.",
+   "ckb": "چراکان لە پێش ئاوابوونەوە تا دوای خۆرهەڵاتن بەکاردەهێنرێن."
+  }
+ },
+ {
+  "n": 76,
+  "id": "q-seatbelt-responsibility",
+  "topic": "rules",
+  "correct": 0,
+  "ar": [
+   "على من تقع مسؤولية عدم ربط حزام الامان لجميع ركاب المركبة؟",
+   "على السائق والراكب سويةً",
+   "على السائق فقط",
+   "على الراكب الذي لم يربط حزام الامان"
+  ],
+  "en": [
+   "Who is responsible when the vehicle's occupants are not wearing seat belts?",
+   "The driver and the passenger together",
+   "The driver only",
+   "The passenger who did not fasten the belt"
+  ],
+  "ckb": [
+   "بەرپرسیاریەتی نەبەستنی پشتێنی سەلامەتی بۆ هەموو سەرنشینەکان لەسەر کێیە؟",
+   "لەسەر شۆفێر و سەرنشین بە یەکەوە",
+   "تەنها لەسەر شۆفێر",
+   "لەسەر ئەو سەرنشینەی پشتێنەکەی نەبەستووە"
+  ],
+  "exp": {
+   "ar": "المسؤولية تقع على السائق والراكب معاً.",
+   "en": "Responsibility rests on the driver and the passenger together.",
+   "ckb": "بەرپرسیاریەتی لەسەر شۆفێر و سەرنشین پێکەوەیە."
+  }
+ },
+ {
+  "n": 77,
+  "id": "q-priority-moving-over-stopped",
+  "topic": "priority",
+  "correct": 0,
+  "ar": [
+   "تكون أسبقية المرور لاحدى الحالات التالية؟",
+   "المركبة المتحركة على المركبة الواقفة",
+   "المركبة الواقفة على المركبة المتحركة",
+   "المركبة النازلة على المركبة الصاعدة"
+  ],
+  "en": [
+   "Right of way belongs to which of the following?",
+   "A moving vehicle over a stopped one",
+   "A stopped vehicle over a moving one",
+   "A descending vehicle over an ascending one"
+  ],
+  "ckb": [
+   "مافی پێشینەیی بۆ کام لەمانەیە؟",
+   "ئۆتۆمبێلی جوڵاو بەسەر ئۆتۆمبێلی وەستاودا",
+   "ئۆتۆمبێلی وەستاو بەسەر جوڵاودا",
+   "ئۆتۆمبێلی دابەزیو بەسەر سەرکەوتوودا"
+  ],
+  "exp": {
+   "ar": "الأسبقية للمركبة المتحركة على الواقفة.",
+   "en": "A moving vehicle has priority over a stopped one.",
+   "ckb": "پێشینەیی بۆ ئۆتۆمبێلی جوڵاوە بەسەر وەستاودا."
+  }
+ },
+ {
+  "n": 78,
+  "id": "q-priority-main-over-side-road",
+  "topic": "priority",
+  "correct": 0,
+  "ar": [
+   "تكون أسبقية المرور لاحدى الحالات التالية؟",
+   "المركبة التي تسير على الطريق الرئيسي على التي تسير في الطريق الفرعي",
+   "المركبة التي تسير على الطريق الفرعي على المركبة التي تسير في الطريق الرئيسي",
+   "المركبة الواقفة على المركبة المتحركة"
+  ],
+  "en": [
+   "Right of way belongs to which of the following?",
+   "A vehicle on the main road over one on the side road",
+   "A vehicle on the side road over one on the main road",
+   "A stopped vehicle over a moving one"
+  ],
+  "ckb": [
+   "مافی پێشینەیی بۆ کام لەمانەیە؟",
+   "ئۆتۆمبێلی ڕێگای سەرەکی بەسەر ئەوەی ڕێگای لاوەکی",
+   "ئۆتۆمبێلی ڕێگای لاوەکی بەسەر ئەوەی ڕێگای سەرەکی",
+   "ئۆتۆمبێلی وەستاو بەسەر جوڵاودا"
+  ],
+  "exp": {
+   "ar": "الأسبقية للمركبة السائرة على الطريق الرئيسي.",
+   "en": "Priority belongs to the vehicle on the main road.",
+   "ckb": "پێشینەیی بۆ ئۆتۆمبێلی ڕێگای سەرەکییە."
+  }
+ },
+ {
+  "n": 79,
+  "id": "q-overtaking-two-vehicles",
+  "topic": "rules",
+  "correct": 0,
+  "ar": [
+   "متى يسمح بتجاوز مركبتين (في آنٍ واحد) تسيران امامك في مسلك سيرك؟",
+   "عند خلو المسار المقابل بشكل كامل من المركبات وعدم وجود موانع اخرى للاجتياز",
+   "يمنع القانون مثل هذا الاجتياز بشكل مطلق",
+   "عندما تكون المركبتين المراد إجتيازهما من النوع الصغير (صالون) فقط"
+  ],
+  "en": [
+   "When may you overtake two vehicles at once travelling ahead of you in your lane?",
+   "When the opposing lane is completely clear of vehicles and there is no other bar to overtaking",
+   "The law prohibits such overtaking absolutely",
+   "Only when both vehicles to be overtaken are small saloons"
+  ],
+  "ckb": [
+   "کەی ڕێپێدراوە دوو ئۆتۆمبێل بە یەک جار تێپەڕێنیت کە لە پێشتەوە لە لاینەکەتدان؟",
+   "کاتێک لاینی بەرامبەر بە تەواوی بەتاڵە و هیچ ڕێگرێکی تر نییە",
+   "یاسا بە تەواوی قەدەغەی کردووە",
+   "تەنها کاتێک هەردوو ئۆتۆمبێلەکە بچووک بن"
+  ],
+  "exp": {
+   "ar": "يجوز عند خلو المسار المقابل تماماً وانتفاء الموانع.",
+   "en": "Permitted when the opposing lane is entirely clear and nothing else bars the manoeuvre.",
+   "ckb": "ڕێپێدراوە کاتێک لاینی بەرامبەر بە تەواوی بەتاڵ بێت."
+  }
+ },
+ {
+  "n": 80,
+  "id": "q-parking-on-pavement",
+  "topic": "rules",
+  "correct": 2,
+  "ar": [
+   "هل يجوز إيقاف المركبة على الرصيف؟",
+   "مسموح على الرصيف المبني من الكونكريت",
+   "مسموح على الرصيف المؤدي الى الكراج",
+   "ممنوع منعاً باتاً"
+  ],
+  "en": [
+   "May a vehicle be parked on the pavement?",
+   "Allowed on a concrete-built pavement",
+   "Allowed on the pavement leading to a garage",
+   "Strictly prohibited"
+  ],
+  "ckb": [
+   "ئایا ڕێپێدراوە ئۆتۆمبێل لەسەر ڕێڕەوی پیادە بوەستێت؟",
+   "ڕێپێدراوە لەسەر ڕێڕەوی کۆنکریتی",
+   "ڕێپێدراوە لەسەر ئەو ڕێڕەوەی بەرەو گاراج دەچێت",
+   "بە تەواوی قەدەغەیە"
+  ],
+  "exp": {
+   "ar": "إيقاف المركبة على الرصيف ممنوع منعاً باتاً.",
+   "en": "Parking on the pavement is strictly prohibited.",
+   "ckb": "وەستان لەسەر ڕێڕەوی پیادە بە تەواوی قەدەغەیە."
+  }
+ }
+]

@@ -1,0 +1,55 @@
+[
+{"n":198,"id":"q-passengers-in-boot-or-bed","topic":"rules","correct":0,
+ "ar":["هل يسمح بنقل الركاب في صندوق المركبات الصغيرة أو حوض الحمل في مركبات البيك اب والشاحنات؟","يمنع منعاً باتاً","نعم يسمح بنقلهم إذا كان العدد قليلاً","نعم مسموح في كل اماكن المركبات"],
+ "en":["May passengers be carried in the boot of a small vehicle or the load bed of a pick-up or lorry?","It is strictly prohibited","Yes, if the number is small","Yes, it is allowed anywhere in the vehicle"],
+ "ckb":["ئایا ڕێپێدراوە سەرنشین لە سندوقی ئۆتۆمبێلی بچووک یان حەوزی بارهەڵگردا بگوێزرێتەوە؟","بە تەواوی قەدەغەیە","بەڵێ، ئەگەر ژمارەکە کەم بێت","بەڵێ، لە هەموو شوێنێکی ئۆتۆمبێلدا ڕێپێدراوە"],
+ "exp":{"ar":"نقل الركاب في الصندوق أو حوض الحمل ممنوع منعاً باتاً.","en":"Carrying passengers in the boot or load bed is strictly prohibited.","ckb":"گواستنەوەی سەرنشین لە سندوق یان حەوزدا بە تەواوی قەدەغەیە."}},
+
+{"n":199,"id":"q-priority-paved-over-unpaved","topic":"priority","correct":0,
+ "ar":["اسبقية السير للطريق؟","المبلط على الطريق غير المبلط","غير المبلط على الطريق المبلط","لايوجد اسبقية"],
+ "en":["Right of way belongs to the road that is:","Paved, over the unpaved road","Unpaved, over the paved road","There is no priority"],
+ "ckb":["پێشینەیی ڕۆیشتن بۆ کام ڕێگایەیە؟","قیرتاوکراو بەسەر ناقیرتاوکراودا","ناقیرتاوکراو بەسەر قیرتاوکراودا","پێشینەیی نییە"],
+ "exp":{"ar":"الأسبقية للطريق المبلط على غير المبلط.","en":"The paved road has priority over the unpaved one.","ckb":"پێشینەیی بۆ ڕێگا قیرتاوکراوەکەیە."}},
+
+{"n":200,"id":"q-fog-avoid","topic":"rules","correct":2,
+ "ar":["عند الضباب عليك تفادي؟","عدم القيام بالاجتياز","عدم القيام بتغيير الممرات","جميع ماذكر"],
+ "en":["In fog you should avoid:","Overtaking","Changing lanes","All of the above"],
+ "ckb":["لە کاتی تەمدا دەبێت خۆت لەمانە بەدوور بگریت:","تێپەڕاندن","گۆڕینی لاین","هەموو ئەوانەی باسکران"],
+ "exp":{"ar":"يُتفادى الاجتياز وتغيير الممرات في الضباب.","en":"Avoid both overtaking and lane changes in fog.","ckb":"لە تەمدا تێپەڕاندن و گۆڕینی لاین مەکە."}},
+
+{"n":201,"id":"q-priority-pedestrians-over-driveway","topic":"priority","correct":1,
+ "ar":["تكون الاسبقية ل؟","المركبات التي تقطع الرصيف للدخول الى الكراج على المشاة السائرين على الرصيف","للمشاة السائرين على الرصيف على المركبات التي تقطع الرصيف للدخول او الخروج من الكراجات","المركبات التي تقطع الرصيف للخروج من الكراج على المشاة السائرين على الرصيف"],
+ "en":["Priority belongs to:","Vehicles crossing the pavement to enter a garage, over pedestrians walking on it","Pedestrians walking on the pavement, over vehicles crossing it to enter or leave garages","Vehicles crossing the pavement to leave a garage, over pedestrians walking on it"],
+ "ckb":["پێشینەیی بۆ کێیە؟","ئەو ئۆتۆمبێلانەی ڕێڕەوی پیادە دەبڕن بۆ چوونە ناو گاراج","پیادەکانی سەر ڕێڕەوەکە بەسەر ئەو ئۆتۆمبێلانەی ڕێڕەوەکە دەبڕن","ئەو ئۆتۆمبێلانەی بۆ دەرچوون لە گاراج ڕێڕەوەکە دەبڕن"],
+ "exp":{"ar":"الأسبقية للمشاة على الرصيف أمام المركبات الداخلة أو الخارجة من الكراجات.","en":"Pedestrians on the pavement have priority over vehicles crossing it.","ckb":"پێشینەیی بۆ پیادەکانی سەر ڕێڕەوەکەیە."}},
+
+{"n":202,"id":"q-best-way-avoid-collision","topic":"rules","correct":0,
+ "ar":["افضل طريقة لتفادي التصادم هي؟","تقليل السرعة","زيادة السرعة","تغيير المسارات بشكل مستمر والمشي بصورة لولبية"],
+ "en":["The best way to avoid a collision is:","Reducing speed","Increasing speed","Changing lanes constantly and weaving"],
+ "ckb":["باشترین ڕێگا بۆ دوورکەوتنەوە لە پێکدادان:","کەمکردنەوەی خێرایی","زیادکردنی خێرایی","گۆڕینی بەردەوامی لاین و ڕۆیشتنی خواروخێچ"],
+ "exp":{"ar":"تقليل السرعة أفضل وسيلة لتفادي التصادم.","en":"Reducing speed is the best way to avoid a collision.","ckb":"کەمکردنەوەی خێرایی باشترین ڕێگایە."}},
+
+{"n":203,"id":"q-priority-train","topic":"priority","correct":1,
+ "ar":["تكون الاسبقية ل؟","المركبات الانشائية على القطار او اي واسطة نقل تسير على سكة الحديد","للقطار او اي واسطة نقل تسير على سكة الحديد على المركبات الاخرى","المركبات الزراعية والدراجات النارية على القطار او اي واسطة نقل تسير على سكة الحديد"],
+ "en":["Priority belongs to:","Construction vehicles, over the train or any rail transport","The train or any rail transport, over all other vehicles","Agricultural vehicles and motorcycles, over the train or any rail transport"],
+ "ckb":["پێشینەیی بۆ کێیە؟","ئۆتۆمبێلی بیناسازی بەسەر شەمەندەفەردا","شەمەندەفەر یان هەر گواستنەوەیەکی سەر هێڵی ئاسن بەسەر ئۆتۆمبێلەکانی تر","ئۆتۆمبێلی کشتوکاڵی و ماتۆڕسکیل بەسەر شەمەندەفەردا"],
+ "exp":{"ar":"الأسبقية المطلقة للقطار وما يسير على سكة الحديد.","en":"The train and anything on rails has absolute priority.","ckb":"پێشینەیی تەواو بۆ شەمەندەفەرە."}},
+
+{"n":204,"id":"q-construction-licence-scope","topic":"mechanics","correct":1,
+ "ar":["حامل إجازة سوق المركبات الانشائية يستطيع قيادة؟","المركبات الزراعية","الإنشائية فقط","مركبات الحمل والاجرة"],
+ "en":["The holder of a construction-vehicle driving licence may drive:","Agricultural vehicles","Construction vehicles only","Goods vehicles and taxis"],
+ "ckb":["خاوەنی مۆڵەتی ئۆتۆمبێلی بیناسازی دەتوانێت چی لێبخوڕێت؟","ئۆتۆمبێلی کشتوکاڵی","تەنها بیناسازی","بارهەڵگر و تاکسی"],
+ "exp":{"ar":"إجازة المركبات الإنشائية تخوّل قيادة الإنشائية فقط.","en":"A construction-vehicle licence covers construction vehicles only.","ckb":"تەنها بۆ ئۆتۆمبێلی بیناسازییە."}},
+
+{"n":205,"id":"q-passing-stopped-bus","topic":"rules","correct":1,
+ "ar":["عند توقف حافلة (باص) لنقل الركاب في الشارع ماذا عليك ان تفعل؟","الاستمرار بالسير بالسرعة التي اقودها","أتجاوز الحافلة المتوقفة بحذر واخفف السرعة","السير بسرعة عالية امام حافلة الباص"],
+ "en":["When a passenger bus has stopped in the street, what should you do?","Carry on at the speed I am driving","Pass the stopped bus carefully and slow down","Drive at high speed in front of the bus"],
+ "ckb":["کاتێک پاسێک بۆ سەرنشین لە شەقامدا وەستاوە، چی دەکەیت؟","بە هەمان خێرایی بەردەوام دەبم","بە وریاییەوە تێیدەپەڕێنم و خێرایی کەم دەکەمەوە","بە خێرایی بەرز لە پێش پاسەکەوە دەڕۆم"],
+ "exp":{"ar":"يُتجاوز الباص المتوقف بحذر مع تخفيف السرعة.","en":"Pass the stopped bus carefully, slowing down.","ckb":"بە وریاییەوە و بە خێرایی کەم تێیبپەڕێنە."}},
+
+{"n":206,"id":"q-standing-water-brakes","topic":"rules","correct":2,
+ "ar":["المياه الفائضة على الطريق؟","القيادة بالضغط المتواصل على الفرامل","التوقف حتى تجف الفرامل","الضغط على الفرامل بشكل متكرر"],
+ "en":["With standing water on the road you should:","Drive with continuous pressure on the brakes","Stop until the brakes dry out","Apply the brakes repeatedly"],
+ "ckb":["ئاوی زیادە لەسەر ڕێگا:","لێخوڕین بە پەستانی بەردەوام لەسەر برێک","وەستان تا برێکەکان وشک دەبنەوە","پەستان لەسەر برێک بە شێوەی دووبارە"],
+ "exp":{"ar":"يُضغط على الفرامل بشكل متكرر لتجفيفها بعد المياه.","en":"Apply the brakes repeatedly to dry them after water.","ckb":"بە دووبارە پەستان لەسەر برێک بکە بۆ وشککردنەوەی."}}
+]

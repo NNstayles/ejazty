@@ -22,7 +22,7 @@ export const warningSigns: TrafficSign[] = [
     title: { ar: 'مدرسة', en: 'School', ckb: 'قوتابخانە' },
     meaning: {
       ar: 'تؤشّر هذه العلامة إلى وجود مدرسة في هذه المنطقة وإلى وجوب تهدئة السرعة حفاظًا على أرواح التلامذة.',
-      en: 'A school is in this area; reduce speed to protect pupils’ lives.',
+      en: 'A school is in this area; reduce speed to protect pupils\' lives.',
       ckb: 'قوتابخانەیەک لەم ناوچەیەدا هەیە؛ خێرایی کەم بکەرەوە بۆ پاراستنی گیانی قوتابیان.',
     },
   },
@@ -139,7 +139,7 @@ export const warningSigns: TrafficSign[] = [
   {
     id: 'sign-uneven-road-hump', category: 'warning', verified: true, source: { ...S, locator: 'ص ١٤' },
     image: require('@/assets/signs/uneven-road-hump.png'),
-    title: { ar: 'طريق غير مستوٍ — مطب صناعي', en: 'Uneven road — speed hump', ckb: 'ڕێگای ناتەخت — بەربەستی خێرایی' },
+    title: { ar: 'طريق غير مستوٍ: مطب صناعي', en: 'Uneven road: speed hump', ckb: 'ڕێگای ناتەخت: بەربەستی خێرایی' },
     meaning: {
       ar: 'تعني هذه العلامة أنه يوجد مرتفع أرضي للحد من سرعة المركبات.',
       en: 'There is a raised section of ground to limit vehicle speed.',
@@ -321,9 +321,9 @@ export const warningSigns: TrafficSign[] = [
     image: require('@/assets/signs/staged-warning.png'),
     title: { ar: 'التحذير على مراحل', en: 'Staged warning markers', ckb: 'ئاگادارکردنەوە بە قۆناغ' },
     meaning: {
-      ar: 'تعني هذه العلامة التحذير على مراحل مختلفة، وكل خط أحمر يعني ٥٠ مترًا [٥٠ مترًا – ١٠٠ متر – ١٥٠ مترًا].',
-      en: 'Warning at successive stages: each red stripe represents 50 metres (50 m – 100 m – 150 m).',
-      ckb: 'ئاگادارکردنەوە بە قۆناغی جیاواز؛ هەر هێڵێکی سوور ٥٠ مەتر دەگەیەنێت (٥٠ – ١٠٠ – ١٥٠ مەتر).',
+      ar: 'تعني هذه العلامة التحذير على مراحل مختلفة، وكل خط أحمر يعني ٥٠ مترًا [٥٠ مترًا، ١٠٠ متر، ١٥٠ مترًا].',
+      en: 'Warning at successive stages: each red stripe represents 50 metres (50 m, 100 m, 150 m).',
+      ckb: 'ئاگادارکردنەوە بە قۆناغی جیاواز؛ هەر هێڵێکی سوور ٥٠ مەتر دەگەیەنێت (٥٠، ١٠٠، ١٥٠ مەتر).',
     },
   },
 ];

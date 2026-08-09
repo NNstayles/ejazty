@@ -1,0 +1,49 @@
+[
+{"n":1,"id":"qp-overtake-motorcycle-broken-line","topic":"rules","correct":0,"img":"pic-001.jpg",
+ "ar":["هل تستطيع المركبة اجتياز الدراجة النارية في هذه الصورة؟","نعم لوجود خط متقطع على يسار المركبة","كلا","كلا لوجود خط منقطع وآخر مستمر على يسار المركبة"],
+ "en":["Can the vehicle overtake the motorcycle in this picture?","Yes, because there is a broken line to the left of the vehicle","No","No, because there is a broken line and a continuous one to the left of the vehicle"],
+ "ckb":["ئایا ئۆتۆمبێلەکە دەتوانێت ماتۆڕسکیلەکە تێبپەڕێنێت لەم وێنەیەدا؟","بەڵێ، چونکە هێڵێکی پچڕپچڕ لە لای چەپی ئۆتۆمبێلەکەیە","نەخێر","نەخێر، چونکە هێڵێکی پچڕپچڕ و یەکێکی بەردەوام لە لای چەپیەتی"],
+ "exp":{"ar":"الخط المتقطع على يسار المركبة يسمح بالاجتياز.","en":"The broken line to the vehicle's left permits overtaking.","ckb":"هێڵی پچڕپچڕ ڕێگا بە تێپەڕاندن دەدات."}},
+
+{"n":2,"id":"qp-slippery-road-sign","topic":"signs","correct":1,"img":"pic-002.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر من مخاطر السقوط","إحذر أمامك طريق منزلق","إحذر أمامك مطبات صناعية"],
+ "en":["What does this sign mean?","Beware of the danger of falling","Beware: slippery road ahead","Beware: speed humps ahead"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداری مەترسی کەوتن بە","ئاگاداربە، ڕێگای خلیسک لە پێشتە","ئاگاداربە، قەڵشی دەستکرد لە پێشتە"],
+ "exp":{"ar":"العلامة تحذر من طريق منزلق أمامك.","en":"The sign warns of a slippery road ahead.","ckb":"تابلۆکە ئاگادارت دەکاتەوە لە ڕێگای خلیسک."}},
+
+{"n":3,"id":"qp-crossroads-priority-sign","topic":"signs","correct":2,"img":"pic-003.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","احذر امامك اشارة ضوئية (ترافيكلايت)","احذر امامك ممر لعبور المشاة","احذر الاسبقية لطريق الرئيسى على الطريق الفرعين من الجهتين اليمين واليسار"],
+ "en":["What does this sign mean?","Beware: traffic lights ahead","Beware: pedestrian crossing ahead","Beware: the main road has priority over the side roads on both the right and the left"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، چرای هاتوچۆ لە پێشتە","ئاگاداربە، پەڕینەوەی پیادە لە پێشتە","ئاگاداربە، پێشینەیی بۆ ڕێگا سەرەکییەکەیە بەسەر ڕێگا لاوەکییەکانی ڕاست و چەپ"],
+ "exp":{"ar":"العلامة تنبه إلى أسبقية الطريق الرئيسي على الفرعيين يميناً ويساراً.","en":"The sign warns that the main road has priority over the side roads either side.","ckb":"تابلۆکە ئاماژە بە پێشینەیی ڕێگا سەرەکییەکە دەکات."}},
+
+{"n":4,"id":"qp-blue-cannot-overtake-green","topic":"rules","correct":0,"img":"pic-004.jpg",
+ "ar":["ما سبب عدم تمكن المركبة الزرقاء من اجتياز المركبة الخضراء التي تسير أمامها؟","وجود خط متصل الى يسار المركبة الزرقاء","وجود مركبة اخرى على يسار المركبة الزرقاء","ممكن للمركبة الزرقاء الاجتياز"],
+ "en":["Why can the blue vehicle not overtake the green vehicle travelling ahead of it?","There is a continuous line to the left of the blue vehicle","There is another vehicle to the left of the blue vehicle","The blue vehicle can overtake"],
+ "ckb":["بۆچی ئۆتۆمبێلە شینەکە ناتوانێت سەوزەکە تێبپەڕێنێت؟","هێڵێکی بەردەوام لە لای چەپی شینەکەیە","ئۆتۆمبێلێکی تر لە لای چەپیەتی","دەتوانێت تێیبپەڕێنێت"],
+ "exp":{"ar":"الخط المتصل على يسار المركبة الزرقاء يمنع الاجتياز.","en":"The continuous line on the blue vehicle's left prohibits overtaking.","ckb":"هێڵی بەردەوام ڕێگری لە تێپەڕاندن دەکات."}},
+
+{"n":5,"id":"qp-side-road-left-sign","topic":"signs","correct":0,"img":"pic-005.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","احذر أمامك طريق فرعي إلى اليسار","احذر أمامك طريق فرعي إلى اليمين","احذر أمامك استداره إلى اليسار"],
+ "en":["What does this sign mean?","Beware: side road to the left ahead","Beware: side road to the right ahead","Beware: a turn to the left ahead"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، ڕێگای لاوەکی بۆ لای چەپ لە پێشتە","ئاگاداربە، ڕێگای لاوەکی بۆ لای ڕاست لە پێشتە","ئاگاداربە، سووڕانەوە بۆ چەپ لە پێشتە"],
+ "exp":{"ar":"العلامة تحذر من طريق فرعي إلى اليسار.","en":"The sign warns of a side road to the left.","ckb":"تابلۆکە ئاگادارت دەکاتەوە لە ڕێگای لاوەکی لای چەپ."}},
+
+{"n":6,"id":"qp-traffic-lights-ahead-sign","topic":"signs","correct":0,"img":"pic-006.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","إحذر أمامك تقاطع منظم بالترفيك لايت","الوقوف ممنوع","إحذر أمامك معبر للمشاة"],
+ "en":["What does this sign mean?","Beware: a junction controlled by traffic lights ahead","No parking","Beware: pedestrian crossing ahead"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ئاگاداربە، چوارڕیانی ڕێکخراو بە چرای هاتوچۆ لە پێشتە","وەستان قەدەغەیە","ئاگاداربە، پەڕینەوەی پیادە لە پێشتە"],
+ "exp":{"ar":"العلامة تنبه إلى تقاطع منظم بالإشارة الضوئية.","en":"The sign warns of a junction controlled by traffic lights.","ckb":"تابلۆکە ئاماژە بە چوارڕیانی ڕێکخراو بە چرا دەکات."}},
+
+{"n":7,"id":"qp-which-vehicle-violates","topic":"rules","correct":1,"img":"pic-007.jpg",
+ "ar":["أي من المركبتين مخالف بموجب القانون؟","المركبة الخضراء","المركبة الزرقاء","كلتا المركبتين"],
+ "en":["Which of the two vehicles is breaking the law?","The green vehicle","The blue vehicle","Both vehicles"],
+ "ckb":["کام لەم دوو ئۆتۆمبێلە سەرپێچی یاسا دەکات؟","ئۆتۆمبێلە سەوزەکە","ئۆتۆمبێلە شینەکە","هەردووکیان"],
+ "exp":{"ar":"المركبة الزرقاء مخالفة لوقوفها على ممر عبور المشاة.","en":"The blue vehicle is at fault for being on the pedestrian crossing.","ckb":"ئۆتۆمبێلە شینەکە سەرپێچی دەکات."}},
+
+{"n":8,"id":"qp-give-way-sign","topic":"signs","correct":1,"img":"pic-008.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع الدخول","قف واسمح لمرور المركبات ذات الاسبقية","الطريق الرئيسي لاسبقية المرور (لك الأسبقية)"],
+ "en":["What does this sign mean?","No entry","Stop and give way to vehicles that have priority","Main road with priority (you have right of way)"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","چوونە ژوورەوە قەدەغەیە","بوەستە و ڕێگا بدە بەو ئۆتۆمبێلانەی پێشینەییان هەیە","ڕێگا سەرەکی خاوەن پێشینەیی (پێشینەیی هی تۆیە)"],
+ "exp":{"ar":"العلامة تعني قف وأعطِ الأسبقية للمركبات ذات الأسبقية.","en":"The sign means stop and give way to vehicles with priority.","ckb":"بوەستە و ڕێگا بدە بەوانەی پێشینەییان هەیە."}}
+]

@@ -1,0 +1,55 @@
+[
+{"n":243,"id":"q-when-lorries-may-overtake","topic":"rules","correct":0,
+ "ar":["متى يحق للشاحنات إجتياز المركبات الاخرى؟","لا يجوز قيام الشاحنات باجتياز المركبات الاخرى إلا في الاماكن المخصصة لها بالعلامات المرورية","ممكن للشاحنات القيام بالإجتياز في الطرق في اي وقت يشاء سائقها","يسمح للشاحنات إجتياز بعضها البعض فقط"],
+ "en":["When may lorries overtake other vehicles?","Lorries may not overtake except in places designated for it by traffic signs","Lorries may overtake on the road whenever their driver wishes","Lorries are only allowed to overtake each other"],
+ "ckb":["کەی بۆ بارهەڵگرەکان هەیە ئۆتۆمبێلەکانی تر تێبپەڕێنن؟","نابێت بارهەڵگرەکان تێپەڕاندن بکەن جگە لەو شوێنانەی بە تابلۆ دیاریکراون","لە هەر کاتێکدا شۆفێرەکەی بیەوێت","تەنها ڕێپێدراوە یەکتری تێبپەڕێنن"],
+ "exp":{"ar":"لا تجتاز الشاحنات إلا في الأماكن المخصصة لذلك بالعلامات المرورية.","en":"Lorries may only overtake where traffic signs allow it.","ckb":"تەنها لەو شوێنانەی بە تابلۆ دیاریکراون."}},
+
+{"n":244,"id":"q-children-alone-in-vehicle","topic":"rules","correct":2,
+ "ar":["يمنع ترك الاطفال في المركبة لوحدهم؟","لمدة نصف ساعة","لمدة تزيد عن ساعة واحدة","لا يجوز تركهم بشكل مطلق بدون مرافق"],
+ "en":["Leaving children alone in the vehicle is prohibited:","For half an hour","For more than one hour","They may never be left without an adult, under any circumstances"],
+ "ckb":["بەجێهێشتنی منداڵان بە تەنها لە ئۆتۆمبێلدا قەدەغەیە:","بۆ ماوەی نیو کاتژمێر","بۆ ماوەی زیاتر لە کاتژمێرێک","بە هیچ شێوەیەک نابێت بەبێ هاوڕێ بەجێبهێڵدرێن"],
+ "exp":{"ar":"لا يجوز ترك الأطفال في المركبة بدون مرافق مطلقاً.","en":"Children must never be left in the vehicle without an adult.","ckb":"بە هیچ شێوەیەک نابێت بەتەنها بەجێبهێڵدرێن."}},
+
+{"n":245,"id":"q-overtaking-on-slippery-road","topic":"rules","correct":2,
+ "ar":["يمنع القيام بمناورة الاجتياز في حال؟","إذا وجدت علامة ممنوع الوقوف","في الطرق الخارجية","في حال كان الطريق زلقا حتى مع عدم وجود علامة منع الاجتياز"],
+ "en":["An overtaking manoeuvre is prohibited when:","There is a no-parking sign","On rural roads","The road is slippery, even where there is no no-overtaking sign"],
+ "ckb":["مانۆڕی تێپەڕاندن کەی قەدەغەیە؟","ئەگەر تابلۆی قەدەغەی وەستان هەبێت","لە ڕێگا دەرەکییەکان","ئەگەر ڕێگاکە خلیسک بێت، تەنانەت ئەگەر تابلۆی قەدەغەش نەبێت"],
+ "exp":{"ar":"يمنع الاجتياز على الطريق الزلق ولو لم توجد علامة منع.","en":"Overtaking is prohibited on a slippery road even without a sign.","ckb":"لە ڕێگای خلیسکدا قەدەغەیە تەنانەت بەبێ تابلۆ."}},
+
+{"n":246,"id":"q-passengers-board-right-side","topic":"rules","correct":0,
+ "ar":["يلزم ركاب أية مركبة أثناء الصعود اليها أو النزول منها، مراعاة أن لا يؤدي ذلك الى تعريض أنفسهم و الاخرين من مستخدمي الطريق للخطر ولهذا يجب؟","النزول والصعود من يمين المركبة","النزول والصعود من جميع الابواب","السائق ممكن أن يصعد و ينزل من جهة اليمين"],
+ "en":["Passengers getting in or out of any vehicle must ensure they do not endanger themselves or other road users, and therefore must:","Get in and out on the right-hand side of the vehicle","Get in and out through any of the doors","The driver may get in and out on the right"],
+ "ckb":["سەرنشینانی هەر ئۆتۆمبێلێک لە کاتی سەرکەوتن و دابەزیندا دەبێت خۆیان و کەسانی تر نەخەنە مەترسییەوە، بۆیە دەبێت:","لە لای ڕاستی ئۆتۆمبێلەوە دابەزن و سەربکەون","لە هەموو دەرگاکانەوە","شۆفێر دەتوانێت لە لای ڕاستەوە بێت"],
+ "exp":{"ar":"يكون الصعود والنزول من جهة يمين المركبة.","en":"Get in and out on the right-hand side.","ckb":"لە لای ڕاستەوە."}},
+
+{"n":247,"id":"q-towed-vehicle-needs-driver","topic":"rules","correct":0,
+ "ar":["هل يجوز ترك المركبة تتحرك بدون وجود سائق يتولى قيادتها لو كانت تقطر بواسطة مركبة مخصصه بالسحب","نعم لجميع انواع المركبات","نعم الشاحنات فقط","المركبات الانشائية"],
+ "en":["May a vehicle be left moving without a driver at its wheel when it is being towed by a recovery vehicle?","Yes, for all types of vehicle","Yes, for lorries only","Construction vehicles"],
+ "ckb":["ئایا ڕێپێدراوە ئۆتۆمبێل بەبێ شۆفێر بجوڵێت کاتێک بە ئۆتۆمبێلی ڕاکێشان دەگوێزرێتەوە؟","بەڵێ، بۆ هەموو جۆرەکانی ئۆتۆمبێل","بەڵێ، تەنها بارهەڵگرەکان","ئۆتۆمبێلی بیناسازی"],
+ "exp":{"ar":"نعم، لجميع أنواع المركبات عند القطر بمركبة مخصصة للسحب.","en":"Yes, for all vehicle types when towed by a recovery vehicle.","ckb":"بەڵێ، بۆ هەموو جۆرەکان."}},
+
+{"n":248,"id":"q-pedestrians-on-expressway","topic":"rules","correct":0,
+ "ar":["هل يجوز للمشاة السير أو العبور من جهة الى اخرى في الطرق السريعة (شارع ال120 السريع كمثال)؟","لا يجوز مطلقاً","يجوز أثناء النهار","يجوز العبور بسرعة (ركضاً)"],
+ "en":["May pedestrians walk along or cross from one side to the other on expressways (the 120 expressway, for example)?","Never permitted","Permitted during the daytime","Permitted if they cross quickly (running)"],
+ "ckb":["ئایا بۆ پیادەکان هەیە لە ڕێگا خێراکاندا بڕۆن یان بپەڕنەوە؟","بە هیچ شێوەیەک ڕێپێدراو نییە","بە ڕۆژ ڕێپێدراوە","بە خێرایی (بە ڕاکردن) ڕێپێدراوە"],
+ "exp":{"ar":"لا يجوز للمشاة السير أو العبور في الطرق السريعة مطلقاً.","en":"Pedestrians may never walk on or cross an expressway.","ckb":"بە هیچ شێوەیەک ڕێپێدراو نییە."}},
+
+{"n":249,"id":"q-cracked-glass-obstructing-view","topic":"rules","correct":0,
+ "ar":["هل يجوز قيادة أية مركبة بوجود ما يعيق رؤية السائق؟","كلا لايجوز في حال وجود كسور في الزجاج الامامي أو الجانبي تحجب الرؤية الجيدة","يجوز قيادة المركبة وزجاج الابواب معتم","لاعلاقة بحمولة المركبة بالامر"],
+ "en":["May any vehicle be driven when something obstructs the driver's view?","No, not where cracks in the windscreen or side glass block a clear view","The vehicle may be driven with the door glass tinted","The vehicle's load has nothing to do with it"],
+ "ckb":["ئایا ڕێپێدراوە ئۆتۆمبێل لێبخوڕدرێت کاتێک شتێک بینینی شۆفێر ڕێدەگرێت؟","نەخێر، ئەگەر شکان لە شووشەی پێشەوە یان لاتەنیشت بینینی باش بشارێتەوە","ڕێپێدراوە بە شووشەی تاریکی دەرگاکان","پەیوەندی بە باری ئۆتۆمبێلەوە نییە"],
+ "exp":{"ar":"لا يجوز القيادة مع كسور في الزجاج تحجب الرؤية الجيدة.","en":"Driving with cracks that block a clear view is not allowed.","ckb":"نابێت بە شکانی شووشەی بینین‌شێوێن لێبخوڕدرێت."}},
+
+{"n":250,"id":"q-rest-break-per-hour","topic":"rules","correct":2,
+ "ar":["قيادة المركبة لمسافات طويلة قد تسبب الشعور بالنعاس أو التعب ولتلافي ذلك يجب أن تكون هناك لكل ساعة قيادة؟","30دقيقة إستراحة","20دقيقة إستراحة","5دقائق إستراحة"],
+ "en":["Driving long distances can cause drowsiness or fatigue; to avoid this there should be, for every hour of driving:","A 30-minute break","A 20-minute break","A 5-minute break"],
+ "ckb":["لێخوڕین بۆ ماوەی دوور دەبێتە هۆی خەواڵووبوون، بۆیە بۆ هەر کاتژمێرێک لێخوڕین دەبێت:","٣٠ خولەک پشوو","٢٠ خولەک پشوو","٥ خولەک پشوو"],
+ "exp":{"ar":"تُؤخذ استراحة 5 دقائق لكل ساعة قيادة.","en":"Take a 5-minute break for every hour of driving.","ckb":"٥ خولەک پشوو بۆ هەر کاتژمێرێک."}},
+
+{"n":251,"id":"q-daily-vehicle-check","topic":"mechanics","correct":0,
+ "ar":["سائق المركبة مسؤول عن سلامة مركبته وعليه الكشف عليها يومياً ودورياً قبل ركوبها للتأكد من","صلاحيتها للقيادة","نظافتها","لوحات التسجيل"],
+ "en":["A driver is responsible for their vehicle's safety and must inspect it daily and periodically before getting in, to confirm:","That it is fit to drive","That it is clean","The registration plates"],
+ "ckb":["شۆفێر بەرپرسیارە لە سەلامەتی ئۆتۆمبێلەکەی و دەبێت ڕۆژانە پشکنینی بکات بۆ دڵنیابوون لە:","شیاوبوونی بۆ لێخوڕین","پاکی","پلێتەکانی تۆمارکردن"],
+ "exp":{"ar":"يتأكد السائق يومياً من صلاحية المركبة للقيادة.","en":"The driver checks daily that the vehicle is fit to drive.","ckb":"ڕۆژانە دڵنیابە لە شیاوبوونی بۆ لێخوڕین."}}
+]

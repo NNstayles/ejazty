@@ -1,0 +1,55 @@
+[
+{"n":207,"id":"q-oncoming-full-beam","topic":"rules","correct":1,
+ "ar":["ماذا عليك ان تفعل عند قيادتك في الليل والمركبة القادمة نحوك تستخدم الاضاءة العالية (فول لايت) ولم يقوم باطفائها؟","تخفيف السرعة كي لاتعرض لاي حادث","تشغيل الاشارة اليمنى والاتجاه الى الجهة اليمنى من الطريق وتخفيف السرعة والنظر الى خطوط الشارع وعدم تجاوزها","تشغيل الاضوية العالية كي يقوم السائق المقابل بتقليل الاضوية"],
+ "en":["What should you do when driving at night and the oncoming vehicle keeps its main beam on?","Slow down so as not to be involved in an accident","Signal right, move to the right-hand side of the road, slow down, watch the road markings and do not cross them","Switch your own main beam on so the other driver dips theirs"],
+ "ckb":["بە شەو کاتێک ئۆتۆمبێلی بەرامبەر ڕووناکی بەرز بەکاردەهێنێت و ناکوژێنێتەوە، چی دەکەیت؟","خێرایی کەم دەکەمەوە","ئاماژەی ڕاست دەدەم و بەرەو لای ڕاستی ڕێگا دەڕۆم و خێرایی کەم دەکەمەوە و سەیری هێڵەکانی شەقام دەکەم","ڕووناکی بەرز داگیرسێنم بۆ ئەوەی ئەو کەمی بکاتەوە"],
+ "exp":{"ar":"يُتجه يميناً مع تخفيف السرعة ومتابعة خطوط الشارع دون تجاوزها.","en":"Move right, slow down and follow the road markings without crossing them.","ckb":"بەرەو ڕاست بڕۆ، خێرایی کەم بکەرەوە و هێڵەکان بپارێزە."}},
+
+{"n":208,"id":"q-boarding-side","topic":"rules","correct":2,
+ "ar":["الركوب والنزول للركاب يجب ان؟","يتم في الاماكن الغير مخصصة لتوقف المركبات","يكون الركوب او النزول من الجانب الايمن اذا كانت المركبة متوقفة على الجانب الايسر من الطريق","يكون الركوب او النزول من الجانب الايمن اذا كانت المركبة متوقفة على الجانب الايمن من الطريق"],
+ "en":["Passengers getting in and out must:","Do so in places not designated for stopping","Get in or out on the right when the vehicle is stopped on the left of the road","Get in or out on the right when the vehicle is stopped on the right of the road"],
+ "ckb":["سەرکەوتن و دابەزینی سەرنشین دەبێت:","لە شوێنی نادیاریکراودا بێت","لە لای ڕاستەوە بێت ئەگەر ئۆتۆمبێلەکە لە لای چەپی ڕێگا وەستابێت","لە لای ڕاستەوە بێت ئەگەر ئۆتۆمبێلەکە لە لای ڕاستی ڕێگا وەستابێت"],
+ "exp":{"ar":"يكون الركوب والنزول من الجانب الأيمن والمركبة متوقفة على يمين الطريق.","en":"Get in and out on the right, with the vehicle stopped on the right of the road.","ckb":"لە لای ڕاستەوە و ئۆتۆمبێلەکە لە لای ڕاستی ڕێگا وەستابێت."}},
+
+{"n":209,"id":"q-passengers-on-expressway","topic":"rules","correct":0,
+ "ar":["هل يسمح بنزول اوصعود الركاب في الطرق السريعة؟","ممنوع منعا باتا ولا يسمح","مسموح بشرط ان تكون حاشية الطريق عريضة","مسموح فقط في ساعات النهار"],
+ "en":["May passengers get in or out on expressways?","Strictly prohibited and not allowed","Allowed provided the verge is wide","Allowed during daylight hours only"],
+ "ckb":["ئایا ڕێپێدراوە سەرنشین لە ڕێگا خێراکاندا دابەزێت یان سەربکەوێت؟","بە تەواوی قەدەغەیە","ڕێپێدراوە ئەگەر شانی ڕێگاکە پان بێت","تەنها بە ڕۆژ ڕێپێدراوە"],
+ "exp":{"ar":"صعود الركاب ونزولهم على الطرق السريعة ممنوع منعاً باتاً.","en":"Passengers getting in or out on expressways is strictly prohibited.","ckb":"بە تەواوی قەدەغەیە."}},
+
+{"n":210,"id":"q-where-writing-allowed-on-vehicle","topic":"mechanics","correct":2,
+ "ar":["في اي مكان يجوز كتابة كلمات او جمل على المركبة؟","على زجاج المركبة الخلفية","على صندوق المركبة الخلفية","الواجب كتابتها بموجب التعليمات وفي الاماكن المحددة لها"],
+ "en":["Where may words or sentences be written on a vehicle?","On the rear window","On the boot lid","Only what the regulations require, in the places designated for it"],
+ "ckb":["لە کوێی ئۆتۆمبێل ڕێپێدراوە وشە یان ڕستە بنووسرێت؟","لەسەر شووشەی دواوە","لەسەر سندوقی دواوە","تەنها ئەوەی بەپێی ڕێنمایی پێویستە و لە شوێنی دیاریکراودا"],
+ "exp":{"ar":"يُسمح فقط بالكتابة الواجبة بموجب التعليمات وفي أماكنها المحددة.","en":"Only writing required by the regulations, in its designated places.","ckb":"تەنها ئەوەی بەپێی ڕێنمایی پێویستە."}},
+
+{"n":211,"id":"q-lane-change-in-roundabout","topic":"rules","correct":1,
+ "ar":["أثناء الدخول للاستدارة الدائرية (فلكة) هل يسمح بتبديل المسار؟","نعم","كلا","كلا أثناء الليل"],
+ "en":["When entering a roundabout, is changing lanes permitted?","Yes","No","No, at night"],
+ "ckb":["لە کاتی چوونە ناو خولانەوە (فەلەکە) ئایا گۆڕینی لاین ڕێپێدراوە؟","بەڵێ","نەخێر","نەخێر، بە شەو"],
+ "exp":{"ar":"لا يُسمح بتبديل المسار أثناء الدخول إلى الاستدارة الدائرية.","en":"Changing lanes when entering a roundabout is not permitted.","ckb":"گۆڕینی لاین لە کاتی چوونە ناو خولانەوەدا ڕێپێدراو نییە."}},
+
+{"n":212,"id":"q-hitting-parked-vehicle","topic":"rules","correct":0,
+ "ar":["اذا اصدمت إحدى المركبات المتوقفة في موقف المركبات كيف تتصرف؟","انتظر صاحب المركبة التي صدمتها لاعلمه بالامر او اكتب له ورقة فيها عنواني ورقم هاتفي في حالة تأخر عودته وأضعها على المركبة المصدومة","أترك الموقع بدون اي اشعار","أغير مكان وقوف مركبتي"],
+ "en":["If you hit one of the parked vehicles in a car park, what should you do?","Wait for its owner to tell them, or leave a note with my address and phone number on the damaged vehicle if they are delayed","Leave the scene without any notice","Move my vehicle to a different space"],
+ "ckb":["ئەگەر لە شوێنی وەستاندا لە ئۆتۆمبێلێکی وەستاوت دا، چی دەکەیت؟","چاوەڕێی خاوەنەکەی دەکەم بۆ ئاگادارکردنەوەی، یان پەڕەیەک بە ناونیشان و ژمارەی تەلەفۆنمەوە لەسەری دادەنێم","بەبێ هیچ ئاگادارکردنەوەیەک شوێنەکە بەجێدەهێڵم","شوێنی وەستانی ئۆتۆمبێلەکەم دەگۆڕم"],
+ "exp":{"ar":"يُنتظر صاحب المركبة أو تُترك ورقة بالعنوان ورقم الهاتف عليها.","en":"Wait for the owner, or leave a note with your address and phone number.","ckb":"چاوەڕێی خاوەنەکەی بکە یان پەڕەیەک دابنێ."}},
+
+{"n":213,"id":"q-required-item-in-vehicle","topic":"mechanics","correct":1,
+ "ar":["عند قيادة اية مركبة يجب ان يتواجد بداخلها احد هذه الاشياء؟","بطل ماء","مثلث فسفوري","قنينة صغيرة من البنزين"],
+ "en":["When driving any vehicle, one of these items must be inside it:","A bottle of water","A reflective triangle","A small bottle of petrol"],
+ "ckb":["لە کاتی لێخوڕینی هەر ئۆتۆمبێلێکدا دەبێت یەکێک لەمانە تێیدا بێت:","بوتڵێک ئاو","سێگۆشەی فۆسفۆری","بوتڵێکی بچووکی بەنزین"],
+ "exp":{"ar":"يجب توفر المثلث الفسفوري داخل المركبة.","en":"A reflective triangle must be carried in the vehicle.","ckb":"دەبێت سێگۆشەی فۆسفۆری لە ئۆتۆمبێلدا بێت."}},
+
+{"n":214,"id":"q-vehicle-ahead-stops-suddenly","topic":"rules","correct":1,
+ "ar":["عند قيادتك للمركبة في الشارع والمركبة التي امامك يقوم بايقاف مفاجا ماذا عليك ان تفعل؟","عدم الوقوف والاجتياز","الوقوف او تقليل السرعه لانه من الممكن ان يكون امامك خطر","لاتوجد علاقه بينك و بين المركبات الواقفه امامك"],
+ "en":["When driving and the vehicle in front stops suddenly, what should you do?","Do not stop, and overtake","Stop or slow down, because there may be a hazard ahead of you","There is no connection between you and the vehicles stopped ahead"],
+ "ckb":["کاتێک لێدەخوڕیت و ئۆتۆمبێلی پێشەوە لەناکاو دەوەستێت، چی دەکەیت؟","ناوەستم و تێدەپەڕێنم","دەوەستم یان خێرایی کەم دەکەمەوە چونکە لەوانەیە مەترسی لە پێشدا بێت","هیچ پەیوەندییەک نییە"],
+ "exp":{"ar":"يُتوقف أو تُخفض السرعة لاحتمال وجود خطر أمامك.","en":"Stop or slow down, because there may be a hazard ahead.","ckb":"بوەستە یان خێرایی کەم بکەرەوە."}},
+
+{"n":215,"id":"q-before-leaving-parked-vehicle","topic":"rules","correct":0,
+ "ar":["ماذا تفعل قبل ترك مركبتك المتوقفة في موقف على الطريق يسمح للوقوف فيه لفترة معينة؟","أتاكد من وقوفي في المكان المناسب والمسموح به قانونياً","أترك المركبة موازية للطريق وبمسافة لا تقل عن 1 م عن الرصيف","أترك محرك المركبة في حالة إشتعال إذ اكنت سأعود اليها خلال 5 دقائق"],
+ "en":["What do you do before leaving your vehicle in a roadside space where parking is allowed for a limited time?","Make sure I am parked in a suitable and legally permitted place","Leave the vehicle parallel to the road, no less than 1 m from the kerb","Leave the engine running if I will return within 5 minutes"],
+ "ckb":["پێش بەجێهێشتنی ئۆتۆمبێلەکەت لە شوێنێکی وەستانی کاتی، چی دەکەیت؟","دڵنیا دەبمەوە لەوەی لە شوێنی گونجاو و ڕێپێدراوی یاسایی وەستاوم","ئۆتۆمبێلەکە هاوتەریب و بە دووری کەمتر نەبێت لە ١ مەتر لە ڕێڕەوەکە","بزوێنەرەکە کار دەکات ئەگەر لە ماوەی ٥ خولەکدا بگەڕێمەوە"],
+ "exp":{"ar":"يُتأكد من الوقوف في مكان مناسب ومسموح به قانوناً.","en":"Make sure you are parked somewhere suitable and legally permitted.","ckb":"دڵنیابە لە وەستان لە شوێنی یاسایی."}}
+]

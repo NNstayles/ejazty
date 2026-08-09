@@ -1,0 +1,55 @@
+[
+{"n":54,"id":"q-driver-conduct-pedestrians","topic":"priority","correct":0,
+ "ar":["سلوك السائقين تجاه المشاة يجب ان تكون؟","اعطاء الاسبقيه للمشاة بالعبور و يجب إيقاف المركبة بشكل تام لحين إتمام العبور","اعطاء الاسبقيه لسائقي المركبات","الاسبقيه للواقفين على الرصيف"],
+ "en":["A driver's conduct towards pedestrians must be:","Give pedestrians right of way and stop the vehicle completely until they have finished crossing","Give right of way to vehicle drivers","Priority goes to those standing on the pavement"],
+ "ckb":["ڕەفتاری شۆفێران بەرامبەر پیادەکان دەبێت چۆن بێت؟","مافی پێشینەیی بدرێت بە پیادەکان و ئۆتۆمبێل بە تەواوی بوەستێت تا پەڕینەوەکە تەواو دەبێت","مافی پێشینەیی بدرێت بە شۆفێرانی ئۆتۆمبێل","پێشینەیی بۆ ئەوانەیە کە لەسەر ڕێڕەوی پیادە وەستاون"],
+ "exp":{"ar":"تُعطى الأسبقية للمشاة مع الإيقاف التام حتى إتمام العبور.","en":"Pedestrians get right of way, and you stop completely until they have crossed.","ckb":"پێشینەیی بۆ پیادەکانە و بە تەواوی دەوەستیت تا دەپەڕنەوە."}},
+
+{"n":55,"id":"q-temporary-customs-plates","topic":"mechanics","correct":0,
+ "ar":["المركبات التي تحمل لوحات (فحص كمركي مؤقت) تمنع من السير في إقليم كوردستان / العراق بعد مرور مدة؟","ستون يوماً من تاريخ توقيع عقد الشراء","ثلاثون يوماً من تاريخ عقد الشراء","تسعون يوماً من تاريخ عقد الشراء"],
+ "en":["Vehicles on temporary customs-inspection plates are barred from driving in the Kurdistan Region / Iraq after:","Sixty days from the date the purchase contract was signed","Thirty days from the date of the purchase contract","Ninety days from the date of the purchase contract"],
+ "ckb":["ئەو ئۆتۆمبێلانەی پلێتی (پشکنینی گومرگی کاتی) هەڵدەگرن، دوای چەند ماوەیەک لە هەرێمی کوردستان/عێراق لە ڕۆیشتن قەدەغە دەکرێن؟","شەست ڕۆژ لە بەرواری واژووکردنی گرێبەستی کڕین","سی ڕۆژ لە بەرواری گرێبەستی کڕین","نەوەد ڕۆژ لە بەرواری گرێبەستی کڕین"],
+ "exp":{"ar":"المدة ستون يوماً من تاريخ توقيع عقد الشراء.","en":"The period is sixty days from the signing of the purchase contract.","ckb":"ماوەکە شەست ڕۆژە لە واژووکردنی گرێبەستی کڕین."}},
+
+{"n":56,"id":"q-illegal-parking-causing-accident","topic":"rules","correct":0,
+ "ar":["عقوبة من يوقف مركبته في مكان يمنع الوقوف ويؤدي الى حادثة؟","الغرامة","حجز المركبة","الغرامة وحجز المركبة"],
+ "en":["The penalty for parking where parking is prohibited and thereby causing an accident is:","A fine","Impounding the vehicle","A fine and impounding the vehicle"],
+ "ckb":["سزای ئەو کەسەی ئۆتۆمبێلەکەی لە شوێنێکی قەدەغەدا دەوەستێنێت و دەبێتە هۆی ڕووداو:","غەرامە","دەستبەسەرداگرتنی ئۆتۆمبێل","غەرامە و دەستبەسەرداگرتنی ئۆتۆمبێل"],
+ "exp":{"ar":"العقوبة هي الغرامة بحسب دليل الأسئلة الرسمي.","en":"The official guide gives the penalty as a fine.","ckb":"بەپێی ڕێنمایی فەرمی، سزاکە غەرامەیە."}},
+
+{"n":57,"id":"q-side-mirror-adjustment","topic":"mechanics","correct":2,
+ "ar":["عليك ضبط المرايا الجانبية لمركبتك بالشكل التالي؟","ان ترى الاطارات الخلفية لمركبتك وأنت جالس في مقعد السياقة","ان ترى النوافذ الخلفية لمركبتك وأنت جالس في مقعد السياقة","أن ترى اكبر قدر من الطريق واقل قدر من جانبي مركبتك"],
+ "en":["You should adjust your vehicle's side mirrors so that:","You can see your rear tyres while sitting in the driver's seat","You can see your rear windows while sitting in the driver's seat","You see as much of the road and as little of your own vehicle's sides as possible"],
+ "ckb":["دەبێت ئاوێنە لاتەنیشتەکانی ئۆتۆمبێلەکەت بەم شێوەیە ڕێک بخەیت:","تایە دواوەکان ببینیت لە کاتی دانیشتن لە شوێنی لێخوڕین","پەنجەرە دواوەکان ببینیت","زۆرترین بەشی ڕێگا و کەمترین بەشی لاتەنیشتی ئۆتۆمبێلەکەت ببینیت"],
+ "exp":{"ar":"تُضبط المرايا لرؤية أكبر قدر من الطريق وأقل قدر من جسم المركبة.","en":"Set the mirrors to show as much road and as little of your own car as possible.","ckb":"ئاوێنەکان ڕێک بخە بۆ بینینی زۆرترین ڕێگا و کەمترین لەشی ئۆتۆمبێل."}},
+
+{"n":58,"id":"q-stopping-on-expressway","topic":"rules","correct":2,
+ "ar":["هل يجوز التوقف في الطرق السريعة لصعود وإنزال الركاب؟","مسموح فقط في ساعات النهار","مسموح عند التوقف في أماكن التوقف","ممنوع منعاً باتاً"],
+ "en":["May you stop on an expressway to pick up or set down passengers?","Allowed during daylight hours only","Allowed when stopping in designated stopping places","Strictly prohibited"],
+ "ckb":["ئایا ڕێپێدراوە لە ڕێگا خێراکاندا بۆ سەرکەوتن و دابەزینی سەرنشین بوەستیت؟","تەنها لە کاتژمێرەکانی ڕۆژدا ڕێپێدراوە","لە شوێنە دیاریکراوەکانی وەستاندا ڕێپێدراوە","بە تەواوی قەدەغەیە"],
+ "exp":{"ar":"التوقف على الطرق السريعة لصعود الركاب أو إنزالهم ممنوع منعاً باتاً.","en":"Stopping on an expressway for passengers is strictly prohibited.","ckb":"وەستان لە ڕێگا خێراکاندا بۆ سەرنشین بە تەواوی قەدەغەیە."}},
+
+{"n":59,"id":"q-front-tyre-blowout","topic":"mechanics","correct":0,
+ "ar":["ما هي الاجراءات التي تقوم بها حال إنفجار الاطار الامامي لمركبتك؟","إضغط على دواسة الوقود لحظة الانفجار لثوان وارفع قدمك بعدها تدريجياً وابقي كلتا يديك ممسكة بالمقود (الستيرن) للسيطرة على المركبة ولا تحاول الضغط على الموقف قدر الامكان","إستخدم الموقف اليدوي (الهاندبريك)","إستخدم عتلة تبديل الكير"],
+ "en":["What should you do if your front tyre blows out?","Press the accelerator for a moment at the blowout, then lift your foot gradually, keep both hands on the steering wheel to control the vehicle, and avoid braking as far as possible","Use the handbrake","Use the gear lever"],
+ "ckb":["ئەگەر تایەی پێشەوەی ئۆتۆمبێلەکەت تەقییەوە چی دەکەیت؟","لە ساتی تەقینەوەدا چەند چرکەیەک پێ بنێ بەسەر پێدانی سووتەمەنی، پاشان بە پلە پێت هەڵبگرە و هەردوو دەستت لەسەر ئستێرن بهێڵەوە و تا دەکرێت برێک مەگرە","هاندبرێک بەکاربهێنە","قۆڵی گێڕ بەکاربهێنە"],
+ "exp":{"ar":"يُحافظ على السيطرة بالمقود ويُتجنب الكبح المفاجئ عند انفجار الإطار الأمامي.","en":"Keep control with the steering wheel and avoid sudden braking on a front blowout.","ckb":"بە ئستێرن کۆنترۆڵ بکە و لە برێکی لەناکاو دووربکەوە."}},
+
+{"n":60,"id":"q-where-parking-prohibited","topic":"rules","correct":0,
+ "ar":["اي من هذه الاماكن يمنع فيها وقوف المركبات؟","في مناطق الاستدارة والانفاق وعلى ممرات عبور المشاة","في الطرق الخارجية","مواقف المركبات"],
+ "en":["In which of these places is parking prohibited?","At turning areas, in tunnels and on pedestrian crossings","On rural roads","In car parks"],
+ "ckb":["لە کام لەم شوێنانەدا وەستانی ئۆتۆمبێل قەدەغەیە؟","لە ناوچەی سووڕانەوە و تونێل و لەسەر پەڕینەوەی پیادە","لە ڕێگا دەرەکییەکان","لە شوێنی وەستانی ئۆتۆمبێل"],
+ "exp":{"ar":"يمنع الوقوف في مناطق الاستدارة والأنفاق وعلى ممرات المشاة.","en":"Parking is prohibited at turning areas, tunnels and pedestrian crossings.","ckb":"وەستان لە ناوچەی سووڕانەوە و تونێل و پەڕینەوەی پیادە قەدەغەیە."}},
+
+{"n":61,"id":"q-avoiding-skid","topic":"rules","correct":0,
+ "ar":["لتلافي تأثير انزلاق المركبة على الطريق أثناء حدوثه عليك؟","خفض سرعة مركبتك برفع قدمك من على دواسة الوقود وعدم الضغط على دواسة الموقف بقوة","إستعمل الموقف اليدوي (الهاندبريك)","أدر مقود المركبة (السكان) عكس إتجاه الانزلاق"],
+ "en":["To counter a skid while it is happening you should:","Reduce speed by lifting your foot off the accelerator and not braking hard","Use the handbrake","Turn the steering wheel against the direction of the skid"],
+ "ckb":["بۆ ڕووبەڕووبوونەوەی خلیسکانی ئۆتۆمبێل لە کاتی ڕوودانیدا، دەبێت:","خێرایی کەم بکەیتەوە بە هەڵگرتنی پێت لەسەر پێدانی سووتەمەنی و برێکی بەهێز مەگرە","هاندبرێک بەکاربهێنە","ئستێرن بە پێچەوانەی ئاراستەی خلیسکانەکە بسووڕێنە"],
+ "exp":{"ar":"يُرفع القدم عن دواسة الوقود دون كبح عنيف عند الانزلاق.","en":"Lift off the accelerator and avoid harsh braking in a skid.","ckb":"پێت لەسەر پێدانی سووتەمەنی هەڵبگرە و برێکی توند مەگرە."}},
+
+{"n":62,"id":"q-rear-tyre-blowout","topic":"mechanics","correct":0,
+ "ar":["ما هي الاجراءات التي تقوم بها حال إنفجار الاطار الخلفي لمركبتك؟","السيطرة على عجلة القيادة (الستيرن) بقوة وحاول تقليل سرعة المركبة تدريجياً وتوجيه المركبة نحو اليمين بإتجاه كتف الطريق مراعياً المركبات اللاحقة بك والمقابلة","الضغط بقوة على الموقف وتوجيه المركبة نحو اليمين","توجيه الستيرن بإتجاه الاطار المنفجرة"],
+ "en":["What should you do if your rear tyre blows out?","Hold the steering wheel firmly, reduce speed gradually and steer right towards the hard shoulder, watching for vehicles behind and oncoming","Brake hard and steer the vehicle to the right","Steer towards the blown tyre"],
+ "ckb":["ئەگەر تایەی دواوەی ئۆتۆمبێلەکەت تەقییەوە چی دەکەیت؟","ئستێرن بە توندی بگرە و بە پلە خێرایی کەم بکەرەوە و بەرەو ڕاست بۆ شانی ڕێگا بیبە، لەگەڵ ئاگاداری ئۆتۆمبێلەکانی دواوە و بەرامبەر","بە توندی برێک بگرە و بەرەو ڕاست بیبە","ئستێرن بەرەو تایە تەقیوەکە بسووڕێنە"],
+ "exp":{"ar":"يُمسك المقود بإحكام وتُخفض السرعة تدريجياً مع التوجه نحو كتف الطريق.","en":"Grip the wheel, slow gradually and move to the hard shoulder.","ckb":"ئستێرن توند بگرە، بە پلە خێرایی کەم بکەرەوە و بەرەو شانی ڕێگا بڕۆ."}}
+]

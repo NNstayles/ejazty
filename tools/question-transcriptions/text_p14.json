@@ -1,0 +1,55 @@
+[
+{"n":108,"id":"q-correct-right-turn-method","topic":"rules","correct":0,
+ "ar":["ما هي الطريقة الصحيحة لتنفيذ الإستدارة نحو اليمين؟","التوجه نحو مسلك اليمين بعد التأكد من خلو المسلك بعد تشغيل إشارة الاستدارة نحو اليمين وتخفيض السرعة","تشغيل الاشارة في اي مسلك كنت والتوجه الى فتحة الاستدارة فوراً","التوجه نحو فتحة الاستدارة المراد التوجه لها بدون تردد لتلافي الازدحام"],
+ "en":["What is the correct way to make a right turn?","Move into the right-hand lane after checking it is clear, having signalled right and reduced speed","Signal from whichever lane you are in and head straight for the turning","Head for the turning without hesitating, to avoid congestion"],
+ "ckb":["ڕێگای دروستی سووڕانەوە بەرەو ڕاست چییە؟","دوای ئاماژەدان بۆ ڕاست و کەمکردنەوەی خێرایی، دوای دڵنیابوون لە بەتاڵی لاینەکە بەرەو لاینی ڕاست بڕۆ","لە هەر لاینێک بیت ئاماژە بدە و ڕاستەوخۆ بەرەو کەلێنی سووڕانەوە بڕۆ","بەبێ دوودڵی بەرەو کەلێنەکە بڕۆ بۆ دوورکەوتنەوە لە قەرەباڵغی"],
+ "exp":{"ar":"يُشغّل المؤشر، تُخفض السرعة، ويُتأكد من خلو المسلك قبل التوجه يميناً.","en":"Signal, slow down and check the lane is clear before moving right.","ckb":"ئاماژە بدە، خێرایی کەم بکەرەوە و دڵنیابە لە بەتاڵی لاینەکە."}},
+
+{"n":109,"id":"q-after-parking-procedure","topic":"rules","correct":0,
+ "ar":["ما هي الاجراءات التي يجب أن يقوم بها السائق بعد إيقاف سيارته وتركه لها في موقف نظامي","يتأكد من إيقاف عمل محرك المركبات وغلق الابواب وتفعيل الموقف اليدوي (الهاندبريك)","يتركها بدون تفعيل الموقف اليدوي ويضع يدة الكير على الحياد (البوش)","وضع المثلث الفسفوري خلف المركبة"],
+ "en":["What must a driver do after parking and leaving the vehicle in a regular parking space?","Make sure the engine is switched off, the doors are locked and the handbrake is applied","Leave it without the handbrake, with the gear lever in neutral","Place the reflective triangle behind the vehicle"],
+ "ckb":["دوای وەستاندن و بەجێهێشتنی ئۆتۆمبێل لە شوێنی وەستانی یاسایی، شۆفێر دەبێت چی بکات؟","دڵنیابێت لە کوژاندنەوەی بزوێنەر و داخستنی دەرگاکان و کارپێکردنی هاندبرێک","بەبێ هاندبرێک بەجێی بهێڵێت و گێڕەکە لەسەر بێلایەنی دابنێت","سێگۆشەی فۆسفۆری لە پشت ئۆتۆمبێلەکە دابنێت"],
+ "exp":{"ar":"يُطفأ المحرك وتُغلق الأبواب ويُفعّل الموقف اليدوي.","en":"Switch off the engine, lock the doors and apply the handbrake.","ckb":"بزوێنەر بکوژێنەوە، دەرگاکان دابخە و هاندبرێک کاراکە."}},
+
+{"n":110,"id":"q-checks-before-right-turn","topic":"rules","correct":0,
+ "ar":["ما هي النقاط التي يجب التأكد منها قبل بدء الاستدارة نحو اليمين؟","خلو الطريق في المسارات التي على يمينك","خلو الطريق في المسار الايسر","تشغيل اضوئة التحذير"],
+ "en":["What must you check before beginning a right turn?","That the lanes to your right are clear","That the left-hand lane is clear","That the hazard lights are on"],
+ "ckb":["پێش دەستپێکردنی سووڕانەوە بەرەو ڕاست دەبێت لە چی دڵنیابیت؟","بەتاڵی ڕێگا لەو لاینانەی لای ڕاستتن","بەتاڵی ڕێگا لە لاینی چەپ","داگیرساندنی چرا ئاگادارکەرەوەکان"],
+ "exp":{"ar":"يُتأكد من خلو المسارات التي على اليمين.","en":"Check that the lanes on your right are clear.","ckb":"دڵنیابە لە بەتاڵی ئەو لاینانەی لای ڕاستتن."}},
+
+{"n":111,"id":"q-reversing-conditions","topic":"rules","correct":0,
+ "ar":["ما هي شروط السماح بالقيادة للخلف في الطرق الداخلية؟","التأكد من خلو الطريق خلف المركبة والرؤيا الواضحة وتشغيل إشارات التحذير الرباعيه والرجوع يجب أن لا يزيد عن 10 م","الرجوع للخلف غير مشروط بمسافة","رجوع المركبة غير مشروط بوجود الضياء الابيض الخلفي"],
+ "en":["What are the conditions for reversing on inner-city roads?","Check the road behind is clear with a clear view, switch on the hazard lights, and reverse no more than 10 m","Reversing is not limited by distance","Reversing does not require the white reversing light"],
+ "ckb":["مەرجەکانی ڕێپێدان بە دواوەچوون لە ڕێگا ناوەکییەکان چین؟","دڵنیابوون لە بەتاڵی ڕێگای دواوە و بینینی ڕوون و داگیرساندنی چرا ئاگادارکەرەوەکان و نەچوونە دواوە زیاتر لە ١٠ مەتر","چوونە دواوە بە دووری مەرجدار نییە","پێویستی بە چرای سپی دواوە نییە"],
+ "exp":{"ar":"يُشترط خلو الطريق ووضوح الرؤية وتشغيل التحذير وألا يزيد الرجوع عن 10 م.","en":"The road must be clear, the view good, hazards on, and the reverse no more than 10 m.","ckb":"ڕێگا بەتاڵ، بینین ڕوون، چراکان داگیرساو و نەزیاتر لە ١٠ مەتر."}},
+
+{"n":112,"id":"q-how-to-park-at-kerb","topic":"rules","correct":0,
+ "ar":["كيف توقف مركبتك في الشارع؟","ايقاف المركبة بجانب الرصيف بشكل متوازي بمسافة لا تزيد عن 30سم","إيقاف المركبة بزاوية 30 درجة عن حافة الرصيف في كل الطرق","إيقاف المركبة في مناطق عبور المشاة كي يسهل العبور للجهة الاخرى"],
+ "en":["How should you park your vehicle in the street?","Parallel to the kerb, no more than 30 cm from it","At a 30-degree angle to the kerb on every road","On a pedestrian crossing, to make crossing to the other side easier"],
+ "ckb":["چۆن ئۆتۆمبێلەکەت لە شەقامدا دەوەستێنیت؟","بە شێوەی هاوتەریب لەتەنیشت ڕێڕەوی پیادە بە دووری نەزیاتر لە ٣٠ سم","بە گۆشەی ٣٠ پلە لە لێواری ڕێڕەوەکە","لە ناوچەی پەڕینەوەی پیادە"],
+ "exp":{"ar":"تُوقف المركبة موازية للرصيف على بعد لا يزيد عن 30 سم.","en":"Park parallel to the kerb, within 30 cm of it.","ckb":"هاوتەریب لەگەڵ ڕێڕەوەکە و بە دووری کەمتر لە ٣٠ سم."}},
+
+{"n":113,"id":"q-meeting-on-narrow-street","topic":"rules","correct":0,
+ "ar":["عند تقابل مركبتين في شارع ضيق ومستوى ما هو الاجراء الذي عليك فعله؟","التمهل والاتجاه بالمركبة الى حافة الشارع في اوسع منطقة من الشارع كي تتفادى الاصطدام","التقابل في اضيق مقطع من الشارع وإغلاق الطريق","محاولة سائق المركبة الكبيرة أن يزيد من سرعته ويعبر الاول في المقطع الضيق"],
+ "en":["When two vehicles meet on a narrow, level street, what should you do?","Slow down and move to the edge of the street at its widest point to avoid a collision","Meet at the narrowest section and block the road","The larger vehicle's driver should speed up and pass through the narrow section first"],
+ "ckb":["کاتێک دوو ئۆتۆمبێل لە شەقامێکی تەسک و تەختدا بەریەککەوتن، چی دەکەیت؟","هێواش بە و بەرەو لێواری شەقامەکە بڕۆ لە فراوانترین شوێن بۆ دوورکەوتنەوە لە پێکدادان","لە تەسکترین بەشدا بەریەک بکەون و ڕێگا دابخەن","شۆفێری ئۆتۆمبێلە گەورەکە خێرایی زیاد بکات و یەکەم بپەڕێتەوە"],
+ "exp":{"ar":"يُتمهل ويُتجه إلى حافة الشارع عند أوسع منطقة لتفادي الاصطدام.","en":"Slow and pull to the edge at the widest point to avoid a collision.","ckb":"هێواش بە و لە فراوانترین شوێن بەرەو لێوار بڕۆ."}},
+
+{"n":114,"id":"q-steep-narrow-road-priority","topic":"priority","correct":1,
+ "ar":["كيف يتصرف سائقوا المركبات في طرق ضيقة ومنحدرة او صعود شديد؟","من يصل اولاً يدخل اولاً للمقطع الضيق","يجب على سائق المركبة النازلة ايقاف مركبته كي يمكن المركبة الصاعدة من مواصلة السير","يجب على سائق المركبة الصاعدة ايقاف مركبته كي يمكن سائق المركبة النازلة من مواصلة السير"],
+ "en":["How should drivers behave on narrow roads with a steep descent or climb?","Whoever arrives first enters the narrow section first","The driver of the descending vehicle must stop so the ascending vehicle can continue","The driver of the ascending vehicle must stop so the descending vehicle can continue"],
+ "ckb":["شۆفێران لە ڕێگای تەسک و لێژ یان هەڵدێری توندا چۆن ڕەفتار دەکەن؟","هەرکەسێک یەکەم بگات یەکەم دەچێتە ناو بەشە تەسکەکە","شۆفێری ئۆتۆمبێلی دابەزیو دەبێت بوەستێت تا ئۆتۆمبێلی سەرکەوتوو بەردەوام بێت","شۆفێری ئۆتۆمبێلی سەرکەوتوو دەبێت بوەستێت"],
+ "exp":{"ar":"تتوقف المركبة النازلة لتمكين الصاعدة من مواصلة السير.","en":"The descending vehicle stops so the ascending one can continue.","ckb":"ئۆتۆمبێلی دابەزیو دەوەستێت تا سەرکەوتووەکە بەردەوام بێت."}},
+
+{"n":115,"id":"q-body-part-outside-vehicle","topic":"rules","correct":0,
+ "ar":["هل يجوز لنا قيادة المركبة وكل أو جزء من جسمنا خارج المركبة؟","ممنوع منعاً باتاً","مسموح في الشاحنات ومركبات الطوارئ","مسموح في الطرق الخارجية"],
+ "en":["May we drive with all or part of our body outside the vehicle?","Strictly prohibited","Allowed in lorries and emergency vehicles","Allowed on rural roads"],
+ "ckb":["ئایا ڕێپێدراوە بە هەموو یان بەشێکی لەشمان لە دەرەوەی ئۆتۆمبێل لێبخوڕین؟","بە تەواوی قەدەغەیە","لە بارهەڵگر و ئۆتۆمبێلی فریاگوزاریدا ڕێپێدراوە","لە ڕێگا دەرەکییەکان ڕێپێدراوە"],
+ "exp":{"ar":"ممنوع منعاً باتاً إخراج الجسم أو جزء منه خارج المركبة أثناء القيادة.","en":"Having any part of the body outside the vehicle while driving is strictly prohibited.","ckb":"دەرهێنانی لەش یان بەشێکی لە دەرەوەی ئۆتۆمبێل بە تەواوی قەدەغەیە."}},
+
+{"n":116,"id":"q-high-beam-two-way-road","topic":"rules","correct":0,
+ "ar":["تستخدم الاضاءة العالية في الليل في طريق ذو سايد واحد والمستخدمة للذهاب والاياب في حالة؟","عدم وجود المركبات في الاتجاه المقابل","بشكل مستمر","في حالة وجود المركبات في الاتجاه المقابل بعدد قليل"],
+ "en":["Main beam is used at night on a single-carriageway road carrying both directions when:","There are no vehicles coming the other way","Continuously","There are only a few vehicles coming the other way"],
+ "ckb":["ڕووناکی بەرز بە شەو لە ڕێگای یەک سایدی هاتوچۆدا کەی بەکاردەهێنرێت؟","کاتێک ئۆتۆمبێل لە ئاراستەی بەرامبەردا نییە","بە بەردەوامی","کاتێک ژمارەیەکی کەم ئۆتۆمبێل لە بەرامبەردایە"],
+ "exp":{"ar":"تُستخدم الإضاءة العالية عند خلو الاتجاه المقابل من المركبات.","en":"Use main beam only when no vehicles are coming the other way.","ckb":"تەنها کاتێک ئۆتۆمبێل لە بەرامبەردا نییە."}}
+]

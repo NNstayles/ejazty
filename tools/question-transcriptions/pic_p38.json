@@ -1,0 +1,55 @@
+[
+{"n":36,"id":"qp-end-no-overtaking-all","topic":"signs","correct":0,"img":"pic-036.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","نهاية حظر تجاوز كافة انواع المركبات","نهاية حظر تجاوز للمركبات الصغيرة","النهاية المحددة"],
+ "en":["What does this sign mean?","End of the overtaking ban for all types of vehicle","End of the overtaking ban for small vehicles","The prescribed end"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","کۆتایی قەدەغەی تێپەڕاندن بۆ هەموو جۆرەکانی ئۆتۆمبێل","کۆتایی قەدەغە بۆ ئۆتۆمبێلە بچووکەکان","کۆتایی دیاریکراو"],
+ "exp":{"ar":"العلامة تنهي حظر التجاوز لكافة أنواع المركبات.","en":"The sign ends the overtaking ban for all vehicle types.","ckb":"کۆتایی بە قەدەغەی تێپەڕاندن دەهێنێت بۆ هەموو جۆرەکان."}},
+
+{"n":37,"id":"qp-merge-start-median","topic":"signs","correct":0,"img":"pic-037.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","بداية إندماج طريقين وحظر المرور في الجزره الوسطية","منطقة عبور المشاة","الاجتياز ممنوع"],
+ "en":["What does this marking mean?","The start of two roads merging, with traffic prohibited on the central island","A pedestrian crossing area","Overtaking is prohibited"],
+ "ckb":["ئەم نیشانەیە چی دەگەیەنێت؟","دەستپێکی تێکەڵبوونی دوو ڕێگا و قەدەغەی ڕۆیشتن لە دوورگەی ناوەڕاست","ناوچەی پەڕینەوەی پیادە","تێپەڕاندن قەدەغەیە"],
+ "exp":{"ar":"تدل على بداية اندماج طريقين مع حظر المرور في الجزرة الوسطية.","en":"It marks the start of a merge, with the central island closed to traffic.","ckb":"دەستپێکی تێکەڵبوونی دوو ڕێگا."}},
+
+{"n":38,"id":"qp-no-overtaking-lorries","topic":"signs","correct":0,"img":"pic-038.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","يمنع على الشاحنات القيام بمناورة الاجتياز","نهاية حظر تجاوز للشاحنات","يمنع مرور المركبات التي تزيد طولها عن 10 أمتار"],
+ "en":["What does this sign mean?","Lorries are prohibited from overtaking","End of the overtaking ban for lorries","Vehicles longer than 10 metres are prohibited"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","بارهەڵگرەکان لە تێپەڕاندن قەدەغەن","کۆتایی قەدەغەی تێپەڕاندن بۆ بارهەڵگرەکان","ئۆتۆمبێلی درێژتر لە ١٠ مەتر قەدەغەیە"],
+ "exp":{"ar":"العلامة تمنع الشاحنات من الاجتياز.","en":"The sign prohibits lorries from overtaking.","ckb":"بارهەڵگرەکان ناتوانن تێبپەڕێنن."}},
+
+{"n":39,"id":"qp-merge-end-median","topic":"signs","correct":1,"img":"pic-039.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","بداية إندماج طريقين وحظر المرور في الجزره الوسطية","نهاية إندماج طريقين وحظر المرور في الجزرة الوسطية","الاجتياز ممنوع"],
+ "en":["What does this marking mean?","The start of two roads merging, with traffic prohibited on the central island","The end of two roads merging, with traffic prohibited on the central island","Overtaking is prohibited"],
+ "ckb":["ئەم نیشانەیە چی دەگەیەنێت؟","دەستپێکی تێکەڵبوونی دوو ڕێگا","کۆتایی تێکەڵبوونی دوو ڕێگا و قەدەغەی ڕۆیشتن لە دوورگەی ناوەڕاست","تێپەڕاندن قەدەغەیە"],
+ "exp":{"ar":"تدل على نهاية اندماج طريقين مع حظر المرور في الجزرة الوسطية.","en":"It marks the end of the merge, with the central island closed to traffic.","ckb":"کۆتایی تێکەڵبوونی دوو ڕێگا."}},
+
+{"n":40,"id":"qp-end-no-overtaking-lorries","topic":"signs","correct":1,"img":"pic-040.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","يمنع على الشاحنات القيام بمناورة الاجتياز","نهاية منع الشاحنات للقيام بمناورة الاجتياز","نهاية حظر القيام بمناورة الاجتياز لكافة أنواع المركبات"],
+ "en":["What does this sign mean?","Lorries are prohibited from overtaking","End of the ban on lorries overtaking","End of the overtaking ban for all types of vehicle"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","بارهەڵگرەکان لە تێپەڕاندن قەدەغەن","کۆتایی قەدەغەی تێپەڕاندن بۆ بارهەڵگرەکان","کۆتایی قەدەغە بۆ هەموو جۆرەکان"],
+ "exp":{"ar":"العلامة تنهي منع الشاحنات من الاجتياز.","en":"The sign ends the ban on lorries overtaking.","ckb":"کۆتایی قەدەغەی تێپەڕاندنی بارهەڵگرەکان."}},
+
+{"n":41,"id":"qp-expressway-sign","topic":"signs","correct":0,"img":"pic-041.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","الطريق السريع","نهاية الطريق السريع","الطريق مسدود"],
+ "en":["What does this sign mean?","Expressway","End of expressway","Road closed"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ڕێگای خێرا","کۆتایی ڕێگای خێرا","ڕێگا داخراوە"],
+ "exp":{"ar":"العلامة تدل على بداية الطريق السريع.","en":"The sign marks the start of an expressway.","ckb":"دەستپێکی ڕێگای خێرا."}},
+
+{"n":42,"id":"qp-parking-near-crossing","topic":"rules","correct":0,"img":"pic-042.jpg",
+ "ar":["ما هي المسافة المسموح بها لوقوف المركبات بالقرب من خطوط عبور المشاة؟","20م قبل الخط و 10م بعد الخط","المسافة غير مهمة المهم عدم الوقوف على خطوط العبور المشاة","5م قبل خط العبور و 5 م بعده"],
+ "en":["What distance is allowed for parking near a pedestrian crossing?","20 m before the crossing and 10 m after it","The distance does not matter; what matters is not parking on the crossing","5 m before the crossing and 5 m after it"],
+ "ckb":["چ ماوەیەک ڕێپێدراوە بۆ وەستان لە نزیک هێڵەکانی پەڕینەوەی پیادە؟","٢٠ مەتر پێش هێڵەکە و ١٠ مەتر دوای","ماوەکە گرنگ نییە، گرنگ ئەوەیە لەسەر هێڵەکان نەوەستیت","٥ مەتر پێش و ٥ مەتر دوای"],
+ "exp":{"ar":"المسافة 20 م قبل الخط و10 م بعده.","en":"The distance is 20 m before and 10 m after the crossing.","ckb":"٢٠ مەتر پێش و ١٠ مەتر دوای."}},
+
+{"n":43,"id":"qp-end-expressway-sign","topic":"signs","correct":1,"img":"pic-043.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","الطريق مسدود","نهاية الطريق السريع","الطريق السريع"],
+ "en":["What does this sign mean?","Road closed","End of expressway","Expressway"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","ڕێگا داخراوە","کۆتایی ڕێگای خێرا","ڕێگای خێرا"],
+ "exp":{"ar":"العلامة تدل على نهاية الطريق السريع.","en":"The sign marks the end of the expressway.","ckb":"کۆتایی ڕێگای خێرا."}},
+
+{"n":44,"id":"qp-no-cars-motorcycles-sign","topic":"signs","correct":1,"img":"pic-044.jpg",
+ "ar":["ماذا تعني هذه العلامة؟","ممنوع مرور كافة أنواع المركبات","ممنوع مرور المركبات الصغيرة والدراجات النارية","يسمح بمرور المركبات الصغيرة والدراجات النارية"],
+ "en":["What does this sign mean?","All types of vehicle are prohibited","Small vehicles and motorcycles are prohibited","Small vehicles and motorcycles are permitted"],
+ "ckb":["ئەم تابلۆیە چی دەگەیەنێت؟","هەموو جۆرەکانی ئۆتۆمبێل قەدەغەن","ئۆتۆمبێلە بچووکەکان و ماتۆڕسکیل قەدەغەن","ڕێپێدراون"],
+ "exp":{"ar":"العلامة تمنع مرور المركبات الصغيرة والدراجات النارية.","en":"The sign prohibits small vehicles and motorcycles.","ckb":"ئۆتۆمبێلە بچووکەکان و ماتۆڕسکیل قەدەغەن."}}
+]

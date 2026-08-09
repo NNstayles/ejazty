@@ -8,19 +8,33 @@
     "scheme": "ejazty",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon",
-      "supportsTablet": true,
-      "bundleIdentifier": "com.ejazty.app"
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ejazty.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": false,
+          "NSExceptionDomains": {
+            "localhost": {
+              "NSExceptionAllowsInsecureHTTPLoads": true
+            }
+          }
+        }
+      },
+      "usesAppleSignIn": true
     },
     "android": {
       "package": "com.ejazty.app",
+      "allowBackup": false,
       "adaptiveIcon": {
-        "backgroundColor": "#0E9F6E",
+        "backgroundColor": "#12131c",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "blockedPermissions": [
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "output": "static",
@@ -31,26 +45,69 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#0E9F6E",
+          "backgroundColor": "#F4F3FA",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "imageWidth": 180,
+          "dark": {
+            "backgroundColor": "#0A0918"
+          }
         }
       ],
       "expo-localization",
-      "expo-secure-store",
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": "Ejazty uses Face ID to unlock the app when you turn on biometric lock, so your study history and account stay private on a shared phone."
+        }
+      ],
       [
         "expo-notifications",
         {
-          "color": "#0E9F6E"
+          "icon": "./assets/images/android-icon-monochrome.png",
+          "color": "#6C5CE7"
         }
-      ]
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Ejazty uses your photos so you can set a profile picture. The picture stays on this device.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "16.0"
+          },
+          "android": {
+            "minSdkVersion": 26,
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36
+          }
+        }
+      ],
+      "expo-font",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Ejazty uses Face ID to unlock the app when you turn on biometric lock, so your study history and account stay private on a shared phone."
+        }
+      ],
+      "expo-web-browser",
+      "expo-apple-authentication"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
     },
     "extra": {
-      "eas": {}
-    }
+      "eas": {
+        "projectId": "5bd4323e-aa38-41e1-98c3-79e4d536f3e7"
+      },
+      "router": {}
+    },
+    "owner": "nawras12s-team"
   }
 }
