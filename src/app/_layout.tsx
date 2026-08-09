@@ -38,6 +38,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import i18n from '@/i18n';
 
+import { initialiseAds } from '@/features/ads';
 import { AuthProvider } from '@/features/auth/auth-provider';
 import { LockGate } from '@/features/auth/lock-gate';
 import {
@@ -235,6 +236,25 @@ function RootNavigator() {
     // dismissed by the OS regardless once the first frame is up.
     if (ready && fontsSettled) void SplashScreen.hideAsync().catch(() => {});
   }, [ready, fontsSettled]);
+
+  /*
+    Start the ads SDK and gather consent, once, after the first frame is up.
+
+    Not at module scope alongside the notification handler, and not before
+    `ready`: Google's UMP consent form is a native screen that needs an
+    attached activity, so running it during bundle evaluation either does
+    nothing or races the splash. Waiting until the app is actually drawing also
+    means the form — which only appears at all in the EEA and UK — arrives over
+    the app rather than over a blank window.
+
+    `initialiseAds` resolves whatever happens, including in Expo Go where the
+    native module does not exist at all, so there is nothing to catch here and
+    no state to gate on. Ads simply never appear until it has run.
+  */
+  useEffect(() => {
+    if (!ready) return;
+    void initialiseAds();
+  }, [ready]);
 
   // Top up the rolling reminder queue whenever the app comes to the foreground,
   // so the horizon keeps advancing without a server.

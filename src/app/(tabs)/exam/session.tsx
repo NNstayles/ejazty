@@ -21,6 +21,7 @@ import { ProgressBar } from '@/components/ui/progress-bar';
 import { Card, Screen } from '@/components/ui/surfaces';
 import { Text } from '@/components/ui/text';
 import { pick } from '@/content/schema';
+import { preloadInterstitial, showInterstitial } from '@/features/ads';
 import { choiceMarker } from '@/features/exam/choice-markers';
 import { EXAM_MODES } from '@/features/exam/engine';
 import { useExamClock, useExamSession } from '@/features/exam/exam-session';
@@ -276,10 +277,67 @@ export default function ExamSessionScreen() {
   /** True while the question's artwork is open full-width. */
   const [zooming, setZooming] = useState(false);
 
-  // The timer can finish the attempt on its own, so navigation to the result
-  // screen is driven by status rather than by the submit handler.
+  /*
+    Fetch the ad that sits between the paper and its score, as the paper opens.
+
+    A whole exam is a generous head start, which is what makes the zero grace
+    period on the show below affordable: by the time it is wanted the ad is
+    already in hand, and the transition is instant.
+  */
   useEffect(() => {
-    if (status === 'finished') router.replace('/exam/result');
+    preloadInterstitial('preResult');
+  }, []);
+
+  /**
+   * Leave for the result screen once the attempt is graded, via the ad.
+   *
+   * The timer can finish an attempt on its own, so this is driven by `status`
+   * rather than by the submit handler — an auto-submit at zero has to reach the
+   * result screen the same way a tapped one does.
+   *
+   * ## Why the attempt is safe across the ad
+   *
+   * `finalise` has already run by the time `status` is `finished`: the paper is
+   * graded, recorded in the history and pushed to Supabase. The ad is shown
+   * over an attempt that is entirely finished, so a learner who kills the app
+   * while it is up loses nothing but the reveal — they will find the result in
+   * their history. That ordering is what makes an ad here acceptable at all.
+   *
+   * `showInterstitial` resolves whatever happens and `replace` is called
+   * unconditionally after it. Nothing may make reaching a graded result
+   * conditional on an advertisement.
+   *
+   * `waitMs: 0` because this screen has already unmounted its question card —
+   * the guard below returns null once `status` leaves `running` — so any wait
+   * would be spent staring at an empty screen. If the preload above did not
+   * land, the placement is skipped rather than stalled.
+   *
+   * ## The once-per-attempt latch
+   *
+   * `shown` is a ref rather than effect-cleanup state, and the difference is
+   * load-bearing. If this effect re-runs while the ad is on screen — anything
+   * that changes its dependencies — a second `showInterstitial` finds the slot
+   * already consumed by the first, returns *immediately*, and navigates to the
+   * result while the learner is still looking at the advertisement. The score
+   * would then be sitting behind it, revealed by dismissing the ad, which is
+   * precisely the ordering this placement exists to prevent.
+   *
+   * A cleanup-based `cancelled` flag cannot express that: it would suppress the
+   * navigation of whichever run was torn down, and the risk there is the
+   * opposite and worse — a learner left on a blank screen with a graded paper
+   * they cannot see. The latch navigates exactly once and always.
+   */
+  const shown = useRef(false);
+  useEffect(() => {
+    if (status !== 'finished') {
+      shown.current = false;
+      return;
+    }
+    if (shown.current) return;
+    shown.current = true;
+    void showInterstitial('preResult', { waitMs: 0 }).then(() => {
+      router.replace('/exam/result');
+    });
   }, [status, router]);
 
   /**

@@ -1,6 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { useRouter } from 'expo-router';
-import { useCallback, useMemo, useState } from 'react';
+import { useFocusEffect, useRouter } from 'expo-router';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
@@ -20,6 +20,7 @@ import { ProgressRing } from '@/components/ui/progress-ring';
 import { Sparkline } from '@/components/ui/sparkline';
 import { Card, Screen } from '@/components/ui/surfaces';
 import { Text } from '@/components/ui/text';
+import { preloadInterstitial, showInterstitial } from '@/features/ads';
 import {
   availableQuestionCount,
   canRunExam,
@@ -179,10 +180,80 @@ export default function ExamHome() {
   const trendTone =
     delta > 0 ? colors.success : delta < 0 ? colors.danger : colors.textMuted;
 
-  const begin = (mode: ExamMode) => {
-    start(mode);
-    router.push('/exam/session');
-  };
+  /**
+   * Whether this screen is the one on show.
+   *
+   * Read after the `await` in `begin` below. Between the tap and the ad
+   * appearing there is a short window in which no ad is up yet and this screen
+   * is still live and swipeable — so a learner can tap a mode card, change
+   * their mind, swipe to Learn, and be dragged into an exam a second later by a
+   * promise resolving behind them. The tab-swipe gesture already refuses to
+   * leave a *running* attempt (`features/navigation/tabs.ts`); this is the same
+   * rule one moment earlier, before the attempt exists.
+   */
+  const focused = useRef(true);
+
+  /*
+    Keep an interstitial warm for the tap that starts a paper.
+
+    On focus rather than on mount, so it retries: the tab stays mounted for the
+    life of the app, and a preload attempted before the ads SDK finished
+    initialising is a no-op that would never be tried again. Coming back to this
+    tab is also exactly when the next one is wanted, since `showInterstitial`
+    consumes the ad it shows.
+  */
+  useFocusEffect(
+    useCallback(() => {
+      focused.current = true;
+      preloadInterstitial('preExam');
+      return () => {
+        focused.current = false;
+      };
+    }, []),
+  );
+
+  /**
+   * True while an ad is on screen and the paper has not been started yet.
+   *
+   * A ref rather than state because nothing renders from it — the exam home is
+   * still fully drawn behind the ad, so a second mode card is tappable, and
+   * without this guard two taps would show two ads and then start two papers,
+   * the second `start()` throwing away the first draw.
+   */
+  const starting = useRef(false);
+
+  /**
+   * Show the pre-exam ad, then start the paper.
+   *
+   * **The ad has to come before `start`, not after.** `start` stamps
+   * `deadline.current = Date.now() + limit` (see `exam-session.tsx`), so an
+   * interstitial shown after it runs the clock while the learner is watching an
+   * advertisement — fifteen seconds off a three-minute quick exam, silently,
+   * with the paper already scored against a timer they never saw start.
+   *
+   * `showInterstitial` resolves whether or not an ad appeared, and the two
+   * lines after it are deliberately unconditional: there is no failure to
+   * branch on, and a version that only started the exam "if the ad showed"
+   * would strand every learner Google had no fill for.
+   */
+  const begin = useCallback(
+    async (mode: ExamMode) => {
+      if (starting.current) return;
+      starting.current = true;
+      try {
+        await showInterstitial('preExam');
+        // The learner may have left while the ad was being fetched. Starting
+        // here would stamp a deadline and push a paper onto a tab they are no
+        // longer looking at — see `focused`.
+        if (!focused.current) return;
+        start(mode);
+        router.push('/exam/session');
+      } finally {
+        starting.current = false;
+      }
+    },
+    [start, router],
+  );
 
   return (
     <Screen contentStyle={{ paddingBottom: clearance }} wash="heroWash">
@@ -345,7 +416,10 @@ export default function ExamHome() {
                 disabled={!runnable}
                 onPress={() => {
                   replay(mode);
-                  begin(mode);
+                  // `begin` awaits the interstitial and never rejects, so
+                  // `void` here discards a promise that cannot fail rather
+                  // than swallowing one that can.
+                  void begin(mode);
                 }}
                 style={styles.gridPress}>
                 <Card

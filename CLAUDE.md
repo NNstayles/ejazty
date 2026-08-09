@@ -72,7 +72,7 @@ Two consequences. **Use the iOS export as the module-graph check**, which is wha
 
 ## Tests
 
-559 tests across thirty-one suites, run under the `jest-expo` preset. **A full run takes about ten seconds.** It used to take around three minutes, and the five suites that accounted for nearly all of it — `learn/entries`, `progress/attempts`, `content/registry`, `learn/sections` and `exam/engine` — each ran 2 min or more because they assert against the *shipped* bundle rather than fixtures and pay to load it. That cost was documented here as the price of the guarantee and not a bug to optimise away, and that was half right: the guarantee is worth keeping, but the price was not the bundle, it was the artwork behind it. Re-encoding the exam pictures (see Content status) took the same five suites to 6–9 seconds each without changing a single assertion, because what they were paying for was `jest-expo`'s asset transform reading 48 MB of PNG on every run.
+565 tests across thirty-two suites, run under the `jest-expo` preset. **A full run takes about ten seconds.** It used to take around three minutes, and the five suites that accounted for nearly all of it — `learn/entries`, `progress/attempts`, `content/registry`, `learn/sections` and `exam/engine` — each ran 2 min or more because they assert against the *shipped* bundle rather than fixtures and pay to load it. That cost was documented here as the price of the guarantee and not a bug to optimise away, and that was half right: the guarantee is worth keeping, but the price was not the bundle, it was the artwork behind it. Re-encoding the exam pictures (see Content status) took the same five suites to 6–9 seconds each without changing a single assertion, because what they were paying for was `jest-expo`'s asset transform reading 48 MB of PNG on every run.
 
 Worth drawing the general lesson, because it is the same number in three places: the bytes those suites were waiting on are the bytes Metro bundles, and the pixels behind them are what the device decodes while a learner scrolls. A suite that is slow for a reason nobody can name is worth measuring rather than accepting. There is no renderer test — everything covered is pure logic or data, which is where the failures that a learner cannot see for themselves live.
 
@@ -139,6 +139,8 @@ Expo Go is versioned per SDK — a client only loads projects on its exact SDK. 
 Consequence to remember: **expo-router v6 does not re-export the React Navigation theme helpers.** `DarkTheme`, `DefaultTheme`, `ThemeProvider` and `Theme` come from `@react-navigation/native` (an explicit dependency). They only moved into `expo-router` in v7.
 
 **`@react-navigation/bottom-tabs` is an explicit dependency for the same reason** — `BottomTabBarProps` and `CommonActions` are needed to write a custom tab bar, and relying on expo-router's transitive copy is a resolution that can move under you. Declare it as **`^7.4.0`**, the range the SDK manifest asks for: `npx expo install` writes the exact installed version (`^7.18.x`), which resolves identically but fails `expo-doctor`'s version check.
+
+**`react-native-google-mobile-ads` is the one dependency that is *not* in Expo Go**, added on 2026-08-09 with the ads layer. It does not break the workflow this pin preserves — the app boots and every screen works, because the module is required lazily behind a try/catch — but the two interstitials cannot be seen or tested there. See Ads.
 
 `expo-image-picker` and `expo-file-system` back the profile picture. Both are in Expo Go, so neither breaks the workflow this SDK pin exists to preserve. `expo-file-system` is on the **SDK 54 `File`/`Directory`/`Paths` API** — synchronous (`file.copy(dest)`, `file.exists`, `file.delete()`), not the promise-based legacy one still available at `expo-file-system/legacy`.
 
@@ -379,6 +381,35 @@ Two timing details:
 - The countdown reads `latest.current` (a ref refreshed **during render**, deliberately — an effect would let a timeout grade the attempt without the last answer).
 - Remaining time is derived from a fixed deadline rather than decremented, so it neither drifts across a 30-minute attempt nor pauses while the app is backgrounded. The clock keeps running in the background, which matches a real exam.
 - `secondsLeft` lives in its own `ExamClockContext`; on the session context it would re-render every question and choice once per second.
+
+## Ads
+
+`src/features/ads/` holds two AdMob interstitials, added on 2026-08-09 on the owner's instruction: one on the tap that starts a paper, one after the paper is graded and **before** the score is revealed. Screens import from `features/ads` rather than from the library, the same way they read content only through `content/registry.ts`.
+
+**Adding this cost the Expo Go workflow for these two screens, and that is the trade to keep in view.** `react-native-google-mobile-ads` is a native module and is not in Expo Go — the client SDK 54 is pinned to preserve. Measured rather than assumed: the library's specs call `TurboModuleRegistry.getEnforcing(...)` at **module scope** (`lib/commonjs/specs/modules/*.js`), so a static `import` throws during bundle evaluation and takes the whole app down at launch. `interstitial.ts` therefore requires it **lazily inside a try/catch**, caches the failure, and degrades every entry point to a no-op. The app still boots and is fully usable in Expo Go; the ads simply never appear. **Do not convert that `require` into an import.** Testing either placement needs a development build.
+
+**The two placements are ordered around things that are not obvious from the screens.**
+
+- **`preExam` fires before `start(mode)`, never after.** `start` stamps `deadline.current = Date.now() + limit`, so an ad shown after it runs the exam clock while the learner watches an advertisement — fifteen seconds off a three-minute quick exam, silently, with the paper graded against a timer they never saw start. The ad is awaited, *then* the paper is drawn and pushed.
+- **`preResult` fires after `finalise`, which is what makes it safe.** By the time `status` is `finished` the attempt is graded, in the history and pushed to Supabase, so a learner who kills the app during the ad loses only the reveal — the result is in their history. An ad *before* grading would be a way to lose a paper.
+- **Both call sites navigate unconditionally after awaiting.** There is no success or failure to branch on, by design. A version that only started the exam "if the ad showed" would strand every learner Google had no fill for, and fill is never 100%.
+
+**Everything in `interstitial.ts` fails open**, the same contract `features/auth/captcha.ts` documents and for a stronger reason — a CAPTCHA that fails closed locks someone out of an account, an ad that fails closed locks them out of the exam they came to sit. An ad is skipped rather than waited on when the native module is missing, the platform is web, consent was refused, nothing preloaded in time, `show()` rejects, or the SDK errors instead of opening.
+
+Four details that constrain edits:
+
+- **`OPEN_TIMEOUT_MS` guards only the gap *before* the ad appears.** Once `OPENED` has fired the wait for `CLOSED` is unbounded, deliberately: a timeout there would navigate the app out from under a full-screen ad the learner is still looking at, and they would dismiss it onto a screen that had already moved on. Before `OPENED`, an SDK that never calls back is just a dead tap, so it is capped.
+- **The two placements pass different `waitMs`, because of what is behind them.** `preExam` takes the full `LOAD_GRACE_MS` — the exam home is still drawn, so holding the tap a moment reads as the app working. `preResult` passes **0**: the session screen has already unmounted its question card (`status` is no longer `running`), so anything spent waiting is spent on a blank screen.
+- **`begin` re-checks focus after the await.** During the load grace no ad is up yet and the exam home is still swipeable, so a learner can tap a card, change their mind, swipe to Learn, and be dragged into an exam by a promise resolving behind them. Same rule `features/navigation/tabs.ts` enforces for a *running* attempt, one moment earlier.
+- **`initialiseAds` preloads `preExam` itself** once it becomes ready. The exam tab preloads on focus, but for a learner who opens the app straight into a mock that focus has already happened and found the SDK not ready — which would reliably cost the first and most valuable impression of the session.
+
+**The ad unit ids in `policy.ts` and the two app ids in `app.json` are still Google's *sample* values, so the app currently earns nothing.** Replacing them is one edit in each file, and both must move together — the app id and the unit ids come from the same AdMob app and a mismatched pair serves nothing. `policy.test.ts` deliberately does **not** assert they differ from the test units, because a test that failed until someone pasted in live credentials is a test that gets deleted.
+
+**`resolveAdUnitId` is pure and takes `isDev` as an argument, and that is the one rule here worth a test.** A development build requesting a *production* unit is invalid traffic, and Google's penalty is not a warning — it is the AdMob account being limited, taking the app's revenue with it. It fails silently and expensively: the app works perfectly and the suspension email arrives weeks later. Note the consequence for **`preview` builds**, which is not fixable in code: `__DEV__` is false there, so an internal build requests production units. Register the device as a test device in the AdMob console before testing ads on one.
+
+**Consent runs before `initialize()`**, which is the order the library documents. `canRequestAds` false means no request is made at all rather than a non-personalised ad being shown, which is what the UMP form's reject option is required to mean. A consent *failure* (unreachable server) falls through to the SDK's default rather than disabling ads, since that is a server problem and not a refusal.
+
+**Not done, and worth knowing before the next round:** there is no frequency cap. Two interstitials per exam is what was asked for and it is fine for a 45-question mock, but open practice can be finished at any point — so a learner could start it, answer one question, finish, and meet two full-screen ads inside a minute. If AdMob ever flags ad frequency, `policy.ts` is where the cap belongs. iOS also needs `use_frameworks: static` in `expo-build-properties` before it will build, which is deferred with the rest of the iOS work.
 
 ## Design system
 
