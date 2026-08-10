@@ -1,5 +1,5 @@
-import { createContext, useContext, useMemo, type ReactNode } from 'react';
-import { useColorScheme } from 'react-native';
+import { createContext, useContext, useEffect, useMemo, type ReactNode } from 'react';
+import { Appearance, useColorScheme } from 'react-native';
 
 import { directionFor, isRTL, scriptOf, type Script } from '@/i18n';
 import { usePreferences } from '@/preferences/preferences-provider';
@@ -119,6 +119,33 @@ const ThemeContext = createContext<ThemeValue | null>(null);
 export function AppThemeProvider({ children }: { children: ReactNode }) {
   const { themeMode, language } = usePreferences();
   const systemScheme = useColorScheme();
+
+  /*
+    Tell the platform which scheme the app is in, so the surfaces this provider
+    cannot reach agree with the ones it can.
+
+    Everything drawn from `colors` is resolved in JS, which covers the whole app
+    *except* the parts the OS draws for us — and this app has several: the
+    `Alert` in front of quitting an attempt, signing out and deleting an
+    account, the `Switch` on the settings screen, and the keyboard behind every
+    auth form. Those read the platform's own appearance, not this context. So a
+    learner who chose **Light** on a phone set to dark got a light app with
+    black system dialogs and a black keyboard over it — the same class of
+    "almost right" mismatch the RTL notes describe, where one channel lags the
+    others and the result reads as broken rather than unfinished.
+
+    `null` means "stop overriding, follow the device", which is exactly what
+    `system` means here — it is not the same as passing the resolved scheme,
+    because that would pin the app to whatever the system happened to be at the
+    moment the preference was read and stop it tracking a later change.
+
+    Deliberately an effect rather than part of the `useMemo` below: this is a
+    side effect on a platform-wide singleton, and React is free to run a memo
+    more than once for a given input.
+  */
+  useEffect(() => {
+    Appearance.setColorScheme(themeMode === 'system' ? null : themeMode);
+  }, [themeMode]);
 
   const value = useMemo<ThemeValue>(() => {
     // `useColorScheme` can report null or 'unspecified'; anything that is not

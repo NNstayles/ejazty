@@ -10,6 +10,10 @@ import {
   signInWithApple,
   signInWithProvider,
 } from '@/features/auth/oauth';
+import {
+  anyOAuthProviderEnabled,
+  oauthProviderEnabled,
+} from '@/features/auth/oauth-providers';
 import { warningFeedback } from '@/lib/haptics';
 import { useTheme } from '@/theme/theme-provider';
 import { radius, spacing } from '@/theme/tokens';
@@ -85,6 +89,17 @@ export function SocialSignIn({
     }
   };
 
+  /*
+    Nothing to offer, so nothing is drawn — not even the divider.
+
+    With both providers disabled on the project, every control below fails after
+    the user has already authorised with Apple or Google. Rendering the rule and
+    its "or continue with" caption over an empty gap would also read as a block
+    of buttons that failed to load. See `features/auth/oauth-providers.ts` for
+    the three switches that have to agree before a provider is live.
+  */
+  if (!anyOAuthProviderEnabled()) return null;
+
   return (
     <View style={styles.root}>
       <View style={styles.divider}>
@@ -114,19 +129,25 @@ export function SocialSignIn({
         />
       ) : null}
 
-      <PressableScale
-        accessibilityRole="button"
-        disabled={disabled || busy !== null}
-        onPress={() => void run('google')}
-        style={[
-          styles.button,
-          { backgroundColor: colors.surface, borderColor: colors.border },
-        ]}>
-        <Ionicons color={colors.text} name="logo-google" size={18} />
-        <Text variant="bodyStrong">
-          {busy === 'google' ? t('auth.signingIn') : t('auth.continueWithGoogle')}
-        </Text>
-      </PressableScale>
+      {/*
+        Gated in its own right rather than riding on the block-level check
+        above: with only Apple enabled this screen must not still offer Google.
+      */}
+      {oauthProviderEnabled('google') ? (
+        <PressableScale
+          accessibilityRole="button"
+          disabled={disabled || busy !== null}
+          onPress={() => void run('google')}
+          style={[
+            styles.button,
+            { backgroundColor: colors.surface, borderColor: colors.border },
+          ]}>
+          <Ionicons color={colors.text} name="logo-google" size={18} />
+          <Text variant="bodyStrong">
+            {busy === 'google' ? t('auth.signingIn') : t('auth.continueWithGoogle')}
+          </Text>
+        </PressableScale>
+      ) : null}
 
       {error ? (
         <Text center tone="danger" variant="caption">

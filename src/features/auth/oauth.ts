@@ -53,6 +53,7 @@ import { Platform } from 'react-native';
 
 import { supabase } from '@/lib/supabase';
 import { codeFromRedirect } from './oauth-redirect';
+import { oauthProviderEnabled } from './oauth-providers';
 
 export type OAuthProvider = 'apple' | 'google';
 
@@ -75,11 +76,19 @@ export function redirectUri(): string {
 /**
  * Whether the native Apple button should be offered.
  *
+ * Three conditions, and the first is the one that was missing. `isAvailableAsync`
+ * answers whether *this device* can run Apple's sheet; it says nothing about
+ * whether the Supabase project will accept the identity token that comes out of
+ * it. With `[auth.external.apple] enabled = false` the button rendered on every
+ * real iPhone and failed after the user had already authorised — see
+ * `oauth-providers.ts`.
+ *
  * iOS only, and `isAvailableAsync` on top of the platform check because the
  * API exists on iOS versions and simulator configurations where it cannot
  * actually run. A button that opens nothing is worse than no button.
  */
 export async function appleSignInAvailable(): Promise<boolean> {
+  if (!oauthProviderEnabled('apple')) return false;
   if (Platform.OS !== 'ios') return false;
   try {
     return await AppleAuthentication.isAvailableAsync();

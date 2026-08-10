@@ -1,8 +1,10 @@
 import {
   AD_PLACEMENTS,
   INTERSTITIAL_UNIT_IDS,
+  MIN_INTERSTITIAL_GAP_MS,
   TEST_INTERSTITIAL_UNIT_IDS,
   adsAvailable,
+  mayShowInterstitial,
   resolveAdUnitId,
   type AdPlatform,
 } from './policy';
@@ -95,6 +97,74 @@ describe('ad unit resolution', () => {
       );
       expect(new Set(ids).size).toBe(ids.length);
     }
+  });
+});
+
+/**
+ * The frequency cap.
+ *
+ * Every case here is one nobody can reach by hand: exercising it means sitting
+ * two papers less than a minute apart on a development build, and the symptom
+ * of it being wrong in the dangerous direction is not a bug report but an AdMob
+ * policy strike weeks later. The opposite direction is worse to debug and just
+ * as silent — a cap that never expires turns the whole ads layer off and looks
+ * exactly like Google having no fill.
+ */
+describe('interstitial frequency cap', () => {
+  const now = 1_700_000_000_000;
+
+  it('allows the first interstitial of a session', () => {
+    expect(mayShowInterstitial({ lastShownAt: null, now })).toBe(true);
+  });
+
+  /*
+    The case the cap exists for. Open practice draws the whole bank and can be
+    finished from the question navigator at any point, so a learner can start
+    it, answer one question, finish, and meet `preExam` and `preResult` inside a
+    minute.
+  */
+  it('suppresses a second interstitial inside the gap', () => {
+    expect(mayShowInterstitial({ lastShownAt: now - 1_000, now })).toBe(false);
+    expect(
+      mayShowInterstitial({
+        lastShownAt: now - (MIN_INTERSTITIAL_GAP_MS - 1),
+        now,
+      }),
+    ).toBe(false);
+  });
+
+  /*
+    The other half, and the one that keeps the cap from quietly becoming an
+    off switch: an ordinary sitting must still show both of its ads.
+  */
+  it('allows one again once the gap has elapsed', () => {
+    expect(
+      mayShowInterstitial({ lastShownAt: now - MIN_INTERSTITIAL_GAP_MS, now }),
+    ).toBe(true);
+    // A three-minute quick exam, which is the shortest real paper there is.
+    expect(mayShowInterstitial({ lastShownAt: now - 180_000, now })).toBe(true);
+  });
+
+  /*
+    Wall time can jump backwards — a manual change, an NTP correction — leaving
+    the stamp in the future. Answering "no" there would suppress every ad until
+    real time caught up, which could be hours. The ads layer fails open
+    everywhere else and does so here too.
+  */
+  it('fails open when the clock has moved backwards', () => {
+    expect(mayShowInterstitial({ lastShownAt: now + 3_600_000, now })).toBe(
+      true,
+    );
+  });
+
+  /*
+    Not a style assertion. Below about thirty seconds the cap stops covering the
+    case it was written for, and a very large value silently turns the second
+    placement off for every normal sitting.
+  */
+  it('keeps the gap in a range that is neither useless nor an off switch', () => {
+    expect(MIN_INTERSTITIAL_GAP_MS).toBeGreaterThanOrEqual(30_000);
+    expect(MIN_INTERSTITIAL_GAP_MS).toBeLessThanOrEqual(180_000);
   });
 });
 

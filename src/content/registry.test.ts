@@ -307,6 +307,54 @@ describe('duplicate questions and their pictures', () => {
     expect(contradictions).toEqual([]);
   });
 
+  it('asks no question twice in English either', () => {
+    /*
+      The same rule read through the *rendered* language rather than the
+      transcribed one, and it is not redundant with `asks no question twice`
+      above.
+
+      Arabic is verbatim from the ministry publication; English and Sorani are
+      unreviewed translations (see CLAUDE.md). So the two directions fail
+      differently and neither implies the other: two questions can be distinct
+      in Arabic — different vocabulary, different phrasing — and land on one
+      English sentence, at which point an English-speaking learner meets the
+      same card twice in a paper that Arabic says is fine. A translator
+      tightening two loose renderings into one good one is exactly how it
+      happens, and it happens in the file nobody re-reads afterwards.
+
+      Identity stays stem + choices + picture for the reason the Arabic block
+      documents: the bank legitimately repeats a stem, and the artwork is what
+      tells those apart. Measured when this was written: 0 collisions on the
+      full identity, and 6 groups that collide only once the picture is dropped
+      — the right-of-way diagrams, three pairs of sign questions, and the
+      engine-bay photographs, each with its own artwork and its own answer.
+    */
+    const normEn = (s: string) =>
+      s
+        .toLowerCase()
+        .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+    const grouped = new Map<string, typeof questions>();
+    for (const q of questions) {
+      const key = [
+        normEn(q.prompt.en),
+        q.choices
+          .map((c) => normEn(c.text.en))
+          .sort()
+          .join('|'),
+        imageKey(q.image),
+      ].join('||');
+      grouped.set(key, [...(grouped.get(key) ?? []), q]);
+    }
+
+    const duplicates = [...grouped.values()]
+      .filter((group) => group.length > 1)
+      .map((group) => group.map((q) => q.id).join(' = '));
+    expect(duplicates).toEqual([]);
+  });
+
   it('gives every picture to exactly one question', () => {
     /*
       The picture *is* the question in a third of the bank, so an image reused

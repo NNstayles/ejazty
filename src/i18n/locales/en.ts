@@ -460,6 +460,153 @@ const en = {
     reminderGoalNote: 'Reminders stop for the day once you reach your goal.',
     about: 'About',
     version: 'Version',
+    privacy: 'Privacy policy',
+    privacyDesc: 'What Ejazty stores, and what stays on this phone',
+  },
+  /**
+   * The privacy policy, rendered by `(tabs)/settings/privacy.tsx`.
+   *
+   * It lives in the app rather than behind a link because there is no website
+   * to host it on, and because both stores require the policy to be reachable
+   * *from inside* the app as well as from the store listing.
+   *
+   * **Every claim here is a claim about code, so it has to be edited with the
+   * code.** The device/account split below mirrors the one CLAUDE.md documents:
+   * the profile picture, the daily goal, the preferences and the attempt cache
+   * are device-local by design, and `profiles`, `exam_attempts` and
+   * `question_stats` are the only tables that exist. If a feature ever starts
+   * uploading something new, this is the file that has to say so.
+   */
+  privacy: {
+    title: 'Privacy policy',
+    updated: 'Last updated 10 August 2026',
+    intro:
+      'Ejazty helps you study for the Iraqi theoretical driving licence exam. This page explains what the app keeps, where it is kept, and what you can do about it.',
+
+    summaryTitle: 'The short version',
+    summary:
+      'You can use Ejazty without an account, and the study material works offline. Nothing you study is sold, and nothing is shared with anyone for marketing. The only outside parties involved at all are the service that hosts your account and Google, which supplies the adverts.',
+
+    controllerTitle: 'Who is responsible for your data',
+    controllerBody:
+      'Ejazty is published by an independent developer, who decides what the app collects and is responsible for the data described on this page. There is no company, no data-sharing arrangement and no third party with access to your account beyond the two named below. Any question about your data can be sent to the address at the end of this page, and you will get a reply from the person who wrote the app.',
+
+    deviceTitle: 'What never leaves this phone',
+    deviceBody:
+      'These are stored on the device itself and are not uploaded anywhere:',
+    devicePhoto: 'Your profile picture, if you set one.',
+    deviceGoal: 'Your daily goal, your streak and how many questions you have answered today.',
+    devicePrefs: 'Your language, appearance, haptics and reminder settings.',
+    deviceLock: 'Whether you have turned on the biometric lock.',
+    deviceCache: 'A copy of your exam history, so the app still works with no signal.',
+
+    accountTitle: 'What is stored with your account',
+    accountBody:
+      'If you create an account, the following is stored on the app’s server so your progress follows you:',
+    accountIdentity: 'Your email address, the display name you choose and your chosen language.',
+    accountAttempts:
+      'A record of each exam you finish: the format, how many you answered correctly, the score, and when you sat it.',
+    accountQuestions:
+      'A tally, per question, of how often you have answered it and whether you got it right last time. This is what the mistake drill is built from.',
+    accountHost:
+      'That server is provided by Supabase, which stores the data on Ejazty’s behalf and does not use it for anything of its own.',
+
+    guestTitle: 'Using Ejazty without an account',
+    guestBody:
+      'If you continue as a guest, no account is created and nothing is sent anywhere. Your progress stays on the phone, and it is lost if you uninstall the app or switch phones.',
+
+    neverTitle: 'What Ejazty never collects',
+    neverBody:
+      'Some things are worth stating plainly, because an app asking for them would be normal and this one does not:',
+    neverLocation:
+      'Your location. The app requests no location permission of any kind, coarse or precise.',
+    neverContacts:
+      'Your contacts, calendar, call history, messages, microphone or camera.',
+    neverIdentifiers:
+      'Your phone number, and any account you hold with anyone other than Ejazty.',
+    neverBehaviour:
+      'Which questions you read, how long you spend on a screen, or anything else about how you move around the app.',
+    neverSell:
+      'None of it is sold, rented or handed to a data broker. There is no arrangement under which that could happen.',
+
+    adsTitle: 'Adverts',
+    adsBody:
+      'Ejazty shows a full-screen advert at two moments: when you start an exam, and once an exam has been graded, before the score is shown. The adverts come from Google AdMob, which may collect device identifiers and information about the adverts you are shown in order to choose and measure them. Google handles that data under its own privacy policy, not this one.',
+    adsConsent:
+      'In the EU, the UK and Switzerland you are asked to choose before any advert is requested, and if you refuse, no advert is requested at all. On iPhone you are also asked whether Ejazty may track you across other companies’ apps. The app behaves exactly the same whichever answer you give.',
+    adsPartners:
+      'Nothing you study is passed to Google. It receives no exam scores, no answers and no account details — an advert request carries information about the device, not about you. How Google uses data from apps that show its adverts is set out at policies.google.com/technologies/partner-sites.',
+
+    notificationsTitle: 'Study reminders',
+    notificationsBody:
+      'Reminders are scheduled by the app on your own device. They are not sent from a server, and no notification token or address is collected. You can turn them off in Settings at any time.',
+
+    photosTitle: 'Photos',
+    photosBody:
+      'If you choose a profile picture, the app copies that one image into its own storage on the phone. It is never uploaded, and Ejazty does not read the rest of your photo library.',
+
+    analyticsTitle: 'Analytics and tracking',
+    analyticsBody:
+      'Ejazty contains no analytics, no tracking and no crash-reporting service. No profile is built from how you use the app, and your answers are never used to target adverts.',
+
+    basisTitle: 'Why Ejazty is allowed to hold this',
+    basisBody:
+      'Where data-protection law asks for a reason, these are the reasons relied on:',
+    basisService:
+      'Your account data is held so the app can do what you asked it to — keep your progress and make it available when you sign in on another phone. Without it there is no account.',
+    basisConsent:
+      'Personalised adverts rest on your consent, asked for before the first advert and withdrawable at any time.',
+    basisSecurity:
+      'A short record of failed password attempts is kept on your own device to slow down anyone who picks up your unlocked phone. It never leaves the device.',
+
+    transferTitle: 'Where your data is held',
+    transferBody:
+      'Account data sits on servers run by Supabase, which may be outside Iraq — data-hosting services of this kind store data in whichever region the project is provisioned in, and traffic to them crosses borders. Everything described in the first section stays on your phone and crosses nothing. If you would rather nothing left the device at all, use the app as a guest.',
+
+    rightsTitle: 'Your choices',
+    rightsBody:
+      'From Account in Settings you can change your display name, your email address and your password, and you can delete your account outright. Deleting it permanently removes your profile, your exam history and your question record from the server. That cannot be undone.',
+
+    deleteWebTitle: 'Deleting your account without the app',
+    deleteWebBody:
+      'If you no longer have the app installed, or you cannot sign in, send an email from the address the account was registered with and say that you want it deleted. The account and everything stored against it — profile, exam history, question record — are removed, and you will get confirmation once it is done. There is nothing to keep afterwards: Ejazty holds no backup copy of a deleted account.',
+
+    legalRightsTitle: 'Your rights over your data',
+    legalRightsBody:
+      'Depending on where you live, data-protection law may give you the rights below. Ejazty honours all of them for everybody, wherever they are, because drawing that line by country would cost more than simply doing it:',
+    rightAccess:
+      'To be told what is held about you, and to be given a copy of it.',
+    rightCorrect: 'To have anything wrong about you corrected.',
+    rightDelete:
+      'To have all of it deleted — from Settings, or by email if you no longer have the app.',
+    rightWithdraw:
+      'To withdraw your consent to personalised adverts, without losing access to any part of the app.',
+    rightObject:
+      'To object to how your data is used, or to ask that a particular use stop.',
+    rightComplain:
+      'To complain to the data-protection authority where you live, if you think this policy has not been kept to.',
+
+    retentionTitle: 'How long any of this is kept',
+    retentionBody:
+      'Account data is kept until you delete your account — there is no separate expiry, and an account is never deleted for inactivity without being asked for first. Anything kept on the device goes when you uninstall the app. Deletion is immediate rather than scheduled: the record is removed when the request is made, not queued for a clean-up run later.',
+
+    securityTitle: 'Security',
+    securityBody:
+      'Your sign-in session is held in the device keychain rather than in ordinary app storage, so it is encrypted by the operating system. Traffic to the server uses HTTPS, and rules on the server restrict every record to the account that created it.',
+
+    childrenTitle: 'Children',
+    childrenBody:
+      'Ejazty is meant for people old enough to be studying for a driving licence. It is not directed at children, and it does not knowingly collect anything from them.',
+
+    changesTitle: 'Changes to this policy',
+    changesBody:
+      'If this policy changes, the date at the top of this page changes with it and the new version appears here in the app.',
+
+    contactTitle: 'Contact',
+    contactBody:
+      'Questions about this policy, or about the data held for your account, can be sent to:',
+    contactAction: 'Send an email',
+    manageAction: 'Manage or delete your account',
   },
   content: {
     // Badge for any record still marked `verified: false`. Nothing shipping

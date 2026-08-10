@@ -685,6 +685,32 @@ export default function SettingsScreen() {
               {Constants.expoConfig?.version ?? '1.0.0'}
             </Text>
           </View>
+          {/*
+            The policy is a screen rather than a link because there is no site to
+            host it on, and because both stores want it reachable from inside the
+            app. It sits in About rather than under its own group label: it is a
+            document you read once, not a setting you come here to change.
+          */}
+          <PressableScale
+            accessibilityHint={t('settings.privacyDesc')}
+            accessibilityLabel={t('settings.privacy')}
+            accessibilityRole="button"
+            onPress={() => {
+              selectionTap();
+              router.push('/settings/privacy');
+            }}
+            scaleTo={0.985}>
+            <View style={styles.row}>
+              <View style={styles.rowBody}>
+                <Text variant="body">{t('settings.privacy')}</Text>
+                <Text tone="textFaint" variant="caption">
+                  {t('settings.privacyDesc')}
+                </Text>
+              </View>
+              <Chevron />
+            </View>
+          </PressableScale>
+
           <View style={[styles.sourceNote, { backgroundColor: colors.surfaceAlt }]}>
             <ShieldIcon color={colors.textMuted} delayMs={480} size={18} />
             <Text style={styles.fill} tone="textMuted" variant="caption">

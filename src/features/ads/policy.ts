@@ -91,6 +91,52 @@ export const INTERSTITIAL_UNIT_IDS: Record<
   },
 };
 
+/**
+ * The shortest gap allowed between two interstitials actually being shown.
+ *
+ * Two per paper is the design and it is fine for a mock exam, where the pair
+ * straddles a 3-to-15 minute sitting. The case it does not cover is **open
+ * practice**, which draws the whole bank and can be finished from the question
+ * navigator at any point: start it, answer one question, finish, and both
+ * placements fire inside a minute. Back-to-back quick exams are the same shape
+ * from the other direction — a `preResult` followed seconds later by the
+ * `preExam` of the next paper.
+ *
+ * That pattern is what AdMob's policy on ad frequency is written about, and the
+ * penalty for tripping it is the account, not the placement. A minute is a
+ * deliberately unambitious floor: it costs a legitimate impression only in the
+ * sitting that took under sixty seconds end to end, and in that sitting the
+ * second ad is precisely the one a reviewer would object to.
+ */
+export const MIN_INTERSTITIAL_GAP_MS = 60_000;
+
+/**
+ * Whether enough time has passed since the last interstitial closed.
+ *
+ * Pure, and takes both the clock and the last stamp as arguments for the reason
+ * everything else in this file does: the alternative is a rule that can only be
+ * exercised by sitting two exams a minute apart on a development build.
+ *
+ * **A backwards clock counts as eligible.** `Date.now()` is wall time and can
+ * jump — a manual change, an NTP correction, a device crossing a timezone with
+ * a badly-behaved OS — which leaves a stamp sitting in the future. Answering
+ * "no" there would suppress every ad until real time caught up, potentially for
+ * hours. Failing open matches the contract the rest of the ads layer is built
+ * to: a missed cap costs one impression's worth of politeness, a stuck cap
+ * costs all of them.
+ */
+export function mayShowInterstitial(options: {
+  /** When the previous interstitial closed, or null if none has been shown. */
+  lastShownAt: number | null;
+  now: number;
+}): boolean {
+  const { lastShownAt, now } = options;
+  if (lastShownAt === null) return true;
+  const elapsed = now - lastShownAt;
+  if (elapsed < 0) return true;
+  return elapsed >= MIN_INTERSTITIAL_GAP_MS;
+}
+
 /** The platforms that can serve an ad. Web is not one — see `adsAvailable`. */
 export type AdPlatform = 'android' | 'ios';
 

@@ -205,6 +205,37 @@ export function initI18n(language: LanguageCode) {
   return i18n;
 }
 
+/*
+  Bootstrap the instance at module load, before any component can render.
+
+  `initI18n` is called from `PreferencesProvider`, and it is called *after* an
+  `await` on AsyncStorage — so for the first few frames of every launch there
+  was no i18n instance at all. `LockGate` sits above the `ready` gate in
+  `app/_layout.tsx` and calls `useTranslation()`, so it rendered into that
+  window and react-i18next warned `NO_I18NEXT_INSTANCE` on every cold start,
+  falling back to printing raw key paths for as long as it lasted.
+
+  Initialising here rather than moving the call site keeps the fix independent
+  of provider order: any component added above the gate later is covered too,
+  which is not a property a re-ordered `useEffect` would have.
+
+  The device language rather than a hardcoded `'en'`, so those frames are drawn
+  in the right script for the majority of users; the stored preference still
+  wins the moment it loads, via the `changeLanguage` branch above. Wrapped
+  because `detectDeviceLanguage` reaches into expo-localization, and a
+  module-scope native call must not be able to take the bundle down — English
+  is the declared `fallbackLng` regardless.
+*/
+initI18n(
+  (() => {
+    try {
+      return detectDeviceLanguage();
+    } catch {
+      return 'en';
+    }
+  })(),
+);
+
 /**
  * Keeps the *native* direction flag out of the way, so direction can be applied
  * per render instead of per launch.

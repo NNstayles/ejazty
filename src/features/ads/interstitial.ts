@@ -1,6 +1,11 @@
-import { Platform } from 'react-native';
+import { Platform, TurboModuleRegistry } from 'react-native';
 
-import { adsAvailable, resolveAdUnitId, type AdPlacement } from './policy';
+import {
+  adsAvailable,
+  mayShowInterstitial,
+  resolveAdUnitId,
+  type AdPlacement,
+} from './policy';
 
 /**
  * The interstitial seam: preload ahead of a transition, show at it, and — the
@@ -22,7 +27,7 @@ import { adsAvailable, resolveAdUnitId, type AdPlacement } from './policy';
  * preloaded within {@link LOAD_GRACE_MS}, `show()` rejects, or the SDK reports
  * an error instead of opening.
  *
- * ## Why the module is required lazily
+ * ## Why the module is required lazily, and why it is *probed* first
  *
  * `react-native-google-mobile-ads` is a native module and **does not exist in
  * Expo Go**, which is the workflow the SDK 54 pin in CLAUDE.md exists to
@@ -30,6 +35,23 @@ import { adsAvailable, resolveAdUnitId, type AdPlacement } from './policy';
  * whole app down on launch, turning "ads do not work in Expo Go" into "the app
  * does not start in Expo Go". A guarded `require` caches the failure once and
  * every entry point below degrades to a no-op.
+ *
+ * A `try`/`catch` around the `require` is **not sufficient on its own**, and
+ * this was a live defect: the library's specs call
+ * `TurboModuleRegistry.getEnforcing(...)` at module scope, and in development
+ * Metro's `guardedLoadModule` reports a module-initialisation throw to LogBox
+ * *before* rethrowing it. So the catch below did its job — the app booted and
+ * every screen worked — while the learner was shown three red
+ * `Invariant Violation: 'RNGoogleMobileAdsModule' could not be found` boxes at
+ * launch, one per component that reached this file. Catching an error does not
+ * unreport it.
+ *
+ * The fix is to never take the throwing path. {@link NATIVE_MODULE_NAME} is
+ * looked up with `TurboModuleRegistry.get`, which performs the *identical*
+ * lookup `getEnforcing` does and returns `null` instead of invoking `invariant`
+ * — so on a build without the native module the `require` is simply never
+ * reached. The `try`/`catch` stays as the backstop for everything else that can
+ * go wrong inside the library's own initialisation.
  *
  * The one thing this does *not* rescue: the exam screens still import this
  * module, so ads simply do not appear under Expo Go. Testing the two placements
@@ -76,10 +98,29 @@ const OPEN_TIMEOUT_MS = 4000;
 
 let moduleCache: AdsModule | null | undefined;
 
+/**
+ * The base TurboModule the library's native side registers.
+ *
+ * This is the exact name the first spec loaded by the package entry point asks
+ * `getEnforcing` for, so its presence is what decides whether requiring the
+ * package can succeed. The library registers six further modules (consent,
+ * interstitial, rewarded, app-open, native, app) but they all ship in the same
+ * native package, so probing one answers for all of them — and this is the one
+ * whose absence produced the redbox described above.
+ */
+const NATIVE_MODULE_NAME = 'RNGoogleMobileAdsModule';
+
 /** The native module, or null wherever it does not exist. Resolved once. */
 function ads(): AdsModule | null {
   if (moduleCache !== undefined) return moduleCache;
+
+  // Cached as absent up front so every early return below is already correct.
+  moduleCache = null;
   try {
+    // Non-throwing probe. See the note on NATIVE_MODULE_NAME: `getEnforcing`
+    // would raise an Invariant Violation that LogBox reports even when it is
+    // caught, which is the whole reason this check exists.
+    if (TurboModuleRegistry.get(NATIVE_MODULE_NAME) == null) return null;
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     moduleCache = require('react-native-google-mobile-ads') as AdsModule;
   } catch {
@@ -92,6 +133,55 @@ function ads(): AdsModule | null {
 function usable(): AdsModule | null {
   if (!adsAvailable(Platform.OS)) return null;
   return ads();
+}
+
+/**
+ * Ask iOS for App Tracking Transparency authorisation, once, before the SDK
+ * starts.
+ *
+ * ## Why this is not optional
+ *
+ * `app.json` declares `userTrackingUsageDescription`, which injects
+ * `NSUserTrackingUsageDescription` into the Info.plist. Declaring that string
+ * and then never prompting is the worst of both worlds: iOS treats the IDFA as
+ * denied, so every iOS impression is served non-personalised at a materially
+ * lower rate, *and* the app ships a purpose string for a permission it never
+ * asks for, which is the kind of inconsistency an App Review pass picks up.
+ *
+ * ## Ordering
+ *
+ * After UMP consent and before `initialize()`, which is the order Google's own
+ * iOS guide sets out: the consent flow may itself present the ATT explainer
+ * screen, so asking first would put the system prompt in front of the
+ * explanation written for it. Initialising last means the SDK reads a settled
+ * tracking status rather than one that changes underneath it — which is also
+ * what `delayAppMeasurementInit` in the plugin block is for.
+ *
+ * ## Nothing branches on the answer
+ *
+ * A refusal is not a reason to skip ads; it is a reason to serve
+ * non-personalised ones, which the SDK handles by itself. This resolves the
+ * same way whether the user allowed, denied, or was never asked.
+ *
+ * Android never prompts — `requestTrackingPermissionsAsync` resolves granted
+ * there — so the platform check is about avoiding pointless work rather than
+ * correctness. The lazy `require` is the same rule the rest of this file
+ * follows: `expo-tracking-transparency` resolves its native module with
+ * `requireNativeModule` at module scope, which throws exactly like the ads
+ * specs do, and this file must never be able to fail at import.
+ */
+async function requestTrackingPermission(): Promise<void> {
+  if (Platform.OS !== 'ios') return;
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const tracking = require('expo-tracking-transparency') as {
+      requestTrackingPermissionsAsync: () => Promise<{ status: string }>;
+    };
+    await tracking.requestTrackingPermissionsAsync();
+  } catch {
+    // Not linked, or the prompt could not be presented. Ads still run; they
+    // are simply non-personalised, which is the same outcome as a refusal.
+  }
 }
 
 type Slot = {
@@ -200,17 +290,40 @@ function waitForLoad(slot: Slot, ms: number): Promise<boolean> {
   });
 }
 
-/** Put a loaded ad on screen and resolve once it is gone. Never rejects. */
-function present(mod: AdsModule, slot: Slot): Promise<void> {
+/**
+ * When the last interstitial *closed*, or null if none has been shown.
+ *
+ * Written only on a real open-then-close, never when a placement was skipped
+ * for want of fill — starting the cooldown on a no-fill would let a bad network
+ * moment suppress the next genuine chance to show one. Measured from the close
+ * rather than the open, so the gap {@link mayShowInterstitial} enforces is time
+ * the learner spent in the app rather than time spent watching.
+ *
+ * Module state rather than storage, deliberately: this bounds how often one
+ * *sitting* is interrupted, and a force-quit ends the sitting. Persisting it
+ * would also make the first paper after every launch depend on when the
+ * previous launch ended, which is a rule nobody could reason about. Contrast
+ * the re-auth backoff in `features/auth/reauth.ts`, which is persisted for the
+ * opposite reason — there, a force-quit clearing the counter is the bypass.
+ */
+let lastShownAt: number | null = null;
+
+/**
+ * Put a loaded ad on screen and resolve once it is gone. Never rejects.
+ *
+ * Resolves **true only if the ad actually opened**, which is what the caller
+ * needs in order to decide whether the frequency cap should start running.
+ */
+function present(mod: AdsModule, slot: Slot): Promise<boolean> {
   const ad = slot.ad;
-  if (!ad) return Promise.resolve();
+  if (!ad) return Promise.resolve(false);
 
   // Consumed either way: an `InterstitialAd` is single-use, so the slot is
   // cleared before showing rather than after. If anything below goes wrong the
   // placement is simply skipped and the next preload mints a fresh one.
   slot.ad = null;
 
-  return new Promise<void>((resolve) => {
+  return new Promise<boolean>((resolve) => {
     let settled = false;
     let opened = false;
 
@@ -223,7 +336,7 @@ function present(mod: AdsModule, slot: Slot): Promise<void> {
       } catch {
         // Nothing to do — we are already leaving.
       }
-      resolve();
+      resolve(opened);
     };
 
     // Only guards the gap before the ad appears; see OPEN_TIMEOUT_MS.
@@ -274,6 +387,14 @@ export async function showInterstitial(
 
   const slot = slotFor(placement);
 
+  // Checked before the load wait, not after: a capped placement must not hold
+  // the learner for the grace period on an ad it has already decided to skip.
+  if (!mayShowInterstitial({ lastShownAt, now: Date.now() })) {
+    // Still worth warming, so the placement after the cap expires has one.
+    preloadInterstitial(placement);
+    return;
+  }
+
   if (!slot.ad?.loaded) {
     // Nothing in hand. Start one so the *next* transition has an ad even if
     // this one goes without, then give the in-flight load a brief moment.
@@ -282,7 +403,8 @@ export async function showInterstitial(
     if (!loaded) return;
   }
 
-  await present(mod, slot);
+  const shown = await present(mod, slot);
+  if (shown) lastShownAt = Date.now();
 
   // Ready the next one immediately: a learner who sits a paper usually sits
   // another, and a cold slot is the most common reason a placement goes empty.
@@ -336,6 +458,10 @@ async function runInitialise(): Promise<void> {
   }
 
   if (!mayRequest) return;
+
+  // iOS only, and deliberately after consent but before `initialize()`. See
+  // the note on requestTrackingPermission for the ordering argument.
+  await requestTrackingPermission();
 
   try {
     await mod.default().initialize();
