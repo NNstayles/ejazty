@@ -11,6 +11,7 @@ const en = {
     next: 'Next',
     cancel: 'Cancel',
     close: 'Close',
+    clear: 'Clear',
     retry: 'Try again',
     error: 'Something went wrong',
     /** Crash-screen detail line. Replaces the raw error text in release builds. */
@@ -42,6 +43,18 @@ const en = {
     chooseLanguage: 'Choose your language',
     chooseLanguageSubtitle: 'You can change this later in Settings.',
     tagline: 'Pass your theoretical driving exam on your first try.',
+    // The one-screen tour between the language picker and sign-in. Each line
+    // names something the app actually does — this is the screen a reader will
+    // hold it to. See `app/onboarding.tsx`.
+    title: 'Everything you need to pass',
+    subtitle: 'Built from the Iraqi ministry’s own material.',
+    studyTitle: 'Study the real material',
+    studyBody: 'Every road sign, rule, penalty and dashboard light, with the ministry’s own artwork. Save anything you want to come back to.',
+    practiseTitle: 'Sit a real mock exam',
+    practiseBody: 'Quick, medium and full mocks against the clock, untimed open practice, and a drill built from the questions you keep getting wrong.',
+    progressTitle: 'Build the habit',
+    progressBody: 'A daily goal, a streak worth keeping, and reminders you can turn off.',
+    guestHint: 'You can look around without an account.',
   },
   auth: {
     signInTitle: 'Welcome back',
@@ -287,6 +300,27 @@ const en = {
     },
     searchPlaceholder: 'Search…',
     noMatches: 'Nothing matches “{{query}}”.',
+    // Saved cards. `save`/`saved` are the bookmark button's accessibility
+    // label in its two states, not visible copy — the control is an icon.
+    save: 'Save this card',
+    saved: 'Saved. Tap to remove.',
+    savedTitle: 'Saved',
+    savedAction: 'Saved cards',
+    savedCount: '{{count}} cards saved',
+    savedCount_one: '{{count}} card saved',
+    savedNone: 'Save a card to find it again here',
+    // The cost of keeping this on the device, said plainly rather than left to
+    // be discovered — the same commitment `account.photoNotice` makes.
+    savedNotice: 'Saved cards stay on this device. They do not move to another phone, and reinstalling the app clears them.',
+    savedEmptyTitle: 'Nothing saved yet',
+    savedEmptyBody: 'Tap the bookmark on any card to keep it here for later.',
+    // Global search, across every section at once.
+    searchTitle: 'Search',
+    searchAction: 'Search everything',
+    searchAllPlaceholder: 'Search every section…',
+    searchPrompt: 'Search signs, rules, priority, penalties, the vehicle, dashboard lights and first aid.',
+    searchResults: '{{count}} matches',
+    searchResults_one: '{{count}} match',
     severity: {
       red: 'Stop now',
       amber: 'Check soon',
@@ -425,6 +459,44 @@ const en = {
     history: 'Past attempts',
     timeTaken: 'Time taken',
   },
+  /**
+   * The full attempt history, reached from the exam home's "Past attempts"
+   * card. That card shows five; a learner who practises daily accumulates
+   * hundreds, and until this screen existed the rest were stored, synced and
+   * unreachable.
+   */
+  history: {
+    title: 'Your history',
+    seeAll: 'See all',
+    filterAll: 'All',
+    passRate: 'Pass rate',
+    best: 'Best',
+    average: 'Average',
+    // Shown in place of a figure that does not exist yet, rather than a zero
+    // the learner never earned.
+    none: '—',
+    attempts: '{{count}} attempts',
+    attempts_one: '{{count}} attempt',
+    // A whole clause rather than a bare number rendered next to the `passed`
+    // label. Composing "3" + " " + t('passed') in JSX fixes English word order
+    // into all three languages, which is the thing the locale files exist to
+    // avoid — the number does not necessarily lead in Arabic or Sorani.
+    passedCount: '{{count}} passed',
+    // Declared even though English reads the same in both forms. The stem only
+    // becomes pluralisable in `TranslationShape` once *some* `_<category>`
+    // variant exists here, so without this line Arabic cannot declare its own
+    // six — which is the whole point of the mechanism.
+    passedCount_one: '{{count}} passed',
+    passed: 'Passed',
+    failed: 'Failed',
+    emptyTitle: 'No attempts yet',
+    emptyBody: 'Sit a mock exam and every result will be kept here.',
+    // The filtered-empty case is a different sentence from the never-sat one:
+    // the learner has a history, just not in this format, and telling them
+    // they have never sat an exam would plainly contradict the chip row above.
+    filterEmpty: 'No results in this format yet.',
+    startAction: 'Start an exam',
+  },
   settings: {
     title: 'Settings',
     account: 'Account',
@@ -462,6 +534,33 @@ const en = {
     version: 'Version',
     privacy: 'Privacy policy',
     privacyDesc: 'What Ejazty stores, and what stays on this phone',
+    // The way back into Google's consent form. Shown only where that form
+    // exists at all — see `privacyOptionsRequired`. The wording avoids "GDPR"
+    // and "consent management": it has to mean something to a reader who never
+    // saw the form, and what they want to change is whether ads know about them.
+    adPrivacy: 'Advert choices',
+    adPrivacyDesc: 'Change whether the adverts you see are personalised',
+    // Shown when the form could not be presented. Deliberately not an error:
+    // nothing is broken for the user, and the answer they already gave stands.
+    adPrivacyUnavailable: 'The advert settings could not be opened just now.',
+    // The route to a human. It leads with reporting a mistake rather than with
+    // "support", because the report this app most needs is a content one: the
+    // Arabic questions are verbatim from the ministry, but the English and
+    // Sorani are unreviewed translations, and the reader is the only person
+    // placed to notice a bad one.
+    support: 'Report a problem',
+    supportDesc: 'Tell us about a mistake in a question, or anything not working',
+    // Subject line. "Ejazty" and the version stay Latin in every language so the
+    // mail can be filtered and the build identified, the way the reminder times
+    // keep Latin digits inside localised copy.
+    supportSubject: 'Ejazty {{version}} — feedback',
+    // Introduces the diagnostic block, so the reader knows what is attached
+    // before they send it and can delete it if they would rather not.
+    supportIntro: 'Sent from:',
+    // Shown when no mail app could be opened, which is ordinary on an Android
+    // device with no mail account set up. The address is interpolated so the
+    // message is still useful — it is the thing they need.
+    supportUnavailable: 'No mail app could be opened. Write to {{email}}.',
   },
   /**
    * The privacy policy, rendered by `(tabs)/settings/privacy.tsx`.
@@ -532,8 +631,13 @@ const en = {
     adsTitle: 'Adverts',
     adsBody:
       'Ejazty shows a full-screen advert at two moments: when you start an exam, and once an exam has been graded, before the score is shown. The adverts come from Google AdMob, which may collect device identifiers and information about the adverts you are shown in order to choose and measure them. Google handles that data under its own privacy policy, not this one.',
+    // The last sentence names the control that makes the "withdrawable at any
+    // time" claim below true. It is scoped to the same regions as the rest of
+    // this paragraph on purpose: the row only appears where Google's consent
+    // form exists, so promising it to everybody would send most readers looking
+    // for something their copy of the app correctly does not show.
     adsConsent:
-      'In the EU, the UK and Switzerland you are asked to choose before any advert is requested, and if you refuse, no advert is requested at all. On iPhone you are also asked whether Ejazty may track you across other companies’ apps. The app behaves exactly the same whichever answer you give.',
+      'In the EU, the UK and Switzerland you are asked to choose before any advert is requested, and if you refuse, no advert is requested at all. On iPhone you are also asked whether Ejazty may track you across other companies’ apps. The app behaves exactly the same whichever answer you give. You can change that choice whenever you like, from Advert choices under About in Settings.',
     adsPartners:
       'Nothing you study is passed to Google. It receives no exam scores, no answers and no account details — an advert request carries information about the device, not about you. How Google uses data from apps that show its adverts is set out at policies.google.com/technologies/partner-sites.',
 

@@ -1,6 +1,8 @@
 import { mkdirSync, writeFileSync } from 'fs';
 import path from 'path';
 
+import { SUPPORT_EMAIL } from '../features/support/contact';
+
 import en from './locales/en';
 import ar from './locales/ar';
 import ckb from './locales/ckb';
@@ -52,8 +54,15 @@ import ckb from './locales/ckb';
  */
 const enabled = process.env.BUILD_PRIVACY_HTML === '1';
 
-/** Contact address. Must match `CONTACT_EMAIL` in the privacy screen. */
-const CONTACT_EMAIL = 'nazarnawras1@gmail.com';
+/*
+  Contact address, from the one module that declares it.
+
+  It used to be a second copy here under a comment asking the reader to keep it
+  in step with the privacy screen — which is the very failure this generator was
+  written to remove, reproduced inside the generator. Importing it means the
+  screen, these three pages and the support row in Settings cannot disagree.
+*/
+const CONTACT_EMAIL = SUPPORT_EMAIL;
 
 /**
  * The section order, as keys into the `privacy` block.

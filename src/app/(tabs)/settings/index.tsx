@@ -1,9 +1,9 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import Constants from 'expo-constants';
-import { useRouter } from 'expo-router';
-import { useEffect, useState } from 'react';
+import { useFocusEffect, useRouter } from 'expo-router';
+import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Alert, Linking, StyleSheet, Switch, View } from 'react-native';
+import { Alert, Linking, Platform, StyleSheet, Switch, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 
 import {
@@ -23,6 +23,7 @@ import { PressableScale } from '@/components/ui/pressable-scale';
 import { ProgressRing } from '@/components/ui/progress-ring';
 import { Card, Screen } from '@/components/ui/surfaces';
 import { Text } from '@/components/ui/text';
+import { privacyOptionsAvailable, showPrivacyOptions } from '@/features/ads';
 import { useAuth } from '@/features/auth/auth-provider';
 import {
   available as biometricsAvailable,
@@ -36,6 +37,7 @@ import {
   REMINDER_SLOT_HOURS,
 } from '@/features/notifications/messages';
 import { useAvatar } from '@/features/profile/avatar-provider';
+import { SUPPORT_EMAIL, supportMailto } from '@/features/support/contact';
 import { GOAL_OPTIONS } from '@/features/progress/goal';
 import { useGoal } from '@/features/progress/goal-provider';
 import { LANGUAGES, type LanguageCode } from '@/i18n';
@@ -118,6 +120,83 @@ export default function SettingsScreen() {
   } = usePreferences();
 
   const [permissionBlocked, setPermissionBlocked] = useState(false);
+
+  /*
+    The way back into Google's ad-consent form.
+
+    Two states rather than one, because "should this row exist" and "did the tap
+    work" are different questions and only the second is worth words on screen.
+
+    Re-read on **focus**, not once on mount, and that is the point. The SDK
+    answers `UNKNOWN` until `initialiseAds` has finished its consent round-trip,
+    which on a cold start into this tab can easily be after this screen has
+    already mounted — so a mount-only check would hide the control for the whole
+    session on exactly the devices that are entitled to it. Focus also covers
+    the case that matters after a tap: the form's own result updates the status
+    it is read from.
+  */
+  const [adPrivacyOffered, setAdPrivacyOffered] = useState(false);
+  const [adPrivacyFailed, setAdPrivacyFailed] = useState(false);
+
+  useFocusEffect(
+    useCallback(() => {
+      let cancelled = false;
+      void privacyOptionsAvailable().then((offered) => {
+        if (!cancelled) setAdPrivacyOffered(offered);
+      });
+      return () => {
+        cancelled = true;
+      };
+    }, []),
+  );
+
+  /*
+    Resolves false when the form could not be presented — never rejects, like
+    everything else in the ads layer. The notice is cleared before each attempt
+    so a tap that succeeds after one that failed does not leave the old line
+    sitting under a form that has just worked.
+  */
+  const openAdPrivacy = async () => {
+    setAdPrivacyFailed(false);
+    const shown = await showPrivacyOptions();
+    if (!shown) setAdPrivacyFailed(true);
+  };
+
+  /*
+    The route to a human.
+
+    `Linking.openURL` on a `mailto:` **rejects** when nothing can handle it,
+    which is ordinary rather than exotic: an Android device with no mail account
+    configured has no handler, and so does a simulator. Unhandled, that is a
+    rejection escaping a press handler; handled, it is a caption carrying the
+    address itself — which is the thing the user actually needs, so the failure
+    path still completes the errand.
+
+    The version falls back the same way the About row's does, so a manifest read
+    that comes back empty produces a subject line rather than "undefined".
+  */
+  const [supportFailed, setSupportFailed] = useState(false);
+  const appVersion = Constants.expoConfig?.version ?? '1.0.0';
+
+  const openSupport = async () => {
+    setSupportFailed(false);
+    try {
+      await Linking.openURL(
+        supportMailto(
+          t('settings.supportSubject', { version: appVersion }),
+          t('settings.supportIntro'),
+          {
+            version: appVersion,
+            platform: Platform.OS,
+            osVersion: String(Platform.Version),
+            language,
+          },
+        ),
+      );
+    } catch {
+      setSupportFailed(true);
+    }
+  };
 
   /*
     The biometric lock.
@@ -682,7 +761,7 @@ export default function SettingsScreen() {
               {t('settings.version')}
             </Text>
             <Text tone="textMuted" variant="caption">
-              {Constants.expoConfig?.version ?? '1.0.0'}
+              {appVersion}
             </Text>
           </View>
           {/*
@@ -710,6 +789,84 @@ export default function SettingsScreen() {
               <Chevron />
             </View>
           </PressableScale>
+
+          {/*
+            The consent control, beside the policy it makes good on.
+
+            Hidden wherever the form does not exist — Expo Go, and everywhere
+            outside the EEA and UK, which is most of this app's audience. That
+            is the same call the biometric-lock card makes and for the same
+            reason: a row that opens nothing is worse than no row. Where it
+            *does* apply, Google requires it and the privacy policy two rows up
+            already promises it in the app's own words.
+          */}
+          {adPrivacyOffered ? (
+            <PressableScale
+              accessibilityHint={t('settings.adPrivacyDesc')}
+              accessibilityLabel={t('settings.adPrivacy')}
+              accessibilityRole="button"
+              onPress={() => {
+                selectionTap();
+                void openAdPrivacy();
+              }}
+              scaleTo={0.985}>
+              <View style={styles.row}>
+                <View style={styles.rowBody}>
+                  <Text variant="body">{t('settings.adPrivacy')}</Text>
+                  <Text tone="textFaint" variant="caption">
+                    {t('settings.adPrivacyDesc')}
+                  </Text>
+                </View>
+                <Chevron />
+              </View>
+            </PressableScale>
+          ) : null}
+
+          {adPrivacyFailed ? (
+            <Text tone="textFaint" variant="caption">
+              {t('settings.adPrivacyUnavailable')}
+            </Text>
+          ) : null}
+
+          {/*
+            The way to reach a human, and the only one the app has.
+
+            The address was already published — at the foot of the privacy
+            policy, which is a document read once and never reopened. So the two
+            reports this app most needs had nowhere to go: a wrong English or
+            Sorani rendering of a question, which only the reader can catch, and
+            anything a device does that no test here can reach.
+
+            Unconditional, unlike the two rows above it: mail is not a
+            capability that varies by region or by build, and where it genuinely
+            cannot be opened the caption below hands over the address instead of
+            leaving a dead tap.
+          */}
+          <PressableScale
+            accessibilityHint={t('settings.supportDesc')}
+            accessibilityLabel={t('settings.support')}
+            accessibilityRole="button"
+            onPress={() => {
+              selectionTap();
+              void openSupport();
+            }}
+            scaleTo={0.985}>
+            <View style={styles.row}>
+              <View style={styles.rowBody}>
+                <Text variant="body">{t('settings.support')}</Text>
+                <Text tone="textFaint" variant="caption">
+                  {t('settings.supportDesc')}
+                </Text>
+              </View>
+              <Chevron />
+            </View>
+          </PressableScale>
+
+          {supportFailed ? (
+            <Text tone="textFaint" variant="caption">
+              {t('settings.supportUnavailable', { email: SUPPORT_EMAIL })}
+            </Text>
+          ) : null}
 
           <View style={[styles.sourceNote, { backgroundColor: colors.surfaceAlt }]}>
             <ShieldIcon color={colors.textMuted} delayMs={480} size={18} />

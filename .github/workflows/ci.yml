@@ -1,0 +1,110 @@
+# The checks this project already documents, run on every push.
+#
+# `CLAUDE.md` states the full verification sequence — tests, types, lint, an
+# iOS export to prove the module graph resolves, then expo-doctor — and until
+# now every one of those was something a person had to remember to run. This is
+# that sequence, in that order, so a change that breaks one of them says so.
+#
+# Two notes on why it looks the way it does:
+#
+# - **`expo export --platform ios`, not `web`.** The web export currently fails
+#   at 87% of the static-render pass with `TypeError: dependencies is not
+#   iterable` out of Metro, bundling `expo-router/node/render.js`. That is a
+#   Metro/expo-router interaction rather than anything in this project, and it
+#   reproduces with the dependency tree in any state — so it is not a check, it
+#   is a guaranteed red build. The iOS export bundles the same `src/` graph and
+#   catches the unresolved-import case that `tsc` misses, which is the whole
+#   reason the step exists. Re-check whether web has been fixed at the next SDK
+#   bump; if it has, add it.
+# - **No `npm audit` step.** It reports 11 high today, all tracing to
+#   `image-size` via Metro, and there is no patched release to move to
+#   (`npm view image-size version` is still 2.0.2). A gate that cannot go green
+#   is a gate people learn to ignore, and worse, `npm audit fix --force`
+#   proposes `expo@53` — a major downgrade — which must never be taken. The
+#   accepted risk is written up in `CLAUDE.md`; re-measure there rather than
+#   here.
+#
+# There is no remote yet — `git remote -v` is empty — so nothing runs this
+# until the repository is created. It is here because the checks are worth
+# having from the first push rather than added after the first regression.
+
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  # So the sequence can be run by hand against a branch without pushing to it.
+  workflow_dispatch:
+
+# A second push to the same branch cancels the first: these steps take a few
+# minutes and the older answer is never the one anybody wants.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # `npm ci` rather than `npm install`, so the lockfile is what is tested
+      # and the two `overrides` entries this project depends on (`postcss` and
+      # `uuid`, both documented in CLAUDE.md) are resolved exactly as they are
+      # locally rather than re-solved.
+      - name: Install
+        run: npm ci
+
+      - name: Test
+        run: npm test -- --ci --runInBand
+
+      # Two generated type files are gitignored and therefore absent from a
+      # fresh clone: `expo-env.d.ts` and `.expo/types/router.d.ts`. Without the
+      # first, `tsc` loses the `expo/types` reference that pulls in Node's
+      # types, and the suite files fail with ten errors on `fs`, `path` and
+      # `__dirname` — measured, not assumed. Without the second, `typedRoutes`
+      # (on, in `app.json`) has nothing to check route strings against.
+      #
+      # `expo customize` with a file argument is the way to get them: it is
+      # interactive without one, and `expo export` does **not** emit them —
+      # also measured, by deleting `.expo/types` and exporting. Naming
+      # `tsconfig.json` is the lever rather than the goal; the CLI writes both
+      # type files alongside it and leaves an existing `tsconfig.json`
+      # byte-identical. If that ever stops being true, this step will show up
+      # as a dirty tree rather than as a silent config rewrite.
+      - name: Generate Expo type declarations
+        run: npx expo customize tsconfig.json
+
+      # Fails the build if the step above rewrote anything it should not have.
+      - name: Check the tree is still clean
+        run: git diff --exit-code
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npx eslint src
+
+      # The module-graph check. `tsc` resolves imports through TypeScript's own
+      # resolver, which is not Metro's — an asset require or a path alias that
+      # only Metro sees can typecheck and then fail to bundle.
+      - name: Bundle
+        run: npx expo export --platform ios --output-dir dist-ci
+        env:
+          # The anon key is public by design (RLS is the security model, and it
+          # is inlined into every shipped bundle), but CI has no `.env`, and
+          # `src/lib/supabase.ts` throws at import time when the credentials are
+          # missing and `__DEV__` is false. Placeholders keep the bundle step
+          # honest about the module graph without putting a real project behind
+          # it — nothing here connects to anything.
+          EXPO_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+          EXPO_PUBLIC_SUPABASE_ANON_KEY: sb_publishable_ci_placeholder
+
+      - name: Dependency health
+        run: npx expo-doctor

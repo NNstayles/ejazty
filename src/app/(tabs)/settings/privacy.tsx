@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { useTabBarClearance } from '@/components/ui/floating-tab-bar';
 import { Card, Screen } from '@/components/ui/surfaces';
 import { Text } from '@/components/ui/text';
+import { SUPPORT_EMAIL } from '@/features/support/contact';
 import { useTheme } from '@/theme/theme-provider';
 import { radius, spacing } from '@/theme/tokens';
 
@@ -37,10 +38,15 @@ import { radius, spacing } from '@/theme/tokens';
  *
  * Deliberately a named constant rather than a locale string: it is the same in
  * every language, and a policy contact that drifted between translations would
- * be worse than none. It must match the address given on both store listings
- * and the one in `docs/privacy-policy.html`.
+ * be worse than none.
+ *
+ * It used to be declared here, again in `i18n/privacy-html.test.ts`, and a
+ * third time in the hosted pages, held together by a comment asking the reader
+ * to keep them in step. It now comes from `features/support/contact.ts`, which
+ * all three read — the same pair-that-drifts argument the page generator itself
+ * rests on, finally applied to the one value the generator was copying by hand.
  */
-const CONTACT_EMAIL = 'nazarnawras1@gmail.com';
+const CONTACT_EMAIL = SUPPORT_EMAIL;
 
 /** A heading and its paragraphs, as one card. */
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
