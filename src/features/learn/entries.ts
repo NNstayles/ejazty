@@ -49,6 +49,7 @@ import type { ImageSourcePropType } from 'react-native';
 import {
   groupTitleKey,
   SECTION_GROUPS,
+  SECTION_IDS,
   type LearnSectionId,
 } from './sections';
 
@@ -139,6 +140,108 @@ export function buildGroups(
   const built = computeGroups(section, lang, t);
   byKey.set(key, built);
   return built;
+}
+
+/**
+ * An entry plus the section it lives in.
+ *
+ * Every screen outside a section list needs the second half: Saved and global
+ * search both draw cards from anywhere in the app, and a card with no idea
+ * which section it came from cannot be labelled or linked back to.
+ */
+export type LocatedEntry = { entry: Entry; section: LearnSectionId };
+
+/** Built flat indexes, keyed the same way `buildGroups` is. See `allEntries`. */
+const flatCache = new WeakMap<Translate, Map<string, LocatedEntry[]>>();
+
+/**
+ * Every card in the app, in section order, each tagged with its section.
+ *
+ * This is what Saved and global search are built on, and it is the *only* place
+ * the app flattens across sections. Both features need the same thing — an
+ * entry looked up by id, or matched against a query, without caring which of
+ * the seven lists it came from — and building it once means they cannot
+ * disagree about what a card is.
+ *
+ * It is genuinely expensive the first time: seven `buildGroups` calls, which
+ * between them flatten 111 sign records, 94 tell-tales and 159 notes, and fold
+ * each one through `foldForSearch`. So it is cached exactly as `buildGroups` is,
+ * on the same `WeakMap` keyed by the translator — and, importantly, it is built
+ * *out of* `buildGroups`, so a reader who has already opened a section pays only
+ * for the six they have not. The first call still costs, which is why the
+ * screens that use it are pushed rather than being tabs: the work happens under
+ * a navigation animation, not during a tab switch.
+ *
+ * Callers must treat the result as frozen, for the same reason `buildGroups`
+ * says so: the arrays are shared with the section screens.
+ */
+export function allEntries(lang: LanguageCode, t: Translate): LocatedEntry[] {
+  let byKey = flatCache.get(t);
+  if (!byKey) {
+    byKey = new Map();
+    flatCache.set(t, byKey);
+  }
+  const hit = byKey.get(lang);
+  if (hit) return hit;
+
+  const built = SECTION_IDS.flatMap((section) =>
+    buildGroups(section, lang, t).flatMap((group) =>
+      group.data.map((entry) => ({ entry, section })),
+    ),
+  );
+  byKey.set(lang, built);
+  return built;
+}
+
+/**
+ * The same index keyed by entry id, for resolving a saved list.
+ *
+ * Cached alongside the flat list rather than rebuilt per render: the Saved
+ * screen resolves its ids on every change to the saved order, and rebuilding a
+ * ~470-entry `Map` to answer a handful of lookups is the kind of cost that only
+ * shows up on the oldest device anyone runs this on.
+ */
+const byIdCache = new WeakMap<Translate, Map<string, Map<string, LocatedEntry>>>();
+
+export function entriesById(
+  lang: LanguageCode,
+  t: Translate,
+): ReadonlyMap<string, LocatedEntry> {
+  let byKey = byIdCache.get(t);
+  if (!byKey) {
+    byKey = new Map();
+    byIdCache.set(t, byKey);
+  }
+  const hit = byKey.get(lang);
+  if (hit) return hit;
+
+  const built = new Map(
+    allEntries(lang, t).map((located) => [located.entry.id, located]),
+  );
+  byKey.set(lang, built);
+  return built;
+}
+
+/**
+ * Cards matching a search query, across every section.
+ *
+ * The query is folded here and the haystack was folded when the entry was
+ * built, which is the rule `foldForSearch` documents: folding one side only
+ * moves the mismatch rather than removing it. An empty query answers *nothing*
+ * rather than everything — a global search box has no useful "show me all 470
+ * cards" state, and rendering one would make the screen look like it ignored
+ * what was typed.
+ */
+export function searchEntries(
+  query: string,
+  lang: LanguageCode,
+  t: Translate,
+): LocatedEntry[] {
+  const folded = foldForSearch(query);
+  if (!folded) return [];
+  return allEntries(lang, t).filter((located) =>
+    located.entry.search.includes(folded),
+  );
 }
 
 function computeGroups(

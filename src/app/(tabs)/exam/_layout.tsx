@@ -12,6 +12,14 @@ export default function ExamLayout() {
       <Stack screenOptions={screenOptions}>
         <Stack.Screen name="index" options={{ headerShown: false }} />
         {/*
+          An ordinary push with the shared `ScreenHeader`, unlike the two
+          screens below it: the history is a page you wander into and back out
+          of, not a mode you have to finish, so it takes the app's usual
+          side-slide and its mirrored back button rather than rising from the
+          bottom.
+        */}
+        <Stack.Screen name="history" />
+        {/*
           Both of these rise from the bottom rather than sliding in from the
           side, and the departure from the app's usual push is deliberate.
 

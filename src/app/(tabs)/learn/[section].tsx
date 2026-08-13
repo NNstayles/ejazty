@@ -1,21 +1,16 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { Image } from 'expo-image';
 import { Stack, useLocalSearchParams } from 'expo-router';
-import { memo, useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { SectionList, StyleSheet, TextInput, View } from 'react-native';
-import Animated, {
-  useAnimatedStyle,
-  useDerivedValue,
-  withTiming,
-} from 'react-native-reanimated';
+import { SectionList, StyleSheet, View } from 'react-native';
+import Animated from 'react-native-reanimated';
 
-import { Artwork } from '@/components/ui/artwork';
+import { EntryCard } from '@/components/learn/entry-card';
+import { SearchField } from '@/components/learn/search-field';
 import { ArtworkViewer } from '@/components/ui/artwork-viewer';
 import { useTabBarClearance } from '@/components/ui/floating-tab-bar';
-import { Badge, Card, Screen } from '@/components/ui/surfaces';
+import { Screen } from '@/components/ui/surfaces';
 import { Text } from '@/components/ui/text';
-import type { DashboardColour } from '@/content/schema';
 import {
   buildGroups,
   type Entry,
@@ -27,253 +22,10 @@ import {
   type LearnSectionId,
 } from '@/features/learn/sections';
 import { foldForSearch } from '@/i18n/fold';
-import { duration as motionDuration, easing, useMotion } from '@/lib/motion';
+import { useMotion } from '@/lib/motion';
 import { usePreferences } from '@/preferences/preferences-provider';
 import { useTheme } from '@/theme/theme-provider';
 import { radius, spacing } from '@/theme/tokens';
-
-/** Severity colour for a dashboard tell-tale, by the convention in `schema`. */
-function severityTone(
-  colour: DashboardColour,
-  colors: ReturnType<typeof useTheme>['colors'],
-): string {
-  switch (colour) {
-    case 'red':
-      return colors.danger;
-    case 'amber':
-      return colors.warning;
-    case 'green':
-      return colors.success;
-    case 'blue':
-      return colors.info;
-    case 'white':
-      return colors.textMuted;
-  }
-}
-
-/**
- * Memoised so scrolling only mounts and paints the rows entering the window —
- * the signs section alone is 111 cards, each with its own image.
- */
-const EntryCard = memo(function EntryCard({
-  entry,
-  unofficialLabel,
-  severityLabel,
-  onOpenArtwork,
-}: {
-  entry: Entry;
-  unofficialLabel: string;
-  severityLabel: string | null;
-  /**
-   * Opens the enlarged view.
-   *
-   * The open state lives on the screen rather than on each card: with a
-   * hundred-odd cards mounted, a `useState` per card is a hundred pieces of
-   * state to hold exactly one boolean between them, and two cards could open at
-   * once during a recycle.
-   */
-  onOpenArtwork: (entry: Entry) => void;
-}) {
-  const { colors } = useTheme();
-
-  // Dashboard tell-tales are drawn on a dark backing plate, the way they are
-  // lit on a real instrument cluster — which is also what keeps a white or
-  // amber glyph legible in light mode.
-  const isTile = entry.colour !== undefined;
-  // Resolved on demand rather than as a map built per card: only dashboard
-  // entries carry a severity at all, and this component mounts ninety-odd
-  // times in one scroll.
-  const severityColour = entry.colour ? severityTone(entry.colour, colors) : null;
-
-  return (
-    // No surface texture: this card is a row in a virtualised list that runs to
-    // 111 entries, so the SVG would be re-mounted on every pass through the
-    // section. See `Card`.
-    <Card style={styles.card} texture={false}>
-      <View style={styles.titleRow}>
-        {/*
-          The tell-tale, as the publisher's own artwork — see `LICENSE-gofar.md`
-          for the grant that allows it. This replaced a set of hand-drawn SVG
-          glyphs that existed only because the artwork could not be licensed at
-          the time; they were deleted once it could.
-
-          `contentFit="contain"` rather than `cover`, and it is load-bearing
-          rather than a default: every icon is square today, so the two agree —
-          but `cover` crops whatever does not fit, so the day a wider tile is
-          added it would lose its own edges silently. `contain` fits it into the
-          plate instead. The normalise step writes every icon onto one 200px
-          square canvas, so they already share a size and a position; this is
-          the second half of that guarantee, held at render time.
-
-          The plate stays behind it. The artwork carries its own black ground,
-          but it is padded to a square while the plate is rounded, so the plate
-          is what fills the corners the icon's own ground does not reach.
-
-          `severityColour` is no longer applied to the glyph — the artwork is
-          already coloured, and tinting it would overwrite the very distinction
-          the section teaches. It still colours the severity label below.
-
-          Not tappable, unchanged: the zoom exists for the scanned exam
-          photographs, where detail is genuinely lost at list size. A 200px icon
-          shown at 56pt has nothing further to reveal.
-        */}
-        {isTile && entry.image ? (
-          <View style={[styles.tile, { backgroundColor: colors.artworkPlate }]}>
-            <Image
-              cachePolicy="memory-disk"
-              contentFit="contain"
-              recyclingKey={entry.id}
-              source={entry.image}
-              style={styles.tileImage}
-            />
-          </View>
-        ) : null}
-
-        <View style={styles.titleText}>
-          <Text variant="heading">{entry.title}</Text>
-          {severityLabel && severityColour ? (
-            <Text style={{ color: severityColour }} variant="overline">
-              {severityLabel.toUpperCase()}
-            </Text>
-          ) : null}
-        </View>
-
-        {!entry.official ? (
-          <Badge label={unofficialLabel} tone="warning" />
-        ) : null}
-      </View>
-
-      {/*
-        No cross-fade: this is a virtualised list, so a flick through the
-        section would otherwise be a dozen independent fades happening under a
-        moving finger. See `Artwork` for the plate and the shared height.
-      */}
-      {entry.image && !isTile ? (
-        <Artwork
-          label={entry.title}
-          onPress={() => onOpenArtwork(entry)}
-          recyclingKey={entry.id}
-          source={entry.image}
-        />
-      ) : null}
-
-      {/*
-        A study note's paragraph carries no label. The catalogue cards below it
-        do, because "What it means" and "What you must do" are different things
-        a reader looks up separately — but an overline over ordinary prose reads
-        as a form rather than as something to read.
-      */}
-      {entry.body ? <Text variant="body">{entry.body}</Text> : null}
-
-      {entry.points?.length ? (
-        <View style={styles.points}>
-          {entry.points.map((point, position) => (
-            // The row inherits `direction` from the root, so the marker sits on
-            // the reading-start side in all three languages without a physical
-            // edge anywhere in here.
-            //
-            // Keyed by position rather than by the text. A note's points are a
-            // fixed list that is never reordered or filtered, so the index is
-            // stable — and two points that happen to read the same in one of
-            // the three languages would otherwise collide, which React resolves
-            // by dropping one of them silently.
-            <View key={`${entry.id}-${position}`} style={styles.point}>
-              <View
-                style={[styles.bullet, { backgroundColor: colors.primary }]}
-              />
-              <Text style={styles.pointText} variant="body">
-                {point}
-              </Text>
-            </View>
-          ))}
-        </View>
-      ) : null}
-
-      {entry.blocks.map((block) => (
-        <View key={block.label} style={styles.block}>
-          <Text tone="textMuted" variant="overline">
-            {block.label.toUpperCase()}
-          </Text>
-          <Text variant="body">{block.value}</Text>
-        </View>
-      ))}
-    </Card>
-  );
-});
-
-/**
- * The section search box.
- *
- * Pulled out of the screen body so its focus state does not live on the screen:
- * a `useState` up there would re-render the whole `FlatList` header — and on
- * the signs section that is a 111-row list — every time the keyboard opened.
- *
- * The focus ring is animated rather than switched because this is the one
- * control on the screen, and a border that snaps between two colours is the
- * detail that makes a form feel like a form rather than an app.
- */
-function SearchField({
-  value,
-  onChange,
-  placeholder,
-}: {
-  value: string;
-  onChange: (next: string) => void;
-  placeholder: string;
-}) {
-  const { colors, inputAlign, writingDirection } = useTheme();
-  const motion = useMotion();
-  const [focused, setFocused] = useState(false);
-  const ms = motion.ms(motionDuration.fast);
-
-  const drive = useDerivedValue<number>(
-    () => withTiming(focused ? 1 : 0, { duration: ms, easing: easing.standard }),
-    [focused, ms],
-  );
-
-  const ringStyle = useAnimatedStyle(() => ({
-    borderColor: drive.value > 0.5 ? colors.primary : colors.border,
-    // A ring rather than a thicker border: growing `borderWidth` on focus
-    // shifts every child by the difference, so the icon and the caret jump
-    // sideways as the keyboard opens.
-    shadowOpacity: drive.value * 0.18,
-  }));
-
-  return (
-    <Animated.View
-      style={[
-        styles.search,
-        { backgroundColor: colors.surface, shadowColor: colors.primary, shadowRadius: 10 },
-        ringStyle,
-      ]}>
-      <Ionicons
-        color={focused ? colors.primary : colors.textFaint}
-        name="search"
-        size={18}
-      />
-      <TextInput
-        autoCorrect={false}
-        onBlur={() => setFocused(false)}
-        onChangeText={onChange}
-        onFocus={() => setFocused(true)}
-        placeholder={placeholder}
-        placeholderTextColor={colors.textFaint}
-        // A bare `TextInput` rather than `Field`, so it does not inherit that
-        // component's label and border chrome — but the alignment and the
-        // writing direction still have to come from the theme, or a search for
-        // an Arabic sign title types backwards into a left-aligned box.
-        //
-        // `inputAlign` is the input's own value: an input gets none of the
-        // logical left/right resolution React Native applies to a `<Text>`.
-        style={[
-          styles.searchInput,
-          { color: colors.text, textAlign: inputAlign, writingDirection },
-        ]}
-        value={value}
-      />
-    </Animated.View>
-  );
-}
 
 export default function LearnSectionScreen() {
   const { t } = useTranslation();
@@ -325,7 +77,11 @@ export default function LearnSectionScreen() {
       .filter((g) => g.data.length > 0);
   }, [groups, query]);
 
+  // Resolved once on the screen rather than per card. `renderItem` closes over
+  // them, and they are the same three strings for every row in the list.
   const unofficialLabel = t('content.unofficial');
+  const saveLabel = t('learn.save');
+  const savedLabel = t('learn.saved');
 
   // A single group gets no heading: the only thing it could say is what the
   // navigation bar directly above it already says.
@@ -395,6 +151,8 @@ export default function LearnSectionScreen() {
         <EntryCard
           entry={item}
           onOpenArtwork={setViewing}
+          saveLabel={saveLabel}
+          savedLabel={savedLabel}
           severityLabel={item.colour ? t(`learn.severity.${item.colour}`) : null}
           unofficialLabel={unofficialLabel}
         />
@@ -433,7 +191,7 @@ export default function LearnSectionScreen() {
         </Animated.View>
       );
     },
-    [t, unofficialLabel, motion, groupOffsets],
+    [t, unofficialLabel, saveLabel, savedLabel, motion, groupOffsets],
   );
 
   const renderSectionHeader = useCallback(
@@ -497,6 +255,9 @@ export default function LearnSectionScreen() {
             <SearchField
               onChange={setQuery}
               placeholder={t('learn.searchPlaceholder')}
+              // Was the content container's `gap`; see `listContent` for why
+              // the spacing has to sit on a measured element instead.
+              style={styles.search}
               value={query}
             />
           }
@@ -691,17 +452,8 @@ const styles = StyleSheet.create({
   },
   /** The row gap, moved into the measured cell. See `listContent`. */
   cell: { marginBottom: spacing.lg },
-  search: {
-    // Was the content container's `gap`; see `listContent` for why it moved.
-    marginBottom: spacing.lg,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    paddingHorizontal: spacing.md,
-    borderRadius: radius.md,
-    borderWidth: StyleSheet.hairlineWidth,
-  },
-  searchInput: { flex: 1, paddingVertical: spacing.md, fontSize: 16 },
+  /** The row gap under the box, moved out of the content container. */
+  search: { marginBottom: spacing.lg },
   empty: {
     alignItems: 'center',
     gap: spacing.md,
@@ -733,38 +485,4 @@ const styles = StyleSheet.create({
     marginHorizontal: -spacing.lg,
     paddingHorizontal: spacing.lg,
   },
-  card: { gap: spacing.md },
-  titleRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.md,
-  },
-  titleText: { flex: 1, gap: 2 },
-  tile: {
-    width: 56,
-    height: 56,
-    borderRadius: radius.md,
-    alignItems: 'center',
-    justifyContent: 'center',
-    overflow: 'hidden',
-  },
-  tileImage: { width: '100%', height: '100%' },
-  block: { gap: spacing.xs },
-  points: { gap: spacing.sm },
-  point: {
-    flexDirection: 'row',
-    gap: spacing.sm,
-    // Start-aligned rather than centred: a point that wraps to three lines
-    // would otherwise float its bullet down beside the middle of the run.
-    alignItems: 'flex-start',
-  },
-  bullet: {
-    width: 5,
-    height: 5,
-    borderRadius: radius.pill,
-    // Nudged down to sit on the first line's optical centre. A bullet aligned
-    // to the top of the text box reads as sitting above the line it belongs to.
-    marginTop: 9,
-  },
-  pointText: { flex: 1 },
 });

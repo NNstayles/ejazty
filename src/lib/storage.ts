@@ -31,6 +31,11 @@ export const StorageKeys = {
   avatar: 'ejazty.profile.avatar',
   /** Whether taps and graded results give haptic feedback. */
   hapticsEnabled: 'ejazty.haptics.enabled',
+  /**
+   * Saved Learn cards, as content ids, newest first. Device-local and kept
+   * across sign-out — see `features/learn/bookmarks.ts` for both decisions.
+   */
+  bookmarks: 'ejazty.learn.bookmarks',
   /** Daily study goal, in questions answered correctly. */
   studyGoal: 'ejazty.study.goal',
   /** Per-day tally of questions answered correctly, for the goal ring. */

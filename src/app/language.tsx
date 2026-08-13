@@ -16,7 +16,7 @@ export default function LanguageScreen() {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const router = useRouter();
-  const { language, setLanguage, completeOnboarding } = usePreferences();
+  const { language, setLanguage } = usePreferences();
   const [selected, setSelected] = useState<LanguageCode>(language);
   const [busy, setBusy] = useState(false);
 
@@ -27,18 +27,18 @@ export default function LanguageScreen() {
     await setLanguage(code);
   };
 
-  const confirm = async () => {
+  const confirm = () => {
     setBusy(true);
-    await completeOnboarding();
-    // Back to the entry gate rather than straight to sign-in. This used to
-    // branch on `onboarded`, which is read from the render *before*
-    // `completeOnboarding` — so it was always the stale `false`, and the branch
-    // that was supposed to handle an already-onboarded user was dead code.
-    // Handing the decision back to `index.tsx` is both correct and one rule
-    // instead of two: it waits for `auth.ready` and sends a user who already
-    // has a session to the tabs rather than to a sign-in screen they do not
-    // need.
-    router.replace('/');
+    // `completeOnboarding` is **not** called here any more; the tour on the
+    // next screen writes it at the end of the flow. So an app killed between
+    // the two resumes here rather than skipping the one screen that explains
+    // what the app does — and nothing is lost by resuming, because the chosen
+    // language is persisted and applied the moment it is tapped, above.
+    //
+    // `replace` rather than `push`: there is nothing to go back to, and a back
+    // gesture onto a language picker that has already taken effect is a control
+    // that appears to undo something and does not.
+    router.replace('/onboarding');
   };
 
   return (
@@ -93,7 +93,7 @@ export default function LanguageScreen() {
         })}
       </View>
 
-      <Button label={t('common.continue')} loading={busy} onPress={() => void confirm()} />
+      <Button label={t('common.continue')} loading={busy} onPress={confirm} />
     </Screen>
   );
 }

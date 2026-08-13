@@ -496,7 +496,29 @@ export default function ExamHome() {
 
       {lastFive.length > 0 ? (
         <Card style={styles.infoCard}>
-          <Text variant="bodyStrong">{t('result.history')}</Text>
+          {/*
+            The card lists five; the quota trigger permits two thousand. Until
+            the history screen existed everything past the fifth row was
+            collected, synced, merged — and unreachable. The affordance is
+            shown whenever there is any history at all rather than only past
+            five rows, because that screen carries the summary and the
+            per-format filter, which this card does not.
+          */}
+          <View style={styles.historyHeader}>
+            <Text variant="bodyStrong">{t('result.history')}</Text>
+            <PressableScale
+              accessibilityRole="button"
+              hitSlop={spacing.sm}
+              onPress={() => router.push('/exam/history')}
+              scaleTo={0.94}>
+              <View style={styles.seeAll}>
+                <Text tone="primary" variant="caption">
+                  {t('history.seeAll')}
+                </Text>
+                <Chevron color={colors.primary} size={14} />
+              </View>
+            </PressableScale>
+          </View>
           {lastFive.map((attempt) => {
             const day = relativeDayKey(attempt.at);
             return (
@@ -658,6 +680,13 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
   },
   infoCard: { gap: spacing.sm },
+  historyHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: spacing.sm,
+  },
+  seeAll: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },
   historyRow: {
     flexDirection: 'row',
     alignItems: 'center',

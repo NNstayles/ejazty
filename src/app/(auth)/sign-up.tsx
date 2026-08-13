@@ -293,7 +293,16 @@ export default function SignUpScreen() {
         <Text tone="textMuted" variant="caption">
           {t('auth.haveAccount')}
         </Text>
-        <Link href="/sign-in" replace>
+        {/*
+          Padded so the target clears 44pt. A `Link` renders a text node, whose
+          hit rect is otherwise the glyph box of a 13pt caption. See the same
+          note on the sign-in screen.
+        */}
+        <Link
+          accessibilityRole="link"
+          href="/sign-in"
+          replace
+          style={styles.inlineLink}>
           <Text tone="primary" variant="caption">
             {t('auth.signIn')}
           </Text>
@@ -313,4 +322,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: spacing.xs,
   },
+  inlineLink: { paddingVertical: spacing.sm, paddingHorizontal: spacing.xs },
 });

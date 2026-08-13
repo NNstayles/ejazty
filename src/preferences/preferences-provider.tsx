@@ -36,6 +36,7 @@ import {
   DEFAULT_REMINDER_FREQUENCY,
   type ReminderFrequency,
 } from '@/features/notifications/messages';
+import { hydrateBookmarks } from '@/features/learn/bookmarks';
 import {
   applyDirection,
   detectDeviceLanguage,
@@ -99,6 +100,13 @@ export function PreferencesProvider({ children }: { children: ReactNode }) {
         readJSON<boolean>(StorageKeys.notificationsEnabled, false),
         readJSON<unknown>(StorageKeys.reminderFrequency, null),
         readJSON<boolean>(StorageKeys.hapticsEnabled, true),
+        // Read here rather than lazily on first subscribe, and awaited with the
+        // rest so it lands before `ready` flips. Hydrating later would paint
+        // every Learn card unsaved and then flip them a frame afterwards —
+        // which on the signs section is a hundred icons changing at once for no
+        // reason the reader can see. It resolves into module state rather than
+        // into React state, so it is destructured to nothing.
+        hydrateBookmarks(),
       ]);
       if (cancelled) return;
 

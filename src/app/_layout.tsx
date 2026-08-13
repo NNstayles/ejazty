@@ -31,7 +31,7 @@ import {
 } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AppState, Pressable, StyleSheet, Text, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -39,7 +39,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import i18n from '@/i18n';
 
 import { initialiseAds } from '@/features/ads';
-import { AuthProvider } from '@/features/auth/auth-provider';
+import { AuthProvider, useAuth } from '@/features/auth/auth-provider';
 import { LockGate } from '@/features/auth/lock-gate';
 import {
   configureNotificationHandler,
@@ -199,8 +199,18 @@ export default function RootLayout() {
   );
 }
 
+/**
+ * How long the splash may wait on `auth.ready` before giving up on it.
+ *
+ * Long enough to cover a token refresh on an ordinary connection, short enough
+ * that a device with no signal is not staring at a launch screen. See the gate
+ * below for why the wait is bounded at all.
+ */
+const AUTH_SPLASH_GRACE_MS = 1500;
+
 function RootNavigator() {
   const { ready, language, notificationsEnabled } = usePreferences();
+  const { ready: authReady } = useAuth();
   const { colors, isDark, direction } = useTheme();
   const router = useRouter();
   const pathname = usePathname();
@@ -231,11 +241,40 @@ function RootNavigator() {
   });
   const fontsSettled = fontsLoaded || fontsError !== null;
 
+  /*
+    The splash also waits on the session, and it is bounded so it cannot stick.
+
+    `preferences.ready` and the fonts are both local reads and settle in a few
+    frames. `auth.ready` is not: it waits on `getSession()`, which reads the
+    chunked session out of the keychain and — on any cold start more than an
+    hour after the last one — refreshes the access token over the network
+    before resolving.
+
+    So the splash used to hide well before the app knew who the user was, and
+    `app/index.tsx` cannot answer until it does: it renders `null` until
+    `ready`, which is a themed but empty screen sitting between the launch
+    image and the first real route for as long as that round trip takes.
+
+    Waiting for it removes the gap, but waiting for it *unconditionally* would
+    trade a dead moment for a dead app — a device with no signal would hold the
+    launch screen on a network call that is not coming back. This is the same
+    failure the `fontsError` half of the gate above exists to avoid, so it
+    takes the same answer: a deadline, after which boot proceeds without it and
+    the behaviour is exactly what it was before this comment existed.
+  */
+  const [authGraceExpired, setAuthGraceExpired] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => setAuthGraceExpired(true), AUTH_SPLASH_GRACE_MS);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const booted = ready && fontsSettled && (authReady || authGraceExpired);
+
   useEffect(() => {
     // A failure to hide is not worth an unhandled rejection: the splash is
     // dismissed by the OS regardless once the first frame is up.
-    if (ready && fontsSettled) void SplashScreen.hideAsync().catch(() => {});
-  }, [ready, fontsSettled]);
+    if (booted) void SplashScreen.hideAsync().catch(() => {});
+  }, [booted]);
 
   /*
     Start the ads SDK and gather consent, once, after the first frame is up.
@@ -328,6 +367,16 @@ function RootNavigator() {
     };
   }, [ready, router]);
 
+  /*
+    Deliberately *not* gated on `authReady`, unlike the splash above.
+
+    The two gates answer different questions. This one decides whether there is
+    enough to paint a correct first frame — the language, the theme and the
+    fonts — and holding it any longer would mean nothing renders behind the
+    splash at all. Letting the tree mount while the session resolves is what
+    makes the extra wait free: by the time the splash lifts, the navigator and
+    the first route are already laid out.
+  */
   if (!ready || !fontsSettled) return null;
 
   const navTheme: Theme = {
@@ -383,6 +432,13 @@ function RootNavigator() {
           }}>
           <Stack.Screen name="index" />
           <Stack.Screen name="language" />
+          {/*
+            The one-screen tour, between the language picker and sign-in. Takes
+            the root stack's cross-fade like everything else here: these
+            children replace one another rather than stacking, so a side push
+            would claim a "back" that does not exist.
+          */}
+          <Stack.Screen name="onboarding" />
           <Stack.Screen name="(auth)" />
           <Stack.Screen name="(tabs)" />
         </Stack>

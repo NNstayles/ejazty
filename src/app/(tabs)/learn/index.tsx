@@ -30,6 +30,7 @@ import {
   studyNotesFor,
 } from '@/content/registry';
 import { useAuth } from '@/features/auth/auth-provider';
+import { useBookmarkIds } from '@/features/learn/bookmarks';
 import {
   SECTION_IDS,
   SECTION_TITLE_KEYS,
@@ -133,6 +134,10 @@ export default function LearnHome() {
   const { uri: avatarUri } = useAvatar();
   const goal = useGoal();
   const clearance = useTabBarClearance();
+  // Subscribed rather than snapshotted: this is the entry point, so it has to
+  // reflect a card saved a moment ago on a section screen. It is one boolean's
+  // worth of information — see the bookmark cue below.
+  const savedCount = useBookmarkIds().length;
 
   /**
    * Replays a section's icon when its card is pressed.
@@ -285,6 +290,54 @@ export default function LearnHome() {
         </PressableScale>
       </Animated.View>
 
+      {/*
+        The two ways into the material that are not "pick a section", placed
+        directly above the sections so they read as alternatives to the grid
+        rather than as chrome belonging to the greeting.
+
+        Search is drawn as a box rather than as a button because that is what it
+        is — a reader looking for one recognises the shape before they read the
+        label. It is a `PressableScale` pushing a screen rather than a live input
+        for a real reason: the flat index behind global search is seven
+        `buildGroups` calls, and paying for that on the Learn home would cost the
+        first frame of the tab everyone opens first. Pushed, it happens under the
+        navigation animation instead.
+      */}
+      <Animated.View entering={motion.appear(120)} style={styles.finders}>
+        <PressableScale
+          accessibilityRole="search"
+          onPress={() => router.push('/learn/search')}
+          scaleTo={0.985}
+          style={[
+            styles.searchCue,
+            { backgroundColor: colors.surface, borderColor: colors.border },
+          ]}>
+          <Ionicons color={colors.textFaint} name="search" size={18} />
+          <Text numberOfLines={1} style={styles.searchCueText} tone="textFaint">
+            {t('learn.searchAction')}
+          </Text>
+        </PressableScale>
+
+        <PressableScale
+          accessibilityLabel={t('learn.savedAction')}
+          accessibilityRole="button"
+          onPress={() => router.push('/learn/saved')}
+          scaleTo={0.96}
+          style={[
+            styles.savedCue,
+            { backgroundColor: colors.surface, borderColor: colors.border },
+          ]}>
+          <Ionicons
+            // Filled once something is saved, so the control reports whether
+            // there is anything behind it without needing a count beside it —
+            // a badge reading "0" is worse than no badge.
+            color={savedCount > 0 ? colors.primary : colors.textFaint}
+            name={savedCount > 0 ? 'bookmark' : 'bookmark-outline'}
+            size={18}
+          />
+        </PressableScale>
+      </Animated.View>
+
       <Text style={styles.gridLabel} tone="textMuted" variant="overline">
         {t('learn.sectionsLabel').toUpperCase()}
       </Text>
@@ -411,6 +464,31 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.sm,
     paddingVertical: 2,
     borderRadius: radius.pill,
+  },
+  finders: {
+    flexDirection: 'row',
+    alignItems: 'stretch',
+    gap: spacing.sm,
+  },
+  searchCue: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.md,
+    borderRadius: radius.md,
+    borderWidth: StyleSheet.hairlineWidth,
+  },
+  // Clamped rather than allowed to wrap: the row has to stay one line tall or
+  // the bookmark button beside it stretches with it.
+  searchCueText: { flex: 1 },
+  savedCue: {
+    width: 48,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: radius.md,
+    borderWidth: StyleSheet.hairlineWidth,
   },
   gridLabel: { marginBottom: -spacing.sm },
   grid: {

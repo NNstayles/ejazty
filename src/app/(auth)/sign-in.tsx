@@ -280,7 +280,20 @@ export default function SignInScreen() {
           loading={busy}
           onPress={() => void submit()}
         />
-        <Link href="/forgot-password" style={styles.forgot}>
+        {/*
+          The padding is the tap target, not decoration.
+
+          `Link` renders a text node, so without it the only touchable area is
+          the glyph box of a 13pt caption — about a third of the 44pt minimum
+          both platforms publish, on the control someone reaches for precisely
+          when they are already failing to get in. Padding a text node grows
+          its own hit rect on both platforms, which `hitSlop` on a `Link` does
+          not reliably do.
+        */}
+        <Link
+          accessibilityRole="link"
+          href="/forgot-password"
+          style={styles.forgot}>
           <Text tone="primary" variant="caption">
             {t('auth.forgotPassword')}
           </Text>
@@ -315,7 +328,7 @@ export default function SignInScreen() {
           <Text tone="textMuted" variant="caption">
             {t('auth.noAccount')}
           </Text>
-          <Link href="/sign-up">
+          <Link accessibilityRole="link" href="/sign-up" style={styles.inlineLink}>
             <Text tone="primary" variant="caption">
               {t('auth.signUp')}
             </Text>
@@ -358,7 +371,10 @@ const styles = StyleSheet.create({
     marginBottom: spacing.sm,
   },
   form: { gap: spacing.md },
-  forgot: { alignSelf: 'center' },
+  // `paddingVertical` is what makes this reachable — see the note at the call
+  // site. `alignSelf: 'center'` keeps it centred while the padding grows the
+  // box rather than the row.
+  forgot: { alignSelf: 'center', paddingVertical: spacing.sm },
   footer: { gap: spacing.sm },
   inline: {
     flexDirection: 'row',
@@ -366,4 +382,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: spacing.xs,
   },
+  // Same reasoning as `forgot`, and horizontal padding too: this one sits at
+  // the end of a sentence, so the target should extend past the word.
+  inlineLink: { paddingVertical: spacing.sm, paddingHorizontal: spacing.xs },
 });

@@ -1,7 +1,12 @@
 import i18n, { initI18n, LANGUAGES, type LanguageCode } from '@/i18n';
 import { foldForSearch } from '@/i18n/fold';
 import { studyNotes } from '@/content/registry';
-import { buildGroups } from './entries';
+import {
+  allEntries,
+  buildGroups,
+  entriesById,
+  searchEntries,
+} from './entries';
 import { SECTION_GROUPS, SECTION_IDS, type LearnSectionId } from './sections';
 
 /**
@@ -181,6 +186,94 @@ describe('learn entries', () => {
     // spell it without the shadda.
     const raw = cards.filter((c) => c.search.includes('الدوّار'));
     expect(raw).toEqual([]);
+  });
+
+  /**
+   * The flat index behind Saved and global search.
+   *
+   * Both screens draw cards from anywhere in the app, so the thing that can go
+   * wrong is a *section* silently missing from the flattening — which renders as
+   * a search that never finds first aid, or a saved card that vanishes. Nothing
+   * on either screen would say so: an absent section looks exactly like a query
+   * that matched nothing.
+   */
+  describe('the flat index', () => {
+    const translate = (key: string, vars?: Record<string, unknown>) =>
+      String(i18n.t(key, vars as never));
+
+    const flat = (lang: LanguageCode) => {
+      void i18n.changeLanguage(lang);
+      return allEntries(lang, translate);
+    };
+
+    it('holds every card from every section', () => {
+      void i18n.changeLanguage('en');
+      const perSection = SECTION_IDS.flatMap((section) =>
+        buildGroups(section, 'en', translate).flatMap((g) => g.data),
+      );
+      expect(flat('en')).toHaveLength(perSection.length);
+      expect(new Set(flat('en').map((l) => l.section))).toEqual(
+        new Set(SECTION_IDS),
+      );
+    });
+
+    it('tags each card with the section it came from', () => {
+      // The tag is what Saved and search label a card with and link back
+      // through, so a wrong one sends the reader to a screen the card is not on.
+      void i18n.changeLanguage('en');
+      for (const section of SECTION_IDS) {
+        const ids = new Set(
+          buildGroups(section, 'en', translate).flatMap((g) =>
+            g.data.map((e) => e.id),
+          ),
+        );
+        for (const located of flat('en')) {
+          if (ids.has(located.entry.id)) {
+            expect([located.entry.id, located.section]).toEqual([
+              located.entry.id,
+              section,
+            ]);
+          }
+        }
+      }
+    });
+
+    it('indexes by id with no id lost to a collision', () => {
+      // `entriesById` is a `Map`, so two cards sharing an id would leave one of
+      // them permanently unresolvable — a bookmark that saves and then never
+      // appears. The no-record-in-two-sections rule above makes this hold; this
+      // asserts the index actually inherits it.
+      const all = flat('en');
+      expect(entriesById('en', translate).size).toBe(all.length);
+    });
+
+    /**
+     * The gap this feature was built to close. Search used to be per-section,
+     * so finding a roundabout meant guessing which of seven lists it was in.
+     */
+    it('finds a card from a section other than the one searched', () => {
+      void i18n.changeLanguage('en');
+      const hits = searchEntries('roundabout', 'en', translate);
+      expect(hits.length).toBeGreaterThan(0);
+      expect(new Set(hits.map((h) => h.section)).size).toBeGreaterThan(1);
+    });
+
+    it('folds the query, so Arabic typed without harakat still matches', () => {
+      // Same rule as the per-section box, asserted again here because this is a
+      // second call site and folding one side only moves the mismatch.
+      void i18n.changeLanguage('ar');
+      expect(searchEntries('الدوار', 'ar', translate).length).toBeGreaterThan(0);
+    });
+
+    /**
+     * An empty query answers nothing, not everything. A global box has no
+     * useful "here are all 470 cards" state, and returning one would read as a
+     * screen that ignored what was typed.
+     */
+    it.each(['', '   '])('answers nothing for %p', (query) => {
+      void i18n.changeLanguage('en');
+      expect(searchEntries(query, 'en', translate)).toEqual([]);
+    });
   });
 
   it('renders notes as prose rather than as labelled fields', () => {
