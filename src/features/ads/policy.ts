@@ -137,6 +137,43 @@ export function mayShowInterstitial(options: {
   return elapsed >= MIN_INTERSTITIAL_GAP_MS;
 }
 
+/**
+ * Whether the app must offer a way back into the consent form.
+ *
+ * ## Why this is a requirement rather than a courtesy
+ *
+ * Google's UMP SDK reports a `privacyOptionsRequirementStatus` alongside the
+ * consent status, and when it reads `REQUIRED` — which is what a user in the
+ * EEA or UK who has answered the form gets — the publisher is obliged to keep a
+ * control somewhere in the app that re-presents it. An app that gathers consent
+ * once at first launch and then gives no way to change the answer is not
+ * compliant, and the failure is invisible from inside the app: ads keep serving
+ * and nothing reports a problem.
+ *
+ * It is also a promise this app has already made in its own words. The privacy
+ * policy lists, under rights honoured for everybody regardless of country, "to
+ * withdraw your consent to personalised adverts, without losing access to any
+ * part of the app" — which needs a button, and had none.
+ *
+ * ## The unknown case answers false, deliberately
+ *
+ * `NOT_REQUIRED` is the answer for most of this app's audience: Iraq is outside
+ * the EEA and UK, so the form never appears and there is nothing behind the
+ * control. `UNKNOWN` means the SDK has not resolved consent yet — in Expo Go,
+ * where the native module is absent entirely, or before `initialiseAds` has
+ * finished.
+ *
+ * Both hide the row, which is the same call the biometric-lock card makes and
+ * for the same reason: a permanently present control that opens nothing is a
+ * promise the app cannot keep on that phone. The direction matters — a row
+ * wrongly hidden costs a user in a regulated region their control, so this is
+ * re-read on focus rather than once at mount (see the settings screen), while a
+ * row wrongly shown is a dead tap for everybody outside one.
+ */
+export function privacyOptionsRequired(status: string | null | undefined): boolean {
+  return status === 'REQUIRED';
+}
+
 /** The platforms that can serve an ad. Web is not one — see `adsAvailable`. */
 export type AdPlatform = 'android' | 'ios';
 

@@ -16,3 +16,9 @@ export {
   preloadInterstitial,
   showInterstitial,
 } from './interstitial';
+/*
+  The consent control the settings screen offers, and the question of whether to
+  offer it at all. Separate from the placements above because it is the one part
+  of this feature the user drives rather than meets.
+*/
+export { privacyOptionsAvailable, showPrivacyOptions } from './consent';

@@ -5,6 +5,7 @@ import {
   TEST_INTERSTITIAL_UNIT_IDS,
   adsAvailable,
   mayShowInterstitial,
+  privacyOptionsRequired,
   resolveAdUnitId,
   type AdPlatform,
 } from './policy';
@@ -182,5 +183,63 @@ describe('platform support', () => {
   it('refuses web, where the native module does not exist', () => {
     expect(adsAvailable('web')).toBe(false);
     expect(adsAvailable('windows')).toBe(false);
+  });
+});
+
+/**
+ * Whether the settings screen offers a way back into the consent form.
+ *
+ * Every case here is unreachable from this developer's own device, which is
+ * what earns the tests: the status is `NOT_REQUIRED` everywhere outside the EEA
+ * and UK, so the branch that matters — the one that keeps the app compliant and
+ * keeps the promise its privacy policy already makes — is the branch that never
+ * fires in Iraq, and never fires in Expo Go either, where the SDK is absent and
+ * every answer is `UNKNOWN`. Reaching it by hand means a debug geography and a
+ * development build.
+ */
+describe('the consent control', () => {
+  /*
+    The load-bearing direction. `REQUIRED` is what a user who has answered the
+    form in a regulated region reports, and Google obliges the publisher to keep
+    a control that re-presents it. Hiding the row there is a compliance failure
+    that is invisible from inside the app — ads keep serving and nothing
+    complains.
+  */
+  it('offers the control where the consent form is required', () => {
+    expect(privacyOptionsRequired('REQUIRED')).toBe(true);
+  });
+
+  /*
+    The common case, and the reason the row is hidden rather than disabled: for
+    most of this app's audience the form does not exist, so a permanently
+    present row would open nothing. Same call the biometric-lock card makes.
+  */
+  it('hides it where consent was never required', () => {
+    expect(privacyOptionsRequired('NOT_REQUIRED')).toBe(false);
+  });
+
+  /*
+    `UNKNOWN` is Expo Go, web, and the window before `initialiseAds` settles.
+    Treating it as required would put a dead row on the settings screen of every
+    device in the project's own documented development workflow.
+  */
+  it('hides it before the SDK has an answer', () => {
+    expect(privacyOptionsRequired('UNKNOWN')).toBe(false);
+    expect(privacyOptionsRequired(null)).toBe(false);
+    expect(privacyOptionsRequired(undefined)).toBe(false);
+    expect(privacyOptionsRequired('')).toBe(false);
+  });
+
+  /*
+    The status crosses the native bridge as a string, so it is an arbitrary
+    value rather than a member of the enum the types claim. A version testing
+    for "not NOT_REQUIRED" would answer yes to every one of these — which is the
+    plausible way to write this check, and it is wrong in the direction that
+    puts a dead control in front of everybody.
+  */
+  it('treats an unrecognised status as no control rather than as a yes', () => {
+    for (const status of ['required', 'Required', 'OBTAINED', 'garbage']) {
+      expect(privacyOptionsRequired(status)).toBe(false);
+    }
   });
 });

@@ -129,8 +129,16 @@ function ads(): AdsModule | null {
   return moduleCache;
 }
 
-/** Whether ads can run here at all: native module present, platform supported. */
-function usable(): AdsModule | null {
+/**
+ * Whether ads can run here at all: native module present, platform supported.
+ *
+ * Exported for `consent.ts`, which needs the same guarded probe and must not
+ * repeat it — a second copy is a second place for the "never take the throwing
+ * path" rule above to be got wrong, and getting it wrong there produces the
+ * identical launch-time redbox this file exists to have fixed. It is shared
+ * within the ads feature and deliberately not re-exported from `index.ts`.
+ */
+export function usable(): AdsModule | null {
   if (!adsAvailable(Platform.OS)) return null;
   return ads();
 }
@@ -232,8 +240,21 @@ export function preloadInterstitial(placement: AdPlacement): void {
   const slot = slotFor(placement);
   if (slot.loading || slot.ad?.loaded) return;
 
-  const platform = Platform.OS as 'android' | 'ios';
-  const unitId = resolveAdUnitId(placement, { isDev: __DEV__, platform });
+  // Re-narrowed through the type guard rather than cast.
+  //
+  // `usable()` above has already established this — it returns null unless
+  // `adsAvailable(Platform.OS)` passed — so this branch is unreachable today.
+  // The cast it replaces was still the wrong shape: it is a claim the compiler
+  // stops checking, and what it would hide is silent rather than loud. On web
+  // `INTERSTITIAL_UNIT_IDS[placement]` has no matching key, so `unitId` would
+  // be `undefined` and the request would go out to the SDK with no unit at
+  // all. A guard costs one branch and keeps the narrowing honest if the order
+  // of the checks above is ever rearranged.
+  if (!adsAvailable(Platform.OS)) return;
+  const unitId = resolveAdUnitId(placement, {
+    isDev: __DEV__,
+    platform: Platform.OS,
+  });
 
   let ad: Interstitial;
   try {
