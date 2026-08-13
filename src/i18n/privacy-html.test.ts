@@ -48,9 +48,14 @@ import ckb from './locales/ckb';
  *
  * `docs/` on the repository's **default branch** is what GitHub Pages serves
  * with no build step, which is the cheapest way to get the URLs both stores
- * require from someone who has no website. Note this needs a remote to exist:
- * as of writing the repository has none, so these files are correct and not yet
- * reachable. See CLAUDE.md.
+ * require from someone who has no website. That is now set up and all three
+ * pages are live under `https://nnstayles.github.io/ejazty/` — see CLAUDE.md
+ * for the configuration and the caveats.
+ *
+ * The consequence for anyone editing this file: **the output filenames are a
+ * public contract now.** They are cited from store listings and held by
+ * reviewers, so renaming one breaks a live link rather than merely moving a
+ * file. Adding a page is free; renaming or removing one is not.
  */
 const enabled = process.env.BUILD_PRIVACY_HTML === '1';
 
