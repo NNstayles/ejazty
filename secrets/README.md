@@ -33,9 +33,30 @@ permission error immediately after step 3 is usually just early.
 upload for an app that has never had a release, so the very first APK/AAB has to
 go through the Play Console UI. Everything after that can use `eas submit`.
 
-Note `submit.production.android` is configured with `track: "internal"` and
+Note `submit.production.android` is configured with `track: "alpha"` and
 `releaseStatus: "draft"`, so a successful submit does *not* go live — it lands as
-a draft on the internal track for you to promote.
+a draft on the closed testing track for you to promote.
+
+**`alpha` means closed testing, and the name is the Play Developer API's, not the
+console's.** The API exposes four tracks — `production`, `beta` (open testing),
+`alpha` (closed testing) and `internal` (internal testing) — while the console
+labels the same tracks in words. There is no `closed` value; writing one fails
+the submit.
+
+**Why closed testing rather than internal.** This is a *personal* Play developer
+account, and personal accounts registered after November 2023 must run a closed
+test with a minimum number of testers opted in for a continuous period before
+Google unlocks production access. Internal testing does **not** count toward it.
+Check the exact tester count and duration on the Play Console dashboard, which
+shows a live counter — Google has changed both numbers over time, so do not
+trust a figure written down here or anywhere else.
+
+**`releaseStatus: "draft"` does not start that clock.** A draft release is not
+delivered to testers, so the continuous-days counter only begins once the
+release is actually rolled out. Draft is kept as the default because it is the
+safe one — a submit cannot surprise you by going live — but expect to promote
+each closed-testing release by hand in the console, or change this to
+`"completed"` once you are confident in the pipeline.
 
 ## The Apple side
 

@@ -1,0 +1,14 @@
+# app-ads.txt for Ejazty (com.ejazty.app)
+#
+# Authorises Google to sell this app's ad inventory. Google crawls this file at
+# the developer-website URL declared on the Play listing, so that listing field
+# must point at https://nnstayles.github.io/ejazty/ for it to be found at all.
+#
+# Verification is not instant: AdMob shows the app as "Not found" or "Pending"
+# under Apps -> App settings -> app-ads.txt until the crawl lands, which can
+# take a day or two after the listing goes live.
+#
+# f08c47fec0942fa0 is Google's own certification authority id and is the same
+# for every publisher. pub-9746729732522915 is this project's, and must match
+# the androidAppId in app.json and the unit ids in src/features/ads/policy.ts.
+google.com, pub-9746729732522915, DIRECT, f08c47fec0942fa0

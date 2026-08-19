@@ -63,30 +63,39 @@ export const TEST_INTERSTITIAL_UNIT_IDS = {
 /**
  * The project's own interstitial units, per placement and platform.
  *
- * ## These are placeholders and earn nothing
+ * ## Android is live; iOS is still a placeholder
  *
- * Every value below is still Google's *sample* unit. They serve a real-looking
- * test creative and generate **no revenue whatsoever**. Replace all four with
- * the units created in the AdMob console for `com.ejazty.app`, and replace the
- * two app IDs in `app.json`'s `react-native-google-mobile-ads` plugin block at
- * the same time — the app ID and the unit IDs come from the same AdMob app and
- * a mismatched pair serves nothing.
+ * The **Android** entries are the real units created in the AdMob console for
+ * `com.ejazty.app` under publisher `pub-9746729732522915`, and they match the
+ * `androidAppId` in `app.json`'s `react-native-google-mobile-ads` plugin block.
+ * The app ID and the unit IDs come from the same AdMob app and a mismatched
+ * pair serves nothing, so those two places move together — always.
  *
- * Until they are replaced, a production build shows test ads: harmless, honest,
- * and worth zero. `policy.test.ts` deliberately does **not** assert that these
- * differ from the test units, because a test that failed until the owner
- * pasted in live credentials would be a test that gets deleted.
+ * The **iOS** entries are still Google's *sample* units, deliberately, and so
+ * is `iosAppId` in that same plugin block. There is no AdMob iOS app yet
+ * because there is no Apple Developer account yet and no iOS build; inventing
+ * an id here would be worse than an honest placeholder, since a wrong-but-real
+ * id fails as no-fill rather than as an error anybody would notice. When the
+ * Apple side exists, register the iOS app in AdMob and replace **both** the two
+ * entries below and `iosAppId` in the same change.
+ *
+ * Until then an iOS build shows test ads: harmless, honest, and worth zero.
+ * `policy.test.ts` deliberately does **not** assert that these differ from the
+ * test units, because a test that failed until the owner pasted in live
+ * credentials would be a test that gets deleted — and it would now have to fail
+ * on the iOS half alone, which is exactly the state this project is meant to be
+ * in for as long as iOS is deferred.
  */
 export const INTERSTITIAL_UNIT_IDS: Record<
   AdPlacement,
   { android: string; ios: string }
 > = {
   preExam: {
-    android: 'ca-app-pub-3940256099942544/1033173712',
+    android: 'ca-app-pub-9746729732522915/9852542465',
     ios: 'ca-app-pub-3940256099942544/4411468910',
   },
   preResult: {
-    android: 'ca-app-pub-3940256099942544/1033173712',
+    android: 'ca-app-pub-9746729732522915/4764596263',
     ios: 'ca-app-pub-3940256099942544/4411468910',
   },
 };

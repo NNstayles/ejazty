@@ -124,7 +124,7 @@
       [
         "react-native-google-mobile-ads",
         {
-          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "androidAppId": "ca-app-pub-9746729732522915~6933951269",
           "iosAppId": "ca-app-pub-3940256099942544~1458002511",
           "userTrackingUsageDescription": "Ejazty uses this to show ads that are more relevant to you. The app works exactly the same if you say no.",
           "delayAppMeasurementInit": true,
